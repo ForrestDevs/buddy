@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "dev-nolog": "next dev -p 3000",
     "build-nolog": "next build"
   },
