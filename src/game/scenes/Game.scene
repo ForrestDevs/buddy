@@ -1,0 +1,109 @@
+{
+    "id": "fe9dec0b-9530-4ff6-a5a1-14fb1c57bb41",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Game",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1024,
+        "borderHeight": 768
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "cd0be28e-bb4f-4cb5-bedd-f9a0b9b35f0b",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 512,
+            "y": 384,
+            "alpha": 0.5
+        },
+        {
+            "type": "Triangle",
+            "id": "0428dd27-6f2f-4ea1-8517-35fe36198047",
+            "label": "body",
+            "displayName": "Body",
+            "useGameObjectName": true,
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 128,
+            "hitArea.height": 128,
+            "x": 519,
+            "y": 333,
+            "scaleX": 0.6797996641730619,
+            "scaleY": 0.9076895843535854,
+            "isFilled": true
+        },
+        {
+            "type": "Ellipse",
+            "id": "766b76bf-e622-4f87-9a06-9fdd48ec9ece",
+            "label": "head",
+            "useGameObjectName": true,
+            "scope": "CLASS",
+            "x": 517,
+            "y": 245,
+            "scaleX": 0.440180796814426,
+            "scaleY": 0.5472606195911818,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Triangle",
+            "id": "bf21dd22-d976-4c98-82f4-d0bd09fe4bea",
+            "label": "triangle_2",
+            "x": 568,
+            "y": 335,
+            "scaleX": 0.3295226204007119,
+            "scaleY": 0.8314096679431473,
+            "angle": -51,
+            "isFilled": true
+        },
+        {
+            "type": "Triangle",
+            "id": "8da66f06-7908-4234-ac72-f9d29173b7cd",
+            "label": "triangle",
+            "x": 468,
+            "y": 334,
+            "scaleX": 0.3295226204007119,
+            "scaleY": 0.8314096679431473,
+            "angle": 51,
+            "isFilled": true
+        },
+        {
+            "type": "Rectangle",
+            "id": "7667169f-3765-4247-9a60-c87f48feb103",
+            "label": "rectangle_1",
+            "x": 504,
+            "y": 420,
+            "scaleX": 0.1638038754181181,
+            "scaleY": 0.4767627259251278,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "2bd6bb81-8ed5-41ba-b027-eccebe784b83",
+            "label": "rectangle",
+            "x": 541,
+            "y": 422,
+            "scaleX": 0.1638038754181181,
+            "scaleY": 0.4767627259251278,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
