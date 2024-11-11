@@ -10,10 +10,8 @@ const config: Phaser.Types.Core.GameConfig = {
   height: 768,
   parent: "game-container",
   backgroundColor: "#028af8",
-  scene: [Boot,Preloader, MainGame, GameOver],
-  plugins: {
-    // global: [MatterCollisionEvents]
-  },
+  scene: [Boot, Preloader, MainGame, GameOver],
+  plugins: {},
   physics: {
     default: "matter",
     matter: {
@@ -82,7 +80,7 @@ const config: Phaser.Types.Core.GameConfig = {
 
         showConvexHulls: true,
         hullColor: 0xd703d0,
-      }
+      },
     },
   },
 };
