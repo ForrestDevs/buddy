@@ -15,9 +15,7 @@
     "strictPropertyInitialization": false,
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "typeRoots": ["./node_modules/phaser/types"],
-    "types": ["Phaser"]
+    }
   },
   "include": [
     "next-env.d.ts",
