@@ -12,10 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Phaser Nextjs Template</title>
-        <meta
-          name="description"
-          content="A Phaser 3 Next.js project template that demonstrates Next.js with React communication and uses Vite for bundling."
-        />
+        <meta name="$BUDDY" content="Kick the $BUDDY" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
