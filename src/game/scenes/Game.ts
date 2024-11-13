@@ -3,27 +3,50 @@
 /* START-USER-IMPORTS */
 import { IPair } from "matter";
 import { EventBus } from "../EventBus";
-import Phaser from "phaser";
+import Phaser, { Scene } from "phaser";
 /* END-USER-IMPORTS */
 
-const JOINT_LENGTH = 20;
+const JOINT_LENGTH = 10;
 const JOINT_STIFFNESS = 1;
+const CHARACTER_HEIGHT = 100;
+const CHARACTER_WIDTH = 100;
+const SLOP = 10;
 
 export default class Game extends Phaser.Scene {
   private moveCam: boolean;
   private cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
   private score = 0;
   private scoreText!: Phaser.GameObjects.Text;
-  private starBody!: MatterJS.BodyType;
+  private fpsText!: Phaser.GameObjects.Text;
+  private clickCountText!: Phaser.GameObjects.Text;
+  private clickButton!: TextButton;
+  private clickCount = 0;
 
+  private starBody!: MatterJS.BodyType;
   private head!: Phaser.Physics.Matter.Image;
   private body!: Phaser.Physics.Matter.Image;
   private leftArm!: Phaser.Physics.Matter.Image;
   private rightArm!: Phaser.Physics.Matter.Image;
   private leftLeg!: Phaser.Physics.Matter.Image;
   private rightLeg!: Phaser.Physics.Matter.Image;
-
   private headText!: Phaser.GameObjects.Text;
+
+  private weapon:
+    | "fist"
+    | "knives"
+    | "desert-eagle"
+    | "tommy-gun"
+    | "rocket-launcher" = "fist";
+
+  private fistButton!: TextButton;
+  private knivesButton!: TextButton;
+  private desertEagleButton!: TextButton;
+  private tommyGunButton!: TextButton;
+  private rocketLauncherButton!: TextButton;
+  private bullets: MatterJS.BodyType[] = [];
+
+  private health = 100;
+
   constructor() {
     super("MainGame");
   }
@@ -32,238 +55,55 @@ export default class Game extends Phaser.Scene {
     this.cursors = this.input?.keyboard?.createCursorKeys()!;
   }
 
-  // editorCreate(): void {
-  //   // background
-  //   const background = this.add.image(512, 384, "background");
-  //   background.alpha = 0.5;
-
-  //   // body
-  //   const body = this.add.triangle(519, 333, 0, 128, 64, 0, 128, 128);
-  //   body.name = "body";
-  //   body.setInteractive(
-  //     new Phaser.Geom.Rectangle(0, 0, 128, 128),
-  //     Phaser.Geom.Rectangle.Contains
-  //   );
-  //   body.scaleX = 0.6797996641730619;
-  //   body.scaleY = 0.9076895843535854;
-  //   body.isFilled = true;
-
-  //   // head
-  //   const head = this.add.ellipse(517, 245, 128, 128);
-  //   head.name = "head";
-  //   head.scaleX = 0.440180796814426;
-  //   head.scaleY = 0.5472606195911818;
-  //   head.isFilled = true;
-
-  //   // triangle_2
-  //   const triangle_2 = this.add.triangle(568, 335, 0, 128, 64, 0, 128, 128);
-  //   triangle_2.scaleX = 0.3295226204007119;
-  //   triangle_2.scaleY = 0.8314096679431473;
-  //   triangle_2.angle = -51;
-  //   triangle_2.isFilled = true;
-
-  //   // triangle
-  //   const triangle = this.add.triangle(468, 334, 0, 128, 64, 0, 128, 128);
-  //   triangle.scaleX = 0.3295226204007119;
-  //   triangle.scaleY = 0.8314096679431473;
-  //   triangle.angle = 51;
-  //   triangle.isFilled = true;
-
-  //   // rectangle_1
-  //   const rectangle_1 = this.add.rectangle(504, 420, 128, 128);
-  //   rectangle_1.scaleX = 0.1638038754181181;
-  //   rectangle_1.scaleY = 0.4767627259251278;
-  //   rectangle_1.isFilled = true;
-
-  //   // rectangle
-  //   const rectangle = this.add.rectangle(541, 422, 128, 128);
-  //   rectangle.scaleX = 0.1638038754181181;
-  //   rectangle.scaleY = 0.4767627259251278;
-  //   rectangle.isFilled = true;
-
-  //   this.head = head;
-
-  //   this.events.emit("scene-awake");
-  // }
-
-  create() {
-    this.add.image(1024 / 2, 768 / 2, "bg").setDisplaySize(1024, 768);
-    this.matter.world.setBounds(0, 0, 1024, 768, 100, true, true, true, true);
-    EventBus.emit("current-scene-ready", this);
-
+  renderCharacter() {
+    const characterShapes = this.cache.json.get("characterShapes");
     this.head = this.matter.add
-      .image(1024 / 2, 768 / 2, "head", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 500, y: 150 },
-            { x: 650, y: 180 },
-            { x: 770, y: 250 },
-            { x: 850, y: 350 },
-            { x: 870, y: 500 },
-            { x: 850, y: 650 },
-            { x: 770, y: 750 },
-            { x: 650, y: 820 },
-            { x: 500, y: 850 },
-            { x: 350, y: 820 },
-            { x: 230, y: 750 },
-            { x: 150, y: 650 },
-            { x: 130, y: 500 },
-            { x: 150, y: 350 },
-            { x: 230, y: 250 },
-            { x: 350, y: 180 },
-          ],
-        },
+      .image(512, 200, "head", undefined, {
+        shape: characterShapes.head,
       })
-      .setDisplaySize(100, 100);
+      .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
+      .setCollisionCategory(1);
     this.body = this.matter.add
-      .image(1024 / 2, 768 / 2, "body", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 500, y: 150 },
-            { x: 650, y: 180 },
-            { x: 770, y: 250 },
-            { x: 850, y: 350 },
-            { x: 870, y: 500 },
-            { x: 850, y: 650 },
-            { x: 770, y: 750 },
-            { x: 650, y: 820 },
-            { x: 500, y: 850 },
-            { x: 350, y: 820 },
-            { x: 230, y: 750 },
-            { x: 150, y: 650 },
-            { x: 130, y: 500 },
-            { x: 150, y: 350 },
-            { x: 230, y: 250 },
-            { x: 350, y: 180 },
-          ],
-        },
+      .image(512, 384, "body", undefined, {
+        shape: characterShapes.body,
       })
-      .setDisplaySize(100, 100);
+      .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
+      .setCollisionCategory(1);
     this.leftArm = this.matter.add
-      .image(1024 / 2, 768 / 2, "left-arm", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 150, y: 400 },
-            { x: 150, y: 500 },
-            { x: 150, y: 600 },
-            { x: 200, y: 700 },
-            { x: 300, y: 750 },
-            { x: 400, y: 800 },
-            { x: 600, y: 800 },
-            { x: 700, y: 750 },
-            { x: 800, y: 700 },
-            { x: 850, y: 600 },
-            { x: 850, y: 500 },
-            { x: 850, y: 400 },
-            { x: 800, y: 300 },
-            { x: 700, y: 250 },
-            { x: 600, y: 200 },
-            { x: 400, y: 200 },
-            { x: 300, y: 250 },
-            { x: 200, y: 300 },
-          ],
-        },
+      .image(750, 200, "left-arm", undefined, {
+        shape: characterShapes.larm,
       })
-      .setDisplaySize(100, 100);
+      .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
+      .setCollisionCategory(1);
     this.rightArm = this.matter.add
-      .image(1024 / 2, 768 / 2, "right-arm", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 150, y: 400 },
-            { x: 150, y: 500 },
-            { x: 150, y: 600 },
-            { x: 200, y: 700 },
-            { x: 300, y: 750 },
-            { x: 400, y: 800 },
-            { x: 600, y: 800 },
-            { x: 700, y: 750 },
-            { x: 800, y: 700 },
-            { x: 850, y: 600 },
-            { x: 850, y: 500 },
-            { x: 850, y: 400 },
-            { x: 800, y: 300 },
-            { x: 700, y: 250 },
-            { x: 600, y: 200 },
-            { x: 400, y: 200 },
-            { x: 300, y: 250 },
-            { x: 200, y: 300 },
-          ],
-        },
+      .image(350, 200, "right-arm", undefined, {
+        shape: characterShapes.rarm,
       })
-      .setDisplaySize(100, 100);
-    this.leftLeg = this.matter.add
-      .image(1024 / 2, 768 / 2, "left-leg", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 500, y: 150 },
-            { x: 650, y: 180 },
-            { x: 770, y: 250 },
-            { x: 850, y: 350 },
-            { x: 870, y: 500 },
-            { x: 850, y: 650 },
-            { x: 770, y: 750 },
-            { x: 650, y: 820 },
-            { x: 500, y: 850 },
-            { x: 350, y: 820 },
-            { x: 230, y: 750 },
-            { x: 150, y: 650 },
-            { x: 130, y: 500 },
-            { x: 150, y: 350 },
-            { x: 230, y: 250 },
-            { x: 350, y: 180 },
-          ],
-        },
-      })
-      .setDisplaySize(100, 100);
-
+      .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
+      .setCollisionCategory(1);
     this.rightLeg = this.matter.add
-      .image(1024 / 2, 768 / 2, "right-leg", undefined, {
-        density: 1,
-        shape: {
-          type: "fromVertices",
-          verts: [
-            { x: 500, y: 150 },
-            { x: 650, y: 180 },
-            { x: 770, y: 250 },
-            { x: 850, y: 350 },
-            { x: 870, y: 500 },
-            { x: 850, y: 650 },
-            { x: 770, y: 750 },
-            { x: 650, y: 820 },
-            { x: 500, y: 850 },
-            { x: 350, y: 820 },
-            { x: 230, y: 750 },
-            { x: 150, y: 650 },
-            { x: 130, y: 500 },
-            { x: 150, y: 350 },
-            { x: 230, y: 250 },
-            { x: 350, y: 180 },
-          ],
-        },
+      .image(750, 500, "right-leg", undefined, {
+        shape: characterShapes.rleg,
       })
-      .setDisplaySize(100, 100);
+      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30);
+    this.leftLeg = this.matter.add
+      .image(350, 500, "left-leg", undefined, {
+        shape: characterShapes.lleg,
+      })
+      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30);
 
-    const neck = this.matter.add.joint(
-      //@ts-ignore
-      this.head,
-      this.body,
-      JOINT_LENGTH,
-      JOINT_STIFFNESS,
-      {
-        pointA: { x: 0, y: 30 },
-        pointB: { x: 0, y: -35 },
-      }
-    );
+    //@ts-ignore
+    const neckLeft = this.matter.add.joint(this.head, this.body, 10, 0.5, {
+      pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
+      pointB: { x: -25, y: -CHARACTER_HEIGHT / 2.6 },
+      angularStiffness: 0.5,
+    });
+    //@ts-ignore
+    const neckRight = this.matter.add.joint(this.head, this.body, 10, 0.5, {
+      pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
+      pointB: { x: 25, y: -CHARACTER_HEIGHT / 2.6 },
+      angularStiffness: 0.5,
+    });
 
     const leftShoulder = this.matter.add.joint(
       //@ts-ignore
@@ -272,9 +112,8 @@ export default class Game extends Phaser.Scene {
       JOINT_LENGTH,
       JOINT_STIFFNESS,
       {
-        pointA: { x: 35, y: 0 },
-        pointB: { x: -35, y: -35 },
-        // angularStiffness: 1,
+        pointA: { x: 35, y: -15 },
+        pointB: { x: -25, y: -35 },
       }
     );
 
@@ -285,9 +124,8 @@ export default class Game extends Phaser.Scene {
       JOINT_LENGTH,
       JOINT_STIFFNESS,
       {
-        pointA: { x: -35, y: 0 },
-        pointB: { x: 35, y: -35 },
-        // angularStiffness: 1,
+        pointA: { x: -35, y: -15 },
+        pointB: { x: 25, y: -35 },
       }
     );
 
@@ -295,12 +133,11 @@ export default class Game extends Phaser.Scene {
       //@ts-ignore
       this.leftLeg,
       this.body,
-      JOINT_LENGTH,
+      1,
       JOINT_STIFFNESS,
       {
-        pointA: { x: 0, y: -50 },
-        pointB: { x: -15, y: 35 },
-        // angularStiffness: 1,
+        pointA: { x: 0, y: -20 },
+        pointB: { x: -25, y: 35 },
       }
     );
 
@@ -308,186 +145,307 @@ export default class Game extends Phaser.Scene {
       //@ts-ignore
       this.rightLeg,
       this.body,
-      JOINT_LENGTH,
+      1,
       JOINT_STIFFNESS,
       {
-        pointA: { x: 0, y: -50 },
-        pointB: { x: 15, y: 35 },
-        // angularStiffness: 1,
+        pointA: { x: 0, y: -20 },
+        pointB: { x: 25, y: 35 },
+      }
+    );
+  }
+
+  renderButtons() {
+    this.fistButton = new TextButton(
+      this,
+      16,
+      80,
+      "Equip Fist",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {}
+    );
+
+    this.knivesButton = new TextButton(
+      this,
+      16,
+      125,
+      "Equip Knives",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {}
+    );
+
+    this.desertEagleButton = new TextButton(
+      this,
+      16,
+      170,
+      "Equip Desert Eagle",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {}
+    );
+
+    this.tommyGunButton = new TextButton(
+      this,
+      16,
+      215,
+      "Equip Tommy Gun",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {}
+    );
+
+    this.rocketLauncherButton = new TextButton(
+      this,
+      16,
+      260,
+      "Equip Rocket Launcher",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {}
+    );
+
+    this.add.existing(this.fistButton);
+    this.add.existing(this.knivesButton);
+    this.add.existing(this.desertEagleButton);
+    this.add.existing(this.tommyGunButton);
+    this.add.existing(this.rocketLauncherButton);
+  }
+
+  spawnProjectile(
+    startPoint: Phaser.Math.Vector2,
+    targetPoint: Phaser.Math.Vector2
+  ): void {
+    // Calculate angle between start and target points
+    const angle = Phaser.Math.Angle.Between(
+      startPoint.x,
+      startPoint.y,
+      targetPoint.x,
+      targetPoint.y - 50
+    );
+    const speed = 80;
+
+    // // Create triangular bullet at start point
+    const projectile = this.matter.add
+      .image(startPoint.x + 20, startPoint.y, "circle", undefined, {
+        angle: Math.random() * 6.28,
+        friction: 0,
+        frictionStatic: 0,
+        frictionAir: 0,
+        restitution: 1,
+        render: { fillColor: 0xffff00 },
+        ignorePointer: true,
+        onCollideCallback: (pair: MatterJS.Pair) => {
+          destroy();
+        },
+
+        // Store when bullet should be removed
+        // lifespan: this.time.now + 1500 // 1.5 seconds
+      })
+      .setCollisionCategory(2);
+
+    const destroy = () => {
+      projectile.destroy();
+    };
+
+    // Set velocity based on angle to target
+    this.matter.setVelocity(
+      projectile,
+      speed * Math.cos(angle),
+      speed * Math.sin(angle)
+    );
+
+    // // Add random spin
+    // this.matter.setAngularVelocity(projectile, (Math.random() - 0.5) * 1);
+
+    // // Track bullet for cleanup
+    //
+    // this.bullets.push(projectile);
+
+    // Reduce health on impact
+    this.health -= 2;
+    if (this.health < 0) this.health = 0;
+
+    // Emit health changed event
+    this.events.emit("health-changed", this.health);
+
+    // Remove the bullet
+    // const bulletIndex = this.bullets.indexOf(projectile);
+    // if (bulletIndex > -1) {
+    //   this.bullets.splice(bulletIndex, 1);
+    // }
+  }
+
+  detectBulletImpacts() {
+    // Check collisions between bullets and body parts
+  }
+
+  create() {
+    this.add.image(1024 / 2, 768 / 2, "bg").setDisplaySize(1024, 768);
+    this.matter.world.setBounds(0, 0, 1024, 768, 100, true, true, true, true);
+    this.matter.add.mouseSpring({ length: 0.1, stiffness: 1 });
+    this.matter.world.autoUpdate = true;
+    EventBus.emit("current-scene-ready", this);
+    this.renderCharacter();
+    this.renderButtons();
+
+    const weaponShapes = this.cache.json.get("weaponShapes");
+    const deg = this.matter.add
+      .image(1024 / 2, 768 / 2, "deg", undefined, {
+        shape: weaponShapes.deg,
+        ignorePointer: true,
+        ignoreGravity: true,
+      })
+      .setDisplaySize(200, 100)
+      .setCollisionCategory(2);
+
+    this.input.on(
+      "pointerdown",
+      (pointer: Phaser.Input.Pointer) => {
+        this.input.mouse?.requestPointerLock();
+        // Create circle with physics body
+        console.log(pointer.x, pointer.y);
+        this.spawnProjectile(
+          new Phaser.Math.Vector2(
+            deg.angle < 0 ? deg.x - 100 : deg.x + 100,
+            deg.y
+          ),
+          new Phaser.Math.Vector2(this.body.x, this.body.y)
+        );
+        // this.matter.add.image(pointer.x, pointer.y, "circle", undefined, {
+        //   shape: {
+        //     type: "circle",
+        //     radius: 40,
+        //   },
+        // });
+      },
+      this
+    );
+
+    const moveGun = (pointer: Phaser.Input.Pointer) => {
+      if (this?.input?.mouse?.locked) {
+        deg.x += pointer.movementX;
+        deg.y += pointer.movementY;
+
+        // Force the sprite to stay on screen
+        deg.x = Phaser.Math.Wrap(deg.x, 0, this.game.renderer.width);
+        deg.y = Phaser.Math.Wrap(deg.y, 0, this.game.renderer.height);
+
+        const angle = Phaser.Math.Angle.Between(
+          this.body.x,
+          this.body.y,
+          deg.x,
+          deg.y
+        );
+
+        deg.setAngle(Phaser.Math.RadToDeg(angle)); // Add 90 degrees to point the left side
+
+        if (pointer.movementX > 0) {
+          // deg.setRotation(0.1);
+        } else if (pointer.movementX < 0) {
+          // deg.setRotation(-0.1);
+        } else {
+          // deg.setRotation(0);
+        }
+      }
+    };
+
+    this.input.on("pointermove", moveGun, this);
+
+    // Create health bar background
+    const healthBarBackground = this.add.rectangle(512, 30, 300, 20, 0x000000);
+    healthBarBackground.setScrollFactor(0);
+
+    // Create health bar fill
+    const healthBarFill = this.add.rectangle(512, 30, 300, 20, 0xff0000);
+    healthBarFill.setScrollFactor(0);
+
+    // Create health text
+    const healthText = this.add.text(512, 30, `${this.health}%`, {
+      fontSize: "16px",
+      color: "#ffffff",
+    });
+    healthText.setOrigin(0.5);
+    healthText.setScrollFactor(0);
+
+    // Update health bar when health changes
+    this.events.on("health-changed", () => {
+      console.log("health changed", this.health);
+      const healthPercent = this.health / 100;
+      healthBarFill.setScale(healthPercent, 1);
+      healthBarFill.setX(512 - (300 * (1 - healthPercent)) / 2);
+      healthText.setText(`${this.health}%`);
+    });
+
+    this.events.on(
+      "collisionStart",
+      (event: Phaser.Physics.Matter.Events.CollisionStartEvent) => {
+        console.log("collision start", event);
+        const pairs = event.pairs;
+
+        for (const pair of pairs) {
+          const bodyA = pair.bodyA;
+          const bodyB = pair.bodyB;
+
+          // Check if one body is a bullet
+          const bullet = this.bullets.find((b) => b === bodyA || b === bodyB);
+          if (!bullet) continue;
+
+          // Check if other body is a character part
+          const characterParts = [
+            this.head,
+            this.body,
+            this.leftArm,
+            this.rightArm,
+            this.leftLeg,
+            this.rightLeg,
+          ];
+
+          const hitPart = characterParts.find(
+            (part) => part.body === bodyA || part.body === bodyB
+          );
+        }
       }
     );
 
-    let counter = -1;
-    let dragBody: Phaser.Physics.Matter.Image | null = null;
-
-    this.matter.world.on("beforeUpdate", () => {
-      counter += 0.014;
-      if (counter < 0) {
-        return;
-      }
-
-      const px = 400 + 100 * Math.sin(counter);
-
-      // Update body position and velocity
-      if (this.body) {
-        this.matter.body.setVelocity(this.body.body as MatterJS.BodyType, {
-          x: px - this.body.x,
-          y: 0,
-        });
-        this.matter.body.setPosition(this.body.body as MatterJS.BodyType, {
-          x: px,
-          y: this.body.y,
-        });
-      }
-
-      // Limit drag velocity and impulse
-      // if (dragBody) {
-      //   const body = dragBody.body as MatterJS.BodyType;
-
-      //   if (body.velocity.x > 25.0) {
-      //     this.matter.body.setVelocity(body, {
-      //       x: 25,
-      //       y: body.velocity.y
-      //     });
-      //   }
-
-      //   if (body.velocity.y > 25.0) {
-      //     this.matter.body.setVelocity(body, {
-      //       x: body.velocity.x,
-      //       y: 25
-      //     });
-      //   }
-
-      //   if (body.positionImpulse.x > 25.0) {
-      //     body.positionImpulse.x = 25.0;
-      //   }
-
-      //   if (body.positionImpulse.y > 25.0) {
-      //     body.positionImpulse.y = 25.0;
-      //   }
-      // }
-    });
-
-    this.headText = this.add
-      .text(16, 16, "Head position: x=0, y=0", {
-        fontSize: "18px",
-        color: "#fff",
-      })
-      .setScrollFactor(0);
-
-    // Track dragged body
-    // this.matter.world.on('dragstart', (body: MatterJS.BodyType) => {
-    //   dragBody = this.children.getByName(body.gameObject.name) as Phaser.Physics.Matter.Image;
-    // });
-
-    // const head = this.matter.add.image(, this.head.y, "head");
-    // const body = this.matter.add.image(this.body.x, this.body.y, "body");
-
-    // this.matter.add.joint(this.head, this.body, {
-    //   length: 1,
-    //   stiffness: 0.6,
-    // });
-    // const headBodyJoint = this.matter.constraint.create({
-    //   bodyA: this.head,
-    //   bodyB: this.body,
-    // });
-
-    //  First, we'll create a few static bodies
-    // const body1 = this.matter.add.rectangle(250, 50, 200, 32, {
-    //   isStatic: true,
-    // });
-
-    // this.matter.add.polygon(600, 100, 3, 40, { isStatic: true });
-    // this.matter.add.polygon(100, 500, 8, 50, { isStatic: true });
-    // this.matter.add.rectangle(750, 200, 16, 180, { isStatic: true });
-
-    //  Now a body that shows off internal edges + convex hulls
-    // const star = "50 0 63 38 100 38 69 59 82 100 50 75 18 100 31 59 0 38 37 38";
-
-    // this.starBody = this.matter.add.fromVertices(
-    //   700,
-    //   500,
-    //   star,
-    //   {
-    //     onCollideCallback: (event: any) => {
-    //       console.log(event);
-    //     },
-    //     restitution: 0.5,
-    //   },
-    //   true
-    // );
-
-    // this.matter.world.autoUpdate = true;
+    // this.updateClickCountText();
 
     // this.starBody.onCollideCallback = (pair: MatterJS.Pair) => {
     //   console.log(pair);
     // };
 
-    //  Some different joint types
-    // const body2 = this.matter.add.circle(150, 250, 16);
-    // const body3 = this.matter.add.circle(400, 450, 16);
-    // const body4 = this.matter.add.circle(500, 50, 16);
-
-    //  A spring, because length > 0 and stiffness < 0.9
-    // this.matter.add.spring(body3, body2, 140, 0.001);
-
-    //  A joint, because length > 0 and stiffness > 0.1
-    // this.matter.add.worldConstraint(body3, 140, 1, {
-    //   pointA: { x: 400, y: 250 },
-    // });
-
-    //  A pin, because length = 0 and stiffness > 0.1
-    // this.matter.add.worldConstraint(body4, 0, 1, { pointA: { x: 500, y: 50 } });
-    // Respawn character if it leaves bounds
-    this.matter.world.on("beforeUpdate", () => {
-      const bounds = {
-        left: 0,
-        right: 1024,
-        top: 0,
-        bottom: 768,
-      };
-
-      // Check if any body part is out of bounds
-      const parts = [
-        this.head,
-        this.body,
-        this.leftArm,
-        this.rightArm,
-        this.leftLeg,
-        this.rightLeg,
-      ];
-      const outOfBounds = parts.some((part) => {
-        if (!part) return false;
-        return (
-          part.x < bounds.left ||
-          part.x > bounds.right ||
-          part.y < bounds.top ||
-          part.y > bounds.bottom
-        );
-      });
-
-      if (outOfBounds) {
-        // Reset all body parts to center
-        parts.forEach((part) => {
-          if (!part) return;
-          this.matter.body.setPosition(part.body as MatterJS.BodyType, {
-            x: 1024 / 2,
-            y: 768 / 2,
-          });
-          this.matter.body.setVelocity(part.body as MatterJS.BodyType, {
-            x: 0,
-            y: 0,
-          });
-        });
-      }
-    });
-
-    this.matter.add.mouseSpring({ length: 1, stiffness: 0.1 });
     // this.scoreText = this.add.text(16, 16, "score: 0", {
     //   fontSize: "32px",
     //   color: "#ffffff",
     // });
   }
+
+  // updateClickCountText() {
+  //   this.clickCountText.setText(
+  //     `Button has been clicked ${this.clickCount} times.`
+  //   );
+  //   this.clickCount++;
+  // }
 
   updateStarBody() {
     this.score++;
@@ -500,52 +458,77 @@ export default class Game extends Phaser.Scene {
 
   update(time: number, delta: number): void {
     const cam = this.cameras.main;
+    cam.centerToBounds();
 
-    if (this.head) {
-      const headPos = `Head position: x=${Math.round(
-        this.head.x
-      )}, y=${Math.round(this.head.y)}`;
-      this.headText.setText(headPos);
+    // Display FPS counter
+    const fps = Math.round(1000 / delta);
+    if (!this.fpsText) {
+      this.fpsText = this.add
+        .text(16, 50, `FPS: ${fps}`, {
+          fontSize: "18px",
+          color: "#fff",
+        })
+        .setScrollFactor(0);
+    } else {
+      this.fpsText.setText(`FPS: ${fps}`);
     }
 
-    if (this.head && (this.head.x > 1024 || this.head.x < 0)) {
-      this.head.setPosition(1024 / 2, 768 / 2);
-      this.body.setPosition(1024 / 2, 768 / 2);
-      this.leftArm.setPosition(1024 / 2, 768 / 2);
-      this.rightArm.setPosition(1024 / 2, 768 / 2);
-      this.leftLeg.setPosition(1024 / 2, 768 / 2);
-      this.rightLeg.setPosition(1024 / 2, 768 / 2);
+    const isOutOfBounds = (part: Phaser.Physics.Matter.Image) => {
+      return part && (part.x > 1024 || part.x < 0);
+    };
+
+    if (
+      isOutOfBounds(this.head) ||
+      isOutOfBounds(this.body) ||
+      isOutOfBounds(this.leftArm) ||
+      isOutOfBounds(this.rightArm) ||
+      isOutOfBounds(this.leftLeg) ||
+      isOutOfBounds(this.rightLeg)
+    ) {
+      const centerX = 1024 / 2;
+      const centerY = 768 / 2;
+
+      this.head.setPosition(512, 200);
+      this.body.setPosition(512, 384);
+      this.leftArm.setPosition(750, 200);
+      this.rightArm.setPosition(350, 200);
+      this.leftLeg.setPosition(350, 500);
+      this.rightLeg.setPosition(750, 500);
     }
+  }
+}
 
-    // this.matter.world.on("collisionstart", this.listener);
+export class TextButton extends Phaser.GameObjects.Text {
+  constructor(
+    scene: Phaser.Scene,
+    x: number,
+    y: number,
+    text: string,
+    style: Phaser.Types.GameObjects.Text.TextStyle,
+    callback: () => void
+  ) {
+    super(scene, x, y, text, style);
 
-    // this.player.setVelocity(0);
+    this.setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.enterButtonHoverState())
+      .on("pointerout", () => this.enterButtonRestState())
+      .on("pointerdown", () => this.enterButtonActiveState())
+      .on("pointerup", () => {
+        this.enterButtonHoverState();
+        callback();
+      });
+  }
 
-    // if (this.moveCam) {
-    //   if (this.cursors.left.isDown) {
-    //     cam.scrollX -= 4;
-    //   } else if (this.cursors.right.isDown) {
-    //     cam.scrollX += 4;
-    //   }
+  enterButtonHoverState() {
+    this.setStyle({ fill: "#ff0" });
+  }
 
-    //   if (this.cursors.up.isDown) {
-    //     cam.scrollY -= 4;
-    //   } else if (this.cursors.down.isDown) {
-    //     cam.scrollY += 4;
-    //   }
-    // } else {
-    //   if (this.cursors.left.isDown) {
-    //     this.player.setVelocityX(-400);
-    //   } else if (this.cursors.right.isDown) {
-    //     this.player.setVelocityX(400);
-    //   }
+  enterButtonRestState() {
+    this.setStyle({ fill: "#0f0" });
+  }
 
-    //   if (this.cursors.up.isDown) {
-    //     this.player.setVelocityY(-400);
-    //   } else if (this.cursors.down.isDown) {
-    //     this.player.setVelocityY(400);
-    //   }
-    // }
+  enterButtonActiveState() {
+    this.setStyle({ fill: "#0ff" });
   }
 }
 
