@@ -59,6 +59,8 @@ export default class Game extends Phaser.Scene {
 
   private health = 100;
 
+  private weaponSelectionArea!: Phaser.GameObjects.Rectangle;
+
   constructor() {
     super("MainGame");
   }
@@ -227,19 +229,19 @@ export default class Game extends Phaser.Scene {
     // Check collisions between bullets and body parts
   }
 
-  fireDeg() {
-    if (this.weapon !== "fist" && this.deg && this.currentWeapon) {
+  fireWeapon() {
+    if (this.weapon !== "fist" && this.currentWeapon?.getDisplayList()) {
       const pointer = this.input.activePointer;
       const worldPoint = pointer.positionToCamera(
         this.cameras.main
       ) as Phaser.Math.Vector2;
 
       // Calculate spawn position offset based on gun angle and flip
-      const spawnOffset = this.deg.flipX ? -100 : 100;
-      const spawnX = this.deg.x + spawnOffset;
+      const spawnOffset = this.currentWeapon.flipX ? -100 : 100;
+      const spawnX = this.currentWeapon.x + spawnOffset;
 
       this.spawnProjectile(
-        new Phaser.Math.Vector2(spawnX, this.deg.y),
+        new Phaser.Math.Vector2(spawnX, this.currentWeapon.y),
         new Phaser.Math.Vector2(this.body.x, this.body.y)
       );
     }
@@ -365,22 +367,24 @@ export default class Game extends Phaser.Scene {
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
       },
-      () => {}
+      () => {
+        this.setWeapon(undefined);
+      }
     );
 
-    this.knivesButton = new TextButton(
-      this,
-      16,
-      125,
-      "Equip Knives",
-      {
-        color: "#0f0",
-        backgroundColor: "blue",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {}
-    );
+    // this.knivesButton = new TextButton(
+    //   this,
+    //   16,
+    //   125,
+    //   "Equip Knives",
+    //   {
+    //     color: "#0f0",
+    //     backgroundColor: "blue",
+    //     padding: { left: 10, right: 10, top: 10, bottom: 10 },
+    //     shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+    //   },
+    //   () => {}
+    // );
 
     this.desertEagleButton = new TextButton(
       this,
@@ -417,25 +421,25 @@ export default class Game extends Phaser.Scene {
       }
     );
 
-    this.rocketLauncherButton = new TextButton(
-      this,
-      16,
-      260,
-      "Equip Rocket Launcher",
-      {
-        color: "#0f0",
-        backgroundColor: "blue",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {}
-    );
+    // this.rocketLauncherButton = new TextButton(
+    //   this,
+    //   16,
+    //   260,
+    //   "Equip Rocket Launcher",
+    //   {
+    //     color: "#0f0",
+    //     backgroundColor: "blue",
+    //     padding: { left: 10, right: 10, top: 10, bottom: 10 },
+    //     shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+    //   },
+    //   () => {}
+    // );
 
     this.add.existing(this.fistButton);
-    this.add.existing(this.knivesButton);
+    // this.add.existing(this.knivesButton);
     this.add.existing(this.desertEagleButton);
     this.add.existing(this.tommyGunButton);
-    this.add.existing(this.rocketLauncherButton);
+    // this.add.existing(this.rocketLauncherButton);
   }
 
   create() {
@@ -455,25 +459,25 @@ export default class Game extends Phaser.Scene {
       color: "#ffffff",
     });
 
-    const rec = this.add
+    this.weaponSelectionArea = this.add
       .rectangle(0, 0, 500, 768 * 2, 0x000000, 0.5)
       .setDepth(-1)
       .setInteractive()
       .on("pointerover", () => {
         this.pointerOver = true;
         text.setText(`Pointer Over ${this.pointerOver}`);
-        rec.setFillStyle(0xff0000, 0.5);
+        this.weaponSelectionArea.setFillStyle(0xff0000, 0.5);
       })
       .on("pointerout", () => {
         this.pointerOver = false;
         text.setText(`Pointer Over ${this.pointerOver}`);
-        rec.setFillStyle(0x000000, 0.5);
+        this.weaponSelectionArea.setFillStyle(0x000000, 0.5);
       })
       .on("pointerdown", () => {
-        rec.setFillStyle(0x00ff00, 0.5);
+        this.weaponSelectionArea.setFillStyle(0x00ff00, 0.5);
       })
       .on("pointerup", () => {
-        rec.setFillStyle(0x000000, 0.5);
+        this.weaponSelectionArea.setFillStyle(0x000000, 0.5);
       });
 
     const weaponShapes = this.cache.json.get("weaponShapes");
@@ -495,48 +499,10 @@ export default class Game extends Phaser.Scene {
     this.input.on(
       "pointerdown",
       (pointer: Phaser.Input.Pointer) => {
-        this.fireDeg()
-        // if (pointer.x > 500) {
-        //   // this.currentWeapon?.addToDisplayList();
-        //   this.fireDeg();
-        // }
-        // Only spawn projectiles if weapon is not fist
+        this.fireWeapon();
       },
       this
     );
-    // this.input.on("pointerup", () => {
-    //   this.setWeapon(undefined);
-    // });
-
-    const moveGun = (pointer: Phaser.Input.Pointer) => {
-      if (this?.input?.mouse?.locked) {
-        deg.x += pointer.movementX;
-        deg.y += pointer.movementY;
-
-        // Force the sprite to stay on screen
-        deg.x = Phaser.Math.Wrap(deg.x, 0, this.game.renderer.width);
-        deg.y = Phaser.Math.Wrap(deg.y, 0, this.game.renderer.height);
-
-        const angle = Phaser.Math.Angle.Between(
-          this.body.x,
-          this.body.y,
-          deg.x,
-          deg.y
-        );
-
-        deg.setAngle(Phaser.Math.RadToDeg(angle)); // Add 90 degrees to point the left side
-
-        if (pointer.movementX > 0) {
-          // deg.setRotation(0.1);
-        } else if (pointer.movementX < 0) {
-          // deg.setRotation(-0.1);
-        } else {
-          // deg.setRotation(0);
-        }
-      }
-    };
-
-    // this.input.on("pointermove", moveGun, this);
 
     // Create health bar background
     const healthBarBackground = this.add.rectangle(512, 30, 300, 20, 0x000000);
@@ -612,6 +578,30 @@ export default class Game extends Phaser.Scene {
     this.displayFps(delta);
     this.ensureCharacterBounds();
     this.updateWeaponPosition();
+
+    // Hide weapon if pointer is in weapon selection area and weapon is equipped
+    if (
+      this.currentWeapon &&
+      this.weapon !== "fist" &&
+      Phaser.Geom.Rectangle.Contains(
+        this.weaponSelectionArea.getBounds(),
+        this.input.activePointer.x,
+        this.input.activePointer.y
+      )
+    ) {
+      this.currentWeapon.removeFromDisplayList();
+    } else if (
+      this.currentWeapon &&
+      this.weapon !== "fist" &&
+      !Phaser.Geom.Rectangle.Contains(
+        this.weaponSelectionArea.getBounds(),
+        this.input.activePointer.x,
+        this.input.activePointer.y
+      ) &&
+      !this.currentWeapon.getDisplayList()
+    ) {
+      this.currentWeapon.addToDisplayList();
+    }
 
     // Move deg to cursor position if it exists and handle flipping
     // if (this.deg && this.deg.getDisplayList()) {
