@@ -53,13 +53,15 @@ export default class Preloader extends Phaser.Scene {
   preload() {
     // Use the 'pack' file to load in any assets you need for this scene
     this.load.pack("preload", "assets/preload-asset-pack.json");
+    
     this.load.image("bg", "assets/bg.jpeg");
-    this.load.image("head", "assets/character/Head.png");
-    this.load.image("body", "assets/character/Torso.png");
-    this.load.image("left-arm", "assets/character/Larm.png");
-    this.load.image("right-arm", "assets/character/Rarm.png");
-    this.load.image("left-leg", "assets/character/Lleg.png");
-    this.load.image("right-leg", "assets/character/Rleg.png");
+    this.load.image("head", "assets/character/v2/Head.png");
+    this.load.image("body", "assets/character/v2/Torso.png");
+    this.load.image("left-arm", "assets/character/v2/Larm.png");
+    this.load.image("right-arm", "assets/character/v2/Rarm.png");
+    this.load.image("left-leg", "assets/character/v2/Lleg.png");
+    this.load.image("right-leg", "assets/character/v2/Rleg.png");
+
     this.load.json("characterShapes", "assets/character/character.xml.json");
 
     this.load.json("weaponShapes", "assets/weapons.xml.json");

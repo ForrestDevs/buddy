@@ -32,6 +32,7 @@ export default class Game extends Phaser.Scene {
   private desertEagleButton!: TextButton;
   private tommyGunButton!: TextButton;
   private rocketLauncherButton!: TextButton;
+  private pointerConstraint!: Phaser.Physics.Matter.PointerConstraint;
 
   private starBody!: MatterJS.BodyType;
   private head!: Phaser.Physics.Matter.Image;
@@ -41,6 +42,7 @@ export default class Game extends Phaser.Scene {
   private leftLeg!: Phaser.Physics.Matter.Image;
   private rightLeg!: Phaser.Physics.Matter.Image;
   private headText!: Phaser.GameObjects.Text;
+  private recoveryTimer?: Phaser.Time.TimerEvent;
 
   private deg!: Phaser.GameObjects.Image;
   private tommyGun!: Phaser.GameObjects.Image;
@@ -122,59 +124,89 @@ export default class Game extends Phaser.Scene {
       console.log("health changed", this.health);
       const healthPercent = this.health / 100;
       healthBarFill.setScale(healthPercent, 1);
-      healthBarFill.setX(GAME_WIDTH/2 - (300 * (1 - healthPercent)) / 2);
+      healthBarFill.setX(GAME_WIDTH / 2 - (300 * (1 - healthPercent)) / 2);
       healthText.setText(`${this.health}%`);
     });
   }
 
   renderCharacter() {
     const characterShapes = this.cache.json.get("characterShapes");
+
+    // Create body parts with more realistic physics properties
     this.head = this.matter.add
       .image(512, 200, "head", undefined, {
         shape: characterShapes.head,
+        friction: 0.1,
+        restitution: 0.3,
+        density: 0.001, // Light head for better swinging
       })
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
-      .setCollisionCategory(1);
+      .setCollisionCategory(1)
+      .setDepth(3);
+
     this.body = this.matter.add
       .image(512, 384, "body", undefined, {
         shape: characterShapes.body,
+        friction: 0.1,
+        restitution: 0.3,
+        density: 0.005, // Heavier body acts as center of mass
       })
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
-      .setCollisionCategory(1);
+      .setCollisionCategory(1)
+      .setDepth(2);
+
     this.leftArm = this.matter.add
       .image(750, 200, "left-arm", undefined, {
         shape: characterShapes.larm,
+        friction: 0.1,
+        density: 0.001,
       })
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
-      .setCollisionCategory(1);
+      .setCollisionCategory(1)
+      .setDepth(1);
+
     this.rightArm = this.matter.add
       .image(350, 200, "right-arm", undefined, {
         shape: characterShapes.rarm,
+        friction: 0.1,
+        density: 0.001,
       })
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
-      .setCollisionCategory(1);
+      .setCollisionCategory(1)
+      .setDepth(1);
+
     this.rightLeg = this.matter.add
       .image(750, 500, "right-leg", undefined, {
         shape: characterShapes.rleg,
+        friction: 0.1,
+        density: 0.002,
       })
-      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30);
+      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30)
+      .setDepth(1);
+
     this.leftLeg = this.matter.add
       .image(350, 500, "left-leg", undefined, {
         shape: characterShapes.lleg,
+        friction: 0.1,
+        density: 0.002,
       })
-      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30);
+      .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30)
+      .setDepth(1);
 
+    // Create joints with more flexibility for swinging
     //@ts-ignore
-    const neckLeft = this.matter.add.joint(this.head, this.body, 10, 0.5, {
+    const neckLeft = this.matter.add.joint(this.head, this.body, 10, 0.1, {
       pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
       pointB: { x: -25, y: -CHARACTER_HEIGHT / 2.6 },
-      angularStiffness: 0.5,
+      angularStiffness: 0.2,
+      stiffness: 0.2,
     });
     //@ts-ignore
-    const neckRight = this.matter.add.joint(this.head, this.body, 10, 0.5, {
+    const neckRight = this.matter.add.joint(this.head, this.body, 10, 0.1, {
       pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
       pointB: { x: 25, y: -CHARACTER_HEIGHT / 2.6 },
-      angularStiffness: 0.5,
+      angularStiffness: 0.2,
+      stiffness: 0.2,
     });
 
     const leftShoulder = this.matter.add.joint(
@@ -182,10 +214,11 @@ export default class Game extends Phaser.Scene {
       this.leftArm,
       this.body,
       JOINT_LENGTH,
-      JOINT_STIFFNESS,
+      0.3,
       {
         pointA: { x: 35, y: -15 },
         pointB: { x: -25, y: -35 },
+        angularStiffness: 0.2,
       }
     );
 
@@ -194,10 +227,11 @@ export default class Game extends Phaser.Scene {
       this.rightArm,
       this.body,
       JOINT_LENGTH,
-      JOINT_STIFFNESS,
+      0.3,
       {
         pointA: { x: -35, y: -15 },
         pointB: { x: 25, y: -35 },
+        angularStiffness: 0.2,
       }
     );
 
@@ -206,10 +240,11 @@ export default class Game extends Phaser.Scene {
       this.leftLeg,
       this.body,
       1,
-      JOINT_STIFFNESS,
+      0.4,
       {
         pointA: { x: 0, y: -20 },
         pointB: { x: -25, y: 35 },
+        angularStiffness: 0.3,
       }
     );
 
@@ -218,10 +253,11 @@ export default class Game extends Phaser.Scene {
       this.rightLeg,
       this.body,
       1,
-      JOINT_STIFFNESS,
+      0.4,
       {
         pointA: { x: 0, y: -20 },
         pointB: { x: 25, y: 35 },
+        angularStiffness: 0.3,
       }
     );
   }
@@ -521,13 +557,14 @@ export default class Game extends Phaser.Scene {
     let fireEvent = "";
     let bulletsPerBurst = 1;
     let burstDelay = 0;
+    let currentWeaponType = this.weapon; // Store current weapon type
 
     switch (this.weapon) {
       case "tommy-gun":
-        fireRate = 100; // Reduced overall fire rate
+        fireRate = 100;
         fireEvent = "tommy-fired";
-        bulletsPerBurst = 20; // Fewer bullets per burst
-        burstDelay = 50; // Increased delay between bullets
+        bulletsPerBurst = 20;
+        burstDelay = 50;
         break;
       case "desert-eagle":
         fireRate = 500;
@@ -535,10 +572,11 @@ export default class Game extends Phaser.Scene {
         bulletsPerBurst = 1;
         break;
       default:
-        return; // Exit if no valid weapon
+        return;
     }
 
     let canFire = true;
+    let burstTimer: Phaser.Time.TimerEvent;
 
     // Start firing immediately on pointerdown
     if (this.input.activePointer.isDown) {
@@ -548,23 +586,38 @@ export default class Game extends Phaser.Scene {
     this.firingTimer = this.time.addEvent({
       delay: fireRate,
       callback: () => {
+        // Check if weapon has changed since starting the burst
+        if (this.weapon !== currentWeaponType) {
+          if (burstTimer) {
+            burstTimer.destroy();
+          }
+          canFire = true;
+          return;
+        }
+
         if (this.input.activePointer.isDown && canFire) {
           canFire = false;
 
           if (bulletsPerBurst > 1) {
             // For burst weapons like tommy gun
             let bulletsShot = 0;
-            const burstTimer = this.time.addEvent({
+            burstTimer = this.time.addEvent({
               delay: burstDelay,
               callback: () => {
-                this.fireWeapon();
-                bulletsShot++;
-                if (bulletsShot >= bulletsPerBurst) {
+                // Check weapon hasn't changed during burst
+                if (this.weapon === currentWeaponType) {
+                  this.fireWeapon();
+                  bulletsShot++;
+                  if (bulletsShot >= bulletsPerBurst) {
+                    burstTimer.destroy();
+                    // Allow next burst after a short delay
+                    this.time.delayedCall(300, () => {
+                      canFire = true;
+                    });
+                  }
+                } else {
                   burstTimer.destroy();
-                  // Allow next burst after a short delay
-                  this.time.delayedCall(300, () => {
-                    canFire = true;
-                  });
+                  canFire = true;
                 }
               },
               repeat: bulletsPerBurst - 1,
@@ -591,7 +644,7 @@ export default class Game extends Phaser.Scene {
 
   create() {
     this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
-    this.matter.add.mouseSpring({ length: 0.1, stiffness: 1 });
+    // const foo = this.matter.add.mouseSpring({ length: 0.1, stiffness: 1 });
     this.matter.world.autoUpdate = true;
     EventBus.emit("current-scene-ready", this);
     this.loadAssets();
@@ -599,6 +652,17 @@ export default class Game extends Phaser.Scene {
     this.renderButtons();
     this.createHealthBar();
     this.createWeaponSelectionArea();
+
+    this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
+      this.scene.scene,
+      this.matter.world,
+      {
+        length: 0.1,
+        stiffness: 1,
+      }
+    );
+
+    this.matter.add.pointerConstraint(this.pointerConstraint.constraint);
 
     this.weaponText = this.add.text(
       10,
@@ -769,6 +833,7 @@ export default class Game extends Phaser.Scene {
       isOutOfBounds(this.leftLeg) ||
       isOutOfBounds(this.rightLeg)
     ) {
+      this.pointerConstraint.stopDrag();
       const centerX = this.game.renderer.width / 2;
       const centerY = this.game.renderer.height / 2;
 
