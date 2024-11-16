@@ -63,8 +63,19 @@ export default class Preloader extends Phaser.Scene {
     this.load.json("characterShapes", "assets/character/character.xml.json");
 
     this.load.json("weaponShapes", "assets/weapons.xml.json");
-    this.load.image("tommy", "assets/TommyGun.png");
-    this.load.image("deg", "assets/DesertEagle.png");
+    // this.load.image("tommy", "assets/TommyGun.png");
+
+    this.load.image("bg1", "assets/bg1.png");
+
+    this.load.image("base-deg", "assets/deagle/deaglefiring_00018.png");
+    this.load.animation("deagle-fire", "assets/deagle/fire.json");
+    this.load.pack("deagle-pack", "assets/deagle/deaglePack.json");
+    this.load.image("deg-bullet", "assets/deagle/bullet.png");
+
+    this.load.image("tommy", "assets/tommy/base-tommy.png");
+    this.load.animation("tommy-fire", "assets/tommy/tommy-fire.json");
+    this.load.pack("tommy-pack", "assets/tommy/tommyPack.json");
+    // this.load.image("tommy-bullet", "assets/tommy/bullet.png");
   }
 
   create() {
