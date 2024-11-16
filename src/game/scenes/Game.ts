@@ -412,7 +412,7 @@ export default class Game extends Phaser.Scene {
         this.weapon = "tommy-gun";
         this.currentWeapon = this.add
           .sprite(1024 / 2, 768 / 2, "tommy")
-          .setDisplaySize(200, 100)
+          .setDisplaySize(300, 150)
           .removeFromDisplayList()
           .setName("tommy");
 
