@@ -501,6 +501,8 @@ export default class Game extends Phaser.Scene {
 
     // Play weapon firing animation if it exists
     if (this.weapon === "desert-eagle") {
+      this.sound.play("deagleCock");
+      this.sound.play("deagleFire");
       this.currentWeapon
         .play("fireDeagle")
         .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
@@ -508,6 +510,8 @@ export default class Game extends Phaser.Scene {
         });
       // Spawn the projectile
     } else if (this.weapon === "tommy-gun") {
+      this.sound.play("deagleCock");
+      this.sound.play("deagleFire");
       this.currentWeapon
         .play("fireTommy")
         .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {

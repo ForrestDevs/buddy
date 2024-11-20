@@ -1,18 +1,23 @@
 {
-    "boot": {
-        "files": [
-            {
-                "url": "assets/bg.png",
-                "type": "image",
-                "key": "background"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phaser.io/editor",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": "assets/bg.png",
+        "type": "image",
+        "key": "background"
+      },
+      {
+        "url": ["assets/sounds/bgMusic.mp3"],
+        "type": "audio",
+        "key": "bgMusic"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }

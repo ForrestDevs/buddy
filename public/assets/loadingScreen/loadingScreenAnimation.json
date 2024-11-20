@@ -1,0 +1,504 @@
+{
+    "anims": [
+        {
+            "key": "buddyload",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "buddyload_00000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00048",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00049",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00050",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00051",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00052",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00053",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00054",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00055",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00056",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00057",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00058",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00059",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00060",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00061",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00062",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00063",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00064",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00065",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00066",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00067",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00068",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00069",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00070",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00071",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00072",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00073",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00074",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00075",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00076",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00077",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00078",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00079",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00080",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00081",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00082",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00083",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00084",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00085",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00086",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00087",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00088",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00089",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00090",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00091",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00092",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00093",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00094",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "buddyload_00095",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 30,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}
