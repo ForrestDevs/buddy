@@ -1,0 +1,119 @@
+{
+  "anims": [
+    {
+      "key": "fireDeagle",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "deaglefiring_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00018",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 50,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
+    }
+  ],
+  "globalTimeScale": 1,
+  "meta": {
+    "app": "Phaser Editor 2D v3",
+    "contentType": "Phaser v3 Animations"
+  },
+  "settings": {
+    "sourceLang": "JAVA_SCRIPT",
+    "esModule": false,
+    "generateCode": false
+  }
+}

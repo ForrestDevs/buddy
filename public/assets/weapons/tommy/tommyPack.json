@@ -1,0 +1,238 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/tommy/tommy-fire.json",
+                "type": "animation",
+                "key": "tommy-fire"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00000.png",
+                "type": "image",
+                "key": "tommygunfiring_00000"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00001.png",
+                "type": "image",
+                "key": "tommygunfiring_00001"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00002.png",
+                "type": "image",
+                "key": "tommygunfiring_00002"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00003.png",
+                "type": "image",
+                "key": "tommygunfiring_00003"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00004.png",
+                "type": "image",
+                "key": "tommygunfiring_00004"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00005.png",
+                "type": "image",
+                "key": "tommygunfiring_00005"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00006.png",
+                "type": "image",
+                "key": "tommygunfiring_00006"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00007.png",
+                "type": "image",
+                "key": "tommygunfiring_00007"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00008.png",
+                "type": "image",
+                "key": "tommygunfiring_00008"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00009.png",
+                "type": "image",
+                "key": "tommygunfiring_00009"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00010.png",
+                "type": "image",
+                "key": "tommygunfiring_00010"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00011.png",
+                "type": "image",
+                "key": "tommygunfiring_00011"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00012.png",
+                "type": "image",
+                "key": "tommygunfiring_00012"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00013.png",
+                "type": "image",
+                "key": "tommygunfiring_00013"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00014.png",
+                "type": "image",
+                "key": "tommygunfiring_00014"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00015.png",
+                "type": "image",
+                "key": "tommygunfiring_00015"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00016.png",
+                "type": "image",
+                "key": "tommygunfiring_00016"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00017.png",
+                "type": "image",
+                "key": "tommygunfiring_00017"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00018.png",
+                "type": "image",
+                "key": "tommygunfiring_00018"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00019.png",
+                "type": "image",
+                "key": "tommygunfiring_00019"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00020.png",
+                "type": "image",
+                "key": "tommygunfiring_00020"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00021.png",
+                "type": "image",
+                "key": "tommygunfiring_00021"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00022.png",
+                "type": "image",
+                "key": "tommygunfiring_00022"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00023.png",
+                "type": "image",
+                "key": "tommygunfiring_00023"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00024.png",
+                "type": "image",
+                "key": "tommygunfiring_00024"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00025.png",
+                "type": "image",
+                "key": "tommygunfiring_00025"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00026.png",
+                "type": "image",
+                "key": "tommygunfiring_00026"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00027.png",
+                "type": "image",
+                "key": "tommygunfiring_00027"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00028.png",
+                "type": "image",
+                "key": "tommygunfiring_00028"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00029.png",
+                "type": "image",
+                "key": "tommygunfiring_00029"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00030.png",
+                "type": "image",
+                "key": "tommygunfiring_00030"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00031.png",
+                "type": "image",
+                "key": "tommygunfiring_00031"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00032.png",
+                "type": "image",
+                "key": "tommygunfiring_00032"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00033.png",
+                "type": "image",
+                "key": "tommygunfiring_00033"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00034.png",
+                "type": "image",
+                "key": "tommygunfiring_00034"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00035.png",
+                "type": "image",
+                "key": "tommygunfiring_00035"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00036.png",
+                "type": "image",
+                "key": "tommygunfiring_00036"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00037.png",
+                "type": "image",
+                "key": "tommygunfiring_00037"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00038.png",
+                "type": "image",
+                "key": "tommygunfiring_00038"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00039.png",
+                "type": "image",
+                "key": "tommygunfiring_00039"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00040.png",
+                "type": "image",
+                "key": "tommygunfiring_00040"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00041.png",
+                "type": "image",
+                "key": "tommygunfiring_00041"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00042.png",
+                "type": "image",
+                "key": "tommygunfiring_00042"
+            },
+            {
+                "url": "assets/tommy/tommygunfiring_00043.png",
+                "type": "image",
+                "key": "tommygunfiring_00043"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

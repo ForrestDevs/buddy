@@ -1,0 +1,119 @@
+{
+  "section1": {
+    "files": [
+      {
+        "url": "assets/deagle/deaglefiring_00000.png",
+        "type": "image",
+        "key": "deaglefiring_00000"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00001.png",
+        "type": "image",
+        "key": "deaglefiring_00001"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00002.png",
+        "type": "image",
+        "key": "deaglefiring_00002"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00003.png",
+        "type": "image",
+        "key": "deaglefiring_00003"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00004.png",
+        "type": "image",
+        "key": "deaglefiring_00004"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00005.png",
+        "type": "image",
+        "key": "deaglefiring_00005"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00006.png",
+        "type": "image",
+        "key": "deaglefiring_00006"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00007.png",
+        "type": "image",
+        "key": "deaglefiring_00007"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00008.png",
+        "type": "image",
+        "key": "deaglefiring_00008"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00009.png",
+        "type": "image",
+        "key": "deaglefiring_00009"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00010.png",
+        "type": "image",
+        "key": "deaglefiring_00010"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00011.png",
+        "type": "image",
+        "key": "deaglefiring_00011"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00012.png",
+        "type": "image",
+        "key": "deaglefiring_00012"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00013.png",
+        "type": "image",
+        "key": "deaglefiring_00013"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00014.png",
+        "type": "image",
+        "key": "deaglefiring_00014"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00015.png",
+        "type": "image",
+        "key": "deaglefiring_00015"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00016.png",
+        "type": "image",
+        "key": "deaglefiring_00016"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00017.png",
+        "type": "image",
+        "key": "deaglefiring_00017"
+      },
+      {
+        "url": "assets/deagle/deaglefiring_00018.png",
+        "type": "image",
+        "key": "deaglefiring_00018"
+      },
+      {
+        "url": ["assets/sounds/deagleCock.wav"],
+        "type": "audio",
+        "key": "deagleCock"
+      },
+      {
+        "url": ["assets/sounds/deagleFire.wav"],
+        "type": "audio",
+        "key": "deagleFire"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
+}
+
