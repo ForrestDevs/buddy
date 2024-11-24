@@ -1,5 +1,4 @@
 import Boot from "./scenes/Boot";
-import GameOver from "./scenes/GameOver";
 import MainGame from "./scenes/Game";
 import Preloader from "./scenes/Preloader";
 import MainMenu from "./scenes/MainMenu";
@@ -11,7 +10,7 @@ const config: Phaser.Types.Core.GameConfig = {
   height: 720,
   parent: "game-container",
   backgroundColor: "#028af8",
-  scene: [Boot, MainMenu, Preloader, MainGame, GameOver],
+  scene: [Boot, MainMenu, Preloader, MainGame],
   plugins: {},
   physics: {
     default: "matter",

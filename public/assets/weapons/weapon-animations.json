@@ -1,0 +1,421 @@
+{
+    "anims": [
+        {
+            "key": "tommygunfiring",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tommygunfiring_00000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tommygunfiring_00043",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 15,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "rocketblast",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "rocketblast_00000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "rocketblast_00012",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 20,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "deaglefiring",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "deaglefiring_00000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "deaglefiring_00018",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 34,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}

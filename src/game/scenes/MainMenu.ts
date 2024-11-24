@@ -24,7 +24,7 @@ export default class MainMenu extends Phaser.Scene {
 
   create() {
     this.add
-      .image(1280 / 2, 720 / 2, "BG95")
+      .image(1280 / 2, 720 / 2, "BG")
       .setDisplaySize(1280, 720)
       .setDepth(-3);
     EventBus.emit("current-scene-ready", this);

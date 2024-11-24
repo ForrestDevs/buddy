@@ -1,0 +1,1363 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00001.png",
+                "type": "image",
+                "key": "blood1_00001"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00002.png",
+                "type": "image",
+                "key": "blood1_00002"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00003.png",
+                "type": "image",
+                "key": "blood1_00003"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00004.png",
+                "type": "image",
+                "key": "blood1_00004"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00005.png",
+                "type": "image",
+                "key": "blood1_00005"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00006.png",
+                "type": "image",
+                "key": "blood1_00006"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00007.png",
+                "type": "image",
+                "key": "blood1_00007"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00008.png",
+                "type": "image",
+                "key": "blood1_00008"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00009.png",
+                "type": "image",
+                "key": "blood1_00009"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00010.png",
+                "type": "image",
+                "key": "blood1_00010"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00011.png",
+                "type": "image",
+                "key": "blood1_00011"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00012.png",
+                "type": "image",
+                "key": "blood1_00012"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00013.png",
+                "type": "image",
+                "key": "blood1_00013"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00014.png",
+                "type": "image",
+                "key": "blood1_00014"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00015.png",
+                "type": "image",
+                "key": "blood1_00015"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00016.png",
+                "type": "image",
+                "key": "blood1_00016"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00017.png",
+                "type": "image",
+                "key": "blood1_00017"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1/blood1_00018.png",
+                "type": "image",
+                "key": "blood1_00018"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_001.png",
+                "type": "image",
+                "key": "bloodgush3_001"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_002.png",
+                "type": "image",
+                "key": "bloodgush3_002"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_003.png",
+                "type": "image",
+                "key": "bloodgush3_003"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_004.png",
+                "type": "image",
+                "key": "bloodgush3_004"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_005.png",
+                "type": "image",
+                "key": "bloodgush3_005"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_006.png",
+                "type": "image",
+                "key": "bloodgush3_006"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_007.png",
+                "type": "image",
+                "key": "bloodgush3_007"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_008.png",
+                "type": "image",
+                "key": "bloodgush3_008"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_009.png",
+                "type": "image",
+                "key": "bloodgush3_009"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_010.png",
+                "type": "image",
+                "key": "bloodgush3_010"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_011.png",
+                "type": "image",
+                "key": "bloodgush3_011"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_012.png",
+                "type": "image",
+                "key": "bloodgush3_012"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_013.png",
+                "type": "image",
+                "key": "bloodgush3_013"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_014.png",
+                "type": "image",
+                "key": "bloodgush3_014"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_015.png",
+                "type": "image",
+                "key": "bloodgush3_015"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_016.png",
+                "type": "image",
+                "key": "bloodgush3_016"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_017.png",
+                "type": "image",
+                "key": "bloodgush3_017"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt3/bloodgush3_018.png",
+                "type": "image",
+                "key": "bloodgush3_018"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_001.png",
+                "type": "image",
+                "key": "bloodgut3_001"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_002.png",
+                "type": "image",
+                "key": "bloodgut3_002"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_003.png",
+                "type": "image",
+                "key": "bloodgut3_003"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_004.png",
+                "type": "image",
+                "key": "bloodgut3_004"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_005.png",
+                "type": "image",
+                "key": "bloodgut3_005"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_006.png",
+                "type": "image",
+                "key": "bloodgut3_006"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_007.png",
+                "type": "image",
+                "key": "bloodgut3_007"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_008.png",
+                "type": "image",
+                "key": "bloodgut3_008"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_009.png",
+                "type": "image",
+                "key": "bloodgut3_009"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_010.png",
+                "type": "image",
+                "key": "bloodgut3_010"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_011.png",
+                "type": "image",
+                "key": "bloodgut3_011"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_012.png",
+                "type": "image",
+                "key": "bloodgut3_012"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_013.png",
+                "type": "image",
+                "key": "bloodgut3_013"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_014.png",
+                "type": "image",
+                "key": "bloodgut3_014"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_015.png",
+                "type": "image",
+                "key": "bloodgut3_015"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_016.png",
+                "type": "image",
+                "key": "bloodgut3_016"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_017.png",
+                "type": "image",
+                "key": "bloodgut3_017"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_018.png",
+                "type": "image",
+                "key": "bloodgut3_018"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_019.png",
+                "type": "image",
+                "key": "bloodgut3_019"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_020.png",
+                "type": "image",
+                "key": "bloodgut3_020"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_021.png",
+                "type": "image",
+                "key": "bloodgut3_021"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt2/bloodgut3_022.png",
+                "type": "image",
+                "key": "bloodgut3_022"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00001.png",
+                "type": "image",
+                "key": "darkerblood1_00001"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00002.png",
+                "type": "image",
+                "key": "darkerblood1_00002"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00003.png",
+                "type": "image",
+                "key": "darkerblood1_00003"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00004.png",
+                "type": "image",
+                "key": "darkerblood1_00004"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00005.png",
+                "type": "image",
+                "key": "darkerblood1_00005"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00006.png",
+                "type": "image",
+                "key": "darkerblood1_00006"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00007.png",
+                "type": "image",
+                "key": "darkerblood1_00007"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00008.png",
+                "type": "image",
+                "key": "darkerblood1_00008"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00009.png",
+                "type": "image",
+                "key": "darkerblood1_00009"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00010.png",
+                "type": "image",
+                "key": "darkerblood1_00010"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00011.png",
+                "type": "image",
+                "key": "darkerblood1_00011"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00012.png",
+                "type": "image",
+                "key": "darkerblood1_00012"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00013.png",
+                "type": "image",
+                "key": "darkerblood1_00013"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00014.png",
+                "type": "image",
+                "key": "darkerblood1_00014"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00015.png",
+                "type": "image",
+                "key": "darkerblood1_00015"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00016.png",
+                "type": "image",
+                "key": "darkerblood1_00016"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00017.png",
+                "type": "image",
+                "key": "darkerblood1_00017"
+            },
+            {
+                "url": "assets/effects/Blood/bloodspurt1DARKER/darkerblood1_00018.png",
+                "type": "image",
+                "key": "darkerblood1_00018"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00001.png",
+                "type": "image",
+                "key": "firstexplosion_00001"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00002.png",
+                "type": "image",
+                "key": "firstexplosion_00002"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00003.png",
+                "type": "image",
+                "key": "firstexplosion_00003"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00004.png",
+                "type": "image",
+                "key": "firstexplosion_00004"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00005.png",
+                "type": "image",
+                "key": "firstexplosion_00005"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00006.png",
+                "type": "image",
+                "key": "firstexplosion_00006"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00007.png",
+                "type": "image",
+                "key": "firstexplosion_00007"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00008.png",
+                "type": "image",
+                "key": "firstexplosion_00008"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00009.png",
+                "type": "image",
+                "key": "firstexplosion_00009"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00010.png",
+                "type": "image",
+                "key": "firstexplosion_00010"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00011.png",
+                "type": "image",
+                "key": "firstexplosion_00011"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00012.png",
+                "type": "image",
+                "key": "firstexplosion_00012"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00013.png",
+                "type": "image",
+                "key": "firstexplosion_00013"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00014.png",
+                "type": "image",
+                "key": "firstexplosion_00014"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00015.png",
+                "type": "image",
+                "key": "firstexplosion_00015"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00016.png",
+                "type": "image",
+                "key": "firstexplosion_00016"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00017.png",
+                "type": "image",
+                "key": "firstexplosion_00017"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00018.png",
+                "type": "image",
+                "key": "firstexplosion_00018"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00019.png",
+                "type": "image",
+                "key": "firstexplosion_00019"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00020.png",
+                "type": "image",
+                "key": "firstexplosion_00020"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00021.png",
+                "type": "image",
+                "key": "firstexplosion_00021"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00022.png",
+                "type": "image",
+                "key": "firstexplosion_00022"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00023.png",
+                "type": "image",
+                "key": "firstexplosion_00023"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00024.png",
+                "type": "image",
+                "key": "firstexplosion_00024"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00025.png",
+                "type": "image",
+                "key": "firstexplosion_00025"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00026.png",
+                "type": "image",
+                "key": "firstexplosion_00026"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00027.png",
+                "type": "image",
+                "key": "firstexplosion_00027"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00028.png",
+                "type": "image",
+                "key": "firstexplosion_00028"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00029.png",
+                "type": "image",
+                "key": "firstexplosion_00029"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00030.png",
+                "type": "image",
+                "key": "firstexplosion_00030"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00031.png",
+                "type": "image",
+                "key": "firstexplosion_00031"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00032.png",
+                "type": "image",
+                "key": "firstexplosion_00032"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00033.png",
+                "type": "image",
+                "key": "firstexplosion_00033"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00034.png",
+                "type": "image",
+                "key": "firstexplosion_00034"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00035.png",
+                "type": "image",
+                "key": "firstexplosion_00035"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00036.png",
+                "type": "image",
+                "key": "firstexplosion_00036"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00037.png",
+                "type": "image",
+                "key": "firstexplosion_00037"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00038.png",
+                "type": "image",
+                "key": "firstexplosion_00038"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00039.png",
+                "type": "image",
+                "key": "firstexplosion_00039"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00040.png",
+                "type": "image",
+                "key": "firstexplosion_00040"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00041.png",
+                "type": "image",
+                "key": "firstexplosion_00041"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00042.png",
+                "type": "image",
+                "key": "firstexplosion_00042"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00043.png",
+                "type": "image",
+                "key": "firstexplosion_00043"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00044.png",
+                "type": "image",
+                "key": "firstexplosion_00044"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00045.png",
+                "type": "image",
+                "key": "firstexplosion_00045"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00046.png",
+                "type": "image",
+                "key": "firstexplosion_00046"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00047.png",
+                "type": "image",
+                "key": "firstexplosion_00047"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00048.png",
+                "type": "image",
+                "key": "firstexplosion_00048"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00049.png",
+                "type": "image",
+                "key": "firstexplosion_00049"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00050.png",
+                "type": "image",
+                "key": "firstexplosion_00050"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00051.png",
+                "type": "image",
+                "key": "firstexplosion_00051"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00052.png",
+                "type": "image",
+                "key": "firstexplosion_00052"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00053.png",
+                "type": "image",
+                "key": "firstexplosion_00053"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00054.png",
+                "type": "image",
+                "key": "firstexplosion_00054"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00055.png",
+                "type": "image",
+                "key": "firstexplosion_00055"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00056.png",
+                "type": "image",
+                "key": "firstexplosion_00056"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00057.png",
+                "type": "image",
+                "key": "firstexplosion_00057"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00058.png",
+                "type": "image",
+                "key": "firstexplosion_00058"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00059.png",
+                "type": "image",
+                "key": "firstexplosion_00059"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00060.png",
+                "type": "image",
+                "key": "firstexplosion_00060"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00061.png",
+                "type": "image",
+                "key": "firstexplosion_00061"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00062.png",
+                "type": "image",
+                "key": "firstexplosion_00062"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00063.png",
+                "type": "image",
+                "key": "firstexplosion_00063"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00064.png",
+                "type": "image",
+                "key": "firstexplosion_00064"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00065.png",
+                "type": "image",
+                "key": "firstexplosion_00065"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00066.png",
+                "type": "image",
+                "key": "firstexplosion_00066"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00067.png",
+                "type": "image",
+                "key": "firstexplosion_00067"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00068.png",
+                "type": "image",
+                "key": "firstexplosion_00068"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00069.png",
+                "type": "image",
+                "key": "firstexplosion_00069"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00070.png",
+                "type": "image",
+                "key": "firstexplosion_00070"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00071.png",
+                "type": "image",
+                "key": "firstexplosion_00071"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00072.png",
+                "type": "image",
+                "key": "firstexplosion_00072"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00073.png",
+                "type": "image",
+                "key": "firstexplosion_00073"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00074.png",
+                "type": "image",
+                "key": "firstexplosion_00074"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00075.png",
+                "type": "image",
+                "key": "firstexplosion_00075"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00076.png",
+                "type": "image",
+                "key": "firstexplosion_00076"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00077.png",
+                "type": "image",
+                "key": "firstexplosion_00077"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00078.png",
+                "type": "image",
+                "key": "firstexplosion_00078"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00079.png",
+                "type": "image",
+                "key": "firstexplosion_00079"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00080.png",
+                "type": "image",
+                "key": "firstexplosion_00080"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00081.png",
+                "type": "image",
+                "key": "firstexplosion_00081"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00082.png",
+                "type": "image",
+                "key": "firstexplosion_00082"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00083.png",
+                "type": "image",
+                "key": "firstexplosion_00083"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00084.png",
+                "type": "image",
+                "key": "firstexplosion_00084"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00085.png",
+                "type": "image",
+                "key": "firstexplosion_00085"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00086.png",
+                "type": "image",
+                "key": "firstexplosion_00086"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00087.png",
+                "type": "image",
+                "key": "firstexplosion_00087"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00088.png",
+                "type": "image",
+                "key": "firstexplosion_00088"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00089.png",
+                "type": "image",
+                "key": "firstexplosion_00089"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00090.png",
+                "type": "image",
+                "key": "firstexplosion_00090"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00091.png",
+                "type": "image",
+                "key": "firstexplosion_00091"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00092.png",
+                "type": "image",
+                "key": "firstexplosion_00092"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00093.png",
+                "type": "image",
+                "key": "firstexplosion_00093"
+            },
+            {
+                "url": "assets/effects/Explosions/explosion1/firstexplosion_00094.png",
+                "type": "image",
+                "key": "firstexplosion_00094"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00016.png",
+                "type": "image",
+                "key": "groundfire_00016"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00017.png",
+                "type": "image",
+                "key": "groundfire_00017"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00018.png",
+                "type": "image",
+                "key": "groundfire_00018"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00020.png",
+                "type": "image",
+                "key": "groundfire_00020"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00021.png",
+                "type": "image",
+                "key": "groundfire_00021"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00022.png",
+                "type": "image",
+                "key": "groundfire_00022"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00023.png",
+                "type": "image",
+                "key": "groundfire_00023"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00024.png",
+                "type": "image",
+                "key": "groundfire_00024"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00025.png",
+                "type": "image",
+                "key": "groundfire_00025"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00028.png",
+                "type": "image",
+                "key": "groundfire_00028"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00029.png",
+                "type": "image",
+                "key": "groundfire_00029"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00030.png",
+                "type": "image",
+                "key": "groundfire_00030"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00034.png",
+                "type": "image",
+                "key": "groundfire_00034"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00035.png",
+                "type": "image",
+                "key": "groundfire_00035"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00036.png",
+                "type": "image",
+                "key": "groundfire_00036"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00037.png",
+                "type": "image",
+                "key": "groundfire_00037"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00038.png",
+                "type": "image",
+                "key": "groundfire_00038"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00039.png",
+                "type": "image",
+                "key": "groundfire_00039"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00040.png",
+                "type": "image",
+                "key": "groundfire_00040"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00041.png",
+                "type": "image",
+                "key": "groundfire_00041"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00042.png",
+                "type": "image",
+                "key": "groundfire_00042"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00043.png",
+                "type": "image",
+                "key": "groundfire_00043"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00044.png",
+                "type": "image",
+                "key": "groundfire_00044"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00045.png",
+                "type": "image",
+                "key": "groundfire_00045"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00046.png",
+                "type": "image",
+                "key": "groundfire_00046"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00047.png",
+                "type": "image",
+                "key": "groundfire_00047"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00048.png",
+                "type": "image",
+                "key": "groundfire_00048"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00049.png",
+                "type": "image",
+                "key": "groundfire_00049"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00050.png",
+                "type": "image",
+                "key": "groundfire_00050"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00051.png",
+                "type": "image",
+                "key": "groundfire_00051"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00052.png",
+                "type": "image",
+                "key": "groundfire_00052"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00053.png",
+                "type": "image",
+                "key": "groundfire_00053"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00054.png",
+                "type": "image",
+                "key": "groundfire_00054"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00055.png",
+                "type": "image",
+                "key": "groundfire_00055"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00056.png",
+                "type": "image",
+                "key": "groundfire_00056"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00057.png",
+                "type": "image",
+                "key": "groundfire_00057"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00058.png",
+                "type": "image",
+                "key": "groundfire_00058"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00059.png",
+                "type": "image",
+                "key": "groundfire_00059"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00060.png",
+                "type": "image",
+                "key": "groundfire_00060"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00061.png",
+                "type": "image",
+                "key": "groundfire_00061"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00062.png",
+                "type": "image",
+                "key": "groundfire_00062"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00063.png",
+                "type": "image",
+                "key": "groundfire_00063"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00064.png",
+                "type": "image",
+                "key": "groundfire_00064"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00065.png",
+                "type": "image",
+                "key": "groundfire_00065"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00066.png",
+                "type": "image",
+                "key": "groundfire_00066"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00067.png",
+                "type": "image",
+                "key": "groundfire_00067"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00068.png",
+                "type": "image",
+                "key": "groundfire_00068"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00069.png",
+                "type": "image",
+                "key": "groundfire_00069"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00070.png",
+                "type": "image",
+                "key": "groundfire_00070"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00071.png",
+                "type": "image",
+                "key": "groundfire_00071"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00072.png",
+                "type": "image",
+                "key": "groundfire_00072"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00073.png",
+                "type": "image",
+                "key": "groundfire_00073"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00074.png",
+                "type": "image",
+                "key": "groundfire_00074"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00075.png",
+                "type": "image",
+                "key": "groundfire_00075"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00076.png",
+                "type": "image",
+                "key": "groundfire_00076"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00077.png",
+                "type": "image",
+                "key": "groundfire_00077"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00078.png",
+                "type": "image",
+                "key": "groundfire_00078"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00079.png",
+                "type": "image",
+                "key": "groundfire_00079"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00080.png",
+                "type": "image",
+                "key": "groundfire_00080"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00081.png",
+                "type": "image",
+                "key": "groundfire_00081"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00082.png",
+                "type": "image",
+                "key": "groundfire_00082"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00083.png",
+                "type": "image",
+                "key": "groundfire_00083"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00084.png",
+                "type": "image",
+                "key": "groundfire_00084"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00085.png",
+                "type": "image",
+                "key": "groundfire_00085"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00086.png",
+                "type": "image",
+                "key": "groundfire_00086"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00087.png",
+                "type": "image",
+                "key": "groundfire_00087"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00088.png",
+                "type": "image",
+                "key": "groundfire_00088"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00089.png",
+                "type": "image",
+                "key": "groundfire_00089"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00090.png",
+                "type": "image",
+                "key": "groundfire_00090"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00091.png",
+                "type": "image",
+                "key": "groundfire_00091"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00092.png",
+                "type": "image",
+                "key": "groundfire_00092"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00093.png",
+                "type": "image",
+                "key": "groundfire_00093"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00094.png",
+                "type": "image",
+                "key": "groundfire_00094"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00095.png",
+                "type": "image",
+                "key": "groundfire_00095"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00096.png",
+                "type": "image",
+                "key": "groundfire_00096"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00097.png",
+                "type": "image",
+                "key": "groundfire_00097"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00098.png",
+                "type": "image",
+                "key": "groundfire_00098"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00099.png",
+                "type": "image",
+                "key": "groundfire_00099"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00100.png",
+                "type": "image",
+                "key": "groundfire_00100"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00101.png",
+                "type": "image",
+                "key": "groundfire_00101"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00102.png",
+                "type": "image",
+                "key": "groundfire_00102"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00103.png",
+                "type": "image",
+                "key": "groundfire_00103"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00104.png",
+                "type": "image",
+                "key": "groundfire_00104"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00105.png",
+                "type": "image",
+                "key": "groundfire_00105"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00106.png",
+                "type": "image",
+                "key": "groundfire_00106"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00107.png",
+                "type": "image",
+                "key": "groundfire_00107"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00108.png",
+                "type": "image",
+                "key": "groundfire_00108"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00109.png",
+                "type": "image",
+                "key": "groundfire_00109"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00110.png",
+                "type": "image",
+                "key": "groundfire_00110"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00111.png",
+                "type": "image",
+                "key": "groundfire_00111"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00112.png",
+                "type": "image",
+                "key": "groundfire_00112"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00113.png",
+                "type": "image",
+                "key": "groundfire_00113"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00114.png",
+                "type": "image",
+                "key": "groundfire_00114"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00115.png",
+                "type": "image",
+                "key": "groundfire_00115"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00116.png",
+                "type": "image",
+                "key": "groundfire_00116"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00117.png",
+                "type": "image",
+                "key": "groundfire_00117"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00118.png",
+                "type": "image",
+                "key": "groundfire_00118"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00119.png",
+                "type": "image",
+                "key": "groundfire_00119"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00120.png",
+                "type": "image",
+                "key": "groundfire_00120"
+            },
+            {
+                "url": "assets/effects/GroundFlames/flames1/groundfire_00121.png",
+                "type": "image",
+                "key": "groundfire_00121"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

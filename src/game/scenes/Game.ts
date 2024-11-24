@@ -42,6 +42,8 @@ export default class Game extends Phaser.Scene {
   private leftLeg!: Phaser.Physics.Matter.Image;
   private rightLeg!: Phaser.Physics.Matter.Image;
   private headText!: Phaser.GameObjects.Text;
+  private bloodSplatter!: Phaser.GameObjects.Sprite;
+  private explosion!: Phaser.GameObjects.Sprite;
   private recoveryTimer?: Phaser.Time.TimerEvent;
 
   private deg!: Phaser.GameObjects.Image;
@@ -53,7 +55,7 @@ export default class Game extends Phaser.Scene {
 
   private barrelPoint!: Phaser.Math.Vector2;
 
-  private deaglePack!: Phaser.Loader.FileTypes.JSONFile;
+  // private deaglePack!: Phaser.Loader.FileTypes.JSONFile;
 
   private weaponText!: Phaser.GameObjects.Text;
   private killCountText!: Phaser.GameObjects.Text;
@@ -83,7 +85,7 @@ export default class Game extends Phaser.Scene {
   }
 
   loadAssets() {
-    this.deaglePack = this.cache.json.get("deaglePack");
+    // this.deaglePack = this.cache.json.get("deaglePack");
     this.add
       .image(1280 / 2, 720 / 2, "bg1")
       .setDisplaySize(1280, 720)
@@ -154,6 +156,9 @@ export default class Game extends Phaser.Scene {
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
       .setCollisionCategory(1)
       .setDepth(2);
+
+    this.bloodSplatter = this.add.sprite(512, 384, "blood1_00018").setDepth(4);
+    this.explosion = this.add.sprite(512, 384, "firstexplosion_00094").setDepth(4);
 
     this.leftArm = this.matter.add
       .image(750, 200, "left-arm", undefined, {
@@ -279,19 +284,21 @@ export default class Game extends Phaser.Scene {
       }
     );
 
-    // this.knivesButton = new TextButton(
-    //   this,
-    //   16,
-    //   125,
-    //   "Equip Knives",
-    //   {
-    //     color: "#0f0",
-    //     backgroundColor: "blue",
-    //     padding: { left: 10, right: 10, top: 10, bottom: 10 },
-    //     shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-    //   },
-    //   () => {}
-    // );
+    this.knivesButton = new TextButton(
+      this,
+      10,
+      220,
+      "Knives",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {
+        this.setWeapon("knives");
+      }
+    );
 
     this.desertEagleButton = new TextButton(
       this,
@@ -307,7 +314,6 @@ export default class Game extends Phaser.Scene {
       () => {
         console.log("desert-eagle");
         this.setWeapon("desert-eagle");
-        // this.input.setDefaultCursor("none");
       }
     );
 
@@ -328,25 +334,27 @@ export default class Game extends Phaser.Scene {
       }
     );
 
-    // this.rocketLauncherButton = new TextButton(
-    //   this,
-    //   16,
-    //   260,
-    //   "Equip Rocket Launcher",
-    //   {
-    //     color: "#0f0",
-    //     backgroundColor: "blue",
-    //     padding: { left: 10, right: 10, top: 10, bottom: 10 },
-    //     shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-    //   },
-    //   () => {}
-    // );
+    this.rocketLauncherButton = new TextButton(
+      this,
+      10,
+      180,
+      "Rocket Launcher",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {
+        this.setWeapon("rocket-launcher");
+      }
+    );
 
     this.add.existing(this.fistButton);
-    // this.add.existing(this.knivesButton);
+    this.add.existing(this.knivesButton);
     this.add.existing(this.desertEagleButton);
     this.add.existing(this.tommyGunButton);
-    // this.add.existing(this.rocketLauncherButton);
+    this.add.existing(this.rocketLauncherButton);
   }
 
   createWeaponSelectionArea() {
@@ -400,13 +408,11 @@ export default class Game extends Phaser.Scene {
     switch (weapon) {
       case "desert-eagle":
         this.weapon = "desert-eagle";
-
         this.currentWeapon = this.add
-          .sprite(1024 / 2, 768 / 2, "base-deg")
+          .sprite(1024 / 2, 768 / 2, "deaglefiring_00018")
           .setDisplaySize(200, 100)
           .removeFromDisplayList()
           .setName("deagle");
-
         break;
       case "tommy-gun":
         this.weapon = "tommy-gun";
@@ -415,7 +421,22 @@ export default class Game extends Phaser.Scene {
           .setDisplaySize(300, 150)
           .removeFromDisplayList()
           .setName("tommy");
-
+        break;
+      case "knives":
+        this.weapon = "knives";
+        this.currentWeapon = this.add
+          .sprite(1024 / 2, 768 / 2, "knife")
+          .setDisplaySize(300, 150)
+          .removeFromDisplayList()
+          .setName("knives");
+        break;
+      case "rocket-launcher":
+        this.weapon = "rocket-launcher";
+        this.currentWeapon = this.add
+          .sprite(1024 / 2, 768 / 2, "rocket-launcher")
+          .setDisplaySize(300, 150)
+          .removeFromDisplayList()
+          .setName("rocket-launcher");
         break;
       default:
         this.currentWeapon = undefined;
@@ -443,13 +464,40 @@ export default class Game extends Phaser.Scene {
       targetPoint.x,
       targetPoint.y
     );
-    const speed = 50;
+    
+    let speed = 50;
+    let projectile;
 
-    const bullet = this.add
-      .image(this.barrelPoint.x, this.barrelPoint.y, "deg-bullet")
-      .setScale(0.06, 0.1);
+    switch (this.weapon) {
+      case "desert-eagle":
+        speed = 75;
+        projectile = this.add
+          .image(this.barrelPoint.x, this.barrelPoint.y, "bullet")
+          .setScale(0.06, 0.1);
+        break;
+      case "tommy-gun": 
+        speed = 50;
+        projectile = this.add
+          .image(this.barrelPoint.x, this.barrelPoint.y, "tommy-bullet")
+          .setScale(0.04, 0.08);
+        break;
+      case "rocket-launcher":
+        speed = 50;
+        projectile = this.add
+          .image(this.barrelPoint.x, this.barrelPoint.y, "rocket-launcher-ammo")
+          .setScale(0.1, 0.1);
+        break;
+      case "knives":
+        speed = 40;
+        projectile = this.add
+          .image(this.barrelPoint.x, this.barrelPoint.y, "knife")
+          .setScale(0.08, 0.08);
+        break;
+      default:
+        return;
+    }
 
-    const matterBullet = this.matter.add.gameObject(bullet, {
+    const matterBullet = this.matter.add.gameObject(projectile, {
       friction: 0,
       frictionStatic: 0,
       frictionAir: 0,
@@ -461,6 +509,17 @@ export default class Game extends Phaser.Scene {
         radius: 10,
       },
       onCollideCallback: () => {
+        
+          
+        if (this.weapon === "rocket-launcher") {
+          this.explosion.play("firstexplosion");
+        }
+
+        this.bloodSplatter.play("b1blood");
+        this.bloodSplatter.play("b2bloodgush");
+        this.bloodSplatter.play("b3bloodgut");
+        this.bloodSplatter.play("b4darkerblood");
+
         matterBullet.destroy();
         // Reduce health on impact
         this.health -= 0.5;
@@ -468,8 +527,6 @@ export default class Game extends Phaser.Scene {
         this.events.emit("health-changed", this.health);
       },
     });
-
-    // matterBullet.setAngle(angle);
 
     // Set velocity based on angle to target
     this.matter.setVelocity(
@@ -499,45 +556,49 @@ export default class Game extends Phaser.Scene {
     const spawnOffset = this.currentWeapon.flipX ? -100 : 100;
     const spawnX = this.currentWeapon.x + spawnOffset;
 
-    // Play weapon firing animation if it exists
-    if (this.weapon === "desert-eagle") {
-      this.sound.play("deagleCock");
-      this.sound.play("deagleFire");
-      this.currentWeapon
-        .play("fireDeagle")
-        .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-          this.events.emit("deagle-fired");
-        });
-      // Spawn the projectile
-    } else if (this.weapon === "tommy-gun") {
-      this.sound.play("deagleCock");
-      this.sound.play("deagleFire");
-      this.currentWeapon
-        .play("fireTommy")
-        .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-          this.events.emit("tommy-fired");
-        });
+    switch (this.weapon) {
+      case "desert-eagle":
+        this.sound.play("deagleCock");
+        this.sound.play("deagleFire");
+        this.currentWeapon
+          .play("deaglefiring")
+          .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+            this.events.emit("deagle-fired");
+          });
+        break;
+      case "tommy-gun":
+        this.sound.play("deagleFire");
+        this.currentWeapon
+          .play("tommygunfiring")
+          .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+            this.events.emit("tommy-fired");
+          });
+        break;
+      case "rocket-launcher":
+        this.sound.play("deagleFire");
+        this.currentWeapon
+          .play("rocketblast")
+          .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+            this.events.emit("rocket-fired");
+          });
+        break;
+      case "knives":
+        console.log("knives");
+        // this.sound.play("knifeThrow");
+        // this.currentWeapon
+        //   .play("knifeThrow")
+        //   .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+        //     this.events.emit("knives-fired");
+        //   });
+        break;
+      default:
+        return;
     }
+
     this.spawnProjectile(
       new Phaser.Math.Vector2(spawnX, this.currentWeapon.y),
       new Phaser.Math.Vector2(this.body.x, this.body.y)
     );
-
-    // if (this.weapon !== "fist" && this.currentWeapon?.getDisplayList()) {
-    //   const pointer = this.input.activePointer;
-    //   const worldPoint = pointer.positionToCamera(
-    //     this.cameras.main
-    //   ) as Phaser.Math.Vector2;
-
-    //   // Calculate spawn position offset based on gun angle and flip
-    //   const spawnOffset = this.currentWeapon.flipX ? -100 : 100;
-    //   const spawnX = this.currentWeapon.x + spawnOffset;
-
-    //   this.spawnProjectile(
-    //     new Phaser.Math.Vector2(spawnX, this.currentWeapon.y),
-    //     new Phaser.Math.Vector2(this.body.x, this.body.y)
-    //   );
-    // }
   }
 
   showAndFireWeapon() {
@@ -573,6 +634,16 @@ export default class Game extends Phaser.Scene {
       case "desert-eagle":
         fireRate = 500;
         fireEvent = "deagle-fired";
+        bulletsPerBurst = 1;
+        break;
+      case "rocket-launcher":
+        fireRate = 1000;
+        fireEvent = "rocket-fired";
+        bulletsPerBurst = 1;
+        break;
+      case "knives":
+        fireRate = 1000;
+        fireEvent = "knives-fired";
         bulletsPerBurst = 1;
         break;
       default:
@@ -782,12 +853,18 @@ export default class Game extends Phaser.Scene {
     this.barrelPoint = new Phaser.Math.Vector2(tipX, tipY);
   }
 
+  updateEffectPosition() {
+    this.bloodSplatter.setPosition(this.body.x, this.body.y);
+    this.explosion.setPosition(this.body.x, this.body.y);
+  }
+
   update(time: number, delta: number): void {
     const cam = this.cameras.main;
     cam.centerToBounds();
     this.displayFps(delta);
     this.ensureCharacterBounds();
     this.updateWeaponPosition();
+    this.updateEffectPosition();
     // Hide weapon if pointer is in weapon selection area and weapon is equipped
     this.weaponSelectionAreaPointerOver();
 

@@ -1,0 +1,1420 @@
+{
+    "anims": [
+        {
+            "key": "b1blood",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "blood1_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blood1_00018",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "b2bloodgush",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bloodgush3_001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgush3_018",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 30,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "b3bloodgut",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bloodgut3_001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bloodgut3_022",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+           
+            "randomFrame": false
+        },
+        {
+            "key": "b4darkerblood",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "darkerblood1_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "darkerblood1_00018",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            
+            "randomFrame": false
+        },
+        {
+            "key": "firstexplosion",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "firstexplosion_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00048",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00049",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00050",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00051",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00052",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00053",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00054",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00055",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00056",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00057",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00058",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00059",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00060",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00061",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00062",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00063",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00064",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00065",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00066",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00067",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00068",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00069",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00070",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00071",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00072",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00073",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00074",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00075",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00076",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00077",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00078",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00079",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00080",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00081",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00082",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00083",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00084",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00085",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00086",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00087",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00088",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00089",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00090",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00091",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00092",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00093",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "firstexplosion_00094",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 90,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "groundfire",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "groundfire_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00048",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00049",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00050",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00051",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00052",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00053",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00054",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00055",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00056",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00057",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00058",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00059",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00060",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00061",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00062",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00063",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00064",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00065",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00066",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00067",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00068",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00069",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00070",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00071",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00072",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00073",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00074",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00075",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00076",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00077",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00078",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00079",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00080",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00081",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00082",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00083",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00084",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00085",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00086",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00087",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00088",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00089",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00090",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00091",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00092",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00093",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00094",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00095",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00096",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00097",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00098",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00099",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00100",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00101",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00102",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00103",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00104",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00105",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00106",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00107",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00108",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00109",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00110",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00111",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00112",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00113",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00114",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00115",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00116",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00117",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00118",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00119",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00120",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "groundfire_00121",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 30,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}
