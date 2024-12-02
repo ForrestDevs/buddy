@@ -1,0 +1,63 @@
+{
+  "section1": {
+    "files": [
+      {
+        "url": "assets/buttons/back.png",
+        "type": "image",
+        "key": "advance"
+      },
+      {
+        "url": "assets/buttons/BackARROW.png",
+        "type": "image",
+        "key": "BackARROW"
+      },
+      {
+        "url": "assets/buttons/FREETier.png",
+        "type": "image",
+        "key": "FREETier"
+      },
+      {
+        "url": "assets/buttons/Page.png",
+        "type": "image",
+        "key": "Page"
+      },
+      {
+        "url": "assets/buttons/Tier2.png",
+        "type": "image",
+        "key": "Tier2"
+      },
+      {
+        "url": "assets/buttons/Tier2LOCKED.png",
+        "type": "image",
+        "key": "Tier2LOCKED"
+      },
+      {
+        "url": "assets/buttons/Tier3.png",
+        "type": "image",
+        "key": "Tier3"
+      },
+      {
+        "url": "assets/buttons/Tier3LOCKED.png",
+        "type": "image",
+        "key": "Tier3LOCKED"
+      },
+      {
+        "url": "assets/buttons/Tier4.png",
+        "type": "image",
+        "key": "Tier4"
+      },
+      {
+        "url": "assets/buttons/Tier4LOCKED.png",
+        "type": "image",
+        "key": "Tier4LOCKED"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
+}

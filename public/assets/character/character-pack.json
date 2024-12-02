@@ -1,43 +1,134 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/character/v2/Head.png",
-                "type": "image",
-                "key": "head"
-            },
-            {
-                "url": "assets/character/v2/Larm.png",
-                "type": "image",
-                "key": "left-arm"
-            },
-            {
-                "url": "assets/character/v2/Lleg.png",
-                "type": "image",
-                "key": "left-leg"
-            },
-            {
-                "url": "assets/character/v2/Rarm.png",
-                "type": "image",
-                "key": "right-arm"
-            },
-            {
-                "url": "assets/character/v2/Rleg.png",
-                "type": "image",
-                "key": "right-leg"
-            },
-            {
-                "url": "assets/character/v2/Torso.png",
-                "type": "image",
-                "key": "body"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": "assets/character/military/ArmMili.png",
+        "type": "image",
+        "key": "mil-Rarm"
+      },
+      {
+        "url": "assets/character/military/BodyMili.png",
+        "type": "image",
+        "key": "mil-Body"
+      },
+      {
+        "url": "assets/character/military/HeadMili.png",
+        "type": "image",
+        "key": "mil-Head"
+      },
+      {
+        "url": "assets/character/military/LarmARMY.png",
+        "type": "image",
+        "key": "mil-Larm"
+      },
+      {
+        "url": "assets/character/military/LegMilli.png",
+        "type": "image",
+        "key": "mil-Rleg"
+      },
+      {
+        "url": "assets/character/musk/Lleg.png",
+        "type": "image",
+        "key": "musk-Lleg"
+      },
+      {
+        "url": "assets/character/military/LlegARMY.png",
+        "type": "image",
+        "key": "mil-Lleg"
+      },
+      {
+        "url": "assets/character/musk/Body.png",
+        "type": "image",
+        "key": "musk-Body"
+      },
+      {
+        "url": "assets/character/musk/muskhead.png",
+        "type": "image",
+        "key": "musk-Head"
+      },
+      {
+        "url": "assets/character/musk/Larm.png",
+        "type": "image",
+        "key": "musk-Larm"
+      },
+      {
+        "url": "assets/character/musk/Rarm.png",
+        "type": "image",
+        "key": "musk-Rarm"
+      },
+      {
+        "url": "assets/character/musk/Rleg.png",
+        "type": "image",
+        "key": "musk-Rleg"
+      },
+      {
+        "url": "assets/character/paper/Head.png",
+        "type": "image",
+        "key": "paper-Head"
+      },
+      {
+        "url": "assets/character/paper/Larm.png",
+        "type": "image",
+        "key": "paper-Larm"
+      },
+      {
+        "url": "assets/character/paper/Lleg.png",
+        "type": "image",
+        "key": "paper-Lleg"
+      },
+      {
+        "url": "assets/character/paper/Rarm.png",
+        "type": "image",
+        "key": "paper-Rarm"
+      },
+      {
+        "url": "assets/character/paper/Rleg.png",
+        "type": "image",
+        "key": "paper-Rleg"
+      },
+      {
+        "url": "assets/character/paper/Torso.png",
+        "type": "image",
+        "key": "paper-Body"
+      },
+      {
+        "url": "assets/character/sol/BodySOLANA.png",
+        "type": "image",
+        "key": "sol-Body"
+      },
+      {
+        "url": "assets/character/sol/HeadSOLANA.png",
+        "type": "image",
+        "key": "sol-Head"
+      },
+      {
+        "url": "assets/character/sol/LarmSOLANA.png",
+        "type": "image",
+        "key": "sol-Larm"
+      },
+      {
+        "url": "assets/character/sol/LlegSOLANA.png",
+        "type": "image",
+        "key": "sol-Lleg"
+      },
+      {
+        "url": "assets/character/sol/RarmSOLANA.png",
+        "type": "image",
+        "key": "sol-Rarm"
+      },
+      {
+        "url": "assets/character/sol/RlegSOLANA.png",
+        "type": "image",
+        "key": "sol-Rleg"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }
+

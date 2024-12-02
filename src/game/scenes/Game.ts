@@ -50,6 +50,8 @@ export default class Game extends Phaser.Scene {
   private tommyGun!: Phaser.GameObjects.Image;
   private weaponTip!: Phaser.GameObjects.Arc;
 
+  private currentTierText!: Phaser.GameObjects.Text;
+
   private currentWeapon?: Phaser.GameObjects.Sprite;
   private pointerOver: boolean = false;
 
@@ -76,12 +78,22 @@ export default class Game extends Phaser.Scene {
   private showWeapon = false;
   private firingTimer?: Phaser.Time.TimerEvent;
 
+  private readonly characterTiers: string[] = ["paper", "sol", "mil", "musk"];
+
+  private debugButton!: TextButton;
+  private basePaper!: Phaser.GameObjects.Image;
+  private freeTier!: Phaser.GameObjects.Image;
+  private backButton!: Phaser.GameObjects.Image;
+
+  private classSelection!: ClassSelection;
+
   constructor() {
     super("MainGame");
   }
 
   init() {
     this.cursors = this.input?.keyboard?.createCursorKeys()!;
+    // this.data.set("tier", 0);
   }
 
   loadAssets() {
@@ -136,65 +148,103 @@ export default class Game extends Phaser.Scene {
 
     // Create body parts with more realistic physics properties
     this.head = this.matter.add
-      .image(512, 200, "head", undefined, {
-        shape: characterShapes.head,
-        friction: 0.1,
-        restitution: 0.3,
-        density: 0.001, // Light head for better swinging
-      })
+      .image(
+        512,
+        200,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Head`,
+        undefined,
+        {
+          shape: characterShapes.head,
+          friction: 0.1,
+          restitution: 0.3,
+          density: 0.001, // Light head for better swinging
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
       .setCollisionCategory(1)
       .setDepth(3);
 
     this.body = this.matter.add
-      .image(512, 384, "body", undefined, {
-        shape: characterShapes.body,
-        friction: 0.1,
-        restitution: 0.3,
-        density: 0.005, // Heavier body acts as center of mass
-      })
+      .image(
+        512,
+        384,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Body`,
+        undefined,
+        {
+          shape: characterShapes.body,
+          friction: 0.1,
+          restitution: 0.3,
+          density: 0.005, // Heavier body acts as center of mass
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
       .setCollisionCategory(1)
       .setDepth(2);
 
     this.bloodSplatter = this.add.sprite(512, 384, "blood1_00018").setDepth(4);
-    this.explosion = this.add.sprite(512, 384, "firstexplosion_00094").setDepth(4);
+    this.explosion = this.add
+      .sprite(512, 384, "firstexplosion_00094")
+      .setDepth(4);
 
     this.leftArm = this.matter.add
-      .image(750, 200, "left-arm", undefined, {
-        shape: characterShapes.larm,
-        friction: 0.1,
-        density: 0.001,
-      })
+      .image(
+        750,
+        200,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Larm`,
+        undefined,
+        {
+          shape: characterShapes.larm,
+          friction: 0.1,
+          density: 0.001,
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
       .setCollisionCategory(1)
       .setDepth(1);
 
     this.rightArm = this.matter.add
-      .image(350, 200, "right-arm", undefined, {
-        shape: characterShapes.rarm,
-        friction: 0.1,
-        density: 0.001,
-      })
+      .image(
+        350,
+        200,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rarm`,
+        undefined,
+        {
+          shape: characterShapes.rarm,
+          friction: 0.1,
+          density: 0.001,
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH, CHARACTER_HEIGHT)
       .setCollisionCategory(1)
       .setDepth(1);
 
     this.rightLeg = this.matter.add
-      .image(750, 500, "right-leg", undefined, {
-        shape: characterShapes.rleg,
-        friction: 0.1,
-        density: 0.002,
-      })
+      .image(
+        350,
+        500,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rleg`,
+        undefined,
+        {
+          shape: characterShapes.rleg,
+          friction: 0.1,
+          density: 0.002,
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30)
       .setDepth(1);
 
     this.leftLeg = this.matter.add
-      .image(350, 500, "left-leg", undefined, {
-        shape: characterShapes.lleg,
-        friction: 0.1,
-        density: 0.002,
-      })
+      .image(
+        350,
+        500,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Lleg`,
+        undefined,
+        {
+          shape: characterShapes.lleg,
+          friction: 0.1,
+          density: 0.002,
+        }
+      )
       .setDisplaySize(CHARACTER_WIDTH - 30, CHARACTER_HEIGHT - 30)
       .setDepth(1);
 
@@ -213,7 +263,6 @@ export default class Game extends Phaser.Scene {
       angularStiffness: 0.2,
       stiffness: 0.2,
     });
-
     const leftShoulder = this.matter.add.joint(
       //@ts-ignore
       this.leftArm,
@@ -226,7 +275,6 @@ export default class Game extends Phaser.Scene {
         angularStiffness: 0.2,
       }
     );
-
     const rightShoulder = this.matter.add.joint(
       //@ts-ignore
       this.rightArm,
@@ -239,7 +287,6 @@ export default class Game extends Phaser.Scene {
         angularStiffness: 0.2,
       }
     );
-
     const leftKnee = this.matter.add.joint(
       //@ts-ignore
       this.leftLeg,
@@ -252,7 +299,6 @@ export default class Game extends Phaser.Scene {
         angularStiffness: 0.3,
       }
     );
-
     const rightKnee = this.matter.add.joint(
       //@ts-ignore
       this.rightLeg,
@@ -268,14 +314,43 @@ export default class Game extends Phaser.Scene {
   }
 
   renderButtons() {
+    this.debugButton = new TextButton(
+      this,
+      100,
+      600,
+      "Debug",
+      {
+        color: "#0f0",
+        backgroundColor: "blue",
+        padding: { left: 10, right: 10, top: 10, bottom: 10 },
+        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+      },
+      () => {
+        // Toggle debug state
+        this.data.set("debug", !this.data.get("debug"));
+        // Update button text to show current state
+        this.debugButton.setText(
+          this.data.get("debug") ? "Hide Debug" : "Debug"
+        );
+
+        if (this.data.get("debug")) {
+          this.classSelection.hide(false);
+        } else {
+          this.classSelection.hide(true);
+        }
+      }
+    );
+
+    this.add.existing(this.debugButton);
+
     this.fistButton = new TextButton(
       this,
       10,
       60,
       "Fists",
       {
-        color: "#0f0",
-        backgroundColor: "blue",
+        color: "#ffffff",
+        backgroundColor: "black",
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
       },
@@ -323,8 +398,8 @@ export default class Game extends Phaser.Scene {
       140,
       "Tommy",
       {
-        color: "#0f0",
-        backgroundColor: "blue",
+        color: "#ffffff",
+        backgroundColor: "black",
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
       },
@@ -355,6 +430,10 @@ export default class Game extends Phaser.Scene {
     this.add.existing(this.desertEagleButton);
     this.add.existing(this.tommyGunButton);
     this.add.existing(this.rocketLauncherButton);
+  }
+
+  renderClassSelection() {
+    this.classSelection = new ClassSelection(this, 0, 250);
   }
 
   createWeaponSelectionArea() {
@@ -464,7 +543,7 @@ export default class Game extends Phaser.Scene {
       targetPoint.x,
       targetPoint.y
     );
-    
+
     let speed = 50;
     let projectile;
 
@@ -475,7 +554,7 @@ export default class Game extends Phaser.Scene {
           .image(this.barrelPoint.x, this.barrelPoint.y, "bullet")
           .setScale(0.06, 0.1);
         break;
-      case "tommy-gun": 
+      case "tommy-gun":
         speed = 50;
         projectile = this.add
           .image(this.barrelPoint.x, this.barrelPoint.y, "tommy-bullet")
@@ -509,8 +588,6 @@ export default class Game extends Phaser.Scene {
         radius: 10,
       },
       onCollideCallback: () => {
-        
-          
         if (this.weapon === "rocket-launcher") {
           this.explosion.play("firstexplosion");
         }
@@ -718,15 +795,18 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
+    this.init();
     this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
     // const foo = this.matter.add.mouseSpring({ length: 0.1, stiffness: 1 });
     this.matter.world.autoUpdate = true;
-    EventBus.emit("current-scene-ready", this);
+
+    this.renderClassSelection();
+    this.renderButtons();
     this.loadAssets();
     this.renderCharacter();
-    this.renderButtons();
     this.createHealthBar();
     this.createWeaponSelectionArea();
+    EventBus.emit("current-scene-ready", this);
 
     this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
       this.scene.scene,
@@ -777,6 +857,15 @@ export default class Game extends Phaser.Scene {
     //   .removeFromDisplayList();
 
     // this.weaponTip = this.add.circle(this.deg.x, this.deg.y, 4, 0xff0000);
+    this.currentTierText = this.add.text(
+      500,
+      60,
+      `Tier: ${this.data.get("tier") ?? "none"}`,
+      {
+        fontSize: "16px",
+        color: "#ffffff",
+      }
+    );
   }
 
   updateWeaponPosition() {
@@ -869,6 +958,7 @@ export default class Game extends Phaser.Scene {
     this.weaponSelectionAreaPointerOver();
 
     this.weaponText.setText(`Weapon: ${this.weapon ?? "none"}`);
+    this.currentTierText.setText(`Tier: ${this.data.get("tier") ?? "none"}`);
 
     if (this.health <= 0) {
       this.killCount++;
@@ -904,7 +994,11 @@ export default class Game extends Phaser.Scene {
 
   ensureCharacterBounds() {
     const isOutOfBounds = (part: Phaser.Physics.Matter.Image) => {
-      return part && (part.x > GAME_WIDTH || part.x < 0);
+      return (
+        part &&
+        (part.x > GAME_WIDTH || part.x < 0) &&
+        (part.y > GAME_HEIGHT || part.y < 0)
+      );
     };
     if (
       isOutOfBounds(this.head) ||
@@ -1052,6 +1146,142 @@ export default class Game extends Phaser.Scene {
 //   }
 // }
 
+export class ClassSelection extends Phaser.GameObjects.Container {
+  constructor(scene: Phaser.Scene, x: number, y: number) {
+    super(scene, x, y);
+
+    this.basePaper = scene.add
+      .image(150, 250, "Page")
+      .setDisplaySize(250, 340)
+      .removeFromDisplayList();
+
+    this.tier = scene.add
+      .image(150, 250, "FREETier")
+      .setDepth(1)
+      .setScale(0.33)
+      .removeFromDisplayList()
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.setHoverState("tier"))
+      .on("pointerout", () => this.setRestState("tier"))
+      .on("pointerup", () => {
+        // this.setRestState("tier");
+        this.onButtonClick("tier");
+      });
+
+    this.leftButton = scene.add
+      .image(50, 225, "advance")
+      .setDisplaySize(31, 340)
+      .setFlipX(true)
+      .setDepth(1)
+      .removeFromDisplayList()
+      .setInteractive({ useHandCursor: true })
+      // .on("pointerover", () => this.setHoverState("left"))
+      // .on("pointerout", () => this.setRestState("left"))
+      // .on("pointerdown", () => this.enterBackButtonActiveState())
+      .on("pointerup", () => {
+        // this.enterBackButtonHoverState();
+        this.onButtonClick("left");
+      });
+
+    this.rightButton = scene.add
+      .image(240, 225, "advance")
+      .setDisplaySize(31, 340)
+      .setDepth(1)
+      .setInteractive({ useHandCursor: true })
+      .removeFromDisplayList()
+      // .on("pointerover", () => this.setHoverState("right"))
+      // .on("pointerout", () => this.setRestState("right"))
+      // .on("pointerdown", () => this.enterBackButtonActiveState())
+      .on("pointerup", () => {
+        // this.enterBackButtonHoverState();
+        this.onButtonClick("right");
+      });
+  }
+
+  private basePaper!: Phaser.GameObjects.Image;
+  private tier!: Phaser.GameObjects.Image;
+  private leftButton!: Phaser.GameObjects.Image;
+  private rightButton!: Phaser.GameObjects.Image;
+  private currentPageIndex: number = 0;
+  private readonly pages: string[] = ["FREETier", "Tier2", "Tier3", "Tier4"];
+
+  nextPage(): void {
+    this.currentPageIndex++;
+    if (this.currentPageIndex >= this.pages.length) {
+      this.currentPageIndex = 0;
+    }
+    this.updatePageDisplay();
+  }
+
+  previousPage(): void {
+    this.currentPageIndex--;
+    if (this.currentPageIndex < 0) {
+      this.hide(true);
+      this.currentPageIndex = 0;
+      return;
+    }
+    this.updatePageDisplay();
+  }
+
+  private updatePageDisplay(): void {
+    this.tier.setTexture(this.pages[this.currentPageIndex]);
+  }
+
+  onButtonClick(which: "left" | "right" | "tier"): void {
+    if (which === "left") {
+      this.previousPage();
+    } else if (which === "right") {
+      this.nextPage();
+    } else if (which === "tier") {
+      this.scene.data.set("tier", this.currentPageIndex);
+    }
+  }
+
+  setHoverState(which: "left" | "right" | "tier") {
+    if (which === "left") {
+      this.leftButton.setScale(1.1);
+    } else if (which === "right") {
+      this.rightButton.setScale(1.1);
+    } else {
+      this.tier.setScale(0.4);
+    }
+  }
+
+  setRestState(which: "left" | "right" | "tier") {
+    if (which === "left") {
+      this.leftButton.setScale(1);
+    } else if (which === "right") {
+      this.rightButton.setScale(1);
+    } else {
+      this.tier.setScale(0.33);
+    }
+  }
+
+  setActiveState(which: "left" | "right" | "tier") {
+    if (which === "left") {
+      this.leftButton.setTint(0x0f0);
+    } else if (which === "right") {
+      this.rightButton.setTint(0x0f0);
+    } else {
+      this.tier.setTint(0x0f0);
+    }
+  }
+
+  hide(bool: boolean) {
+    if (bool) {
+      this.basePaper.removeFromDisplayList();
+      this.tier.removeFromDisplayList();
+      this.leftButton.removeFromDisplayList();
+      this.rightButton.removeFromDisplayList();
+    } else {
+      this.basePaper.addToDisplayList();
+      this.tier.addToDisplayList();
+      this.leftButton.addToDisplayList();
+      this.rightButton.addToDisplayList();
+    }
+  }
+}
+
 export class TextButton extends Phaser.GameObjects.Text {
   constructor(
     scene: Phaser.Scene,
@@ -1074,15 +1304,17 @@ export class TextButton extends Phaser.GameObjects.Text {
   }
 
   enterButtonHoverState() {
-    this.setStyle({ fill: "#ff0" });
+    this.setScale(1.1);
+    this.setStyle({ fill: "#ffffff" });
   }
 
   enterButtonRestState() {
-    this.setStyle({ fill: "#0f0" });
+    this.setScale(1);
+    this.setStyle({ fill: "#ffffff" });
   }
 
   enterButtonActiveState() {
-    this.setStyle({ fill: "#0ff" });
+    this.setStyle({ fill: "#0f0" });
   }
 }
 
