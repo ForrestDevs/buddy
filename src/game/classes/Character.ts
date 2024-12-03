@@ -62,6 +62,29 @@ export class Character {
     ["grunt", null],
     ["death", null],
   ]);
+  private effectStates: Map<
+    string,
+    { isPlaying: boolean; timer?: Phaser.Time.TimerEvent }
+  > = new Map<
+    string,
+    {
+      isPlaying: boolean;
+      timer?: Phaser.Time.TimerEvent;
+    }
+  >();
+
+  private setupEffectStates(): void {
+    // Initialize states for all effects
+    [
+      "bloodSplatter",
+      "bloodSplatter2",
+      "bloodSplatter3",
+      "bloodSplatter4",
+      "explosion",
+    ].forEach((effect) => {
+      this.effectStates.set(effect, { isPlaying: false });
+    });
+  }
 
   constructor(config: CharacterConfig) {
     this.scene = config.scene;
@@ -70,6 +93,7 @@ export class Character {
     this.createEffects();
     this.setupEventListeners();
     this.loadSounds();
+    this.setupEffectStates();
   }
 
   private createCharacter(x: number, y: number): void {
@@ -285,6 +309,7 @@ export class Character {
     });
   }
 
+  // Make sure effects start hidden in createEffects
   private createEffects(): void {
     const bodyPosition = {
       x: this.bodyParts.get("body")!.x,
@@ -302,7 +327,8 @@ export class Character {
     effectsConfig.forEach(({ key, texture }) => {
       const sprite = this.scene.add
         .sprite(bodyPosition.x, bodyPosition.y, texture)
-        .setDepth(4);
+        .setDepth(4)
+        .setVisible(false); // Start hidden
       this.effects.set(key, sprite);
     });
   }
@@ -363,14 +389,57 @@ export class Character {
   }
 
   private playHitEffects(isExplosion?: boolean): void {
-    this.effects.get("bloodSplatter")?.play("b1");
-    this.effects.get("bloodSplatter2")?.play("b2");
-    this.effects.get("bloodSplatter3")?.play("b3");
-    this.effects.get("bloodSplatter4")?.play("b4");
+    this.playEffect("bloodSplatter", "b1");
+    this.playEffect("bloodSplatter2", "b2");
+    this.playEffect("bloodSplatter3", "b3");
+    this.playEffect("bloodSplatter4", "b4");
 
     if (isExplosion) {
-      this.effects.get("explosion")?.play("explosion");
+      this.playEffect("explosion", "explosion");
     }
+  }
+
+  private playEffect(effectKey: string, animationKey: string): void {
+    const effect = this.effects.get(effectKey);
+    const state = this.effectStates.get(effectKey);
+
+    if (!effect || !state) return;
+
+    // If effect is already playing, just reset its stop timer
+    if (state.isPlaying) {
+      if (state.timer) {
+        state.timer.reset({
+          delay: 500,
+          callback: () => {
+            state.isPlaying = false;
+            effect.stop();
+            effect.setVisible(false); // Hide the sprite
+            effect.off("animationcomplete");
+          },
+        });
+      }
+      return;
+    }
+
+    // Start playing the effect
+    state.isPlaying = true;
+    effect.setVisible(true); // Show the sprite
+    effect.play(animationKey);
+
+    // Set up auto-repeat on animation complete
+    effect.on("animationcomplete", () => {
+      if (state.isPlaying) {
+        effect.play(animationKey);
+      }
+    });
+
+    // Create a timer to stop the effect if no more hits occur
+    state.timer = this.scene.time.delayedCall(500, () => {
+      state.isPlaying = false;
+      effect.stop();
+      effect.setVisible(false); // Hide the sprite
+      effect.off("animationcomplete");
+    });
   }
 
   public getPosition(): Phaser.Math.Vector2 {
@@ -448,6 +517,7 @@ export class Character {
     });
   }
 
+  // Don't forget to clean up in the destroy method
   public destroy(): void {
     EventBus.off("projectile-hit", this.onProjectileHit, this);
 
@@ -461,21 +531,22 @@ export class Character {
     // Clean up all effects
     this.effects.forEach((effect) => {
       if (effect) {
+        effect.off("animationcomplete"); // Remove any remaining listeners
         effect.destroy();
       }
     });
 
+    // Clean up all timers
+    this.effectStates.forEach((state) => {
+      if (state.timer) {
+        state.timer.destroy();
+      }
+    });
+    this.effectStates.clear();
+
     // Clear the maps
     this.bodyParts.clear();
     this.effects.clear();
-
-    // Clean up sounds
-    this.sounds.forEach((sound) => {
-      if (sound) {
-        sound.destroy();
-      }
-    });
-    this.sounds.clear();
   }
 }
 
