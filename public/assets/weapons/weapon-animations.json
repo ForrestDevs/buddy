@@ -1,1159 +1,1159 @@
 {
-    "anims": [
+  "anims": [
+    {
+      "key": "saw",
+      "type": "frame",
+      "frames": [
         {
-            "key": "saw",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "chainsawanimation_00000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00013",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00014",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00015",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00016",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00017",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00018",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00019",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00020",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00021",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00022",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00023",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00024",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00025",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00026",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00027",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00028",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00029",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00030",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00031",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00032",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00033",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00034",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00035",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00036",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00037",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00038",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00039",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00040",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00041",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00042",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00043",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00044",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00045",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00046",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00047",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00048",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00049",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00050",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00051",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00052",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00053",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00054",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "chainsawanimation_00055",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 50,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
+          "key": "chainsawanimation_00000",
+          "duration": 0,
+          "keyframe": false
         },
         {
-            "key": "tommyFire",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "tommygunfiring_00000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00013",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00014",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00015",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00016",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00017",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00018",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00019",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00020",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00021",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00022",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00023",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00024",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00025",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00026",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00027",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00028",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00029",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00030",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00031",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00032",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00033",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00034",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00035",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00036",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00037",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00038",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00039",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00040",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00041",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00042",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "tommygunfiring_00043",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
+          "key": "chainsawanimation_00001",
+          "duration": 0,
+          "keyframe": false
         },
         {
-            "key": "mgFire",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "shootingMG42_00000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00013",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00014",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00015",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00016",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00017",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00018",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00019",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00020",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00021",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00022",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00023",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00024",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00025",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00026",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00027",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00028",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00029",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00030",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00031",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00032",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00033",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00034",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00035",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00036",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00037",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00038",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00039",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00040",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00041",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00042",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00043",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00044",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00045",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00046",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00047",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00048",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00049",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00050",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00051",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00052",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00053",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00054",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00055",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00056",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00057",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00058",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00059",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00060",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00061",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00062",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00063",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00064",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00065",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00066",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00067",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00068",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00069",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00070",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00071",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00072",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00073",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00074",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00075",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00076",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00077",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00078",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00079",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00080",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00081",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00082",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00083",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00084",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00085",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "shootingMG42_00086",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
+          "key": "chainsawanimation_00002",
+          "duration": 0,
+          "keyframe": false
         },
         {
-            "key": "rpgFire",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "rocketblast_00000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "rocketblast_00012",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
+          "key": "chainsawanimation_00003",
+          "duration": 0,
+          "keyframe": false
         },
         {
-            "key": "deaglefiring",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "deaglefiring_00000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00005",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00006",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00007",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00008",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00009",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00010",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00011",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00012",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00013",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00014",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00015",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00016",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00017",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "deaglefiring_00018",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "randomFrame": false
+          "key": "chainsawanimation_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00018",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00019",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00020",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00021",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00022",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00023",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00024",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00025",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00026",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00027",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00028",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00029",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00030",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00031",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00032",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00033",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00034",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00035",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00036",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00037",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00038",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00039",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00040",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00041",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00042",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00043",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00044",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00045",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00046",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00047",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00048",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00049",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00050",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00051",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00052",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00053",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00054",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "chainsawanimation_00055",
+          "duration": 0,
+          "keyframe": false
         }
-    ],
-    "globalTimeScale": 1,
-    "meta": {
-        "app": "Phaser Editor 2D v3",
-        "contentType": "Phaser v3 Animations"
+      ],
+      "frameRate": 50,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
     },
-    "settings": {
-        "sourceLang": "JAVA_SCRIPT",
-        "esModule": false,
-        "generateCode": false
+    {
+      "key": "tommyFire",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "tommygunfiring_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00018",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00019",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00020",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00021",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00022",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00023",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00024",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00025",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00026",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00027",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00028",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00029",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00030",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00031",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00032",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00033",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00034",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00035",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00036",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00037",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00038",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00039",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00040",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00041",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00042",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "tommygunfiring_00043",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
+    },
+    {
+      "key": "mgFire",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "shootingMG42_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00018",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00019",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00020",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00021",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00022",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00023",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00024",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00025",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00026",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00027",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00028",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00029",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00030",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00031",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00032",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00033",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00034",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00035",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00036",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00037",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00038",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00039",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00040",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00041",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00042",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00043",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00044",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00045",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00046",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00047",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00048",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00049",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00050",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00051",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00052",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00053",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00054",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00055",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00056",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00057",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00058",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00059",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00060",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00061",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00062",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00063",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00064",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00065",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00066",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00067",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00068",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00069",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00070",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00071",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00072",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00073",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00074",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00075",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00076",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00077",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00078",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00079",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00080",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00081",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00082",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00083",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00084",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00085",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "shootingMG42_00086",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
+    },
+    {
+      "key": "rpgFire",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "rocketblast_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "rocketblast_00012",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
+    },
+    {
+      "key": "deagleFire",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "deaglefiring_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "deaglefiring_00018",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
     }
+  ],
+  "globalTimeScale": 1,
+  "meta": {
+    "app": "Phaser Editor 2D v3",
+    "contentType": "Phaser v3 Animations"
+  },
+  "settings": {
+    "sourceLang": "JAVA_SCRIPT",
+    "esModule": false,
+    "generateCode": false
+  }
 }

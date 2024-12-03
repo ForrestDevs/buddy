@@ -57,6 +57,7 @@ export default class Preloader extends Phaser.Scene {
     this.load.pack("weapon-pack", "assets/weapons/weapon-pack.json");
     this.load.pack("character-pack", "assets/character/character-pack.json");
     this.load.json("characterShapes", "assets/character/character.xml.json");
+    this.load.pack("sound-pack", "assets/sounds/sound-pack.json");
     this.load.image("bg1", "assets/bg1.png");
 
     this.load.animation(

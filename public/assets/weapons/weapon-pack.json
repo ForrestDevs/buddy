@@ -1,1163 +1,1308 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/weapons/tommy/base-tommy.png",
-                "type": "image",
-                "key": "base-tommy"
-            },
-            {
-                "url": "assets/weapons/deagle/bullet.png",
-                "type": "image",
-                "key": "bullet"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00000.png",
-                "type": "image",
-                "key": "chainsawanimation_00000"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00001.png",
-                "type": "image",
-                "key": "chainsawanimation_00001"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00002.png",
-                "type": "image",
-                "key": "chainsawanimation_00002"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00003.png",
-                "type": "image",
-                "key": "chainsawanimation_00003"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00004.png",
-                "type": "image",
-                "key": "chainsawanimation_00004"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00005.png",
-                "type": "image",
-                "key": "chainsawanimation_00005"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00006.png",
-                "type": "image",
-                "key": "chainsawanimation_00006"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00007.png",
-                "type": "image",
-                "key": "chainsawanimation_00007"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00008.png",
-                "type": "image",
-                "key": "chainsawanimation_00008"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00009.png",
-                "type": "image",
-                "key": "chainsawanimation_00009"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00010.png",
-                "type": "image",
-                "key": "chainsawanimation_00010"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00011.png",
-                "type": "image",
-                "key": "chainsawanimation_00011"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00012.png",
-                "type": "image",
-                "key": "chainsawanimation_00012"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00013.png",
-                "type": "image",
-                "key": "chainsawanimation_00013"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00014.png",
-                "type": "image",
-                "key": "chainsawanimation_00014"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00015.png",
-                "type": "image",
-                "key": "chainsawanimation_00015"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00016.png",
-                "type": "image",
-                "key": "chainsawanimation_00016"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00017.png",
-                "type": "image",
-                "key": "chainsawanimation_00017"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00018.png",
-                "type": "image",
-                "key": "chainsawanimation_00018"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00019.png",
-                "type": "image",
-                "key": "chainsawanimation_00019"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00020.png",
-                "type": "image",
-                "key": "chainsawanimation_00020"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00021.png",
-                "type": "image",
-                "key": "chainsawanimation_00021"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00022.png",
-                "type": "image",
-                "key": "chainsawanimation_00022"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00023.png",
-                "type": "image",
-                "key": "chainsawanimation_00023"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00024.png",
-                "type": "image",
-                "key": "chainsawanimation_00024"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00025.png",
-                "type": "image",
-                "key": "chainsawanimation_00025"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00026.png",
-                "type": "image",
-                "key": "chainsawanimation_00026"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00027.png",
-                "type": "image",
-                "key": "chainsawanimation_00027"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00028.png",
-                "type": "image",
-                "key": "chainsawanimation_00028"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00029.png",
-                "type": "image",
-                "key": "chainsawanimation_00029"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00030.png",
-                "type": "image",
-                "key": "chainsawanimation_00030"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00031.png",
-                "type": "image",
-                "key": "chainsawanimation_00031"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00032.png",
-                "type": "image",
-                "key": "chainsawanimation_00032"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00033.png",
-                "type": "image",
-                "key": "chainsawanimation_00033"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00034.png",
-                "type": "image",
-                "key": "chainsawanimation_00034"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00035.png",
-                "type": "image",
-                "key": "chainsawanimation_00035"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00036.png",
-                "type": "image",
-                "key": "chainsawanimation_00036"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00037.png",
-                "type": "image",
-                "key": "chainsawanimation_00037"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00038.png",
-                "type": "image",
-                "key": "chainsawanimation_00038"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00039.png",
-                "type": "image",
-                "key": "chainsawanimation_00039"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00040.png",
-                "type": "image",
-                "key": "chainsawanimation_00040"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00041.png",
-                "type": "image",
-                "key": "chainsawanimation_00041"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00042.png",
-                "type": "image",
-                "key": "chainsawanimation_00042"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00043.png",
-                "type": "image",
-                "key": "chainsawanimation_00043"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00044.png",
-                "type": "image",
-                "key": "chainsawanimation_00044"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00045.png",
-                "type": "image",
-                "key": "chainsawanimation_00045"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00046.png",
-                "type": "image",
-                "key": "chainsawanimation_00046"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00047.png",
-                "type": "image",
-                "key": "chainsawanimation_00047"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00048.png",
-                "type": "image",
-                "key": "chainsawanimation_00048"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00049.png",
-                "type": "image",
-                "key": "chainsawanimation_00049"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00050.png",
-                "type": "image",
-                "key": "chainsawanimation_00050"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00051.png",
-                "type": "image",
-                "key": "chainsawanimation_00051"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00052.png",
-                "type": "image",
-                "key": "chainsawanimation_00052"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00053.png",
-                "type": "image",
-                "key": "chainsawanimation_00053"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00054.png",
-                "type": "image",
-                "key": "chainsawanimation_00054"
-            },
-            {
-                "url": "assets/weapons/chainsaw/chainsawanimation_00055.png",
-                "type": "image",
-                "key": "chainsawanimation_00055"
-            },
-            {
-                "url": "assets/weapons/chainsaw/ChainsawRaw.png",
-                "type": "image",
-                "key": "ChainsawRaw"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00000.png",
-                "type": "image",
-                "key": "deaglefiring_00000"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00001.png",
-                "type": "image",
-                "key": "deaglefiring_00001"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00002.png",
-                "type": "image",
-                "key": "deaglefiring_00002"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00003.png",
-                "type": "image",
-                "key": "deaglefiring_00003"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00004.png",
-                "type": "image",
-                "key": "deaglefiring_00004"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00005.png",
-                "type": "image",
-                "key": "deaglefiring_00005"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00006.png",
-                "type": "image",
-                "key": "deaglefiring_00006"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00007.png",
-                "type": "image",
-                "key": "deaglefiring_00007"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00008.png",
-                "type": "image",
-                "key": "deaglefiring_00008"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00009.png",
-                "type": "image",
-                "key": "deaglefiring_00009"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00010.png",
-                "type": "image",
-                "key": "deaglefiring_00010"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00011.png",
-                "type": "image",
-                "key": "deaglefiring_00011"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00012.png",
-                "type": "image",
-                "key": "deaglefiring_00012"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00013.png",
-                "type": "image",
-                "key": "deaglefiring_00013"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00014.png",
-                "type": "image",
-                "key": "deaglefiring_00014"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00015.png",
-                "type": "image",
-                "key": "deaglefiring_00015"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00016.png",
-                "type": "image",
-                "key": "deaglefiring_00016"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00017.png",
-                "type": "image",
-                "key": "deaglefiring_00017"
-            },
-            {
-                "url": "assets/weapons/deagle/deaglefiring_00018.png",
-                "type": "image",
-                "key": "deaglefiring_00018"
-            },
-            {
-                "url": "assets/weapons/fire-bomb/FireNade.png",
-                "type": "image",
-                "key": "FireNade"
-            },
-            {
-                "url": "assets/weapons/knife/knife.png",
-                "type": "image",
-                "key": "knife"
-            },
-            {
-                "url": "assets/weapons/mg/mg42bullet.png",
-                "type": "image",
-                "key": "mg42bullet"
-            },
-            {
-                "url": "assets/weapons/mg/MG42GunStart.png",
-                "type": "image",
-                "key": "MG42GunStart"
-            },
-            {
-                "url": "assets/weapons/grenade/nade.png",
-                "type": "image",
-                "key": "nade"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00000.png",
-                "type": "image",
-                "key": "rocketblast_00000"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00001.png",
-                "type": "image",
-                "key": "rocketblast_00001"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00002.png",
-                "type": "image",
-                "key": "rocketblast_00002"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00003.png",
-                "type": "image",
-                "key": "rocketblast_00003"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00004.png",
-                "type": "image",
-                "key": "rocketblast_00004"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00005.png",
-                "type": "image",
-                "key": "rocketblast_00005"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00006.png",
-                "type": "image",
-                "key": "rocketblast_00006"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00007.png",
-                "type": "image",
-                "key": "rocketblast_00007"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00008.png",
-                "type": "image",
-                "key": "rocketblast_00008"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00009.png",
-                "type": "image",
-                "key": "rocketblast_00009"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00010.png",
-                "type": "image",
-                "key": "rocketblast_00010"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00011.png",
-                "type": "image",
-                "key": "rocketblast_00011"
-            },
-            {
-                "url": "assets/weapons/rpg/rocketblast_00012.png",
-                "type": "image",
-                "key": "rocketblast_00012"
-            },
-            {
-                "url": "assets/weapons/rpg/RocketLauncher.png",
-                "type": "image",
-                "key": "RocketLauncher"
-            },
-            {
-                "url": "assets/weapons/rpg/RocketLauncher Ammo.png",
-                "type": "image",
-                "key": "RocketLauncher Ammo"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00000.png",
-                "type": "image",
-                "key": "shootingMG42_00000"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00001.png",
-                "type": "image",
-                "key": "shootingMG42_00001"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00002.png",
-                "type": "image",
-                "key": "shootingMG42_00002"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00003.png",
-                "type": "image",
-                "key": "shootingMG42_00003"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00004.png",
-                "type": "image",
-                "key": "shootingMG42_00004"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00005.png",
-                "type": "image",
-                "key": "shootingMG42_00005"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00006.png",
-                "type": "image",
-                "key": "shootingMG42_00006"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00007.png",
-                "type": "image",
-                "key": "shootingMG42_00007"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00008.png",
-                "type": "image",
-                "key": "shootingMG42_00008"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00009.png",
-                "type": "image",
-                "key": "shootingMG42_00009"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00010.png",
-                "type": "image",
-                "key": "shootingMG42_00010"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00011.png",
-                "type": "image",
-                "key": "shootingMG42_00011"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00012.png",
-                "type": "image",
-                "key": "shootingMG42_00012"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00013.png",
-                "type": "image",
-                "key": "shootingMG42_00013"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00014.png",
-                "type": "image",
-                "key": "shootingMG42_00014"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00015.png",
-                "type": "image",
-                "key": "shootingMG42_00015"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00016.png",
-                "type": "image",
-                "key": "shootingMG42_00016"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00017.png",
-                "type": "image",
-                "key": "shootingMG42_00017"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00018.png",
-                "type": "image",
-                "key": "shootingMG42_00018"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00019.png",
-                "type": "image",
-                "key": "shootingMG42_00019"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00020.png",
-                "type": "image",
-                "key": "shootingMG42_00020"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00021.png",
-                "type": "image",
-                "key": "shootingMG42_00021"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00022.png",
-                "type": "image",
-                "key": "shootingMG42_00022"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00023.png",
-                "type": "image",
-                "key": "shootingMG42_00023"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00024.png",
-                "type": "image",
-                "key": "shootingMG42_00024"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00025.png",
-                "type": "image",
-                "key": "shootingMG42_00025"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00026.png",
-                "type": "image",
-                "key": "shootingMG42_00026"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00027.png",
-                "type": "image",
-                "key": "shootingMG42_00027"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00028.png",
-                "type": "image",
-                "key": "shootingMG42_00028"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00029.png",
-                "type": "image",
-                "key": "shootingMG42_00029"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00030.png",
-                "type": "image",
-                "key": "shootingMG42_00030"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00031.png",
-                "type": "image",
-                "key": "shootingMG42_00031"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00032.png",
-                "type": "image",
-                "key": "shootingMG42_00032"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00033.png",
-                "type": "image",
-                "key": "shootingMG42_00033"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00034.png",
-                "type": "image",
-                "key": "shootingMG42_00034"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00035.png",
-                "type": "image",
-                "key": "shootingMG42_00035"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00036.png",
-                "type": "image",
-                "key": "shootingMG42_00036"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00037.png",
-                "type": "image",
-                "key": "shootingMG42_00037"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00038.png",
-                "type": "image",
-                "key": "shootingMG42_00038"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00039.png",
-                "type": "image",
-                "key": "shootingMG42_00039"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00040.png",
-                "type": "image",
-                "key": "shootingMG42_00040"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00041.png",
-                "type": "image",
-                "key": "shootingMG42_00041"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00042.png",
-                "type": "image",
-                "key": "shootingMG42_00042"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00043.png",
-                "type": "image",
-                "key": "shootingMG42_00043"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00044.png",
-                "type": "image",
-                "key": "shootingMG42_00044"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00045.png",
-                "type": "image",
-                "key": "shootingMG42_00045"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00046.png",
-                "type": "image",
-                "key": "shootingMG42_00046"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00047.png",
-                "type": "image",
-                "key": "shootingMG42_00047"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00048.png",
-                "type": "image",
-                "key": "shootingMG42_00048"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00049.png",
-                "type": "image",
-                "key": "shootingMG42_00049"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00050.png",
-                "type": "image",
-                "key": "shootingMG42_00050"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00051.png",
-                "type": "image",
-                "key": "shootingMG42_00051"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00052.png",
-                "type": "image",
-                "key": "shootingMG42_00052"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00053.png",
-                "type": "image",
-                "key": "shootingMG42_00053"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00054.png",
-                "type": "image",
-                "key": "shootingMG42_00054"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00055.png",
-                "type": "image",
-                "key": "shootingMG42_00055"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00056.png",
-                "type": "image",
-                "key": "shootingMG42_00056"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00057.png",
-                "type": "image",
-                "key": "shootingMG42_00057"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00058.png",
-                "type": "image",
-                "key": "shootingMG42_00058"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00059.png",
-                "type": "image",
-                "key": "shootingMG42_00059"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00060.png",
-                "type": "image",
-                "key": "shootingMG42_00060"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00061.png",
-                "type": "image",
-                "key": "shootingMG42_00061"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00062.png",
-                "type": "image",
-                "key": "shootingMG42_00062"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00063.png",
-                "type": "image",
-                "key": "shootingMG42_00063"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00064.png",
-                "type": "image",
-                "key": "shootingMG42_00064"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00065.png",
-                "type": "image",
-                "key": "shootingMG42_00065"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00066.png",
-                "type": "image",
-                "key": "shootingMG42_00066"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00067.png",
-                "type": "image",
-                "key": "shootingMG42_00067"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00068.png",
-                "type": "image",
-                "key": "shootingMG42_00068"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00069.png",
-                "type": "image",
-                "key": "shootingMG42_00069"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00070.png",
-                "type": "image",
-                "key": "shootingMG42_00070"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00071.png",
-                "type": "image",
-                "key": "shootingMG42_00071"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00072.png",
-                "type": "image",
-                "key": "shootingMG42_00072"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00073.png",
-                "type": "image",
-                "key": "shootingMG42_00073"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00074.png",
-                "type": "image",
-                "key": "shootingMG42_00074"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00075.png",
-                "type": "image",
-                "key": "shootingMG42_00075"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00076.png",
-                "type": "image",
-                "key": "shootingMG42_00076"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00077.png",
-                "type": "image",
-                "key": "shootingMG42_00077"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00078.png",
-                "type": "image",
-                "key": "shootingMG42_00078"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00079.png",
-                "type": "image",
-                "key": "shootingMG42_00079"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00080.png",
-                "type": "image",
-                "key": "shootingMG42_00080"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00081.png",
-                "type": "image",
-                "key": "shootingMG42_00081"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00082.png",
-                "type": "image",
-                "key": "shootingMG42_00082"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00083.png",
-                "type": "image",
-                "key": "shootingMG42_00083"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00084.png",
-                "type": "image",
-                "key": "shootingMG42_00084"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00085.png",
-                "type": "image",
-                "key": "shootingMG42_00085"
-            },
-            {
-                "url": "assets/weapons/mg/shootingMG42_00086.png",
-                "type": "image",
-                "key": "shootingMG42_00086"
-            },
-            {
-                "url": "assets/weapons/tommy/tommy-bullet.png",
-                "type": "image",
-                "key": "tommy-bullet"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00000.png",
-                "type": "image",
-                "key": "tommygunfiring_00000"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00001.png",
-                "type": "image",
-                "key": "tommygunfiring_00001"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00002.png",
-                "type": "image",
-                "key": "tommygunfiring_00002"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00003.png",
-                "type": "image",
-                "key": "tommygunfiring_00003"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00004.png",
-                "type": "image",
-                "key": "tommygunfiring_00004"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00005.png",
-                "type": "image",
-                "key": "tommygunfiring_00005"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00006.png",
-                "type": "image",
-                "key": "tommygunfiring_00006"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00007.png",
-                "type": "image",
-                "key": "tommygunfiring_00007"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00008.png",
-                "type": "image",
-                "key": "tommygunfiring_00008"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00009.png",
-                "type": "image",
-                "key": "tommygunfiring_00009"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00010.png",
-                "type": "image",
-                "key": "tommygunfiring_00010"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00011.png",
-                "type": "image",
-                "key": "tommygunfiring_00011"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00012.png",
-                "type": "image",
-                "key": "tommygunfiring_00012"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00013.png",
-                "type": "image",
-                "key": "tommygunfiring_00013"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00014.png",
-                "type": "image",
-                "key": "tommygunfiring_00014"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00015.png",
-                "type": "image",
-                "key": "tommygunfiring_00015"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00016.png",
-                "type": "image",
-                "key": "tommygunfiring_00016"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00017.png",
-                "type": "image",
-                "key": "tommygunfiring_00017"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00018.png",
-                "type": "image",
-                "key": "tommygunfiring_00018"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00019.png",
-                "type": "image",
-                "key": "tommygunfiring_00019"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00020.png",
-                "type": "image",
-                "key": "tommygunfiring_00020"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00021.png",
-                "type": "image",
-                "key": "tommygunfiring_00021"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00022.png",
-                "type": "image",
-                "key": "tommygunfiring_00022"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00023.png",
-                "type": "image",
-                "key": "tommygunfiring_00023"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00024.png",
-                "type": "image",
-                "key": "tommygunfiring_00024"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00025.png",
-                "type": "image",
-                "key": "tommygunfiring_00025"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00026.png",
-                "type": "image",
-                "key": "tommygunfiring_00026"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00027.png",
-                "type": "image",
-                "key": "tommygunfiring_00027"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00028.png",
-                "type": "image",
-                "key": "tommygunfiring_00028"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00029.png",
-                "type": "image",
-                "key": "tommygunfiring_00029"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00030.png",
-                "type": "image",
-                "key": "tommygunfiring_00030"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00031.png",
-                "type": "image",
-                "key": "tommygunfiring_00031"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00032.png",
-                "type": "image",
-                "key": "tommygunfiring_00032"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00033.png",
-                "type": "image",
-                "key": "tommygunfiring_00033"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00034.png",
-                "type": "image",
-                "key": "tommygunfiring_00034"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00035.png",
-                "type": "image",
-                "key": "tommygunfiring_00035"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00036.png",
-                "type": "image",
-                "key": "tommygunfiring_00036"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00037.png",
-                "type": "image",
-                "key": "tommygunfiring_00037"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00038.png",
-                "type": "image",
-                "key": "tommygunfiring_00038"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00039.png",
-                "type": "image",
-                "key": "tommygunfiring_00039"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00040.png",
-                "type": "image",
-                "key": "tommygunfiring_00040"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00041.png",
-                "type": "image",
-                "key": "tommygunfiring_00041"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00042.png",
-                "type": "image",
-                "key": "tommygunfiring_00042"
-            },
-            {
-                "url": "assets/weapons/tommy/tommygunfiring_00043.png",
-                "type": "image",
-                "key": "tommygunfiring_00043"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": "assets/weapons/chainsaw/ChainsawRaw.png",
+        "type": "image",
+        "key": "chainsaw"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00000.png",
+        "type": "image",
+        "key": "chainsawanimation_00000"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00001.png",
+        "type": "image",
+        "key": "chainsawanimation_00001"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00002.png",
+        "type": "image",
+        "key": "chainsawanimation_00002"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00003.png",
+        "type": "image",
+        "key": "chainsawanimation_00003"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00004.png",
+        "type": "image",
+        "key": "chainsawanimation_00004"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00005.png",
+        "type": "image",
+        "key": "chainsawanimation_00005"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00006.png",
+        "type": "image",
+        "key": "chainsawanimation_00006"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00007.png",
+        "type": "image",
+        "key": "chainsawanimation_00007"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00008.png",
+        "type": "image",
+        "key": "chainsawanimation_00008"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00009.png",
+        "type": "image",
+        "key": "chainsawanimation_00009"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00010.png",
+        "type": "image",
+        "key": "chainsawanimation_00010"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00011.png",
+        "type": "image",
+        "key": "chainsawanimation_00011"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00012.png",
+        "type": "image",
+        "key": "chainsawanimation_00012"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00013.png",
+        "type": "image",
+        "key": "chainsawanimation_00013"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00014.png",
+        "type": "image",
+        "key": "chainsawanimation_00014"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00015.png",
+        "type": "image",
+        "key": "chainsawanimation_00015"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00016.png",
+        "type": "image",
+        "key": "chainsawanimation_00016"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00017.png",
+        "type": "image",
+        "key": "chainsawanimation_00017"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00018.png",
+        "type": "image",
+        "key": "chainsawanimation_00018"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00019.png",
+        "type": "image",
+        "key": "chainsawanimation_00019"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00020.png",
+        "type": "image",
+        "key": "chainsawanimation_00020"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00021.png",
+        "type": "image",
+        "key": "chainsawanimation_00021"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00022.png",
+        "type": "image",
+        "key": "chainsawanimation_00022"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00023.png",
+        "type": "image",
+        "key": "chainsawanimation_00023"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00024.png",
+        "type": "image",
+        "key": "chainsawanimation_00024"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00025.png",
+        "type": "image",
+        "key": "chainsawanimation_00025"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00026.png",
+        "type": "image",
+        "key": "chainsawanimation_00026"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00027.png",
+        "type": "image",
+        "key": "chainsawanimation_00027"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00028.png",
+        "type": "image",
+        "key": "chainsawanimation_00028"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00029.png",
+        "type": "image",
+        "key": "chainsawanimation_00029"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00030.png",
+        "type": "image",
+        "key": "chainsawanimation_00030"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00031.png",
+        "type": "image",
+        "key": "chainsawanimation_00031"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00032.png",
+        "type": "image",
+        "key": "chainsawanimation_00032"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00033.png",
+        "type": "image",
+        "key": "chainsawanimation_00033"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00034.png",
+        "type": "image",
+        "key": "chainsawanimation_00034"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00035.png",
+        "type": "image",
+        "key": "chainsawanimation_00035"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00036.png",
+        "type": "image",
+        "key": "chainsawanimation_00036"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00037.png",
+        "type": "image",
+        "key": "chainsawanimation_00037"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00038.png",
+        "type": "image",
+        "key": "chainsawanimation_00038"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00039.png",
+        "type": "image",
+        "key": "chainsawanimation_00039"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00040.png",
+        "type": "image",
+        "key": "chainsawanimation_00040"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00041.png",
+        "type": "image",
+        "key": "chainsawanimation_00041"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00042.png",
+        "type": "image",
+        "key": "chainsawanimation_00042"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00043.png",
+        "type": "image",
+        "key": "chainsawanimation_00043"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00044.png",
+        "type": "image",
+        "key": "chainsawanimation_00044"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00045.png",
+        "type": "image",
+        "key": "chainsawanimation_00045"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00046.png",
+        "type": "image",
+        "key": "chainsawanimation_00046"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00047.png",
+        "type": "image",
+        "key": "chainsawanimation_00047"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00048.png",
+        "type": "image",
+        "key": "chainsawanimation_00048"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00049.png",
+        "type": "image",
+        "key": "chainsawanimation_00049"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00050.png",
+        "type": "image",
+        "key": "chainsawanimation_00050"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00051.png",
+        "type": "image",
+        "key": "chainsawanimation_00051"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00052.png",
+        "type": "image",
+        "key": "chainsawanimation_00052"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00053.png",
+        "type": "image",
+        "key": "chainsawanimation_00053"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00054.png",
+        "type": "image",
+        "key": "chainsawanimation_00054"
+      },
+      {
+        "url": "assets/weapons/chainsaw/chainsawanimation_00055.png",
+        "type": "image",
+        "key": "chainsawanimation_00055"
+      },
+      {
+        "url": "assets/weapons/deagle/bullet.png",
+        "type": "image",
+        "key": "deagle-bullet"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00000.png",
+        "type": "image",
+        "key": "deaglefiring_00000"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00001.png",
+        "type": "image",
+        "key": "deaglefiring_00001"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00002.png",
+        "type": "image",
+        "key": "deaglefiring_00002"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00003.png",
+        "type": "image",
+        "key": "deaglefiring_00003"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00004.png",
+        "type": "image",
+        "key": "deaglefiring_00004"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00005.png",
+        "type": "image",
+        "key": "deaglefiring_00005"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00006.png",
+        "type": "image",
+        "key": "deaglefiring_00006"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00007.png",
+        "type": "image",
+        "key": "deaglefiring_00007"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00008.png",
+        "type": "image",
+        "key": "deaglefiring_00008"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00009.png",
+        "type": "image",
+        "key": "deaglefiring_00009"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00010.png",
+        "type": "image",
+        "key": "deaglefiring_00010"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00011.png",
+        "type": "image",
+        "key": "deaglefiring_00011"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00012.png",
+        "type": "image",
+        "key": "deaglefiring_00012"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00013.png",
+        "type": "image",
+        "key": "deaglefiring_00013"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00014.png",
+        "type": "image",
+        "key": "deaglefiring_00014"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00015.png",
+        "type": "image",
+        "key": "deaglefiring_00015"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00016.png",
+        "type": "image",
+        "key": "deaglefiring_00016"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00017.png",
+        "type": "image",
+        "key": "deaglefiring_00017"
+      },
+      {
+        "url": "assets/weapons/deagle/deaglefiring_00018.png",
+        "type": "image",
+        "key": "deaglefiring_00018"
+      },
+      {
+        "url": "assets/weapons/fire-bomb/FireNade.png",
+        "type": "image",
+        "key": "fire-bomb"
+      },
+      {
+        "url": "assets/weapons/grenade/nade.png",
+        "type": "image",
+        "key": "grenade"
+      },
+      {
+        "url": "assets/weapons/knife/knife.png",
+        "type": "image",
+        "key": "knife"
+      },
+      {
+        "url": "assets/weapons/mg/MG42GunStart.png",
+        "type": "image",
+        "key": "mg"
+      },
+      {
+        "url": "assets/weapons/mg/mg42bullet.png",
+        "type": "image",
+        "key": "mg-bullet"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygun.png",
+        "type": "image",
+        "key": "raygun"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygun-bullet.png",
+        "type": "image",
+        "key": "raygun-bullet"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00000.png",
+        "type": "image",
+        "key": "raygunfire_00000"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00001.png",
+        "type": "image",
+        "key": "raygunfire_00001"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00002.png",
+        "type": "image",
+        "key": "raygunfire_00002"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00003.png",
+        "type": "image",
+        "key": "raygunfire_00003"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00004.png",
+        "type": "image",
+        "key": "raygunfire_00004"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00005.png",
+        "type": "image",
+        "key": "raygunfire_00005"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00006.png",
+        "type": "image",
+        "key": "raygunfire_00006"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00007.png",
+        "type": "image",
+        "key": "raygunfire_00007"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00008.png",
+        "type": "image",
+        "key": "raygunfire_00008"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00009.png",
+        "type": "image",
+        "key": "raygunfire_00009"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00010.png",
+        "type": "image",
+        "key": "raygunfire_00010"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00011.png",
+        "type": "image",
+        "key": "raygunfire_00011"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00012.png",
+        "type": "image",
+        "key": "raygunfire_00012"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00013.png",
+        "type": "image",
+        "key": "raygunfire_00013"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00014.png",
+        "type": "image",
+        "key": "raygunfire_00014"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00015.png",
+        "type": "image",
+        "key": "raygunfire_00015"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00016.png",
+        "type": "image",
+        "key": "raygunfire_00016"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00017.png",
+        "type": "image",
+        "key": "raygunfire_00017"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00018.png",
+        "type": "image",
+        "key": "raygunfire_00018"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00019.png",
+        "type": "image",
+        "key": "raygunfire_00019"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00020.png",
+        "type": "image",
+        "key": "raygunfire_00020"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00021.png",
+        "type": "image",
+        "key": "raygunfire_00021"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00022.png",
+        "type": "image",
+        "key": "raygunfire_00022"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00023.png",
+        "type": "image",
+        "key": "raygunfire_00023"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00024.png",
+        "type": "image",
+        "key": "raygunfire_00024"
+      },
+      {
+        "url": "assets/weapons/ray-gun/raygunfire_00025.png",
+        "type": "image",
+        "key": "raygunfire_00025"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00000.png",
+        "type": "image",
+        "key": "rocketblast_00000"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00001.png",
+        "type": "image",
+        "key": "rocketblast_00001"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00002.png",
+        "type": "image",
+        "key": "rocketblast_00002"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00003.png",
+        "type": "image",
+        "key": "rocketblast_00003"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00004.png",
+        "type": "image",
+        "key": "rocketblast_00004"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00005.png",
+        "type": "image",
+        "key": "rocketblast_00005"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00006.png",
+        "type": "image",
+        "key": "rocketblast_00006"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00007.png",
+        "type": "image",
+        "key": "rocketblast_00007"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00008.png",
+        "type": "image",
+        "key": "rocketblast_00008"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00009.png",
+        "type": "image",
+        "key": "rocketblast_00009"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00010.png",
+        "type": "image",
+        "key": "rocketblast_00010"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00011.png",
+        "type": "image",
+        "key": "rocketblast_00011"
+      },
+      {
+        "url": "assets/weapons/rpg/rocketblast_00012.png",
+        "type": "image",
+        "key": "rocketblast_00012"
+      },
+      {
+        "url": "assets/weapons/rpg/RocketLauncher.png",
+        "type": "image",
+        "key": "rpg"
+      },
+      {
+        "url": "assets/weapons/rpg/RocketLauncher Ammo.png",
+        "type": "image",
+        "key": "rpg-bullet"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00000.png",
+        "type": "image",
+        "key": "shootingMG42_00000"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00001.png",
+        "type": "image",
+        "key": "shootingMG42_00001"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00002.png",
+        "type": "image",
+        "key": "shootingMG42_00002"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00003.png",
+        "type": "image",
+        "key": "shootingMG42_00003"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00004.png",
+        "type": "image",
+        "key": "shootingMG42_00004"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00005.png",
+        "type": "image",
+        "key": "shootingMG42_00005"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00006.png",
+        "type": "image",
+        "key": "shootingMG42_00006"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00007.png",
+        "type": "image",
+        "key": "shootingMG42_00007"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00008.png",
+        "type": "image",
+        "key": "shootingMG42_00008"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00009.png",
+        "type": "image",
+        "key": "shootingMG42_00009"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00010.png",
+        "type": "image",
+        "key": "shootingMG42_00010"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00011.png",
+        "type": "image",
+        "key": "shootingMG42_00011"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00012.png",
+        "type": "image",
+        "key": "shootingMG42_00012"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00013.png",
+        "type": "image",
+        "key": "shootingMG42_00013"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00014.png",
+        "type": "image",
+        "key": "shootingMG42_00014"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00015.png",
+        "type": "image",
+        "key": "shootingMG42_00015"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00016.png",
+        "type": "image",
+        "key": "shootingMG42_00016"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00017.png",
+        "type": "image",
+        "key": "shootingMG42_00017"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00018.png",
+        "type": "image",
+        "key": "shootingMG42_00018"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00019.png",
+        "type": "image",
+        "key": "shootingMG42_00019"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00020.png",
+        "type": "image",
+        "key": "shootingMG42_00020"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00021.png",
+        "type": "image",
+        "key": "shootingMG42_00021"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00022.png",
+        "type": "image",
+        "key": "shootingMG42_00022"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00023.png",
+        "type": "image",
+        "key": "shootingMG42_00023"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00024.png",
+        "type": "image",
+        "key": "shootingMG42_00024"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00025.png",
+        "type": "image",
+        "key": "shootingMG42_00025"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00026.png",
+        "type": "image",
+        "key": "shootingMG42_00026"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00027.png",
+        "type": "image",
+        "key": "shootingMG42_00027"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00028.png",
+        "type": "image",
+        "key": "shootingMG42_00028"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00029.png",
+        "type": "image",
+        "key": "shootingMG42_00029"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00030.png",
+        "type": "image",
+        "key": "shootingMG42_00030"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00031.png",
+        "type": "image",
+        "key": "shootingMG42_00031"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00032.png",
+        "type": "image",
+        "key": "shootingMG42_00032"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00033.png",
+        "type": "image",
+        "key": "shootingMG42_00033"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00034.png",
+        "type": "image",
+        "key": "shootingMG42_00034"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00035.png",
+        "type": "image",
+        "key": "shootingMG42_00035"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00036.png",
+        "type": "image",
+        "key": "shootingMG42_00036"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00037.png",
+        "type": "image",
+        "key": "shootingMG42_00037"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00038.png",
+        "type": "image",
+        "key": "shootingMG42_00038"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00039.png",
+        "type": "image",
+        "key": "shootingMG42_00039"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00040.png",
+        "type": "image",
+        "key": "shootingMG42_00040"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00041.png",
+        "type": "image",
+        "key": "shootingMG42_00041"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00042.png",
+        "type": "image",
+        "key": "shootingMG42_00042"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00043.png",
+        "type": "image",
+        "key": "shootingMG42_00043"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00044.png",
+        "type": "image",
+        "key": "shootingMG42_00044"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00045.png",
+        "type": "image",
+        "key": "shootingMG42_00045"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00046.png",
+        "type": "image",
+        "key": "shootingMG42_00046"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00047.png",
+        "type": "image",
+        "key": "shootingMG42_00047"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00048.png",
+        "type": "image",
+        "key": "shootingMG42_00048"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00049.png",
+        "type": "image",
+        "key": "shootingMG42_00049"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00050.png",
+        "type": "image",
+        "key": "shootingMG42_00050"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00051.png",
+        "type": "image",
+        "key": "shootingMG42_00051"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00052.png",
+        "type": "image",
+        "key": "shootingMG42_00052"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00053.png",
+        "type": "image",
+        "key": "shootingMG42_00053"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00054.png",
+        "type": "image",
+        "key": "shootingMG42_00054"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00055.png",
+        "type": "image",
+        "key": "shootingMG42_00055"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00056.png",
+        "type": "image",
+        "key": "shootingMG42_00056"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00057.png",
+        "type": "image",
+        "key": "shootingMG42_00057"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00058.png",
+        "type": "image",
+        "key": "shootingMG42_00058"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00059.png",
+        "type": "image",
+        "key": "shootingMG42_00059"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00060.png",
+        "type": "image",
+        "key": "shootingMG42_00060"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00061.png",
+        "type": "image",
+        "key": "shootingMG42_00061"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00062.png",
+        "type": "image",
+        "key": "shootingMG42_00062"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00063.png",
+        "type": "image",
+        "key": "shootingMG42_00063"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00064.png",
+        "type": "image",
+        "key": "shootingMG42_00064"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00065.png",
+        "type": "image",
+        "key": "shootingMG42_00065"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00066.png",
+        "type": "image",
+        "key": "shootingMG42_00066"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00067.png",
+        "type": "image",
+        "key": "shootingMG42_00067"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00068.png",
+        "type": "image",
+        "key": "shootingMG42_00068"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00069.png",
+        "type": "image",
+        "key": "shootingMG42_00069"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00070.png",
+        "type": "image",
+        "key": "shootingMG42_00070"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00071.png",
+        "type": "image",
+        "key": "shootingMG42_00071"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00072.png",
+        "type": "image",
+        "key": "shootingMG42_00072"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00073.png",
+        "type": "image",
+        "key": "shootingMG42_00073"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00074.png",
+        "type": "image",
+        "key": "shootingMG42_00074"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00075.png",
+        "type": "image",
+        "key": "shootingMG42_00075"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00076.png",
+        "type": "image",
+        "key": "shootingMG42_00076"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00077.png",
+        "type": "image",
+        "key": "shootingMG42_00077"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00078.png",
+        "type": "image",
+        "key": "shootingMG42_00078"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00079.png",
+        "type": "image",
+        "key": "shootingMG42_00079"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00080.png",
+        "type": "image",
+        "key": "shootingMG42_00080"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00081.png",
+        "type": "image",
+        "key": "shootingMG42_00081"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00082.png",
+        "type": "image",
+        "key": "shootingMG42_00082"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00083.png",
+        "type": "image",
+        "key": "shootingMG42_00083"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00084.png",
+        "type": "image",
+        "key": "shootingMG42_00084"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00085.png",
+        "type": "image",
+        "key": "shootingMG42_00085"
+      },
+      {
+        "url": "assets/weapons/mg/shootingMG42_00086.png",
+        "type": "image",
+        "key": "shootingMG42_00086"
+      },
+      {
+        "url": "assets/weapons/sticky-bomb/sticky-bomb.png",
+        "type": "image",
+        "key": "sticky-bomb"
+      },
+      {
+        "url": "assets/weapons/tommy/base-tommy.png",
+        "type": "image",
+        "key": "tommy"
+      },
+      {
+        "url": "assets/weapons/tommy/tommy-bullet.png",
+        "type": "image",
+        "key": "tommy-bullet"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00000.png",
+        "type": "image",
+        "key": "tommygunfiring_00000"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00001.png",
+        "type": "image",
+        "key": "tommygunfiring_00001"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00002.png",
+        "type": "image",
+        "key": "tommygunfiring_00002"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00003.png",
+        "type": "image",
+        "key": "tommygunfiring_00003"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00004.png",
+        "type": "image",
+        "key": "tommygunfiring_00004"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00005.png",
+        "type": "image",
+        "key": "tommygunfiring_00005"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00006.png",
+        "type": "image",
+        "key": "tommygunfiring_00006"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00007.png",
+        "type": "image",
+        "key": "tommygunfiring_00007"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00008.png",
+        "type": "image",
+        "key": "tommygunfiring_00008"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00009.png",
+        "type": "image",
+        "key": "tommygunfiring_00009"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00010.png",
+        "type": "image",
+        "key": "tommygunfiring_00010"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00011.png",
+        "type": "image",
+        "key": "tommygunfiring_00011"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00012.png",
+        "type": "image",
+        "key": "tommygunfiring_00012"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00013.png",
+        "type": "image",
+        "key": "tommygunfiring_00013"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00014.png",
+        "type": "image",
+        "key": "tommygunfiring_00014"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00015.png",
+        "type": "image",
+        "key": "tommygunfiring_00015"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00016.png",
+        "type": "image",
+        "key": "tommygunfiring_00016"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00017.png",
+        "type": "image",
+        "key": "tommygunfiring_00017"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00018.png",
+        "type": "image",
+        "key": "tommygunfiring_00018"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00019.png",
+        "type": "image",
+        "key": "tommygunfiring_00019"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00020.png",
+        "type": "image",
+        "key": "tommygunfiring_00020"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00021.png",
+        "type": "image",
+        "key": "tommygunfiring_00021"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00022.png",
+        "type": "image",
+        "key": "tommygunfiring_00022"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00023.png",
+        "type": "image",
+        "key": "tommygunfiring_00023"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00024.png",
+        "type": "image",
+        "key": "tommygunfiring_00024"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00025.png",
+        "type": "image",
+        "key": "tommygunfiring_00025"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00026.png",
+        "type": "image",
+        "key": "tommygunfiring_00026"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00027.png",
+        "type": "image",
+        "key": "tommygunfiring_00027"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00028.png",
+        "type": "image",
+        "key": "tommygunfiring_00028"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00029.png",
+        "type": "image",
+        "key": "tommygunfiring_00029"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00030.png",
+        "type": "image",
+        "key": "tommygunfiring_00030"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00031.png",
+        "type": "image",
+        "key": "tommygunfiring_00031"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00032.png",
+        "type": "image",
+        "key": "tommygunfiring_00032"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00033.png",
+        "type": "image",
+        "key": "tommygunfiring_00033"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00034.png",
+        "type": "image",
+        "key": "tommygunfiring_00034"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00035.png",
+        "type": "image",
+        "key": "tommygunfiring_00035"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00036.png",
+        "type": "image",
+        "key": "tommygunfiring_00036"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00037.png",
+        "type": "image",
+        "key": "tommygunfiring_00037"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00038.png",
+        "type": "image",
+        "key": "tommygunfiring_00038"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00039.png",
+        "type": "image",
+        "key": "tommygunfiring_00039"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00040.png",
+        "type": "image",
+        "key": "tommygunfiring_00040"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00041.png",
+        "type": "image",
+        "key": "tommygunfiring_00041"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00042.png",
+        "type": "image",
+        "key": "tommygunfiring_00042"
+      },
+      {
+        "url": "assets/weapons/tommy/tommygunfiring_00043.png",
+        "type": "image",
+        "key": "tommygunfiring_00043"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }

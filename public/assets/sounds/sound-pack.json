@@ -1,0 +1,153 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": [
+                    "assets/sounds/Buddy_death.mp3"
+                ],
+                "type": "audio",
+                "key": "death"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_grunt.mp3"
+                ],
+                "type": "audio",
+                "key": "grunt"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_journal.mp3"
+                ],
+                "type": "audio",
+                "key": "journal"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_menuclick.mp3"
+                ],
+                "type": "audio",
+                "key": "click"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_menuDeny.mp3"
+                ],
+                "type": "audio",
+                "key": "click-deny"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_ouch.mp3"
+                ],
+                "type": "audio",
+                "key": "ouch"
+            },
+            {
+                "url": [
+                    "assets/sounds/Buddy_thump.mp3"
+                ],
+                "type": "audio",
+                "key": "thump"
+            },
+            {
+                "url": [
+                    "assets/sounds/deagleCock.wav"
+                ],
+                "type": "audio",
+                "key": "deagle-cock"
+            },
+            {
+                "url": [
+                    "assets/sounds/deagleFire.wav"
+                ],
+                "type": "audio",
+                "key": "deagle-fire"
+            },
+            {
+                "url": [
+                    "assets/sounds/FireNade_fire.mp3"
+                ],
+                "type": "audio",
+                "key": "fire-bomb-fire"
+            },
+            {
+                "url": [
+                    "assets/sounds/FireNade_impact.mp3"
+                ],
+                "type": "audio",
+                "key": "fire-bomb-impact"
+            },
+            {
+                "url": [
+                    "assets/sounds/misc_explode.mp3"
+                ],
+                "type": "audio",
+                "key": "explode"
+            },
+            {
+                "url": [
+                    "assets/sounds/Railgun_explode.mp3"
+                ],
+                "type": "audio",
+                "key": "railgun-explode"
+            },
+            {
+                "url": [
+                    "assets/sounds/Railgun_hold.mp3"
+                ],
+                "type": "audio",
+                "key": "railgun-charge"
+            },
+            {
+                "url": [
+                    "assets/sounds/Railgun_powerup.mp3"
+                ],
+                "type": "audio",
+                "key": "railgun-power"
+            },
+            {
+                "url": [
+                    "assets/sounds/Railgun_shot.mp3"
+                ],
+                "type": "audio",
+                "key": "railgun-fire"
+            },
+            {
+                "url": [
+                    "assets/sounds/Railgun_shot2.mp3"
+                ],
+                "type": "audio",
+                "key": "railgun-fire2"
+            },
+            {
+                "url": [
+                    "assets/sounds/RayGun_hit.mp3"
+                ],
+                "type": "audio",
+                "key": "raygun-impact"
+            },
+            {
+                "url": [
+                    "assets/sounds/RayGun_shot.mp3"
+                ],
+                "type": "audio",
+                "key": "raygun-fire"
+            },
+            {
+                "url": [
+                    "assets/sounds/RPG_shot.mp3"
+                ],
+                "type": "audio",
+                "key": "rpg-fire"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

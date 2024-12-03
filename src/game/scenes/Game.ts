@@ -1,107 +1,71 @@
-/* START OF COMPILED CODE */
-
-/* START-USER-IMPORTS */
-import { IPair } from "matter";
 import { EventBus } from "../EventBus";
 import Phaser, { Scene } from "phaser";
-/* END-USER-IMPORTS */
-
-const GAME_WIDTH = 1280;
-const GAME_HEIGHT = 720;
-
-const JOINT_LENGTH = 10;
-const JOINT_STIFFNESS = 1;
-const CHARACTER_HEIGHT = 100;
-const CHARACTER_WIDTH = 100;
-const SLOP = 10;
-
-// TODO: Make the gun fire when mouseDown and stop when mouseUp, also only show the weapon when it's selected
-// TODO: Make a box arround the button areas so that the weapon mechanics dont fire in that area and we can click the buttons
+import { GameWeaponKey, GameSoundKey, WeaponConfig } from "../types";
+import {
+  GAME_WIDTH,
+  GAME_HEIGHT,
+  CHARACTER_WIDTH,
+  CHARACTER_HEIGHT,
+  JOINT_LENGTH,
+} from "../config";
+import { Character } from "../classes/Character";
 
 export default class Game extends Phaser.Scene {
-  private moveCam: boolean;
-  private cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
-  private score = 0;
-  private scoreText!: Phaser.GameObjects.Text;
-  private fpsText!: Phaser.GameObjects.Text;
-  private clickCountText!: Phaser.GameObjects.Text;
-  private clickButton!: TextButton;
-  private clickCount = 0;
-  private fistButton!: TextButton;
-  private knivesButton!: TextButton;
-  private desertEagleButton!: TextButton;
-  private tommyGunButton!: TextButton;
-  private rocketLauncherButton!: TextButton;
-  private pointerConstraint!: Phaser.Physics.Matter.PointerConstraint;
+  private character!: Character;
 
-  private starBody!: MatterJS.BodyType;
+  private fpsText!: Phaser.GameObjects.Text;
+
+  private pointerConstraint!: Phaser.Physics.Matter.PointerConstraint;
   private head!: Phaser.Physics.Matter.Image;
   private body!: Phaser.Physics.Matter.Image;
   private leftArm!: Phaser.Physics.Matter.Image;
   private rightArm!: Phaser.Physics.Matter.Image;
   private leftLeg!: Phaser.Physics.Matter.Image;
   private rightLeg!: Phaser.Physics.Matter.Image;
-  private headText!: Phaser.GameObjects.Text;
   private bloodSplatter!: Phaser.GameObjects.Sprite;
   private explosion!: Phaser.GameObjects.Sprite;
-  private recoveryTimer?: Phaser.Time.TimerEvent;
-
-  private deg!: Phaser.GameObjects.Image;
-  private tommyGun!: Phaser.GameObjects.Image;
-  private weaponTip!: Phaser.GameObjects.Arc;
-
   private currentTierText!: Phaser.GameObjects.Text;
-
   private currentWeapon?: Phaser.GameObjects.Sprite;
   private pointerOver: boolean = false;
-
   private barrelPoint!: Phaser.Math.Vector2;
-
-  // private deaglePack!: Phaser.Loader.FileTypes.JSONFile;
-
-  private weaponText!: Phaser.GameObjects.Text;
-  private killCountText!: Phaser.GameObjects.Text;
-
-  private weapon?:
-    | "fist"
-    | "knives"
-    | "desert-eagle"
-    | "tommy-gun"
-    | "rocket-launcher";
-
-  private bullets: MatterJS.BodyType[] = [];
-
   private health = 100;
   private killCount = 0;
+  private killCountText!: Phaser.GameObjects.Text;
 
-  private weaponSelectionArea!: Phaser.GameObjects.Rectangle;
+  // Weapons
   private showWeapon = false;
+  private weapon?: GameWeaponKey;
+  private weaponText!: Phaser.GameObjects.Text;
+  private weaponButtons: Map<string, TextButton> = new Map();
+  private weaponSelectionArea!: Phaser.GameObjects.Rectangle;
+
   private firingTimer?: Phaser.Time.TimerEvent;
-
   private readonly characterTiers: string[] = ["paper", "sol", "mil", "musk"];
-
   private debugButton!: TextButton;
-  private basePaper!: Phaser.GameObjects.Image;
-  private freeTier!: Phaser.GameObjects.Image;
-  private backButton!: Phaser.GameObjects.Image;
-
   private classSelection!: ClassSelection;
+  private soundManager!: SoundManager;
 
   constructor() {
     super("MainGame");
   }
 
   init() {
-    this.cursors = this.input?.keyboard?.createCursorKeys()!;
-    // this.data.set("tier", 0);
-  }
-
-  loadAssets() {
-    // this.deaglePack = this.cache.json.get("deaglePack");
+    this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
+    this.soundManager = new SoundManager(this);
+    this.classSelection = new ClassSelection(this, 0, 0, {
+      onTierChange: (tier) => {
+        this.changeTier();
+      },
+    });
     this.add
       .image(1280 / 2, 720 / 2, "bg1")
       .setDisplaySize(1280, 720)
       .setDepth(-2);
+    this.createHealthBar();
+    this.renderButtons();
+    // this.renderCharacter();
+    this.createCharacter();
+    this.createWeaponSelectionArea();
   }
 
   createHealthBar() {
@@ -128,7 +92,7 @@ export default class Game extends Phaser.Scene {
     healthText.setOrigin(0.5);
     healthText.setScrollFactor(0);
 
-    this.killCountText = this.add.text(GAME_WIDTH / 2 + 310, 30, `Kills: 0`, {
+    this.killCountText = this.add.text(1150, 60, `Kills: 0`, {
       fontSize: "16px",
       color: "#ffffff",
     });
@@ -190,7 +154,7 @@ export default class Game extends Phaser.Scene {
       .image(
         750,
         200,
-        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Larm`,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rarm`,
         undefined,
         {
           shape: characterShapes.larm,
@@ -206,7 +170,7 @@ export default class Game extends Phaser.Scene {
       .image(
         350,
         200,
-        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rarm`,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Larm`,
         undefined,
         {
           shape: characterShapes.rarm,
@@ -222,7 +186,7 @@ export default class Game extends Phaser.Scene {
       .image(
         350,
         500,
-        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rleg`,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Lleg`,
         undefined,
         {
           shape: characterShapes.rleg,
@@ -237,7 +201,7 @@ export default class Game extends Phaser.Scene {
       .image(
         350,
         500,
-        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Lleg`,
+        `${this.characterTiers[this.data.get("tier")] ?? "paper"}-Rleg`,
         undefined,
         {
           shape: characterShapes.lleg,
@@ -313,24 +277,47 @@ export default class Game extends Phaser.Scene {
     );
   }
 
+  private createCharacter() {
+    this.character = new Character({
+      scene: this,
+      x: 512,
+      y: 200,
+      tier: this.characterTiers[this.data.get("tier")] ?? "paper",
+    });
+
+    // Listen for health changes from the character
+    EventBus.on("character-health-changed", (health: number) => {
+      this.health = health;
+      this.events.emit("health-changed");
+
+      if (this.health <= 0) {
+        this.killCount++;
+        this.killCountText.setText(`Kills: ${this.killCount}`);
+        this.health = 100;
+        this.events.emit("health-changed");
+      }
+    });
+  }
+
   renderButtons() {
     this.debugButton = new TextButton(
       this,
-      100,
-      600,
-      "Debug",
+      10,
+      20,
+      "Journal",
       {
-        color: "#0f0",
-        backgroundColor: "blue",
+        color: "#ffffff",
+        backgroundColor: "black",
         padding: { left: 10, right: 10, top: 10, bottom: 10 },
         shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
       },
       () => {
+        this.soundManager.play("click");
         // Toggle debug state
         this.data.set("debug", !this.data.get("debug"));
         // Update button text to show current state
         this.debugButton.setText(
-          this.data.get("debug") ? "Hide Debug" : "Debug"
+          this.data.get("debug") ? "Hide Journal" : "Journal"
         );
 
         if (this.data.get("debug")) {
@@ -343,97 +330,51 @@ export default class Game extends Phaser.Scene {
 
     this.add.existing(this.debugButton);
 
-    this.fistButton = new TextButton(
-      this,
-      10,
-      60,
-      "Fists",
-      {
-        color: "#ffffff",
-        backgroundColor: "black",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {
-        this.setWeapon(undefined);
-      }
-    );
+    const weapons: Array<{
+      key: GameWeaponKey | undefined;
+      label: string;
+      y: number;
+    }> = [
+      { key: undefined, label: "Fists", y: 60 },
+      { key: "knives", label: "Knives", y: 100 },
+      { key: "desert-eagle", label: "Deagle", y: 140 },
+      { key: "grenade", label: "Grenade", y: 180 },
+      { key: "fire-bomb", label: "Fire Bomb", y: 220 },
+      { key: "sticky-bomb", label: "Sticky Bomb", y: 260 },
+      { key: "chainsaw", label: "Chainsaw", y: 300 },
+      { key: "lightsaber", label: "Lightsaber", y: 340 },
+      { key: "tommy-gun", label: "Tommy Gun", y: 380 },
+      { key: "mg", label: "Machine Gun", y: 420 },
+      { key: "railgun", label: "Rail Gun", y: 460 },
+      { key: "raygun", label: "Ray Gun", y: 500 },
+      { key: "rpg", label: "Rocket Launcher", y: 540 },
+    ];
 
-    this.knivesButton = new TextButton(
-      this,
-      10,
-      220,
-      "Knives",
-      {
-        color: "#0f0",
-        backgroundColor: "blue",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {
-        this.setWeapon("knives");
-      }
-    );
+    weapons.forEach(({ key, label, y }) => {
+      this.weaponButtons.set(
+        key || "fist",
+        new TextButton(
+          this,
+          10,
+          y,
+          label,
+          {
+            color: "#ffffff",
+            backgroundColor: "black",
+            padding: { left: 10, right: 10, top: 10, bottom: 10 },
+            shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
+          },
+          () => {
+            this.soundManager.play("click");
+            this.setWeapon(key);
+          }
+        )
+      );
+    });
 
-    this.desertEagleButton = new TextButton(
-      this,
-      10,
-      100,
-      "Deagle",
-      {
-        color: "#0f0",
-        backgroundColor: "blue",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {
-        console.log("desert-eagle");
-        this.setWeapon("desert-eagle");
-      }
-    );
-
-    this.tommyGunButton = new TextButton(
-      this,
-      10,
-      140,
-      "Tommy",
-      {
-        color: "#ffffff",
-        backgroundColor: "black",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {
-        console.log("tommy-gun");
-        this.setWeapon("tommy-gun");
-      }
-    );
-
-    this.rocketLauncherButton = new TextButton(
-      this,
-      10,
-      180,
-      "Rocket Launcher",
-      {
-        color: "#0f0",
-        backgroundColor: "blue",
-        padding: { left: 10, right: 10, top: 10, bottom: 10 },
-        shadow: { color: "#000", offsetX: 1, offsetY: 1, blur: 1 },
-      },
-      () => {
-        this.setWeapon("rocket-launcher");
-      }
-    );
-
-    this.add.existing(this.fistButton);
-    this.add.existing(this.knivesButton);
-    this.add.existing(this.desertEagleButton);
-    this.add.existing(this.tommyGunButton);
-    this.add.existing(this.rocketLauncherButton);
-  }
-
-  renderClassSelection() {
-    this.classSelection = new ClassSelection(this, 0, 250);
+    this.weaponButtons.forEach((button) => {
+      this.add.existing(button);
+    });
   }
 
   createWeaponSelectionArea() {
@@ -463,15 +404,7 @@ export default class Game extends Phaser.Scene {
       });
   }
 
-  setWeapon(
-    weapon:
-      | "fist"
-      | "knives"
-      | "desert-eagle"
-      | "tommy-gun"
-      | "rocket-launcher"
-      | undefined
-  ) {
+  setWeapon(weapon: GameWeaponKey | undefined) {
     // Remove current weapon from display
     if (this.currentWeapon) {
       this.currentWeapon.removeFromDisplayList();
@@ -484,58 +417,66 @@ export default class Game extends Phaser.Scene {
     }
 
     // Set and show the appropriate weapon
-    switch (weapon) {
-      case "desert-eagle":
-        this.weapon = "desert-eagle";
-        this.currentWeapon = this.add
-          .sprite(1024 / 2, 768 / 2, "deaglefiring_00018")
-          .setDisplaySize(200, 100)
-          .removeFromDisplayList()
-          .setName("deagle");
-        break;
-      case "tommy-gun":
-        this.weapon = "tommy-gun";
-        this.currentWeapon = this.add
-          .sprite(1024 / 2, 768 / 2, "tommy")
-          .setDisplaySize(300, 150)
-          .removeFromDisplayList()
-          .setName("tommy");
-        break;
-      case "knives":
-        this.weapon = "knives";
-        this.currentWeapon = this.add
-          .sprite(1024 / 2, 768 / 2, "knife")
-          .setDisplaySize(300, 150)
-          .removeFromDisplayList()
-          .setName("knives");
-        break;
-      case "rocket-launcher":
-        this.weapon = "rocket-launcher";
-        this.currentWeapon = this.add
-          .sprite(1024 / 2, 768 / 2, "rocket-launcher")
-          .setDisplaySize(300, 150)
-          .removeFromDisplayList()
-          .setName("rocket-launcher");
-        break;
-      default:
-        this.currentWeapon = undefined;
-        return;
+    if (!weapon) {
+      this.currentWeapon = undefined;
+      return;
     }
 
-    // if (!this.weaponTip && this.currentWeapon) {
-    //   this.weaponTip = this.add.circle(
-    //     this.currentWeapon.x,
-    //     this.currentWeapon.y,
-    //     4,
-    //     0xff0000
-    //   );
-    // }
+    const weaponConfig: Record<GameWeaponKey, WeaponConfig> = {
+      "desert-eagle": {
+        texture: "deaglefiring_00018",
+        width: 200,
+        height: 100,
+        name: "deagle",
+      },
+      "tommy-gun": { texture: "tommy", width: 300, height: 150, name: "tommy" },
+      knives: { texture: "knife", width: 300, height: 150, name: "knives" },
+      rpg: { texture: "rpg", width: 300, height: 150, name: "rpg" },
+      grenade: { texture: "grenade", width: 100, height: 100, name: "grenade" },
+      "fire-bomb": {
+        texture: "fire-bomb",
+        width: 120,
+        height: 70,
+        name: "fire-bomb",
+      },
+      "sticky-bomb": {
+        texture: "sticky-bomb",
+        width: 100,
+        height: 100,
+        name: "sticky-bomb",
+      },
+      chainsaw: {
+        texture: "chainsaw",
+        width: 300,
+        height: 150,
+        name: "chainsaw",
+      },
+      lightsaber: {
+        texture: "lightsaber",
+        width: 300,
+        height: 150,
+        name: "lightsaber",
+      },
+      mg: { texture: "mg", width: 300, height: 150, name: "mg" },
+      railgun: { texture: "railgun", width: 300, height: 150, name: "railgun" },
+      raygun: { texture: "raygun", width: 300, height: 150, name: "raygun" },
+    };
+
+    const config = weapon ? weaponConfig[weapon] : undefined;
+    if (config) {
+      this.weapon = weapon;
+      this.currentWeapon = this.add
+        .sprite(1024 / 2, 768 / 2, config.texture)
+        .setDisplaySize(config.width, config.height)
+        .removeFromDisplayList()
+        .setName(config.name);
+    }
   }
 
-  spawnProjectile(
-    startPoint: Phaser.Math.Vector2,
-    targetPoint: Phaser.Math.Vector2
-  ): void {
+  spawnProjectile(startPoint: Phaser.Math.Vector2): void {
+    const characterPos = this.character.getPosition();
+    const targetPoint = new Phaser.Math.Vector2(characterPos.x, characterPos.y);
+
     // Calculate angle between start and target points
     const angle = Phaser.Math.Angle.Between(
       startPoint.x,
@@ -560,7 +501,7 @@ export default class Game extends Phaser.Scene {
           .image(this.barrelPoint.x, this.barrelPoint.y, "tommy-bullet")
           .setScale(0.04, 0.08);
         break;
-      case "rocket-launcher":
+      case "rpg":
         speed = 50;
         projectile = this.add
           .image(this.barrelPoint.x, this.barrelPoint.y, "rocket-launcher-ammo")
@@ -588,16 +529,41 @@ export default class Game extends Phaser.Scene {
         radius: 10,
       },
       onCollideCallback: () => {
-        if (this.weapon === "rocket-launcher") {
-          this.explosion.play("firstexplosion");
+        if (this.weapon === "rpg") {
+          this.soundManager.play("explode");
+          // this.explosion.play("explosion");
         }
 
-        this.bloodSplatter.play("b1blood");
-        this.bloodSplatter.play("b2bloodgush");
-        this.bloodSplatter.play("b3bloodgut");
-        this.bloodSplatter.play("b4darkerblood");
+        // Calculate damage based on weapon type
+        let damage = 0.05; // default damage
+        switch (this.weapon) {
+          case "rpg":
+            damage = 0.2;
+            break;
+          case "desert-eagle":
+            damage = 0.1;
+            break;
+          case "tommy-gun":
+            damage = 0.01;
+            break;
+          // Add other weapon damage values as needed
+        }
 
+        const isExplosion = this.weapon === "rpg";
+        EventBus.emit("projectile-hit", { damage, isExplosion });
         matterBullet.destroy();
+
+        // Effects
+        // this.bloodSplatter.play("b1");
+        // this.bloodSplatter.play("b2");
+        // this.bloodSplatter.play("b3");
+        // this.bloodSplatter.play("b4");
+
+        // Sounds
+        // this.soundManager.play("grunt");
+        // this.soundManager.play("thump");
+        // this.soundManager.play("ouch");
+
         // Reduce health on impact
         this.health -= 0.5;
         if (this.health < 0) this.health = 0;
@@ -614,18 +580,19 @@ export default class Game extends Phaser.Scene {
   }
 
   fireWeapon() {
+    const characterPos = this.character.getPosition();
     // Don't fire if pointer is over weapon selection area
     if (this.pointerOver) {
       return;
     }
 
-    // Don't fire if no weapon equipped or weapon not visible
-    if (!this.currentWeapon || !this.currentWeapon.getDisplayList()) {
+    // Don't fire if using fists
+    if (this.weapon === undefined) {
       return;
     }
 
-    // Don't fire if using fists
-    if (this.weapon === "fist") {
+    // Don't fire if no weapon equipped or weapon not visible
+    if (!this.currentWeapon || !this.currentWeapon.getDisplayList()) {
       return;
     }
 
@@ -635,8 +602,8 @@ export default class Game extends Phaser.Scene {
 
     switch (this.weapon) {
       case "desert-eagle":
-        this.sound.play("deagleCock");
-        this.sound.play("deagleFire");
+        this.soundManager.play("deagle-cock");
+        this.soundManager.play("deagle-fire");
         this.currentWeapon
           .play("deaglefiring")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
@@ -644,15 +611,15 @@ export default class Game extends Phaser.Scene {
           });
         break;
       case "tommy-gun":
-        this.sound.play("deagleFire");
+        this.soundManager.play("deagle-fire");
         this.currentWeapon
           .play("tommygunfiring")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
             this.events.emit("tommy-fired");
           });
         break;
-      case "rocket-launcher":
-        this.sound.play("deagleFire");
+      case "rpg":
+        this.soundManager.play("rpg-fire");
         this.currentWeapon
           .play("rocketblast")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
@@ -672,10 +639,7 @@ export default class Game extends Phaser.Scene {
         return;
     }
 
-    this.spawnProjectile(
-      new Phaser.Math.Vector2(spawnX, this.currentWeapon.y),
-      new Phaser.Math.Vector2(this.body.x, this.body.y)
-    );
+    this.spawnProjectile(new Phaser.Math.Vector2(spawnX, this.currentWeapon.y));
   }
 
   showAndFireWeapon() {
@@ -713,7 +677,7 @@ export default class Game extends Phaser.Scene {
         fireEvent = "deagle-fired";
         bulletsPerBurst = 1;
         break;
-      case "rocket-launcher":
+      case "rpg":
         fireRate = 1000;
         fireEvent = "rocket-fired";
         bulletsPerBurst = 1;
@@ -794,18 +758,22 @@ export default class Game extends Phaser.Scene {
     }
   }
 
+  changeTier() {
+    // this.head.setTexture(`${this.data.get("tier")}-Head`);
+    // this.body.setTexture(`${this.data.get("tier")}-Body`);
+    // this.leftArm.setTexture(`${this.data.get("tier")}-Rarm`);
+    // this.rightArm.setTexture(`${this.data.get("tier")}-Larm`);
+    // this.leftLeg.setTexture(`${this.data.get("tier")}-Rleg`);
+    // this.rightLeg.setTexture(`${this.data.get("tier")}-Lleg`);
+    this.character.changeTier(this.data.get("tier"));
+  }
+
   create() {
-    this.init();
-    this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
+    // this.init();
+
     // const foo = this.matter.add.mouseSpring({ length: 0.1, stiffness: 1 });
     this.matter.world.autoUpdate = true;
 
-    this.renderClassSelection();
-    this.renderButtons();
-    this.loadAssets();
-    this.renderCharacter();
-    this.createHealthBar();
-    this.createWeaponSelectionArea();
     EventBus.emit("current-scene-ready", this);
 
     this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
@@ -820,9 +788,19 @@ export default class Game extends Phaser.Scene {
     this.matter.add.pointerConstraint(this.pointerConstraint.constraint);
 
     this.weaponText = this.add.text(
-      10,
+      850,
       30,
       `Weapon: ${this.weapon ?? "none"}`,
+      {
+        fontSize: "16px",
+        color: "#ffffff",
+      }
+    );
+
+    this.currentTierText = this.add.text(
+      1150,
+      90,
+      `Tier: ${this.data.get("tier") ?? "none"}`,
       {
         fontSize: "16px",
         color: "#ffffff",
@@ -835,37 +813,6 @@ export default class Game extends Phaser.Scene {
     this.input.on("pointerup", () => {
       this.hideWeapon();
     });
-
-    // const deg = this.add
-    //   .sprite(1024 / 2, 768 / 2, "deg")
-    //   .setDisplaySize(400, 200);
-
-    // deg.play("fireDeagle");
-
-    // this.input.on("pointerdown", function () {
-    //   if (deg.anims.isPlaying) {
-    //     deg.stop();
-    //   } else {
-    //     deg.play("fireDeagle");
-    //   }
-    // });
-
-    // this.tommyGun = this.add
-    //   .image(1024 / 2, 768 / 2, "tommy", undefined)
-    //   .setDisplaySize(200, 100)
-    //   .setInteractive()
-    //   .removeFromDisplayList();
-
-    // this.weaponTip = this.add.circle(this.deg.x, this.deg.y, 4, 0xff0000);
-    this.currentTierText = this.add.text(
-      500,
-      60,
-      `Tier: ${this.data.get("tier") ?? "none"}`,
-      {
-        fontSize: "16px",
-        color: "#ffffff",
-      }
-    );
   }
 
   updateWeaponPosition() {
@@ -873,18 +820,21 @@ export default class Game extends Phaser.Scene {
       return;
     }
 
+    const characterPos = this.character.getPosition();
+
     const pointer = this.input.activePointer;
     const worldPoint = pointer.positionToCamera(
       this.cameras.main
     ) as Phaser.Math.Vector2;
+
     this.currentWeapon.setPosition(worldPoint.x, worldPoint.y);
 
     // Calculate angle between weapon and body
     const angle = Phaser.Math.Angle.Between(
       this.currentWeapon.x,
       this.currentWeapon.y,
-      this.body.x,
-      this.body.y
+      characterPos.x,
+      characterPos.y
     );
 
     // Add 180 degrees to point barrel at body
@@ -951,9 +901,10 @@ export default class Game extends Phaser.Scene {
     const cam = this.cameras.main;
     cam.centerToBounds();
     this.displayFps(delta);
-    this.ensureCharacterBounds();
+    this.character.update();
+    // this.ensureCharacterBounds();
     this.updateWeaponPosition();
-    this.updateEffectPosition();
+    // this.updateEffectPosition();
     // Hide weapon if pointer is in weapon selection area and weapon is equipped
     this.weaponSelectionAreaPointerOver();
 
@@ -1026,14 +977,318 @@ export default class Game extends Phaser.Scene {
     const fps = Math.round(1000 / delta);
     if (!this.fpsText) {
       this.fpsText = this.add
-        .text(1100, 30, `FPS: ${fps}`, {
-          fontSize: "18px",
+        .text(1150, 30, `FPS: ${fps}`, {
           color: "#fff",
         })
         .setScrollFactor(0);
     } else {
       this.fpsText.setText(`FPS: ${fps}`);
     }
+  }
+
+  // Clean up in scene shutdown
+  shutdown() {
+    EventBus.off("character-health-changed"); // Remove event listener
+    this.character.destroy();
+  }
+}
+
+export class SoundManager {
+  private scene: Phaser.Scene;
+  private sounds: Map<string, Phaser.Sound.BaseSound>;
+
+  constructor(scene: Phaser.Scene) {
+    this.scene = scene;
+    this.sounds = new Map();
+
+    // Initialize common game sounds
+    this.initializeSounds();
+  }
+
+  private initializeSounds(): void {
+    // Weapon sounds
+    // Weapon sounds
+    this.sounds.set(
+      "deagle-cock",
+      this.scene.sound.add("deagle-cock", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "deagle-fire",
+      this.scene.sound.add("deagle-fire", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "rpg-fire",
+      this.scene.sound.add("rpg-fire", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "railgun-fire",
+      this.scene.sound.add("railgun-fire", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "railgun-fire2",
+      this.scene.sound.add("railgun-fire2", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "raygun-fire",
+      this.scene.sound.add("raygun-fire", { volume: 0.5 })
+    );
+
+    // Impact sounds
+    this.sounds.set(
+      "explode",
+      this.scene.sound.add("explode", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "railgun-explode",
+      this.scene.sound.add("railgun-explode", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "raygun-impact",
+      this.scene.sound.add("raygun-impact", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "fire-bomb-impact",
+      this.scene.sound.add("fire-bomb-impact", { volume: 0.5 })
+    );
+
+    // Character sounds
+    this.sounds.set("death", this.scene.sound.add("death", { volume: 0.5 }));
+    this.sounds.set("grunt", this.scene.sound.add("grunt", { volume: 0.5 }));
+    this.sounds.set("ouch", this.scene.sound.add("ouch", { volume: 0.5 }));
+    this.sounds.set("thump", this.scene.sound.add("thump", { volume: 0.5 }));
+
+    // UI sounds
+    this.sounds.set("click", this.scene.sound.add("click", { volume: 0.5 }));
+    this.sounds.set(
+      "click-deny",
+      this.scene.sound.add("click-deny", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "journal",
+      this.scene.sound.add("journal", { volume: 0.5 })
+    );
+
+    // Special weapon sounds
+    this.sounds.set(
+      "railgun-charge",
+      this.scene.sound.add("railgun-charge", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "railgun-power",
+      this.scene.sound.add("railgun-power", { volume: 0.5 })
+    );
+    this.sounds.set(
+      "fire-bomb-fire",
+      this.scene.sound.add("fire-bomb-fire", { volume: 0.5 })
+    );
+  }
+  public play(soundKey: GameSoundKey): void {
+    const sound = this.sounds.get(soundKey);
+    if (sound) {
+      sound.play();
+    } else {
+      console.warn(`Sound ${soundKey} not found`);
+    }
+  }
+
+  public stop(soundKey: GameSoundKey): void {
+    const sound = this.sounds.get(soundKey);
+    if (sound) {
+      sound.stop();
+    }
+  }
+
+  public stopAll(): void {
+    this.sounds.forEach((sound) => sound.stop());
+  }
+}
+
+export class ClassSelection extends Phaser.GameObjects.Container {
+  constructor(
+    scene: Phaser.Scene,
+    x: number,
+    y: number,
+    callbacks?: {
+      onTierChange?: (tier: number) => void;
+      onClassChange?: (direction: "left" | "right") => void;
+    }
+  ) {
+    super(scene, x, y);
+
+    this.callbacks = callbacks;
+
+    this.basePaper = new Phaser.GameObjects.Image(scene, 150, 250, "Page")
+      .setDisplaySize(250, 340)
+      .removeFromDisplayList();
+
+    this.tier = new Phaser.GameObjects.Image(scene, 150, 250, "FREETier")
+      .setDepth(1)
+      .setScale(0.33)
+      .removeFromDisplayList()
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.setHoverState("tier"))
+      .on("pointerout", () => this.setRestState("tier"))
+      .on("pointerup", () => {
+        // this.setRestState("tier");
+        this.onButtonClick("tier");
+      });
+
+    this.leftButton = new Phaser.GameObjects.Image(scene, 50, 225, "advance")
+      .setDisplaySize(31, 340)
+      .setFlipX(true)
+      .setDepth(1)
+      .removeFromDisplayList()
+      .setInteractive({ useHandCursor: true })
+      // .on("pointerover", () => this.setHoverState("left"))
+      // .on("pointerout", () => this.setRestState("left"))
+      // .on("pointerdown", () => this.enterBackButtonActiveState())
+      .on("pointerup", () => {
+        // this.enterBackButtonHoverState();
+        this.onButtonClick("left");
+      });
+
+    this.rightButton = new Phaser.GameObjects.Image(scene, 240, 225, "advance")
+      .setDisplaySize(31, 340)
+      .setDepth(1)
+      .setInteractive({ useHandCursor: true })
+      .removeFromDisplayList()
+      // .on("pointerover", () => this.setHoverState("right"))
+      // .on("pointerout", () => this.setRestState("right"))
+      // .on("pointerdown", () => this.enterBackButtonActiveState())
+      .on("pointerup", () => {
+        // this.enterBackButtonHoverState();
+        this.onButtonClick("right");
+      });
+
+    this.add([this.basePaper, this.tier, this.leftButton, this.rightButton]);
+  }
+
+  private callbacks?: {
+    onTierChange?: (tier: number) => void;
+    onClassChange?: (direction: "left" | "right") => void;
+  };
+  private basePaper!: Phaser.GameObjects.Image;
+  private tier!: Phaser.GameObjects.Image;
+  private leftButton!: Phaser.GameObjects.Image;
+  private rightButton!: Phaser.GameObjects.Image;
+  private currentPageIndex: number = 0;
+  private readonly pages: string[] = ["FREETier", "Tier2", "Tier3", "Tier4"];
+  private readonly tiers: string[] = ["paper", "musk", "mil", "sol"];
+
+  nextPage(): void {
+    this.currentPageIndex++;
+    if (this.currentPageIndex >= this.pages.length) {
+      this.currentPageIndex = 0;
+    }
+    this.updatePageDisplay();
+  }
+
+  previousPage(): void {
+    this.currentPageIndex--;
+    if (this.currentPageIndex < 0) {
+      this.hide(true);
+      this.currentPageIndex = 0;
+      return;
+    }
+    this.updatePageDisplay();
+  }
+
+  private updatePageDisplay(): void {
+    this.tier.setTexture(this.pages[this.currentPageIndex]);
+  }
+
+  onButtonClick(which: "left" | "right" | "tier"): void {
+    this.scene.sound.play("click");
+    this.scene.sound.play("journal");
+
+    if (which === "left") {
+      this.previousPage();
+    } else if (which === "right") {
+      this.nextPage();
+    } else if (which === "tier") {
+      this.scene.data.set("tier", this.tiers[this.currentPageIndex]);
+      this.callbacks?.onTierChange?.(this.currentPageIndex);
+    }
+  }
+
+  setHoverState(which: "left" | "right" | "tier") {
+    // if (which === "left") {
+    //   this.leftButton.setScale(1.1);
+    // } else if (which === "right") {
+    //   this.rightButton.setScale(1.1);
+    // } else {
+    //   this.tier.setScale(0.4);
+    // }
+  }
+
+  setRestState(which: "left" | "right" | "tier") {
+    // if (which === "left") {
+    //   this.leftButton.setScale(1);
+    // } else if (which === "right") {
+    //   this.rightButton.setScale(1);
+    // } else {
+    //   this.tier.setScale(0.33);
+    // }
+  }
+
+  setActiveState(which: "left" | "right" | "tier") {
+    // if (which === "left") {
+    //   this.leftButton.setTint(0x0f0);
+    // } else if (which === "right") {
+    //   this.rightButton.setTint(0x0f0);
+    // } else {
+    //   this.tier.setTint(0x0f0);
+    // }
+  }
+
+  hide(bool: boolean) {
+    if (bool) {
+      this.basePaper.removeFromDisplayList();
+      this.tier.removeFromDisplayList();
+      this.leftButton.removeFromDisplayList();
+      this.rightButton.removeFromDisplayList();
+    } else {
+      this.basePaper.addToDisplayList();
+      this.tier.addToDisplayList();
+      this.leftButton.addToDisplayList();
+      this.rightButton.addToDisplayList();
+    }
+  }
+}
+
+export class TextButton extends Phaser.GameObjects.Text {
+  constructor(
+    scene: Phaser.Scene,
+    x: number,
+    y: number,
+    text: string,
+    style: Phaser.Types.GameObjects.Text.TextStyle,
+    callback: () => void
+  ) {
+    super(scene, x, y, text, style);
+
+    this.setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.enterButtonHoverState())
+      .on("pointerout", () => this.enterButtonRestState())
+      .on("pointerdown", () => this.enterButtonActiveState())
+      .on("pointerup", () => {
+        this.enterButtonHoverState();
+        callback();
+      });
+  }
+
+  enterButtonHoverState() {
+    this.setScale(1.1);
+    this.setStyle({ fill: "#ffffff" });
+  }
+
+  enterButtonRestState() {
+    this.setScale(1);
+    this.setStyle({ fill: "#ffffff" });
+  }
+
+  enterButtonActiveState() {
+    this.setStyle({ fill: "#0f0" });
   }
 }
 
@@ -1145,176 +1400,4 @@ export default class Game extends Phaser.Scene {
 //     );
 //   }
 // }
-
-export class ClassSelection extends Phaser.GameObjects.Container {
-  constructor(scene: Phaser.Scene, x: number, y: number) {
-    super(scene, x, y);
-
-    this.basePaper = scene.add
-      .image(150, 250, "Page")
-      .setDisplaySize(250, 340)
-      .removeFromDisplayList();
-
-    this.tier = scene.add
-      .image(150, 250, "FREETier")
-      .setDepth(1)
-      .setScale(0.33)
-      .removeFromDisplayList()
-      .setInteractive({ useHandCursor: true })
-      .on("pointerover", () => this.setHoverState("tier"))
-      .on("pointerout", () => this.setRestState("tier"))
-      .on("pointerup", () => {
-        // this.setRestState("tier");
-        this.onButtonClick("tier");
-      });
-
-    this.leftButton = scene.add
-      .image(50, 225, "advance")
-      .setDisplaySize(31, 340)
-      .setFlipX(true)
-      .setDepth(1)
-      .removeFromDisplayList()
-      .setInteractive({ useHandCursor: true })
-      // .on("pointerover", () => this.setHoverState("left"))
-      // .on("pointerout", () => this.setRestState("left"))
-      // .on("pointerdown", () => this.enterBackButtonActiveState())
-      .on("pointerup", () => {
-        // this.enterBackButtonHoverState();
-        this.onButtonClick("left");
-      });
-
-    this.rightButton = scene.add
-      .image(240, 225, "advance")
-      .setDisplaySize(31, 340)
-      .setDepth(1)
-      .setInteractive({ useHandCursor: true })
-      .removeFromDisplayList()
-      // .on("pointerover", () => this.setHoverState("right"))
-      // .on("pointerout", () => this.setRestState("right"))
-      // .on("pointerdown", () => this.enterBackButtonActiveState())
-      .on("pointerup", () => {
-        // this.enterBackButtonHoverState();
-        this.onButtonClick("right");
-      });
-  }
-
-  private basePaper!: Phaser.GameObjects.Image;
-  private tier!: Phaser.GameObjects.Image;
-  private leftButton!: Phaser.GameObjects.Image;
-  private rightButton!: Phaser.GameObjects.Image;
-  private currentPageIndex: number = 0;
-  private readonly pages: string[] = ["FREETier", "Tier2", "Tier3", "Tier4"];
-
-  nextPage(): void {
-    this.currentPageIndex++;
-    if (this.currentPageIndex >= this.pages.length) {
-      this.currentPageIndex = 0;
-    }
-    this.updatePageDisplay();
-  }
-
-  previousPage(): void {
-    this.currentPageIndex--;
-    if (this.currentPageIndex < 0) {
-      this.hide(true);
-      this.currentPageIndex = 0;
-      return;
-    }
-    this.updatePageDisplay();
-  }
-
-  private updatePageDisplay(): void {
-    this.tier.setTexture(this.pages[this.currentPageIndex]);
-  }
-
-  onButtonClick(which: "left" | "right" | "tier"): void {
-    if (which === "left") {
-      this.previousPage();
-    } else if (which === "right") {
-      this.nextPage();
-    } else if (which === "tier") {
-      this.scene.data.set("tier", this.currentPageIndex);
-    }
-  }
-
-  setHoverState(which: "left" | "right" | "tier") {
-    if (which === "left") {
-      this.leftButton.setScale(1.1);
-    } else if (which === "right") {
-      this.rightButton.setScale(1.1);
-    } else {
-      this.tier.setScale(0.4);
-    }
-  }
-
-  setRestState(which: "left" | "right" | "tier") {
-    if (which === "left") {
-      this.leftButton.setScale(1);
-    } else if (which === "right") {
-      this.rightButton.setScale(1);
-    } else {
-      this.tier.setScale(0.33);
-    }
-  }
-
-  setActiveState(which: "left" | "right" | "tier") {
-    if (which === "left") {
-      this.leftButton.setTint(0x0f0);
-    } else if (which === "right") {
-      this.rightButton.setTint(0x0f0);
-    } else {
-      this.tier.setTint(0x0f0);
-    }
-  }
-
-  hide(bool: boolean) {
-    if (bool) {
-      this.basePaper.removeFromDisplayList();
-      this.tier.removeFromDisplayList();
-      this.leftButton.removeFromDisplayList();
-      this.rightButton.removeFromDisplayList();
-    } else {
-      this.basePaper.addToDisplayList();
-      this.tier.addToDisplayList();
-      this.leftButton.addToDisplayList();
-      this.rightButton.addToDisplayList();
-    }
-  }
-}
-
-export class TextButton extends Phaser.GameObjects.Text {
-  constructor(
-    scene: Phaser.Scene,
-    x: number,
-    y: number,
-    text: string,
-    style: Phaser.Types.GameObjects.Text.TextStyle,
-    callback: () => void
-  ) {
-    super(scene, x, y, text, style);
-
-    this.setInteractive({ useHandCursor: true })
-      .on("pointerover", () => this.enterButtonHoverState())
-      .on("pointerout", () => this.enterButtonRestState())
-      .on("pointerdown", () => this.enterButtonActiveState())
-      .on("pointerup", () => {
-        this.enterButtonHoverState();
-        callback();
-      });
-  }
-
-  enterButtonHoverState() {
-    this.setScale(1.1);
-    this.setStyle({ fill: "#ffffff" });
-  }
-
-  enterButtonRestState() {
-    this.setScale(1);
-    this.setStyle({ fill: "#ffffff" });
-  }
-
-  enterButtonActiveState() {
-    this.setStyle({ fill: "#0f0" });
-  }
-}
 
