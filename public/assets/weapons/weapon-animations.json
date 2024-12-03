@@ -1144,6 +1144,146 @@
       "skipMissedFrames": true,
       "repeat": 0,
       "randomFrame": false
+    },
+    {
+      "key": "raygunFire",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "raygunfire_00000",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00011",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00012",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00013",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00014",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00015",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00016",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00017",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00018",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00019",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00020",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00021",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00022",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00023",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00024",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "raygunfire_00025",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "repeat": 0,
+      "randomFrame": false
     }
   ],
   "globalTimeScale": 1,
@@ -1157,3 +1297,4 @@
     "generateCode": false
   }
 }
+

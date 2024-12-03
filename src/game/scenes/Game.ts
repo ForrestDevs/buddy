@@ -103,7 +103,7 @@ export default class Game extends Phaser.Scene {
       const healthPercent = this.health / 100;
       healthBarFill.setScale(healthPercent, 1);
       healthBarFill.setX(GAME_WIDTH / 2 - (300 * (1 - healthPercent)) / 2);
-      healthText.setText(`${this.health}%`);
+      healthText.setText(`${this.health.toFixed(2)}%`);
     });
   }
 
@@ -487,12 +487,22 @@ export default class Game extends Phaser.Scene {
 
     let speed = 50;
     let projectile;
+    let throwForce = 0;
+    let projectileConfig = {
+      friction: 0,
+      frictionStatic: 0,
+      frictionAir: 0.005, // Add air friction for arcing motion
+      restitution: 0.3, // Reduce bounce
+      angle: angle + Math.PI,
+      density: 0.001, // Light enough to arc
+      ignorePointer: true,
+    };
 
     switch (this.weapon) {
       case "desert-eagle":
         speed = 75;
         projectile = this.add
-          .image(this.barrelPoint.x, this.barrelPoint.y, "bullet")
+          .image(this.barrelPoint.x, this.barrelPoint.y, "deagle-bullet")
           .setScale(0.06, 0.1);
         break;
       case "tommy-gun":
@@ -504,7 +514,7 @@ export default class Game extends Phaser.Scene {
       case "rpg":
         speed = 50;
         projectile = this.add
-          .image(this.barrelPoint.x, this.barrelPoint.y, "rocket-launcher-ammo")
+          .image(this.barrelPoint.x, this.barrelPoint.y, "rpg-bullet")
           .setScale(0.1, 0.1);
         break;
       case "knives":
@@ -513,70 +523,177 @@ export default class Game extends Phaser.Scene {
           .image(this.barrelPoint.x, this.barrelPoint.y, "knife")
           .setScale(0.08, 0.08);
         break;
+      case "raygun":
+        speed = 50;
+        projectile = this.add.image(
+          this.barrelPoint.x,
+          this.barrelPoint.y,
+          "raygun-bullet"
+        );
+        break;
+      case "mg":
+        speed = 50;
+        projectile = this.add
+          .image(this.barrelPoint.x, this.barrelPoint.y, "mg-bullet")
+          .setScale(0.08, 0.08);
+        break;
+      case "grenade":
+      case "sticky-bomb":
+      case "fire-bomb":
+        projectile = this.add
+          .image(startPoint.x, startPoint.y, this.weapon)
+          .setScale(0.15);
+
+        // Add rotation to the throwable
+        projectileConfig = {
+          ...projectileConfig,
+          //@ts-ignore
+          shape: { type: "circle", radius: 15 },
+          angularVelocity: 0.2, // Increased rotation speed
+          label: this.weapon, // Used to identify projectile type in collision
+        };
+
+        // Calculate throw force based on distance to target with increased force
+        const distance = Phaser.Math.Distance.Between(
+          startPoint.x,
+          startPoint.y,
+          targetPoint.x,
+          targetPoint.y
+        );
+        throwForce = Math.min(distance * 0.02, 25); // Slightly reduced multiplier and max force
+
+        break;
       default:
         return;
     }
 
-    const matterBullet = this.matter.add.gameObject(projectile, {
-      friction: 0,
-      frictionStatic: 0,
-      frictionAir: 0,
-      restitution: 1,
-      angle: angle + Math.PI,
-      ignorePointer: true,
-      shape: {
-        type: "circle",
-        radius: 10,
-      },
-      onCollideCallback: () => {
-        if (this.weapon === "rpg") {
-          this.soundManager.play("explode");
-          // this.explosion.play("explosion");
-        }
+    if (
+      this.weapon === "grenade" ||
+      this.weapon === "sticky-bomb" ||
+      this.weapon === "fire-bomb"
+    ) {
+      const matterBomb = this.matter.add.gameObject(projectile, {
+        ...projectileConfig,
+        onCollideCallback: (collision: MatterJS.ICollisionPair) => {
+          const bodyA = collision.bodyA;
+          const bodyB = collision.bodyB;
 
-        // Calculate damage based on weapon type
-        let damage = 0.05; // default damage
-        switch (this.weapon) {
-          case "rpg":
-            damage = 0.2;
-            break;
-          case "desert-eagle":
-            damage = 0.1;
-            break;
-          case "tommy-gun":
-            damage = 0.01;
-            break;
-          // Add other weapon damage values as needed
-        }
+          const collisionPoint = {
+            x: collision.collision.supports[0]?.x,
+            y: collision.collision.supports[0]?.y,
+          };
 
-        const isExplosion = this.weapon === "rpg";
-        EventBus.emit("projectile-hit", { damage, isExplosion });
-        matterBullet.destroy();
+          switch (this.weapon) {
+            case "sticky-bomb": {
+              // Stick to the first thing hit
+              if (!matterBomb.getData("stuck")) {
+                matterBomb.setData("stuck", true);
+                //@ts-ignore
+                this.matter.add.joint(bodyA, bodyB, {
+                  pointA: { x: 0, y: 0 },
+                  pointB: { x: 0, y: 0 },
+                });
+                // this.matter.setStatic(matterBomb, true);
 
-        // Effects
-        // this.bloodSplatter.play("b1");
-        // this.bloodSplatter.play("b2");
-        // this.bloodSplatter.play("b3");
-        // this.bloodSplatter.play("b4");
+                // Explode after delay
+                this.time.delayedCall(2000, () => {
+                  this.createExplosion(collisionPoint.x, collisionPoint.y);
+                  matterBomb.destroy();
+                });
+              }
+              break;
+            }
+            case "fire-bomb": {
+              // Create fire effect and DOT damage
+              this.createFireEffect(collisionPoint.x, collisionPoint.y);
+              matterBomb.destroy();
+              break;
+            }
+            case "grenade": {
+              // Explode immediately on impact
+              this.createExplosion(collisionPoint.x, collisionPoint.y);
+              matterBomb.destroy();
+              break;
+            }
+          }
+        },
+      });
 
-        // Sounds
-        // this.soundManager.play("grunt");
-        // this.soundManager.play("thump");
-        // this.soundManager.play("ouch");
+      // Apply arc trajectory
+      this.matter.setVelocity(
+        matterBomb,
+        Math.cos(angle) * throwForce,
+        Math.sin(angle) * throwForce - 5 // Negative Y for upward arc
+      );
+    } else {
+      const matterBullet = this.matter.add.gameObject(projectile, {
+        friction: 0,
+        frictionStatic: 0,
+        frictionAir: 0,
+        restitution: 1,
+        angle: angle + Math.PI,
+        ignorePointer: true,
+        shape: {
+          type: "circle",
+          radius: 10,
+        },
+        onCollideCallback: () => {
+          if (this.weapon === "rpg") {
+            this.soundManager.play("explode");
+          } else if (this.weapon === "raygun") {
+            this.soundManager.play("raygun-impact");
+          }
 
-        // Reduce health on impact
-        this.health -= 0.5;
-        if (this.health < 0) this.health = 0;
-        this.events.emit("health-changed", this.health);
-      },
-    });
+          // Calculate damage based on weapon type
+          let damage = 0.05; // default damage
+          switch (this.weapon) {
+            case "rpg":
+              damage = 1;
+              break;
+            case "desert-eagle":
+              damage = 0.5;
+              break;
+            case "tommy-gun":
+              damage = 0.3;
+              break;
+            case "mg":
+              damage = 0.4;
+              break;
+            case "raygun":
+              damage = 0.3;
+              break;
+            // Add other weapon damage values as needed
+          }
 
-    // Set velocity based on angle to target
-    this.matter.setVelocity(
-      matterBullet,
-      speed * Math.cos(angle),
-      speed * Math.sin(angle)
-    );
+          const isExplosion = this.weapon === "rpg";
+          EventBus.emit("projectile-hit", { damage, isExplosion });
+          matterBullet.destroy();
+
+          // Effects
+          // this.bloodSplatter.play("b1");
+          // this.bloodSplatter.play("b2");
+          // this.bloodSplatter.play("b3");
+          // this.bloodSplatter.play("b4");
+
+          // Sounds
+          // this.soundManager.play("grunt");
+          // this.soundManager.play("thump");
+          // this.soundManager.play("ouch");
+
+          // Reduce health on impact
+          this.health -= 0.5;
+          if (this.health < 0) this.health = 0;
+          this.events.emit("health-changed", this.health);
+        },
+      });
+
+      // Set velocity based on angle to target
+      this.matter.setVelocity(
+        matterBullet,
+        speed * Math.cos(angle),
+        speed * Math.sin(angle)
+      );
+    }
   }
 
   fireWeapon() {
@@ -605,7 +722,7 @@ export default class Game extends Phaser.Scene {
         this.soundManager.play("deagle-cock");
         this.soundManager.play("deagle-fire");
         this.currentWeapon
-          .play("deaglefiring")
+          .play("deagleFire")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
             this.events.emit("deagle-fired");
           });
@@ -613,7 +730,7 @@ export default class Game extends Phaser.Scene {
       case "tommy-gun":
         this.soundManager.play("deagle-fire");
         this.currentWeapon
-          .play("tommygunfiring")
+          .play("tommyFire")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
             this.events.emit("tommy-fired");
           });
@@ -621,19 +738,41 @@ export default class Game extends Phaser.Scene {
       case "rpg":
         this.soundManager.play("rpg-fire");
         this.currentWeapon
-          .play("rocketblast")
+          .play("rpgFire")
           .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
             this.events.emit("rocket-fired");
           });
         break;
+      case "mg":
+        this.soundManager.play("deagle-fire");
+        this.currentWeapon
+          .play("mgFire")
+          .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+            this.events.emit("mg-fired");
+          });
+        break;
+      case "raygun":
+        this.soundManager.play("raygun-fire");
+        this.currentWeapon
+          .play("raygunFire")
+          .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+            this.events.emit("raygun-fired");
+          });
+        break;
       case "knives":
         console.log("knives");
-        // this.sound.play("knifeThrow");
+        // this.soundManager.play()
         // this.currentWeapon
         //   .play("knifeThrow")
         //   .on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
         //     this.events.emit("knives-fired");
         //   });
+        break;
+
+      case "grenade":
+      case "sticky-bomb":
+      case "fire-bomb":
+        this.soundManager.play("fire-bomb-fire");
         break;
       default:
         return;
@@ -642,8 +781,74 @@ export default class Game extends Phaser.Scene {
     this.spawnProjectile(new Phaser.Math.Vector2(spawnX, this.currentWeapon.y));
   }
 
+  private createFireEffect(x: number, y: number) {
+    const fireEffect = this.add.sprite(x, y, "groundfire_00016").play("fire");
+
+    this.soundManager.play("fire-bomb-impact");
+
+    // Create damage over time effect
+    let tickCount = 0;
+    const maxTicks = 5;
+
+    const fireDamage = this.time.addEvent({
+      delay: 500, // Damage every 0.5 seconds
+      callback: () => {
+        const characterPos = this.character.getPosition();
+        const distance = Phaser.Math.Distance.Between(
+          x,
+          y,
+          characterPos.x,
+          characterPos.y
+        );
+
+        if (distance <= 50) {
+          // Fire damage radius
+          EventBus.emit("projectile-hit", {
+            damage: 5,
+            isExplosion: false,
+          });
+        }
+
+        tickCount++;
+        if (tickCount >= maxTicks) {
+          fireDamage.destroy();
+          fireEffect.destroy();
+        }
+      },
+      loop: true,
+    });
+  }
+
+  private createExplosion(x: number, y: number) {
+    // Visual effect
+    const explosion = this.add
+      .sprite(x, y, "firstexplosion_00094")
+      .play("explosion");
+
+    // Sound effect
+    this.soundManager.play("explode");
+
+    // Damage calculation based on distance
+    const blastRadius = 100;
+    const characterPos = this.character.getPosition();
+    const distance = Phaser.Math.Distance.Between(
+      x,
+      y,
+      characterPos.x,
+      characterPos.y
+    );
+
+    if (distance <= blastRadius) {
+      const damage = 1 - distance / blastRadius; // More damage closer to explosion
+      EventBus.emit("projectile-hit", {
+        damage: damage * 20, // Scale damage appropriately
+        isExplosion: true,
+      });
+    }
+  }
+
   showAndFireWeapon() {
-    if (!this.showWeapon) {
+    if (!this.showWeapon || !this.weapon || this.pointerOver) {
       return;
     }
 
@@ -658,99 +863,230 @@ export default class Game extends Phaser.Scene {
       this.firingTimer = undefined;
     }
 
-    // Set up weapon-specific firing behavior
-    let fireRate = 0;
-    let fireEvent = "";
-    let bulletsPerBurst = 1;
-    let burstDelay = 0;
-    let currentWeaponType = this.weapon; // Store current weapon type
+    // Weapon configurations
+    const weaponConfigs = {
+      grenade: {
+        fireRate: 1000,
+        burstSize: 1,
+        sound: "fire-bomb-fire",
+      },
+      "sticky-bomb": {
+        fireRate: 1000,
+        burstSize: 1,
+        sound: "fire-bomb-fire",
+      },
+      "fire-bomb": {
+        fireRate: 1000,
+        burstSize: 1,
+        sound: "fire-bomb-fire",
+      },
+      knives: {
+        fireRate: 500,
+        burstSize: 1,
+      },
+      "tommy-gun": {
+        fireRate: 50, // Faster fire rate for tommy gun
+        burstSize: 3, // Number of bullets per burst
+        burstDelay: 300, // Delay between bursts
+        sound: "deagle-fire",
+      },
+      "desert-eagle": {
+        fireRate: 500, // Consistent delay between shots
+        burstSize: 1,
+        sound: "deagle-fire",
+      },
+      rpg: {
+        fireRate: 1000,
+        burstSize: 1,
+        sound: "rpg-fire",
+      },
+      mg: {
+        fireRate: 100,
+        burstSize: 1,
+        sound: "deagle-fire",
+      },
+      raygun: {
+        fireRate: 200,
+        burstSize: 1,
+        sound: "raygun-fire",
+      },
+    };
 
-    switch (this.weapon) {
-      case "tommy-gun":
-        fireRate = 100;
-        fireEvent = "tommy-fired";
-        bulletsPerBurst = 20;
-        burstDelay = 50;
-        break;
-      case "desert-eagle":
-        fireRate = 500;
-        fireEvent = "deagle-fired";
-        bulletsPerBurst = 1;
-        break;
-      case "rpg":
-        fireRate = 1000;
-        fireEvent = "rocket-fired";
-        bulletsPerBurst = 1;
-        break;
-      case "knives":
-        fireRate = 1000;
-        fireEvent = "knives-fired";
-        bulletsPerBurst = 1;
-        break;
-      default:
-        return;
-    }
+    //@ts-ignore
+    const config = weaponConfigs[this.weapon];
+    if (!config) return;
 
+    let lastFired = 0;
+    let burstCount = 0;
     let canFire = true;
-    let burstTimer: Phaser.Time.TimerEvent;
 
-    // Start firing immediately on pointerdown
+    // Initial fire on pointer down
     if (this.input.activePointer.isDown) {
       this.fireWeapon();
+      lastFired = this.time.now;
     }
 
     this.firingTimer = this.time.addEvent({
-      delay: fireRate,
+      delay: 16, // Run at ~60fps for smooth firing checks
       callback: () => {
-        // Check if weapon has changed since starting the burst
-        if (this.weapon !== currentWeaponType) {
-          if (burstTimer) {
-            burstTimer.destroy();
-          }
+        const currentTime = this.time.now;
+
+        if (!this.input.activePointer.isDown) {
           canFire = true;
+          burstCount = 0;
           return;
         }
 
-        if (this.input.activePointer.isDown && canFire) {
-          canFire = false;
-
-          if (bulletsPerBurst > 1) {
-            // For burst weapons like tommy gun
-            let bulletsShot = 0;
-            burstTimer = this.time.addEvent({
-              delay: burstDelay,
-              callback: () => {
-                // Check weapon hasn't changed during burst
-                if (this.weapon === currentWeaponType) {
-                  this.fireWeapon();
-                  bulletsShot++;
-                  if (bulletsShot >= bulletsPerBurst) {
-                    burstTimer.destroy();
-                    // Allow next burst after a short delay
-                    this.time.delayedCall(300, () => {
-                      canFire = true;
-                    });
-                  }
-                } else {
-                  burstTimer.destroy();
-                  canFire = true;
-                }
-              },
-              repeat: bulletsPerBurst - 1,
-            });
-          } else {
-            // For single shot weapons like desert eagle
+        // Check if enough time has passed since last shot
+        if (currentTime - lastFired >= config.fireRate && canFire) {
+          if (config.burstSize > 1) {
+            // Burst fire logic
             this.fireWeapon();
-            // Re-enable firing after animation completes
-            this.events.once(fireEvent, () => {
-              canFire = true;
-            });
+            burstCount++;
+            lastFired = currentTime;
+
+            if (burstCount >= config.burstSize) {
+              canFire = false;
+              burstCount = 0;
+              // Reset after burst delay
+              this.time.delayedCall(config.burstDelay || 300, () => {
+                canFire = true;
+              });
+            }
+          } else {
+            // Single shot logic
+            this.fireWeapon();
+            lastFired = currentTime;
+          }
+
+          // Play weapon sound
+          if (config.sound) {
+            this.soundManager.play(config.sound);
           }
         }
       },
       loop: true,
     });
   }
+  // showAndFireWeapon() {
+  //   if (!this.showWeapon) {
+  //     return;
+  //   }
+
+  //   // Show current weapon if it exists but isn't displayed
+  //   if (this.currentWeapon && !this.currentWeapon.getDisplayList()) {
+  //     this.currentWeapon.addToDisplayList();
+  //   }
+
+  //   // Clear any existing firing timer when changing weapons
+  //   if (this.firingTimer) {
+  //     this.firingTimer.destroy();
+  //     this.firingTimer = undefined;
+  //   }
+
+  //   // Set up weapon-specific firing behavior
+  //   let fireRate = 0;
+  //   let fireEvent = "";
+  //   let bulletsPerBurst = 1;
+  //   let burstDelay = 0;
+  //   let currentWeaponType = this.weapon; // Store current weapon type
+
+  //   switch (this.weapon) {
+  //     case "tommy-gun":
+  //       fireRate = 100;
+  //       fireEvent = "tommy-fired";
+  //       bulletsPerBurst = 20;
+  //       burstDelay = 50;
+  //       break;
+  //     case "desert-eagle":
+  //       fireRate = 500;
+  //       fireEvent = "deagle-fired";
+  //       bulletsPerBurst = 1;
+  //       break;
+  //     case "rpg":
+  //       fireRate = 1000;
+  //       fireEvent = "rocket-fired";
+  //       bulletsPerBurst = 1;
+  //       break;
+  //     case "knives":
+  //       fireRate = 1000;
+  //       fireEvent = "knives-fired";
+  //       bulletsPerBurst = 1;
+  //       break;
+  //     case "mg":
+  //       fireRate = 100;
+  //       fireEvent = "mg-fired";
+  //       bulletsPerBurst = 1;
+  //       break;
+  //     case "raygun":
+  //       fireRate = 100;
+  //       fireEvent = "raygun-fired";
+  //       bulletsPerBurst = 1;
+  //       break;
+  //     default:
+  //       return;
+  //   }
+
+  //   let canFire = true;
+  //   let burstTimer: Phaser.Time.TimerEvent;
+
+  //   // Start firing immediately on pointerdown
+  //   if (this.input.activePointer.isDown) {
+  //     this.fireWeapon();
+  //   }
+
+  //   this.firingTimer = this.time.addEvent({
+  //     delay: fireRate,
+  //     callback: () => {
+  //       // Check if weapon has changed since starting the burst
+  //       if (this.weapon !== currentWeaponType) {
+  //         if (burstTimer) {
+  //           burstTimer.destroy();
+  //         }
+  //         canFire = true;
+  //         return;
+  //       }
+
+  //       if (this.input.activePointer.isDown && canFire) {
+  //         canFire = false;
+
+  //         if (bulletsPerBurst > 1) {
+  //           // For burst weapons like tommy gun
+  //           let bulletsShot = 0;
+  //           burstTimer = this.time.addEvent({
+  //             delay: burstDelay,
+  //             callback: () => {
+  //               // Check weapon hasn't changed during burst
+  //               if (this.weapon === currentWeaponType) {
+  //                 this.fireWeapon();
+  //                 bulletsShot++;
+  //                 if (bulletsShot >= bulletsPerBurst) {
+  //                   burstTimer.destroy();
+  //                   // Allow next burst after a short delay
+  //                   this.time.delayedCall(300, () => {
+  //                     canFire = true;
+  //                   });
+  //                 }
+  //               } else {
+  //                 burstTimer.destroy();
+  //                 canFire = true;
+  //               }
+  //             },
+  //             repeat: bulletsPerBurst - 1,
+  //           });
+  //         } else {
+  //           // For single shot weapons like desert eagle
+  //           this.fireWeapon();
+  //           // Re-enable firing after animation completes
+  //           this.events.once(fireEvent, () => {
+  //             canFire = true;
+  //           });
+  //         }
+  //       }
+  //     },
+  //     loop: true,
+  //   });
+  // }
 
   hideWeapon() {
     if (this.currentWeapon && this.currentWeapon.getDisplayList()) {

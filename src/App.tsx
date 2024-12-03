@@ -65,8 +65,40 @@ function App() {
   };
 
   return (
-    <div id="app">
-      <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
+    <div
+      id="app"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <div style={{
+        border: '2px solid #30cfd0',
+        borderRadius: '8px',
+        boxShadow: '0 0 20px rgba(48, 207, 208, 0.5), inset 0 0 10px rgba(48, 207, 208, 0.3)',
+        padding: '4px'
+      }}>
+        <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
+      </div>
+      <div
+        className="game-info"
+        style={{ textAlign: "center", padding: "20px", color: "#fff" }}
+      >
+        <p
+          style={{
+            fontSize: "1.2rem",
+            maxWidth: "600px",
+            margin: "0 auto",
+            color: "#888888",
+          }}
+        >
+          The first kick-the-buddy game on the blockchain! Choose your tier,
+          pick your weapons, and unleash chaos. Earn while you play - the more
+          you kick, the more you earn!
+        </p>
+      </div>
     </div>
   );
 }

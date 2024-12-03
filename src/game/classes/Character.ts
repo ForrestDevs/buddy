@@ -293,9 +293,9 @@ export class Character {
 
     const effectsConfig = [
       { key: "bloodSplatter", texture: "blood1_00018" },
-      { key: "bloodSplatter2", texture: "blood2_00018" },
-      { key: "bloodSplatter3", texture: "blood3_00018" },
-      { key: "bloodSplatter4", texture: "blood4_00018" },
+      { key: "bloodSplatter2", texture: "bloodgush3_018" },
+      { key: "bloodSplatter3", texture: "bloodgut3_022" },
+      { key: "bloodSplatter4", texture: "darkerblood1_00018" },
       { key: "explosion", texture: "firstexplosion_00094" },
     ];
 
