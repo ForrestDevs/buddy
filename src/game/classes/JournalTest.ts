@@ -65,7 +65,7 @@ interface SkinData {
 }
 
 const JOURNAL_SCALE = 0.6;
-const HITAREA_ALPHA = 170;
+const HITAREA_ALPHA = 0;
 
 export class JournalManager extends Phaser.GameObjects.Container {
   private currentJournal: JournalType | null = null;
