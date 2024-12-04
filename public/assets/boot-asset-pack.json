@@ -1,25 +1,23 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/loadingScreen/BG95.jpg",
-                "type": "image",
-                "key": "BG"
-            },
-            {
-                "url": [
-                    "assets/sounds/bgMusic.mp3"
-                ],
-                "type": "audio",
-                "key": "bgMusic"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": "assets/loadingScreen/BG95.jpg",
+        "type": "image",
+        "key": "BG"
+      },
+      {
+        "url": ["assets/sounds/bgMusic.mp3"],
+        "type": "audio",
+        "key": "bgMusic"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }

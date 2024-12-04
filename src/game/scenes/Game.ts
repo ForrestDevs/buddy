@@ -9,9 +9,14 @@ import {
   JOINT_LENGTH,
 } from "../config";
 import { Character } from "../classes/Character";
+import { GameButtons } from "../classes/GameButtons";
+import { JournalManager } from "../classes/JournalTest";
 
 export default class Game extends Phaser.Scene {
+  private bg!: Phaser.GameObjects.Image;
   private character!: Character;
+  private gameButtons!: GameButtons;
+  private journalManager!: JournalManager;
 
   private fpsText!: Phaser.GameObjects.Text;
 
@@ -42,7 +47,7 @@ export default class Game extends Phaser.Scene {
   private firingTimer?: Phaser.Time.TimerEvent;
   private readonly characterTiers: string[] = ["paper", "sol", "mil", "musk"];
   private debugButton!: TextButton;
-  private classSelection!: ClassSelection;
+  // private classSelection!: ClassSelection;
   private soundManager!: SoundManager;
 
   constructor() {
@@ -52,17 +57,17 @@ export default class Game extends Phaser.Scene {
   init() {
     this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
     this.soundManager = new SoundManager(this);
-    this.classSelection = new ClassSelection(this, 0, 0, {
-      onTierChange: (tier) => {
-        this.changeTier();
-      },
-    });
-    this.add
-      .image(1280 / 2, 720 / 2, "bg1")
+    // this.classSelection = new ClassSelection(this, 0, 0, {
+    //   onTierChange: (tier) => {
+    //     this.changeTier();
+    //   },
+    // });
+    this.bg = this.add
+      .image(1280 / 2, 720 / 2, "bg-main")
       .setDisplaySize(1280, 720)
       .setDepth(-2);
     this.createHealthBar();
-    this.renderButtons();
+    // this.renderButtons();
     // this.renderCharacter();
     this.createCharacter();
     this.createWeaponSelectionArea();
@@ -320,11 +325,11 @@ export default class Game extends Phaser.Scene {
           this.data.get("debug") ? "Hide Journal" : "Journal"
         );
 
-        if (this.data.get("debug")) {
-          this.classSelection.hide(false);
-        } else {
-          this.classSelection.hide(true);
-        }
+        // if (this.data.get("debug")) {
+        //   this.classSelection.hide(false);
+        // } else {
+        //   this.classSelection.hide(true);
+        // }
       }
     );
 
@@ -336,14 +341,14 @@ export default class Game extends Phaser.Scene {
       y: number;
     }> = [
       { key: undefined, label: "Fists", y: 60 },
-      { key: "knives", label: "Knives", y: 100 },
-      { key: "desert-eagle", label: "Deagle", y: 140 },
+      { key: "knife", label: "Knives", y: 100 },
+      { key: "deagle", label: "Deagle", y: 140 },
       { key: "grenade", label: "Grenade", y: 180 },
       { key: "fire-bomb", label: "Fire Bomb", y: 220 },
       { key: "sticky-bomb", label: "Sticky Bomb", y: 260 },
       { key: "chainsaw", label: "Chainsaw", y: 300 },
       { key: "lightsaber", label: "Lightsaber", y: 340 },
-      { key: "tommy-gun", label: "Tommy Gun", y: 380 },
+      { key: "tommy", label: "Tommy Gun", y: 380 },
       { key: "mg", label: "Machine Gun", y: 420 },
       { key: "railgun", label: "Rail Gun", y: 460 },
       { key: "raygun", label: "Ray Gun", y: 500 },
@@ -423,14 +428,14 @@ export default class Game extends Phaser.Scene {
     }
 
     const weaponConfig: Record<GameWeaponKey, WeaponConfig> = {
-      "desert-eagle": {
+      deagle: {
         texture: "deaglefiring_00018",
         width: 200,
         height: 100,
         name: "deagle",
       },
-      "tommy-gun": { texture: "tommy", width: 300, height: 150, name: "tommy" },
-      knives: { texture: "knife", width: 300, height: 150, name: "knives" },
+      tommy: { texture: "tommy", width: 300, height: 150, name: "tommy" },
+      knife: { texture: "knife", width: 300, height: 150, name: "knife" },
       rpg: { texture: "rpg", width: 300, height: 150, name: "rpg" },
       grenade: { texture: "grenade", width: 100, height: 100, name: "grenade" },
       "fire-bomb": {
@@ -499,13 +504,13 @@ export default class Game extends Phaser.Scene {
     };
 
     switch (this.weapon) {
-      case "desert-eagle":
+      case "deagle":
         speed = 75;
         projectile = this.add
           .image(this.barrelPoint.x, this.barrelPoint.y, "deagle-bullet")
           .setScale(0.06, 0.1);
         break;
-      case "tommy-gun":
+      case "tommy":
         speed = 50;
         projectile = this.add
           .image(this.barrelPoint.x, this.barrelPoint.y, "tommy-bullet")
@@ -517,7 +522,7 @@ export default class Game extends Phaser.Scene {
           .image(this.barrelPoint.x, this.barrelPoint.y, "rpg-bullet")
           .setScale(0.1, 0.1);
         break;
-      case "knives":
+      case "knife":
         speed = 40;
         projectile = this.add
           .image(this.barrelPoint.x, this.barrelPoint.y, "knife")
@@ -650,10 +655,10 @@ export default class Game extends Phaser.Scene {
             case "rpg":
               damage = 1;
               break;
-            case "desert-eagle":
+            case "deagle":
               damage = 0.5;
               break;
-            case "tommy-gun":
+            case "tommy":
               damage = 0.3;
               break;
             case "mg":
@@ -718,7 +723,7 @@ export default class Game extends Phaser.Scene {
     const spawnX = this.currentWeapon.x + spawnOffset;
 
     switch (this.weapon) {
-      case "desert-eagle":
+      case "deagle":
         this.soundManager.play("deagle-cock");
         this.soundManager.play("deagle-fire");
         this.currentWeapon
@@ -727,7 +732,7 @@ export default class Game extends Phaser.Scene {
             this.events.emit("deagle-fired");
           });
         break;
-      case "tommy-gun":
+      case "tommy":
         this.soundManager.play("deagle-fire");
         this.currentWeapon
           .play("tommyFire")
@@ -759,7 +764,7 @@ export default class Game extends Phaser.Scene {
             this.events.emit("raygun-fired");
           });
         break;
-      case "knives":
+      case "knife":
         console.log("knives");
         // this.soundManager.play()
         // this.currentWeapon
@@ -1112,6 +1117,20 @@ export default class Game extends Phaser.Scene {
 
     EventBus.emit("current-scene-ready", this);
 
+    this.gameButtons = new GameButtons({
+      scene: this,
+      x: 75,
+      y: 200,
+      spacing: 110, // Optional: adjust button spacing
+    });
+
+    this.journalManager = new JournalManager({
+      scene: this,
+      x: 1450,
+      // x: this.HIDDEN_X,
+      y: 360, // Vertical center of the screen
+    });
+
     this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
       this.scene.scene,
       this.matter.world,
@@ -1120,6 +1139,16 @@ export default class Game extends Phaser.Scene {
         stiffness: 1,
       }
     );
+
+    EventBus.on("weapon-selected", (weapon: string) => {
+      console.log("Weapon Selected Game", weapon);
+      this.setWeapon(weapon as GameWeaponKey);
+    });
+
+    EventBus.on("bg-change", (bg: string) => {
+      
+      this.bg.setTexture(bg);
+    });
 
     this.matter.add.pointerConstraint(this.pointerConstraint.constraint);
 
@@ -1193,7 +1222,7 @@ export default class Game extends Phaser.Scene {
     // Scale constants for weapon tip positioning
     // Different weapons need different scale multipliers
     const GUN_SCALE =
-      this.weapon === "tommy-gun"
+      this.weapon === "tommy"
         ? {
             length: this.currentWeapon.displayWidth * 0.5,
             barrelOffset: this.currentWeapon.displayHeight * 0.08,
@@ -1400,8 +1429,8 @@ export class SoundManager {
       this.scene.sound.add("click-deny", { volume: 0.5 })
     );
     this.sounds.set(
-      "journal",
-      this.scene.sound.add("journal", { volume: 0.5 })
+      "page-turn",
+      this.scene.sound.add("page-turn", { volume: 0.5 })
     );
 
     // Special weapon sounds
@@ -1436,159 +1465,6 @@ export class SoundManager {
 
   public stopAll(): void {
     this.sounds.forEach((sound) => sound.stop());
-  }
-}
-
-export class ClassSelection extends Phaser.GameObjects.Container {
-  constructor(
-    scene: Phaser.Scene,
-    x: number,
-    y: number,
-    callbacks?: {
-      onTierChange?: (tier: number) => void;
-      onClassChange?: (direction: "left" | "right") => void;
-    }
-  ) {
-    super(scene, x, y);
-
-    this.callbacks = callbacks;
-
-    this.basePaper = new Phaser.GameObjects.Image(scene, 150, 250, "Page")
-      .setDisplaySize(250, 340)
-      .removeFromDisplayList();
-
-    this.tier = new Phaser.GameObjects.Image(scene, 150, 250, "FREETier")
-      .setDepth(1)
-      .setScale(0.33)
-      .removeFromDisplayList()
-      .setInteractive({ useHandCursor: true })
-      .on("pointerover", () => this.setHoverState("tier"))
-      .on("pointerout", () => this.setRestState("tier"))
-      .on("pointerup", () => {
-        // this.setRestState("tier");
-        this.onButtonClick("tier");
-      });
-
-    this.leftButton = new Phaser.GameObjects.Image(scene, 50, 225, "advance")
-      .setDisplaySize(31, 340)
-      .setFlipX(true)
-      .setDepth(1)
-      .removeFromDisplayList()
-      .setInteractive({ useHandCursor: true })
-      // .on("pointerover", () => this.setHoverState("left"))
-      // .on("pointerout", () => this.setRestState("left"))
-      // .on("pointerdown", () => this.enterBackButtonActiveState())
-      .on("pointerup", () => {
-        // this.enterBackButtonHoverState();
-        this.onButtonClick("left");
-      });
-
-    this.rightButton = new Phaser.GameObjects.Image(scene, 240, 225, "advance")
-      .setDisplaySize(31, 340)
-      .setDepth(1)
-      .setInteractive({ useHandCursor: true })
-      .removeFromDisplayList()
-      // .on("pointerover", () => this.setHoverState("right"))
-      // .on("pointerout", () => this.setRestState("right"))
-      // .on("pointerdown", () => this.enterBackButtonActiveState())
-      .on("pointerup", () => {
-        // this.enterBackButtonHoverState();
-        this.onButtonClick("right");
-      });
-
-    this.add([this.basePaper, this.tier, this.leftButton, this.rightButton]);
-  }
-
-  private callbacks?: {
-    onTierChange?: (tier: number) => void;
-    onClassChange?: (direction: "left" | "right") => void;
-  };
-  private basePaper!: Phaser.GameObjects.Image;
-  private tier!: Phaser.GameObjects.Image;
-  private leftButton!: Phaser.GameObjects.Image;
-  private rightButton!: Phaser.GameObjects.Image;
-  private currentPageIndex: number = 0;
-  private readonly pages: string[] = ["FREETier", "Tier2", "Tier3", "Tier4"];
-  private readonly tiers: string[] = ["paper", "musk", "mil", "sol"];
-
-  nextPage(): void {
-    this.currentPageIndex++;
-    if (this.currentPageIndex >= this.pages.length) {
-      this.currentPageIndex = 0;
-    }
-    this.updatePageDisplay();
-  }
-
-  previousPage(): void {
-    this.currentPageIndex--;
-    if (this.currentPageIndex < 0) {
-      this.hide(true);
-      this.currentPageIndex = 0;
-      return;
-    }
-    this.updatePageDisplay();
-  }
-
-  private updatePageDisplay(): void {
-    this.tier.setTexture(this.pages[this.currentPageIndex]);
-  }
-
-  onButtonClick(which: "left" | "right" | "tier"): void {
-    this.scene.sound.play("click");
-    this.scene.sound.play("journal");
-
-    if (which === "left") {
-      this.previousPage();
-    } else if (which === "right") {
-      this.nextPage();
-    } else if (which === "tier") {
-      this.scene.data.set("tier", this.tiers[this.currentPageIndex]);
-      this.callbacks?.onTierChange?.(this.currentPageIndex);
-    }
-  }
-
-  setHoverState(which: "left" | "right" | "tier") {
-    // if (which === "left") {
-    //   this.leftButton.setScale(1.1);
-    // } else if (which === "right") {
-    //   this.rightButton.setScale(1.1);
-    // } else {
-    //   this.tier.setScale(0.4);
-    // }
-  }
-
-  setRestState(which: "left" | "right" | "tier") {
-    // if (which === "left") {
-    //   this.leftButton.setScale(1);
-    // } else if (which === "right") {
-    //   this.rightButton.setScale(1);
-    // } else {
-    //   this.tier.setScale(0.33);
-    // }
-  }
-
-  setActiveState(which: "left" | "right" | "tier") {
-    // if (which === "left") {
-    //   this.leftButton.setTint(0x0f0);
-    // } else if (which === "right") {
-    //   this.rightButton.setTint(0x0f0);
-    // } else {
-    //   this.tier.setTint(0x0f0);
-    // }
-  }
-
-  hide(bool: boolean) {
-    if (bool) {
-      this.basePaper.removeFromDisplayList();
-      this.tier.removeFromDisplayList();
-      this.leftButton.removeFromDisplayList();
-      this.rightButton.removeFromDisplayList();
-    } else {
-      this.basePaper.addToDisplayList();
-      this.tier.addToDisplayList();
-      this.leftButton.addToDisplayList();
-      this.rightButton.addToDisplayList();
-    }
   }
 }
 

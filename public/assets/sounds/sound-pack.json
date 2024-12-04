@@ -20,7 +20,7 @@
                     "assets/sounds/Buddy_journal.mp3"
                 ],
                 "type": "audio",
-                "key": "journal"
+                "key": "page-turn"
             },
             {
                 "url": [

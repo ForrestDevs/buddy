@@ -19,21 +19,21 @@ export type GameSoundKey =
   // UI sounds
   | "click"
   | "click-deny"
-  | "journal"
+  | "page-turn"
   // Special weapon sounds
   | "railgun-charge"
   | "railgun-power"
   | "fire-bomb-fire";
 
 export type GameWeaponKey =
-  | "knives"
-  | "desert-eagle"
+  | "knife"
+  | "deagle"
   | "grenade"
   | "fire-bomb"
   | "sticky-bomb"
   | "chainsaw"
   | "lightsaber"
-  | "tommy-gun"
+  | "tommy"
   | "mg"
   | "railgun"
   | "raygun"

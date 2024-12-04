@@ -1,63 +1,303 @@
 {
-  "section1": {
-    "files": [
-      {
-        "url": "assets/buttons/back.png",
-        "type": "image",
-        "key": "advance"
-      },
-      {
-        "url": "assets/buttons/BackARROW.png",
-        "type": "image",
-        "key": "BackARROW"
-      },
-      {
-        "url": "assets/buttons/FREETier.png",
-        "type": "image",
-        "key": "FREETier"
-      },
-      {
-        "url": "assets/buttons/Page.png",
-        "type": "image",
-        "key": "Page"
-      },
-      {
-        "url": "assets/buttons/Tier2.png",
-        "type": "image",
-        "key": "Tier2"
-      },
-      {
-        "url": "assets/buttons/Tier2LOCKED.png",
-        "type": "image",
-        "key": "Tier2LOCKED"
-      },
-      {
-        "url": "assets/buttons/Tier3.png",
-        "type": "image",
-        "key": "Tier3"
-      },
-      {
-        "url": "assets/buttons/Tier3LOCKED.png",
-        "type": "image",
-        "key": "Tier3LOCKED"
-      },
-      {
-        "url": "assets/buttons/Tier4.png",
-        "type": "image",
-        "key": "Tier4"
-      },
-      {
-        "url": "assets/buttons/Tier4LOCKED.png",
-        "type": "image",
-        "key": "Tier4LOCKED"
-      }
-    ]
-  },
-  "meta": {
-    "app": "Phaser Editor 2D - Asset Pack Editor",
-    "contentType": "phasereditor2d.pack.core.AssetContentType",
-    "url": "https://phasereditor2d.com",
-    "version": 2,
-    "showAllFilesInBlocks": false
-  }
+    "section1": {
+        "files": [
+            {
+                "url": "assets/buttons/back.png",
+                "type": "image",
+                "key": "advance"
+            },
+            {
+                "url": "assets/buttons/BackARROW.png",
+                "type": "image",
+                "key": "backarrow"
+            },
+            {
+                "url": "assets/buttons/pages/backarrow1.png",
+                "type": "image",
+                "key": "backarrow1"
+            },
+            {
+                "url": "assets/buttons/pages/backarrow2.png",
+                "type": "image",
+                "key": "backarrow2"
+            },
+            {
+                "url": "assets/buttons/pages/backarrow3.png",
+                "type": "image",
+                "key": "backarrow3"
+            },
+            {
+                "url": "assets/buttons/boxes/BaskedBoxLOCKED.png",
+                "type": "image",
+                "key": "basket-box-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/BaskedBoxUNLOCKED.png",
+                "type": "image",
+                "key": "basket-box"
+            },
+            {
+                "url": "assets/buttons/boxes/BloodBoxLOCKED.png",
+                "type": "image",
+                "key": "blood-box-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/BloodBoxUNLOCKED.png",
+                "type": "image",
+                "key": "blood-box"
+            },
+            {
+                "url": "assets/buttons/icons/BuddyBoxesJournal icon.png",
+                "type": "image",
+                "key": "boxes"
+            },
+            {
+                "url": "assets/buttons/boxes/boxes-page.png",
+                "type": "image",
+                "key": "boxes-page"
+            },
+            {
+                "url": "assets/buttons/icons/BoxesSELECTED.png",
+                "type": "image",
+                "key": "boxes-selected"
+            },
+            {
+                "url": "assets/buttons/boxes/CardboardBoxIcon.png",
+                "type": "image",
+                "key": "main-box"
+            },
+            {
+                "url": "assets/buttons/pages/TeethUNLOCKED.png",
+                "type": "image",
+                "key": "chainsaw-button"
+            },
+            {
+                "url": "assets/buttons/pages/TeethLOCKED.png",
+                "type": "image",
+                "key": "chainsaw-button-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/ComingSoonBox LAST PAGE.png",
+                "type": "image",
+                "key": "coming-soon-box"
+            },
+            {
+                "url": "assets/buttons/pages/Deagle.png",
+                "type": "image",
+                "key": "deagle-button"
+            },
+            {
+                "url": "assets/buttons/pages/HeatUNLOCKED.png",
+                "type": "image",
+                "key": "firebomb-button"
+            },
+            {
+                "url": "assets/buttons/pages/HeatLOCKED.png",
+                "type": "image",
+                "key": "firebomb-button-locked"
+            },
+            {
+                "url": "assets/buttons/FREETier.png",
+                "type": "image",
+                "key": "FREETier"
+            },
+            {
+                "url": "assets/buttons/pages/Nade.png",
+                "type": "image",
+                "key": "grenade-button"
+            },
+            {
+                "url": "assets/buttons/pages/Nife.png",
+                "type": "image",
+                "key": "knife-button"
+            },
+            {
+                "url": "assets/buttons/icons/BuddyLevelsJournal icon.png",
+                "type": "image",
+                "key": "levels"
+            },
+            {
+                "url": "assets/buttons/icons/LevelsSELECTED.png",
+                "type": "image",
+                "key": "levels-selected"
+            },
+            {
+                "url": "assets/buttons/pages/LightSaberUNLOCKED.png",
+                "type": "image",
+                "key": "lightsaber-button"
+            },
+            {
+                "url": "assets/buttons/pages/LightSaberLOCKED.png",
+                "type": "image",
+                "key": "lightsaber-button-locked"
+            },
+            {
+                "url": "assets/buttons/pages/BG42UNLOCKED.png",
+                "type": "image",
+                "key": "mg-button"
+            },
+            {
+                "url": "assets/buttons/pages/BG42LOCKED.png",
+                "type": "image",
+                "key": "mg-button-locked"
+            },
+            {
+                "url": "assets/buttons/icons/muteicon.png",
+                "type": "image",
+                "key": "muteicon"
+            },
+            {
+                "url": "assets/buttons/Page.png",
+                "type": "image",
+                "key": "Page"
+            },
+            {
+                "url": "assets/buttons/boxes/PresentBoxLOCKED.png",
+                "type": "image",
+                "key": "present-box-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/PresentBoxUNLOCKED.png",
+                "type": "image",
+                "key": "present-box"
+            },
+            {
+                "url": "assets/buttons/pages/RailGunUNLOCKED.png",
+                "type": "image",
+                "key": "railgun-button"
+            },
+            {
+                "url": "assets/buttons/pages/RailGunLOCKED.png",
+                "type": "image",
+                "key": "railgun-button-locked"
+            },
+            {
+                "url": "assets/buttons/pages/RayGunUNLOCKED.png",
+                "type": "image",
+                "key": "raygun-button"
+            },
+            {
+                "url": "assets/buttons/pages/RayGunLOCKED.png",
+                "type": "image",
+                "key": "raygun-button-locked"
+            },
+            {
+                "url": "assets/buttons/pages/BuddyBlasterUNLOCKED.png",
+                "type": "image",
+                "key": "rpg-button"
+            },
+            {
+                "url": "assets/buttons/pages/BuddyBlasterLOCKED.png",
+                "type": "image",
+                "key": "rpg-button-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/ShoeBoxIconLOCKED.png",
+                "type": "image",
+                "key": "shoe-box-locked"
+            },
+            {
+                "url": "assets/buttons/boxes/ShoeBoxIconUNLOCKED.png",
+                "type": "image",
+                "key": "shoe-box"
+            },
+            {
+                "url": "assets/buttons/icons/BuddyShopJournal icon.png",
+                "type": "image",
+                "key": "shop"
+            },
+            {
+                "url": "assets/buttons/icons/ShopSELECTED.png",
+                "type": "image",
+                "key": "shop-selected"
+            },
+            {
+                "url": "assets/buttons/icons/BuddySkinsJournal icon.png",
+                "type": "image",
+                "key": "skins"
+            },
+            {
+                "url": "assets/buttons/icons/SkinsSELECTED.png",
+                "type": "image",
+                "key": "skins-selected"
+            },
+            {
+                "url": "assets/buttons/pages/AntiBGUNLOCKED.png",
+                "type": "image",
+                "key": "sticky-bomb-button"
+            },
+            {
+                "url": "assets/buttons/pages/AntiBGLOCKED.png",
+                "type": "image",
+                "key": "sticky-bomb-button-locked"
+            },
+            {
+                "url": "assets/buttons/pages/FreePageBG.png",
+                "type": "image",
+                "key": "tier1-bg"
+            },
+            {
+                "url": "assets/buttons/Tier2.png",
+                "type": "image",
+                "key": "Tier2"
+            },
+            {
+                "url": "assets/buttons/pages/GangstapageBG.png",
+                "type": "image",
+                "key": "tier2-bg"
+            },
+            {
+                "url": "assets/buttons/Tier2LOCKED.png",
+                "type": "image",
+                "key": "Tier2LOCKED"
+            },
+            {
+                "url": "assets/buttons/Tier3.png",
+                "type": "image",
+                "key": "Tier3"
+            },
+            {
+                "url": "assets/buttons/pages/TrenchWarriorBG.png",
+                "type": "image",
+                "key": "tier3-bg"
+            },
+            {
+                "url": "assets/buttons/Tier3LOCKED.png",
+                "type": "image",
+                "key": "Tier3LOCKED"
+            },
+            {
+                "url": "assets/buttons/Tier4.png",
+                "type": "image",
+                "key": "Tier4"
+            },
+            {
+                "url": "assets/buttons/pages/SolanaLegendBG.png",
+                "type": "image",
+                "key": "tier4-bg"
+            },
+            {
+                "url": "assets/buttons/Tier4LOCKED.png",
+                "type": "image",
+                "key": "Tier4LOCKED"
+            },
+            {
+                "url": "assets/buttons/pages/TommyUNLOCKED.png",
+                "type": "image",
+                "key": "tommy-button"
+            },
+            {
+                "url": "assets/buttons/pages/TommyLOCKED.png",
+                "type": "image",
+                "key": "tommy-button-locked"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
 }

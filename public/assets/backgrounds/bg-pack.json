@@ -1,0 +1,39 @@
+{
+  "section1": {
+    "files": [
+      {
+        "url": "assets/backgrounds/bg-basket.jpg",
+        "type": "image",
+        "key": "bg-basket"
+      },
+      {
+        "url": "assets/backgrounds/bg-bloody.jpg",
+        "type": "image",
+        "key": "bg-bloody"
+      },
+      {
+        "url": "assets/backgrounds/bg-main.jpg",
+        "type": "image",
+        "key": "bg-main"
+      },
+      {
+        "url": "assets/backgrounds/bg-present.jpg",
+        "type": "image",
+        "key": "bg-present"
+      },
+      {
+        "url": "assets/backgrounds/bg-shoe.jpg",
+        "type": "image",
+        "key": "bg-shoe"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
+}
+
