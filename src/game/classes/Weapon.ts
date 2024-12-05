@@ -1,6 +1,7 @@
 import { EventBus } from "../EventBus";
 import { Character } from "./Character";
 import { GameWeaponKey } from "../types";
+import { Effects } from "./Effects";
 
 interface WeaponConfig {
   texture: string;
@@ -19,6 +20,7 @@ interface WeaponConfig {
 export class Weapon {
   private scene: Phaser.Scene;
   private character: Character;
+  private effects: Effects;
   private currentWeapon?: Phaser.GameObjects.Sprite;
   private weapon?: GameWeaponKey;
   private firingTimer?: Phaser.Time.TimerEvent;
@@ -171,9 +173,10 @@ export class Weapon {
       },
     };
 
-  constructor(scene: Phaser.Scene, character: Character) {
+  constructor(scene: Phaser.Scene, character: Character, effects: Effects) {
     this.scene = scene;
     this.character = character;
+    this.effects = effects;
     this.barrelPoint = new Phaser.Math.Vector2(0, 0);
     this.setupEventListeners();
   }
@@ -283,23 +286,12 @@ export class Weapon {
   }
 
   public fireWeapon(): void {
-    if (!this.canFire()) return;
-
     const config = this.getCurrentWeaponConfig();
     if (!config) return;
 
     this.playWeaponAnimation();
     this.playWeaponSound(config);
     this.spawnProjectile();
-  }
-
-  private canFire(): boolean {
-    return (
-      this.showWeapon &&
-      !this.pointerOver &&
-      this.weapon !== undefined &&
-      this.currentWeapon !== undefined
-    );
   }
 
   private getCurrentWeaponConfig(): WeaponConfig | undefined {
@@ -338,14 +330,13 @@ export class Weapon {
 
   private spawnProjectile(): void {
     const characterPos = this.character.getPosition();
-    const targetPoint = new Phaser.Math.Vector2(characterPos.x, characterPos.y);
 
     // Calculate angle between start and target points
     const angle = Phaser.Math.Angle.Between(
       this.barrelPoint.x,
       this.barrelPoint.y,
-      targetPoint.x,
-      targetPoint.y
+      characterPos.x,
+      characterPos.y
     );
 
     let speed = 50;
@@ -418,8 +409,8 @@ export class Weapon {
         const distance = Phaser.Math.Distance.Between(
           this.barrelPoint.x,
           this.barrelPoint.y,
-          targetPoint.x,
-          targetPoint.y
+          characterPos.x,
+          characterPos.y
         );
         throwForce = Math.min(distance * 0.02, 25); // Slightly reduced multiplier and max force
 
@@ -458,7 +449,12 @@ export class Weapon {
 
                 // Explode after delay
                 this.scene.time.delayedCall(2000, () => {
-                  this.createExplosion(collisionPoint.x, collisionPoint.y);
+                  this.effects.playEffect(
+                    "explosion2",
+                    collisionPoint.x,
+                    collisionPoint.y
+                  );
+                  // this.createExplosion(collisionPoint.x, collisionPoint.y);
                   matterBomb.destroy();
                 });
               }
@@ -466,17 +462,29 @@ export class Weapon {
             }
             case "fire-bomb": {
               // Create fire effect and DOT damage
-              this.createFireEffect(collisionPoint.x, collisionPoint.y);
+              this.effects.playEffect(
+                "fire",
+                collisionPoint.x,
+                collisionPoint.y
+              );
               matterBomb.destroy();
               break;
             }
             case "grenade": {
               // Explode immediately on impact
-              this.createExplosion(collisionPoint.x, collisionPoint.y);
+              this.effects.playEffect(
+                "explosion2",
+                collisionPoint.x,
+                collisionPoint.y
+              );
               matterBomb.destroy();
               break;
             }
           }
+
+          const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
+
+          EventBus.emit("projectile-hit", damage);
         },
       });
 
@@ -498,7 +506,12 @@ export class Weapon {
           type: "circle",
           radius: 10,
         },
-        onCollideCallback: () => {
+        onCollideCallback: (collision: MatterJS.ICollisionPair) => {
+          const collisionPoint = {
+            x: collision.collision.supports[0]?.x,
+            y: collision.collision.supports[0]?.y,
+          };
+
           if (this.weapon === "rpg") {
             this.scene.sound.play("explode");
           } else if (this.weapon === "raygun") {
@@ -526,8 +539,13 @@ export class Weapon {
             // Add other weapon damage values as needed
           }
 
+          const characterPos = this.character.getPosition();
+
           const isExplosion = this.weapon === "rpg";
-          EventBus.emit("projectile-hit", { damage, isExplosion });
+          EventBus.emit("health-changed", damage);
+          // this.effects.playEffect("coin", collisionPoint.x, collisionPoint.y);
+          this.effects.playEffect("b1", characterPos.x, characterPos.y);
+          // EventBus.emit("projectile-hit", { damage, isExplosion });
           matterBullet.destroy();
         },
       });
@@ -539,73 +557,9 @@ export class Weapon {
         speed * Math.sin(angle)
       );
     }
-  }
 
-  private createFireEffect(x: number, y: number) {
-    const fireEffect = this.scene.add
-      .sprite(x, y, "groundfire_00016")
-      .play("fire");
-
-    this.scene.sound.play("fire-bomb-impact");
-
-    // Create damage over time effect
-    let tickCount = 0;
-    const maxTicks = 5;
-
-    const fireDamage = this.scene.time.addEvent({
-      delay: 500, // Damage every 0.5 seconds
-      callback: () => {
-        const characterPos = this.character.getPosition();
-        const distance = Phaser.Math.Distance.Between(
-          x,
-          y,
-          characterPos.x,
-          characterPos.y
-        );
-
-        if (distance <= 50) {
-          // Fire damage radius
-          EventBus.emit("projectile-hit", {
-            damage: 5,
-            isExplosion: false,
-          });
-        }
-
-        tickCount++;
-        if (tickCount >= maxTicks) {
-          fireDamage.destroy();
-          fireEffect.destroy();
-        }
-      },
-      loop: true,
-    });
-  }
-
-  private createExplosion(x: number, y: number) {
-    // Visual effect
-    const explosion = this.scene.add
-      .sprite(x, y, "firstexplosion_00094")
-      .play("explosion");
-
-    // Sound effect
-    this.scene.sound.play("explode");
-
-    // Damage calculation based on distance
-    const blastRadius = 100;
-    const characterPos = this.character.getPosition();
-    const distance = Phaser.Math.Distance.Between(
-      x,
-      y,
-      characterPos.x,
-      characterPos.y
-    );
-
-    if (distance <= blastRadius) {
-      const damage = 1 - distance / blastRadius; // More damage closer to explosion
-      EventBus.emit("projectile-hit", {
-        damage: damage * 20, // Scale damage appropriately
-        isExplosion: true,
-      });
+    for (let i = 0; i < 5; i++) {
+      this.effects.spawnCoin(characterPos.x, characterPos.y);
     }
   }
 

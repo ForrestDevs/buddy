@@ -21,10 +21,7 @@ export class GameButtons extends Phaser.GameObjects.Container {
     super(config.scene, config.x, config.y);
     this.scene = config.scene;
     this.spacing = config.spacing || 60;
-
-    // Add container to scene
     this.scene.add.existing(this);
-
     this.createButtons();
     this.setupEventListeners();
   }

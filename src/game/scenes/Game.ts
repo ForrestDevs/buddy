@@ -6,10 +6,12 @@ import { JournalManager } from "../classes/Journal";
 import { ScoreBar } from "../classes/ScoreBar";
 import { SoundManager } from "../classes/SoundManager";
 import { Weapon } from "../classes/Weapon";
+import { Effects } from "../classes/Effects";
 
 export default class Game extends Phaser.Scene {
   private bg!: Phaser.GameObjects.Image;
   private character!: Character;
+  private effects!: Effects;
   private gameButtons!: GameButtons;
   private journalManager!: JournalManager;
   private soundManager!: SoundManager;
@@ -43,8 +45,6 @@ export default class Game extends Phaser.Scene {
       y: 30, // Adjust based on your game height
       width: 300,
       health: 100,
-      kills: 0,
-      coins: 0,
     });
     this.gameButtons = new GameButtons({
       scene: this,
@@ -64,7 +64,8 @@ export default class Game extends Phaser.Scene {
       y: 200,
       tier: this.characterTiers[this.data.get("tier")] ?? "paper",
     });
-    this.weaponObject = new Weapon(this, this.character);
+    this.effects = new Effects(this);
+    this.weaponObject = new Weapon(this, this.character, this.effects);
     EventBus.on("bg-change", (bg: string) => {
       this.bg.setTexture(bg);
     });
@@ -75,7 +76,7 @@ export default class Game extends Phaser.Scene {
       this.pointerOver = false;
     });
     EventBus.on("skin-equipped", (skin: string) => {
-      this.character.changeTier(skin);
+      this.character.changeSkin(skin);
     });
     this.input.on("pointerdown", () => {
       if (!this.weaponObject) return;

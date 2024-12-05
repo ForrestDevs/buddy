@@ -50,50 +50,18 @@ export class Character {
     ["leftLeg", null],
     ["rightLeg", null],
   ]);
-  private effects: Map<string, Phaser.GameObjects.Sprite | null> = new Map([
-    ["bloodSplatter", null],
-    ["bloodSplatter2", null],
-    ["bloodSplatter3", null],
-    ["bloodSplatter4", null],
-    ["explosion", null],
-  ]);
   private sounds: Map<string, Phaser.Sound.BaseSound | null> = new Map([
     ["hit", null],
     ["grunt", null],
     ["death", null],
   ]);
-  private effectStates: Map<
-    string,
-    { isPlaying: boolean; timer?: Phaser.Time.TimerEvent }
-  > = new Map<
-    string,
-    {
-      isPlaying: boolean;
-      timer?: Phaser.Time.TimerEvent;
-    }
-  >();
-
-  private setupEffectStates(): void {
-    // Initialize states for all effects
-    [
-      "bloodSplatter",
-      "bloodSplatter2",
-      "bloodSplatter3",
-      "bloodSplatter4",
-      "explosion",
-    ].forEach((effect) => {
-      this.effectStates.set(effect, { isPlaying: false });
-    });
-  }
 
   constructor(config: CharacterConfig) {
     this.scene = config.scene;
     this.tier = config.tier || "paper";
     this.createCharacter(config.x, config.y);
-    this.createEffects();
     this.setupEventListeners();
     this.loadSounds();
-    this.setupEffectStates();
   }
 
   private createCharacter(x: number, y: number): void {
@@ -309,32 +277,8 @@ export class Character {
     });
   }
 
-  // Make sure effects start hidden in createEffects
-  private createEffects(): void {
-    const bodyPosition = {
-      x: this.bodyParts.get("body")!.x,
-      y: this.bodyParts.get("body")!.y,
-    };
-
-    const effectsConfig = [
-      { key: "bloodSplatter", texture: "blood1_00018" },
-      { key: "bloodSplatter2", texture: "bloodgush3_018" },
-      { key: "bloodSplatter3", texture: "bloodgut3_022" },
-      { key: "bloodSplatter4", texture: "darkerblood1_00018" },
-      { key: "explosion", texture: "firstexplosion_00094" },
-    ];
-
-    effectsConfig.forEach(({ key, texture }) => {
-      const sprite = this.scene.add
-        .sprite(bodyPosition.x, bodyPosition.y, texture)
-        .setDepth(4)
-        .setVisible(false); // Start hidden
-      this.effects.set(key, sprite);
-    });
-  }
-
   private setupEventListeners(): void {
-    EventBus.on("projectile-hit", this.onProjectileHit, this);
+    // EventBus.on("projectile-hit", this.onProjectileHit, this);
   }
 
   private loadSounds(): void {
@@ -356,107 +300,49 @@ export class Character {
     });
   }
 
-  private onProjectileHit({
-    damage,
-    isExplosion,
-  }: {
-    damage: number;
-    isExplosion?: boolean;
-  }): void {
-    this.damage(damage);
-    this.playHitEffects(isExplosion);
+  // private onProjectileHit({
+  //   damage,
+  //   isExplosion,
+  // }: {
+  //   damage: number;
+  //   isExplosion?: boolean;
+  // }): void {
+  //   this.damage(damage);
 
-    // Play appropriate sound based on damage/health
-    this.sounds.get("thump")?.play();
-    if (this.health <= 0) {
-      this.sounds.get("death")?.play();
-    } else if (damage > 20) {
-      this.sounds.get("grunt")?.play();
-    } else {
-      this.sounds.get("ouch")?.play();
-    }
-  }
+  //   // Play appropriate sound based on damage/health
+  //   this.sounds.get("thump")?.play();
+  //   if (this.health <= 0) {
+  //     this.sounds.get("death")?.play();
+  //   } else if (damage > 20) {
+  //     this.sounds.get("grunt")?.play();
+  //   } else {
+  //     this.sounds.get("ouch")?.play();
+  //   }
+  // }
 
-  public damage(amount: number): void {
-    this.health -= amount;
-    if (this.health <= 0) {
-      this.health = 100;
-      const currentKills = this.scene.data.get("killCount") || 0;
-      this.scene.data.set("killCount", currentKills + 1);
-    }
-    this.scene.data.set("health", this.health);
-    EventBus.emit("character-health-changed", this.health);
-  }
-
-  private playHitEffects(isExplosion?: boolean): void {
-    this.playEffect("bloodSplatter", "b1");
-    this.playEffect("bloodSplatter2", "b2");
-    this.playEffect("bloodSplatter3", "b3");
-    this.playEffect("bloodSplatter4", "b4");
-
-    if (isExplosion) {
-      this.playEffect("explosion", "explosion");
-    }
-  }
-
-  private playEffect(effectKey: string, animationKey: string): void {
-    const effect = this.effects.get(effectKey);
-    const state = this.effectStates.get(effectKey);
-
-    if (!effect || !state) return;
-
-    // If effect is already playing, just reset its stop timer
-    if (state.isPlaying) {
-      if (state.timer) {
-        state.timer.reset({
-          delay: 500,
-          callback: () => {
-            state.isPlaying = false;
-            effect.stop();
-            effect.setVisible(false); // Hide the sprite
-            effect.off("animationcomplete");
-          },
-        });
-      }
-      return;
-    }
-
-    // Start playing the effect
-    state.isPlaying = true;
-    effect.setVisible(true); // Show the sprite
-    effect.play(animationKey);
-
-    // Set up auto-repeat on animation complete
-    effect.on("animationcomplete", () => {
-      if (state.isPlaying) {
-        effect.play(animationKey);
-      }
-    });
-
-    // Create a timer to stop the effect if no more hits occur
-    state.timer = this.scene.time.delayedCall(500, () => {
-      state.isPlaying = false;
-      effect.stop();
-      effect.setVisible(false); // Hide the sprite
-      effect.off("animationcomplete");
-    });
-  }
+  // public damage(amount: number): void {
+  //   this.health -= amount;
+  //   if (this.health <= 0) {
+  //     this.health = 100;
+  //     const currentKills = this.scene.data.get("killCount") || 0;
+  //     this.scene.data.set("killCount", currentKills + 1);
+  //   }
+  //   this.scene.data.set("health", this.health);
+  //   EventBus.emit("character-health-changed", this.health);
+  // }
 
   public getPosition(): Phaser.Math.Vector2 {
     const body = this.bodyParts.get("body");
     if (!body) {
       return new Phaser.Math.Vector2(0, 0);
     }
-
-    return new Phaser.Math.Vector2(body.x, body.y);
+    // Get the body bounds to find true center
+    const bounds = body.getBounds();
+    return new Phaser.Math.Vector2(bounds.centerX, bounds.centerY);
   }
 
-  public changeTier(newTier: string): void {
+  public changeSkin(newTier: string): void {
     this.tier = newTier;
-    this.updateTextures();
-  }
-
-  private updateTextures(): void {
     this.bodyParts.get("head")?.setTexture(`${this.tier}-Head`);
     this.bodyParts.get("body")?.setTexture(`${this.tier}-Body`);
     this.bodyParts.get("leftArm")?.setTexture(`${this.tier}-Rarm`);
@@ -466,19 +352,7 @@ export class Character {
   }
 
   public update(): void {
-    this.updateEffectsPosition();
     this.ensureCharacterBounds();
-  }
-
-  private updateEffectsPosition(): void {
-    const body = this.bodyParts.get("body");
-    if (!body) {
-      return;
-    }
-
-    this.effects.forEach((effect) => {
-      effect?.setPosition(body.x, body.y);
-    });
   }
 
   private ensureCharacterBounds(): void {
@@ -519,7 +393,7 @@ export class Character {
 
   // Don't forget to clean up in the destroy method
   public destroy(): void {
-    EventBus.off("projectile-hit", this.onProjectileHit, this);
+    // EventBus.off("projectile-hit", this.onProjectileHit, this);
 
     // Clean up all body parts
     this.bodyParts.forEach((part) => {
@@ -528,25 +402,8 @@ export class Character {
       }
     });
 
-    // Clean up all effects
-    this.effects.forEach((effect) => {
-      if (effect) {
-        effect.off("animationcomplete"); // Remove any remaining listeners
-        effect.destroy();
-      }
-    });
-
-    // Clean up all timers
-    this.effectStates.forEach((state) => {
-      if (state.timer) {
-        state.timer.destroy();
-      }
-    });
-    this.effectStates.clear();
-
     // Clear the maps
     this.bodyParts.clear();
-    this.effects.clear();
   }
 }
 

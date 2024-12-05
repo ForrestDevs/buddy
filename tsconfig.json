@@ -21,8 +21,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/game/scenes/Game.ts"
-, "svgp.ts"  ],
+    "src/game/scenes/Game.ts",
+    "svgp.ts"
+  ],
   "exclude": ["node_modules"]
 }
 

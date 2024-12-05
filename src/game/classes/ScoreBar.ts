@@ -6,8 +6,6 @@ interface ScoreBarConfig {
   y: number;
   width: number;
   health: number;
-  kills: number;
-  coins: number;
 }
 
 export class ScoreBar extends Phaser.GameObjects.Container {
@@ -32,12 +30,15 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     this.scene.add.existing(this);
     this.healthBarWidth = config.width;
     this.health = config.health;
-    this.kills = config.kills;
-    this.coins = config.coins;
 
+    const kills = parseInt(localStorage.getItem("kills") || "0");
+    const coins = parseInt(localStorage.getItem("coins") || "0");
+
+    this.kills = kills;
+    this.coins = coins;
     this.createHealthBar(config.health);
-    this.createKillCount(config.kills);
-    this.createCoins(config.coins);
+    this.createKillCount(kills);
+    this.createCoins(coins);
     this.setupEventListeners();
   }
 
@@ -80,7 +81,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
 
   private createCoins(initialCoins: number): void {
     this.coinsText = this.scene.add
-      .text(500, 0, `Coins: ${initialCoins}`, {
+      .text(470, 0, `${initialCoins}`, {
         fontSize: "16px",
         color: "#ffffff",
       })
@@ -109,6 +110,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   public updateKills(): void {
     this.kills += 1;
     this.killCountText.setText(`Kills: ${this.kills}`);
+    localStorage.setItem("kills", this.kills.toString());
   }
 
   public updateHealth(amount: number): void {
@@ -117,11 +119,19 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     this.healthText.setText(`${this.health.toFixed(2)}%`);
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
+
+    if (this.health <= 0) {
+      this.updateKills();
+      this.health = 100;
+      this.healthText.setText(`${this.health.toFixed(2)}%`);
+      this.healthBarFill.width = this.healthBarWidth;
+    }
   }
 
   public updateCoins(amount: number = 1): void {
     this.coins += amount;
-    this.coinsText.setText(`Coins: ${this.coins}`);
+    this.coinsText.setText(`${this.coins}`);
+    localStorage.setItem("coins", this.coins.toString());
   }
 
   public destroy(fromScene?: boolean): void {

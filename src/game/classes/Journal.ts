@@ -172,9 +172,11 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private tierText!: Phaser.GameObjects.Text;
   private skinPage!: Phaser.GameObjects.Image;
   private shopPage!: Phaser.GameObjects.Image;
+  private pointerOver: boolean = false;
 
   constructor(config: JournalManagerConfig) {
     super(config.scene, config.x, config.y);
+    this.setDepth(100);
     this.scene.add.existing(this);
 
     this.journalContents = new Map();

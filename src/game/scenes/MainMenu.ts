@@ -25,7 +25,7 @@ export default class MainMenu extends Phaser.Scene {
     this.music = this.sound.add("bgMusic");
     this.music.play({
       loop: true,
-      volume: 1,
+      volume: 0.5,
     });
     this.background = this.add
       .video(1280 / 2, 720 / 2, "loading")
