@@ -97,7 +97,6 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true,
-            "repeat": 0,
             "randomFrame": false
         },
         {
@@ -197,7 +196,6 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true,
-            "repeat": 0,
             "randomFrame": false
         },
         {
@@ -317,7 +315,6 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true,
-            "repeat": 0,
             "randomFrame": false
         },
         {
@@ -417,7 +414,6 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true,
-            "repeat": 0,
             "randomFrame": false
         },
         {
@@ -897,7 +893,255 @@
             ],
             "frameRate": 60,
             "skipMissedFrames": true,
-            "repeat": 0,
+            "randomFrame": false
+        },
+        {
+            "key": "coin-spin",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "SpinningMoney0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "SpinningMoney0048",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
             "randomFrame": false
         },
         {
@@ -1405,9 +1649,936 @@
                     "keyframe": false
                 }
             ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "randomFrame": false
+        },
+        {
+            "key": "fire2",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "fire2fixed_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00048",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00049",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00050",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00051",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00052",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00053",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00054",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00055",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00056",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00057",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00058",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00059",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00060",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00061",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00062",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00063",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00064",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00065",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00066",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00067",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00068",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00069",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00070",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00071",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00072",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00073",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00074",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00075",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00076",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00077",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00078",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fire2fixed_00079",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
             "frameRate": 30,
             "skipMissedFrames": true,
-            "repeat": 0,
+            "randomFrame": false
+        },
+        {
+            "key": "explosion2",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "expl2fixed_00000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00023",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00024",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00025",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00026",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00030",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00031",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00032",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00033",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00034",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00035",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00036",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00037",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00038",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00039",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00040",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00041",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00042",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00043",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00044",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00045",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00046",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00047",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00048",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00049",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00050",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00051",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00052",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00053",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00054",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00055",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00056",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00057",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00058",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00059",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00060",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00061",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00062",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00063",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00064",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00065",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00066",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00067",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00068",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00069",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00070",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00071",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00072",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00073",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00074",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00075",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00076",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00077",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00078",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00079",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00080",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00081",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00082",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00083",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00084",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00085",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00086",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00087",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00088",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00089",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00090",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00091",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00092",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00093",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00094",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00095",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00096",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00097",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00098",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00099",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00100",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00101",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00102",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00103",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00104",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00105",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00106",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00107",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00108",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00109",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00110",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00111",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00112",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "expl2fixed_00113",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 60,
+            "skipMissedFrames": true,
             "randomFrame": false
         }
     ],

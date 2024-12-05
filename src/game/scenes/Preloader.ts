@@ -1,17 +1,13 @@
-// You can write more code here
-
-/* START OF COMPILED CODE */
-
 import Phaser from "phaser";
-/* START-USER-IMPORTS */
-/* END-USER-IMPORTS */
 
 export default class Preloader extends Phaser.Scene {
+  private progressBar!: Phaser.GameObjects.Rectangle;
+
   constructor() {
     super("Preloader");
   }
 
-  editorCreate(): void {
+  init() {
     // background
     const width = this.cameras.main.width;
     const height = this.cameras.main.height;
@@ -32,15 +28,6 @@ export default class Preloader extends Phaser.Scene {
     this.progressBar = progressBar;
 
     this.events.emit("scene-awake");
-  }
-
-  private progressBar!: Phaser.GameObjects.Rectangle;
-
-  /* START-USER-CODE */
-
-  // Write your code here
-  init() {
-    this.editorCreate();
 
     //  This is the progress bar itself. It will increase in size from the left based on the % of progress.
     const bar = this.add.rectangle(
@@ -237,18 +224,75 @@ export default class Preloader extends Phaser.Scene {
     ];
 
     this.registry.set("weapons", weapons);
+
+    const items = [
+      {
+        id: "dynamite",
+        name: "dynamite",
+        texture: "dynamite-item",
+        tier: 1,
+        price: 0,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+      {
+        id: "gasnade",
+        name: "gasnade",
+        texture: "gasnade-item",
+        tier: 1,
+        price: 0,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+      {
+        id: "katana",
+        name: "katana",
+        texture: "katana-item",
+        tier: 2,
+        price: 0,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+      {
+        id: "battle-axe",
+        name: "battle-axe",
+        texture: "battleaxe-item",
+        tier: 2,
+        price: 1000,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+      {
+        id: "kar98",
+        name: "kar98",
+        texture: "kar98-item",
+        tier: 3,
+        price: 1500,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+      {
+        id: "flamethrower",
+        name: "flamethrower",
+        texture: "flamethrower-item",
+        tier: 3,
+        price: 2000,
+        unlocked: true,
+        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+      },
+    ];
+
+    this.registry.set("items", items);
   }
 
   preload() {
-    // Use the 'pack' file to load in any assets you need for this scene
     this.load.pack("button-pack", "assets/buttons/button-pack.json");
     this.load.pack("effect-pack", "assets/effects/effect-pack.json");
     this.load.pack("weapon-pack", "assets/weapons/weapon-pack.json");
     this.load.pack("character-pack", "assets/character/character-pack.json");
-    this.load.json("characterShapes", "assets/character/character.xml.json");
     this.load.pack("sound-pack", "assets/sounds/sound-pack.json");
     this.load.pack("background-pack", "assets/backgrounds/bg-pack.json");
-
+    this.load.json("characterShapes", "assets/character/character.xml.json");
     this.load.animation(
       "weapon-animations",
       "assets/weapons/weapon-animations.json"
@@ -260,19 +304,7 @@ export default class Preloader extends Phaser.Scene {
   }
 
   create() {
-    //  When all the assets have loaded, it's often worth creating global objects here that the rest of the game can use.
-    //  For example, you can define global animations here, so we can use them in other scenes.
-    //  Move to the MainGame. You could also swap this for a Scene Transition, such as a camera fade.
-    this.scene.transition({
-      target: "MainGame",
-      duration: 3000,
-      moveBelow: false,
-    });
+    this.scene.start("MainGame");
   }
-  /* END-USER-CODE */
 }
-
-/* END OF COMPILED CODE */
-
-// You can write more code here
 

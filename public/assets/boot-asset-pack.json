@@ -10,6 +10,11 @@
         "url": ["assets/sounds/bgMusic.mp3"],
         "type": "audio",
         "key": "bgMusic"
+      },
+      {
+        "url": "assets/coin.png",
+        "type": "image",
+        "key": "coin"
       }
     ]
   },
@@ -21,3 +26,4 @@
     "showAllFilesInBlocks": false
   }
 }
+

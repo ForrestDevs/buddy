@@ -12,6 +12,10 @@ export class GameButtons extends Phaser.GameObjects.Container {
   private buttonStates: Map<string, "default" | "hover" | "selected"> =
     new Map();
   private spacing: number;
+  private muteButton: Phaser.GameObjects.Image;
+  private muteButtonState: "muted" | "unmuted" = "unmuted";
+  private socialsButton: Phaser.GameObjects.Image;
+  private socialsButtonState: "open" | "closed" = "closed";
 
   constructor(config: ButtonConfig) {
     super(config.scene, config.x, config.y);
@@ -45,10 +49,36 @@ export class GameButtons extends Phaser.GameObjects.Container {
       this.buttons.set(key, button);
       this.buttonStates.set(key, "default");
     });
+
+    this.socialsButton = this.scene.add
+      .image(0, 440, "logo-select")
+      .setDisplaySize(100, 100)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => this.onSocialsButtonClick());
+
+    this.add(this.socialsButton);
+
+    this.muteButton = this.scene.add
+      .image(0, -110, "unmuted")
+      .setDisplaySize(100, 100)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => this.onMuteButtonClick());
+
+    this.add(this.muteButton);
   }
 
   private setupEventListeners(): void {
     EventBus.on("journal-closed", this.resetButtonStates, this);
+  }
+
+  private onMuteButtonClick(): void {
+    this.toggleMute();
+  }
+
+  private onSocialsButtonClick(): void {
+    this.scene.sound.play("click");
+    this.socialsButtonState =
+      this.socialsButtonState === "open" ? "closed" : "open";
   }
 
   private onButtonHover(key: string): void {
@@ -108,22 +138,26 @@ export class GameButtons extends Phaser.GameObjects.Container {
   }
 
   private toggleMute(): void {
-    const muteButton = this.buttons.get("mute")!;
-    const isMuted = this.buttonStates.get("mute") === "selected";
+    this.scene.sound.play("click");
+    const isMuted = this.muteButtonState === "muted";
 
-    muteButton.setTexture(isMuted ? "mute" : "mute-selected");
-    this.buttonStates.set("mute", isMuted ? "default" : "selected");
+    this.muteButton.setTexture(isMuted ? "unmuted" : "mute");
+    this.muteButtonState = isMuted ? "unmuted" : "muted";
 
+    if (this.muteButtonState === "muted") {
+      this.scene.game.sound.stopByKey("bgMusic");
+    } else if (
+      !this.scene.game.sound.isPlaying("bgMusic") &&
+      this.muteButtonState === "unmuted"
+    ) {
+      this.scene.game.sound.play("bgMusic");
+    }
     // Emit mute event
     EventBus.emit("toggle-mute", !isMuted);
-
-    // Play click sound (if not muted)
-    if (!isMuted) {
-      this.scene.sound.play("click");
-    }
   }
 
-  private isPointerOver(): boolean {
+  public isPointerOver(): boolean {
+    EventBus.emit("hide-weapon", true);
     const bounds = this.getBounds();
     return bounds.contains(
       this.scene.input.activePointer.x,

@@ -1,11 +1,5 @@
-// You can write more code here
-
-/* START OF COMPILED CODE */
-
 import Phaser from "phaser";
-/* START-USER-IMPORTS */
 import { EventBus } from "../EventBus";
-/* END-USER-IMPORTS */
 
 export default class MainMenu extends Phaser.Scene {
   private background!: Phaser.GameObjects.Video;
@@ -73,4 +67,3 @@ export default class MainMenu extends Phaser.Scene {
 }
 
 export { MainMenu };
-

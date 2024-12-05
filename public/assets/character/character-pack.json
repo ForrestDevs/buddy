@@ -1,134 +1,258 @@
 {
-  "section1": {
-    "files": [
-      {
-        "url": "assets/character/military/ArmMili.png",
-        "type": "image",
-        "key": "mil-Rarm"
-      },
-      {
-        "url": "assets/character/military/BodyMili.png",
-        "type": "image",
-        "key": "mil-Body"
-      },
-      {
-        "url": "assets/character/military/HeadMili.png",
-        "type": "image",
-        "key": "mil-Head"
-      },
-      {
-        "url": "assets/character/military/LarmARMY.png",
-        "type": "image",
-        "key": "mil-Larm"
-      },
-      {
-        "url": "assets/character/military/LegMilli.png",
-        "type": "image",
-        "key": "mil-Rleg"
-      },
-      {
-        "url": "assets/character/musk/Lleg.png",
-        "type": "image",
-        "key": "musk-Lleg"
-      },
-      {
-        "url": "assets/character/military/LlegARMY.png",
-        "type": "image",
-        "key": "mil-Lleg"
-      },
-      {
-        "url": "assets/character/musk/Body.png",
-        "type": "image",
-        "key": "musk-Body"
-      },
-      {
-        "url": "assets/character/musk/muskhead.png",
-        "type": "image",
-        "key": "musk-Head"
-      },
-      {
-        "url": "assets/character/musk/Larm.png",
-        "type": "image",
-        "key": "musk-Larm"
-      },
-      {
-        "url": "assets/character/musk/Rarm.png",
-        "type": "image",
-        "key": "musk-Rarm"
-      },
-      {
-        "url": "assets/character/musk/Rleg.png",
-        "type": "image",
-        "key": "musk-Rleg"
-      },
-      {
-        "url": "assets/character/paper/Head.png",
-        "type": "image",
-        "key": "paper-Head"
-      },
-      {
-        "url": "assets/character/paper/Larm.png",
-        "type": "image",
-        "key": "paper-Larm"
-      },
-      {
-        "url": "assets/character/paper/Lleg.png",
-        "type": "image",
-        "key": "paper-Lleg"
-      },
-      {
-        "url": "assets/character/paper/Rarm.png",
-        "type": "image",
-        "key": "paper-Rarm"
-      },
-      {
-        "url": "assets/character/paper/Rleg.png",
-        "type": "image",
-        "key": "paper-Rleg"
-      },
-      {
-        "url": "assets/character/paper/Torso.png",
-        "type": "image",
-        "key": "paper-Body"
-      },
-      {
-        "url": "assets/character/sol/BodySOLANA.png",
-        "type": "image",
-        "key": "sol-Body"
-      },
-      {
-        "url": "assets/character/sol/HeadSOLANA.png",
-        "type": "image",
-        "key": "sol-Head"
-      },
-      {
-        "url": "assets/character/sol/LarmSOLANA.png",
-        "type": "image",
-        "key": "sol-Larm"
-      },
-      {
-        "url": "assets/character/sol/LlegSOLANA.png",
-        "type": "image",
-        "key": "sol-Lleg"
-      },
-      {
-        "url": "assets/character/sol/RarmSOLANA.png",
-        "type": "image",
-        "key": "sol-Rarm"
-      },
-      {
-        "url": "assets/character/sol/RlegSOLANA.png",
-        "type": "image",
-        "key": "sol-Rleg"
-      }
-    ]
-  },
-  "meta": {
-    "app": "Phaser Editor 2D - Asset Pack Editor",
-    "contentType": "phasereditor2d.pack.core.AssetContentType",
-    "url": "https://phasereditor2d.com",
-    "version": 2,
-    "showAllFilesInBlocks": false
-  }
+    "section1": {
+        "files": [
+            {
+                "url": "assets/character/military/BodyMili.png",
+                "type": "image",
+                "key": "mil-Body"
+            },
+            {
+                "url": "assets/character/military/HeadMili.png",
+                "type": "image",
+                "key": "mil-Head"
+            },
+            {
+                "url": "assets/character/military/LarmARMY.png",
+                "type": "image",
+                "key": "mil-Larm"
+            },
+            {
+                "url": "assets/character/military/LlegARMY.png",
+                "type": "image",
+                "key": "mil-Lleg"
+            },
+            {
+                "url": "assets/character/military/ArmMili.png",
+                "type": "image",
+                "key": "mil-Rarm"
+            },
+            {
+                "url": "assets/character/military/LegMilli.png",
+                "type": "image",
+                "key": "mil-Rleg"
+            },
+            {
+                "url": "assets/character/injured/Mili_heavy_Larm.png",
+                "type": "image",
+                "key": "Mili_heavy_Larm"
+            },
+            {
+                "url": "assets/character/injured/Mili_heavy_Rarm.png",
+                "type": "image",
+                "key": "Mili_heavy_Rarm"
+            },
+            {
+                "url": "assets/character/injured/Mili_light_Larm.png",
+                "type": "image",
+                "key": "Mili_light_Larm"
+            },
+            {
+                "url": "assets/character/injured/Mili_light_Rarm.png",
+                "type": "image",
+                "key": "Mili_light_Rarm"
+            },
+            {
+                "url": "assets/character/injured/Musk_dead_head.png",
+                "type": "image",
+                "key": "Musk_dead_head"
+            },
+            {
+                "url": "assets/character/injured/Musk_heavy_Larm.png",
+                "type": "image",
+                "key": "Musk_heavy_Larm"
+            },
+            {
+                "url": "assets/character/injured/Musk_heavy_Rarm.png",
+                "type": "image",
+                "key": "Musk_heavy_Rarm"
+            },
+            {
+                "url": "assets/character/injured/Musk_light_head.png",
+                "type": "image",
+                "key": "Musk_light_head"
+            },
+            {
+                "url": "assets/character/injured/Musk_light_Larm.png",
+                "type": "image",
+                "key": "Musk_light_Larm"
+            },
+            {
+                "url": "assets/character/injured/Musk_light_Rarm.png",
+                "type": "image",
+                "key": "Musk_light_Rarm"
+            },
+            {
+                "url": "assets/character/musk/Body.png",
+                "type": "image",
+                "key": "musk-Body"
+            },
+            {
+                "url": "assets/character/musk/muskhead.png",
+                "type": "image",
+                "key": "musk-Head"
+            },
+            {
+                "url": "assets/character/musk/Larm.png",
+                "type": "image",
+                "key": "musk-Larm"
+            },
+            {
+                "url": "assets/character/musk/Lleg.png",
+                "type": "image",
+                "key": "musk-Lleg"
+            },
+            {
+                "url": "assets/character/musk/Rarm.png",
+                "type": "image",
+                "key": "musk-Rarm"
+            },
+            {
+                "url": "assets/character/musk/Rleg.png",
+                "type": "image",
+                "key": "musk-Rleg"
+            },
+            {
+                "url": "assets/character/injured/Must_heavy_head.png",
+                "type": "image",
+                "key": "Must_heavy_head"
+            },
+            {
+                "url": "assets/character/injured/Paper_dead_head.png",
+                "type": "image",
+                "key": "Paper_dead_head"
+            },
+            {
+                "url": "assets/character/injured/Paper_heavy_head.png",
+                "type": "image",
+                "key": "Paper_heavy_head"
+            },
+            {
+                "url": "assets/character/injured/Paper_heavy_Larm.png",
+                "type": "image",
+                "key": "Paper_heavy_Larm"
+            },
+            {
+                "url": "assets/character/injured/Paper_heavy_Rarm.png",
+                "type": "image",
+                "key": "Paper_heavy_Rarm"
+            },
+            {
+                "url": "assets/character/injured/Paper_light_head.png",
+                "type": "image",
+                "key": "Paper_light_head"
+            },
+            {
+                "url": "assets/character/injured/Paper_light_Larm.png",
+                "type": "image",
+                "key": "Paper_light_Larm"
+            },
+            {
+                "url": "assets/character/injured/Paper_light_Rarm.png",
+                "type": "image",
+                "key": "Paper_light_Rarm"
+            },
+            {
+                "url": "assets/character/paper/Torso.png",
+                "type": "image",
+                "key": "paper-Body"
+            },
+            {
+                "url": "assets/character/paper/Head.png",
+                "type": "image",
+                "key": "paper-Head"
+            },
+            {
+                "url": "assets/character/paper/Larm.png",
+                "type": "image",
+                "key": "paper-Larm"
+            },
+            {
+                "url": "assets/character/paper/Lleg.png",
+                "type": "image",
+                "key": "paper-Lleg"
+            },
+            {
+                "url": "assets/character/paper/Rarm.png",
+                "type": "image",
+                "key": "paper-Rarm"
+            },
+            {
+                "url": "assets/character/paper/Rleg.png",
+                "type": "image",
+                "key": "paper-Rleg"
+            },
+            {
+                "url": "assets/character/injured/Sol_dead_head.png",
+                "type": "image",
+                "key": "Sol_dead_head"
+            },
+            {
+                "url": "assets/character/injured/Sol_heavy_head.png",
+                "type": "image",
+                "key": "Sol_heavy_head"
+            },
+            {
+                "url": "assets/character/injured/Sol_heavy_Larm2.png",
+                "type": "image",
+                "key": "Sol_heavy_Larm2"
+            },
+            {
+                "url": "assets/character/injured/Sol_heavy_Rarm2.png",
+                "type": "image",
+                "key": "Sol_heavy_Rarm2"
+            },
+            {
+                "url": "assets/character/injured/Sol_light_head.png",
+                "type": "image",
+                "key": "Sol_light_head"
+            },
+            {
+                "url": "assets/character/injured/Sol_light_Larm2.png",
+                "type": "image",
+                "key": "Sol_light_Larm2"
+            },
+            {
+                "url": "assets/character/injured/Sol_light_Rarm2.png",
+                "type": "image",
+                "key": "Sol_light_Rarm2"
+            },
+            {
+                "url": "assets/character/sol/BodySOLANA.png",
+                "type": "image",
+                "key": "sol-Body"
+            },
+            {
+                "url": "assets/character/sol/HeadSOLANA.png",
+                "type": "image",
+                "key": "sol-Head"
+            },
+            {
+                "url": "assets/character/sol/LarmSOLANA.png",
+                "type": "image",
+                "key": "sol-Larm"
+            },
+            {
+                "url": "assets/character/sol/LlegSOLANA.png",
+                "type": "image",
+                "key": "sol-Lleg"
+            },
+            {
+                "url": "assets/character/sol/RarmSOLANA.png",
+                "type": "image",
+                "key": "sol-Rarm"
+            },
+            {
+                "url": "assets/character/sol/RlegSOLANA.png",
+                "type": "image",
+                "key": "sol-Rleg"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
 }
-
