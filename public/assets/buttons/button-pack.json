@@ -32,6 +32,11 @@
         "key": "basket-box-locked"
       },
       {
+        "url": "assets/buttons/shop/FAKEbattleaxe.png",
+        "type": "image",
+        "key": "battleaxe-item"
+      },
+      {
         "url": "assets/buttons/boxes/BloodBoxUNLOCKED.png",
         "type": "image",
         "key": "blood-box"
@@ -57,16 +62,6 @@
         "key": "boxes-selected"
       },
       {
-        "url": "assets/buttons/shop/BuddyBurnerLOCKED.png",
-        "type": "image",
-        "key": "flamethrower-item-locked"
-      },
-      {
-        "url": "assets/buttons/shop/BuddyBurnerUNLOCKED.png",
-        "type": "image",
-        "key": "flamethrower-item"
-      },
-      {
         "url": "assets/buttons/pages/TeethUNLOCKED.png",
         "type": "image",
         "key": "chainsaw-button"
@@ -75,6 +70,11 @@
         "url": "assets/buttons/pages/TeethLOCKED.png",
         "type": "image",
         "key": "chainsaw-button-locked"
+      },
+      {
+        "url": "assets/buttons/icons/CLOSEicon.png",
+        "type": "image",
+        "key": "close"
       },
       {
         "url": "assets/buttons/boxes/ComingSoonBox LAST PAGE.png",
@@ -97,24 +97,14 @@
         "key": "DexLogoACTIVE"
       },
       {
-        "url": "assets/buttons/shop/DynamiteLOCKED.png",
-        "type": "image",
-        "key": "dynamite-item-locked"
-      },
-      {
         "url": "assets/buttons/shop/DynamiteUNLOCKED.png",
         "type": "image",
         "key": "dynamite-item"
       },
       {
-        "url": "assets/buttons/shop/FAKEbattleaxe.png",
+        "url": "assets/buttons/shop/DynamiteLOCKED.png",
         "type": "image",
-        "key": "battleaxe-item"
-      },
-      {
-        "url": "assets/buttons/shop/FAKEgasnade.png",
-        "type": "image",
-        "key": "gasnade-item"
+        "key": "dynamite-item-locked"
       },
       {
         "url": "assets/buttons/pages/HeatUNLOCKED.png",
@@ -127,6 +117,21 @@
         "key": "firebomb-button-locked"
       },
       {
+        "url": "assets/buttons/shop/BuddyBurnerUNLOCKED.png",
+        "type": "image",
+        "key": "flamethrower-item"
+      },
+      {
+        "url": "assets/buttons/shop/BuddyBurnerLOCKED.png",
+        "type": "image",
+        "key": "flamethrower-item-locked"
+      },
+      {
+        "url": "assets/buttons/shop/WILLBEREALflamethrower.png",
+        "type": "image",
+        "key": "flamethrower-item1"
+      },
+      {
         "url": "assets/buttons/skins/FreeBud.png",
         "type": "image",
         "key": "FreeBud"
@@ -137,14 +142,19 @@
         "key": "FREETier"
       },
       {
+        "url": "assets/buttons/shop/FAKEgasnade.png",
+        "type": "image",
+        "key": "gasnade-item"
+      },
+      {
         "url": "assets/buttons/pages/Nade.png",
         "type": "image",
         "key": "grenade-button"
       },
       {
-        "url": "assets/buttons/shop/Kar98kLOCKED.png",
+        "url": "assets/buttons/Healthbar.png",
         "type": "image",
-        "key": "kar98-item-locked"
+        "key": "healthbar"
       },
       {
         "url": "assets/buttons/shop/Kar98kUNLOCKED.png",
@@ -152,14 +162,19 @@
         "key": "kar98-item"
       },
       {
-        "url": "assets/buttons/shop/KatanaLOCKED.png",
+        "url": "assets/buttons/shop/Kar98kLOCKED.png",
         "type": "image",
-        "key": "katana-item-locked"
+        "key": "kar98-item-locked"
       },
       {
         "url": "assets/buttons/shop/KatanaUNLOCKED.png",
         "type": "image",
         "key": "katana-item"
+      },
+      {
+        "url": "assets/buttons/shop/KatanaLOCKED.png",
+        "type": "image",
+        "key": "katana-item-locked"
       },
       {
         "url": "assets/buttons/pages/Nife.png",
@@ -170,6 +185,11 @@
         "url": "assets/buttons/icons/BuddyLevelsJournal icon.png",
         "type": "image",
         "key": "levels"
+      },
+      {
+        "url": "assets/buttons/levels/levels-page.png",
+        "type": "image",
+        "key": "levels-page"
       },
       {
         "url": "assets/buttons/icons/LevelsSELECTED.png",
@@ -185,6 +205,11 @@
         "url": "assets/buttons/pages/LightSaberLOCKED.png",
         "type": "image",
         "key": "lightsaber-button-locked"
+      },
+      {
+        "url": "assets/buttons/icons/LogosSelect.png",
+        "type": "image",
+        "key": "logo-select"
       },
       {
         "url": "assets/buttons/boxes/CardboardBoxIcon.png",
@@ -267,14 +292,14 @@
         "key": "shop"
       },
       {
-        "url": "assets/buttons/icons/ShopSELECTED.png",
-        "type": "image",
-        "key": "shop-selected"
-      },
-      {
         "url": "assets/buttons/shop/ShopPageRaw.png",
         "type": "image",
         "key": "shop-page"
+      },
+      {
+        "url": "assets/buttons/icons/ShopSELECTED.png",
+        "type": "image",
+        "key": "shop-selected"
       },
       {
         "url": "assets/buttons/icons/BuddySkinsJournal icon.png",
@@ -282,14 +307,14 @@
         "key": "skins"
       },
       {
-        "url": "assets/buttons/icons/SkinsSELECTED.png",
-        "type": "image",
-        "key": "skins-selected"
-      },
-      {
         "url": "assets/buttons/skins/SkinsJournalRaw.png",
         "type": "image",
         "key": "skins-page"
+      },
+      {
+        "url": "assets/buttons/icons/SkinsSELECTED.png",
+        "type": "image",
+        "key": "skins-selected"
       },
       {
         "url": "assets/buttons/skins/Stage1G.png",
@@ -417,16 +442,6 @@
         "key": "tommy-button-locked"
       },
       {
-        "url": "assets/buttons/icons/Unmuted Icon.png",
-        "type": "image",
-        "key": "unmuted"
-      },
-      {
-        "url": "assets/buttons/shop/WILLBEREALflamethrower.png",
-        "type": "image",
-        "key": "flamethrower-item1"
-      },
-      {
         "url": "assets/buttons/socials/Xicon.png",
         "type": "image",
         "key": "twitter"
@@ -437,19 +452,9 @@
         "key": "twitter-active"
       },
       {
-        "url": "assets/buttons/icons/LogosSelect.png",
+        "url": "assets/buttons/icons/Unmuted Icon.png",
         "type": "image",
-        "key": "logo-select"
-      },
-      {
-        "url": "assets/buttons/icons/CLOSEicon.png",
-        "type": "image",
-        "key": "close"
-      },
-      {
-        "url": "assets/buttons/levels/levels-page.png",
-        "type": "image",
-        "key": "levels-page"
+        "key": "unmuted"
       }
     ]
   },
@@ -461,4 +466,3 @@
     "showAllFilesInBlocks": false
   }
 }
-

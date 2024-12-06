@@ -14,7 +14,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   private coins!: number;
   private healthBarWidth!: number;
   // Health Bar Elements
-  private healthBarBackground: Phaser.GameObjects.Rectangle;
+  private healthBarBackground: Phaser.GameObjects.Image;
   private healthBarFill: Phaser.GameObjects.Rectangle;
   private healthText: Phaser.GameObjects.Text;
 
@@ -28,7 +28,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   constructor(config: ScoreBarConfig) {
     super(config.scene, config.x, config.y);
     this.scene.add.existing(this);
-    this.healthBarWidth = config.width;
+    this.healthBarWidth = 420;
     this.health = config.health;
 
     const kills = parseInt(localStorage.getItem("kills") || "0");
@@ -43,29 +43,32 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   }
 
   private createHealthBar(initialHealth: number): void {
-    // Health Bar Background
-    this.healthBarBackground = this.scene.add
-      .rectangle(0, 0, this.healthBarWidth, 20, 0x000000)
-      .setOrigin(0.5)
-      .setScrollFactor(0);
-    this.add(this.healthBarBackground);
-
     // Health Bar Fill
     this.healthBarFill = this.scene.add
-      .rectangle(0, 0, this.healthBarWidth, 20, 0xff0000)
+      .rectangle(0, 0, this.healthBarWidth, 20, 0x30cfd0)
       .setOrigin(0.5)
+      .setDepth(1)
       .setScrollFactor(0);
     this.add(this.healthBarFill);
 
-    // Health Text
-    this.healthText = this.scene.add
-      .text(0, 0, `${initialHealth}%`, {
-        fontSize: "16px",
-        color: "#ffffff",
-      })
+    // Health Bar Background
+    this.healthBarBackground = this.scene.add
+      .image(0, 0, "healthbar")
+      .setScale(0.45)
       .setOrigin(0.5)
+      .setDepth(4)
       .setScrollFactor(0);
-    this.add(this.healthText);
+    this.add(this.healthBarBackground);
+
+    // Health Text
+    // this.healthText = this.scene.add
+    //   .text(0, 0, `${initialHealth}%`, {
+    //     fontSize: "16px",
+    //     color: "#ffffff",
+    //   })
+    //   .setOrigin(0.5)
+    //   .setScrollFactor(0);
+    // this.add(this.healthText);
   }
 
   private createKillCount(initialKills: number): void {
@@ -103,6 +106,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   }
 
   private setupEventListeners(): void {
+    EventBus.on("health-update", this.setHealth, this);
     // Listen to health changes
     EventBus.on("health-changed", this.updateHealth, this);
 
@@ -119,17 +123,23 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     localStorage.setItem("kills", this.kills.toString());
   }
 
+  private setHealth(amount: number): void {
+    this.health = amount;
+    const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
+    this.healthBarFill.width = this.healthBarWidth * healthPercent;
+  }
+
   public updateHealth(amount: number): void {
     this.health -= amount;
     this.health = Phaser.Math.Clamp(this.health, 0, 100);
-    this.healthText.setText(`${this.health.toFixed(2)}%`);
+    // this.healthText.setText(`${this.health.toFixed(2)}%`);
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
 
     if (this.health <= 0) {
       this.updateKills();
       this.health = 100;
-      this.healthText.setText(`${this.health.toFixed(2)}%`);
+      // this.healthText.setText(`${this.health.toFixed(2)}%`);
       this.healthBarFill.width = this.healthBarWidth;
     }
   }

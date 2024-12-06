@@ -133,6 +133,14 @@ export class JournalManager extends Phaser.GameObjects.Container {
       unlocked: true,
       purchased: false,
     },
+    6: {
+      name: "COMING SOON",
+      texture: "coming-soon-box",
+      bg: "bg-coming-soon",
+      price: 0,
+      unlocked: true,
+      purchased: false,
+    },
   };
   private readonly SKIN_INFO: Record<number, Skin> = {
     1: {
@@ -719,7 +727,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
   private advanceBox(): void {
     // Increment tier or loop back to 1
-    this.currentBox = (this.currentBox % 5) + 1;
+    this.currentBox = (this.currentBox % 6) + 1;
 
     // Create a fade transition
     this.scene.tweens.add({
@@ -745,6 +753,10 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private handleSelectBox(box: Box): void {
+    if (box.name === "COMING SOON") {
+      this.scene.sound.play("click-deny");
+      return;
+    }
     EventBus.emit("bg-change", box.bg);
   }
 

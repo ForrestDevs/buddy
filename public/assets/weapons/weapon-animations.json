@@ -1280,7 +1280,7 @@
             "randomFrame": false
         },
         {
-            "key": "railgun-fire",
+            "key": "railgunFire",
             "type": "frame",
             "frames": [
                 {
@@ -1494,7 +1494,7 @@
             "randomFrame": false
         },
         {
-            "key": "railgun-hold",
+            "key": "railgunHold",
             "type": "frame",
             "frames": [
                 {
@@ -1643,7 +1643,7 @@
             "randomFrame": false
         },
         {
-            "key": "railgun-charge",
+            "key": "railgunCharge",
             "type": "frame",
             "frames": [
                 {
@@ -1937,14 +1937,9 @@
             "randomFrame": false
         },
         {
-            "key": "kar98",
+            "key": "kar98Fire",
             "type": "frame",
             "frames": [
-                {
-                    "key": "kar98idle",
-                    "duration": 0,
-                    "keyframe": false
-                },
                 {
                     "key": "kar98kanimation_00000",
                     "duration": 0,
@@ -2066,7 +2061,7 @@
             "randomFrame": false
         },
         {
-            "key": "lightsaber-open",
+            "key": "lightsaberOpen",
             "type": "frame",
             "frames": [
                 {
@@ -2130,7 +2125,7 @@
             "randomFrame": false
         },
         {
-            "key": "lightsaber-close",
+            "key": "lightsaberClose",
             "type": "frame",
             "frames": [
                 {
@@ -2189,7 +2184,7 @@
             "randomFrame": false
         },
         {
-            "key": "dynamite",
+            "key": "dynamiteFire",
             "type": "frame",
             "frames": [
                 {
@@ -2378,7 +2373,7 @@
             "randomFrame": false
         },
         {
-            "key": "flamethrower-ignition",
+            "key": "flamethrowerIgnition",
             "type": "frame",
             "frames": [
                 {
@@ -2917,7 +2912,7 @@
             "randomFrame": false
         },
         {
-            "key": "flamethrower-holding",
+            "key": "flamethrowerFire",
             "type": "frame",
             "frames": [
                 {

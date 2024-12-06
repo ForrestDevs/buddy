@@ -27,14 +27,14 @@ export class SoundManager {
       "rpg-fire",
       this.scene.sound.add("rpg-fire", { volume: 0.5 })
     );
-    this.sounds.set(
-      "railgun-fire",
-      this.scene.sound.add("railgun-fire", { volume: 0.5 })
-    );
-    this.sounds.set(
-      "railgun-fire2",
-      this.scene.sound.add("railgun-fire2", { volume: 0.5 })
-    );
+    // this.sounds.set(
+    //   "railgun-fire",
+    //   this.scene.sound.add("railgun-fire", { volume: 0.5 })
+    // );
+    // this.sounds.set(
+    //   "railgun-fire2",
+    //   this.scene.sound.add("railgun-fire2", { volume: 0.5 })
+    // );
     this.sounds.set(
       "raygun-fire",
       this.scene.sound.add("raygun-fire", { volume: 0.5 })
@@ -45,14 +45,14 @@ export class SoundManager {
       "explode",
       this.scene.sound.add("explode", { volume: 0.5 })
     );
-    this.sounds.set(
-      "railgun-explode",
-      this.scene.sound.add("railgun-explode", { volume: 0.5 })
-    );
-    this.sounds.set(
-      "raygun-impact",
-      this.scene.sound.add("raygun-impact", { volume: 0.5 })
-    );
+    // this.sounds.set(
+    //   "railgun-explode",
+    //   this.scene.sound.add("railgun-explode", { volume: 0.5 })
+    // );
+    // this.sounds.set(
+    //   "raygun-impact",
+    //   this.scene.sound.add("raygun-impact", { volume: 0.5 })
+    // );
     this.sounds.set(
       "fire-bomb-impact",
       this.scene.sound.add("fire-bomb-impact", { volume: 0.5 })
@@ -76,14 +76,14 @@ export class SoundManager {
     );
 
     // Special weapon sounds
-    this.sounds.set(
-      "railgun-charge",
-      this.scene.sound.add("railgun-charge", { volume: 0.5 })
-    );
-    this.sounds.set(
-      "railgun-power",
-      this.scene.sound.add("railgun-power", { volume: 0.5 })
-    );
+    // this.sounds.set(
+    //   "railgun-charge",
+    //   this.scene.sound.add("railgun-charge", { volume: 0.5 })
+    // );
+    // this.sounds.set(
+    //   "railgun-power",
+    //   this.scene.sound.add("railgun-power", { volume: 0.5 })
+    // );
     this.sounds.set(
       "fire-bomb-fire",
       this.scene.sound.add("fire-bomb-fire", { volume: 0.5 })
