@@ -80,6 +80,7 @@ export class Character {
   private armCategory = 0b0100;
   private legCategory = 0b1000;
   private worldCategory = 0b10000;
+
   constructor(config: CharacterConfig) {
     this.scene = config.scene;
     this.characterSkin = config.tier || "paper";
@@ -377,7 +378,7 @@ export class Character {
         stiffness: 0.9,
         options: {
           pointA: { x: 0, y: -20 },
-          pointB: { x: -25, y: 35 },
+          pointB: { x: -30, y: 35 },
           angularStiffness: 0.5,
         },
       },
@@ -388,7 +389,7 @@ export class Character {
         stiffness: 0.9,
         options: {
           pointA: { x: 0, y: -20 },
-          pointB: { x: 25, y: 35 },
+          pointB: { x: 30, y: 35 },
           angularStiffness: 0.5,
         },
       },
@@ -529,7 +530,7 @@ export class Character {
     });
 
     // Wait for parts to scatter
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
     // Start fading parts
     const fadePromises = Array.from(this.bodyParts.values()).map((part) => {
@@ -550,7 +551,7 @@ export class Character {
               // Create smoke effect at final position
               // this.createSmokeEffect(part.x, part.y);
               resolve();
-            }
+            },
           });
         });
       }
@@ -559,9 +560,9 @@ export class Character {
 
     // Wait for all fades and smoke effects
     await Promise.all(fadePromises);
-    
+
     // Additional delay before respawn
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
     // Finally respawn
     this.respawnCharacter();

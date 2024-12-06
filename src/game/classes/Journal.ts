@@ -85,6 +85,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private journalContents: Map<JournalType, Phaser.GameObjects.Container>;
   private tierContents: Map<number, Phaser.GameObjects.Container>;
   private shopContents: Map<number, Phaser.GameObjects.Container>;
+
   private readonly TIER_INFO: Record<number, TierData> = {
     1: { name: "PAPER", texture: "FREETier", bg: "tier1-bg" },
     2: { name: "MUSK", texture: "Tier2", bg: "tier2-bg" },
@@ -345,11 +346,17 @@ export class JournalManager extends Phaser.GameObjects.Container {
         -25,
         0,
         350,
-        350, // Adjust size to match the tier page
+        400, // Adjust size to match the tier page
         0xff0000, // Color (won't be visible)
         HITAREA_ALPHA // Alpha (completely transparent)
       )
       .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        this.tierPage.setScale(JOURNAL_SCALE + 0.01);
+      })
+      .on("pointerout", () => {
+        this.tierPage.setScale(JOURNAL_SCALE);
+      })
       .on("pointerdown", () => {
         this.scene.sound.play("page-turn");
         this.openTier(this.currentTier);
@@ -438,7 +445,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
       )
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
-        weaponSprite.setScale(JOURNAL_SCALE + 0.005);
+        weaponSprite.setScale(JOURNAL_SCALE + 0.01);
       })
       .on("pointerout", () => {
         weaponSprite.setScale(JOURNAL_SCALE);
@@ -585,7 +592,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
       )
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
-        itemSprite.setScale(JOURNAL_SCALE + 0.005);
+        itemSprite.setScale(JOURNAL_SCALE + 0.01);
       })
       .on("pointerout", () => {
         itemSprite.setScale(JOURNAL_SCALE);
@@ -614,13 +621,19 @@ export class JournalManager extends Phaser.GameObjects.Container {
     const skinHitArea = this.scene.add
       .rectangle(
         -25,
-        0,
+        25,
         350,
-        350, // Adjust size to match the tier page
+        400, // Adjust size to match the tier page
         0xff0000, // Color (won't be visible)
         HITAREA_ALPHA // Alpha (completely transparent)
       )
       .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        this.skinPage.setScale(JOURNAL_SCALE + 0.01);
+      })
+      .on("pointerout", () => {
+        this.skinPage.setScale(JOURNAL_SCALE);
+      })
       .on("pointerdown", () => {
         this.scene.sound.play("click");
         this.handleSelectSkin(this.SKIN_INFO[this.currentSkin]);
@@ -686,6 +699,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
         HITAREA_ALPHA // Alpha (completely transparent)
       )
       .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        this.boxPage.setScale(JOURNAL_SCALE + 0.01);
+      })
+      .on("pointerout", () => {
+        this.boxPage.setScale(JOURNAL_SCALE);
+      })
       .on("pointerdown", () => {
         this.scene.sound.play("click");
         this.handleSelectBox(this.BOX_INFO[this.currentBox]);

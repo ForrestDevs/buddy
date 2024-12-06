@@ -17,6 +17,8 @@ interface WeaponConfig {
   projectileScale: { x: number; y: number };
 }
 
+//TODO: Make sure to remove the joints for sticky bombs
+
 export class Weapon {
   private scene: Phaser.Scene;
   private character: Character;
@@ -170,6 +172,50 @@ export class Weapon {
         damage: 25,
         projectileSpeed: 50,
         projectileScale: { x: 1, y: 1 },
+      },
+      dynamite: {
+        texture: "dynamite",
+        width: 100,
+        height: 100,
+        name: "dynamite",
+        fireRate: 1000,
+        burstSize: 1,
+        damage: 0.7,
+        projectileSpeed: 25,
+        projectileScale: { x: 0.15, y: 0.15 },
+      },
+      katana: {
+        texture: "katana",
+        width: 300,
+        height: 150,
+        name: "katana",
+        fireRate: 1000,
+        burstSize: 1,
+        damage: 0.5,
+        projectileSpeed: 50,
+        projectileScale: { x: 0.1, y: 0.1 },
+      },
+      kar98: {
+        texture: "kar98",
+        width: 300,
+        height: 150,
+        name: "kar98",
+        fireRate: 1000,
+        burstSize: 1,
+        damage: 0.5,
+        projectileSpeed: 50,
+        projectileScale: { x: 0.1, y: 0.1 },
+      },
+      flamethrower: {
+        texture: "flamethrower",
+        width: 300,
+        height: 150,
+        name: "flamethrower",
+        fireRate: 1000,
+        burstSize: 1,
+        damage: 0.5,
+        projectileSpeed: 50,
+        projectileScale: { x: 0.1, y: 0.1 },
       },
     };
 

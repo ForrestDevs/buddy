@@ -1,153 +1,229 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": [
-                    "assets/sounds/Buddy_death.mp3"
-                ],
-                "type": "audio",
-                "key": "death"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_grunt.mp3"
-                ],
-                "type": "audio",
-                "key": "grunt"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_journal.mp3"
-                ],
-                "type": "audio",
-                "key": "page-turn"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_menuclick.mp3"
-                ],
-                "type": "audio",
-                "key": "click"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_menuDeny.mp3"
-                ],
-                "type": "audio",
-                "key": "click-deny"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_ouch.mp3"
-                ],
-                "type": "audio",
-                "key": "ouch"
-            },
-            {
-                "url": [
-                    "assets/sounds/Buddy_thump.mp3"
-                ],
-                "type": "audio",
-                "key": "thump"
-            },
-            {
-                "url": [
-                    "assets/sounds/deagleCock.wav"
-                ],
-                "type": "audio",
-                "key": "deagle-cock"
-            },
-            {
-                "url": [
-                    "assets/sounds/deagleFire.wav"
-                ],
-                "type": "audio",
-                "key": "deagle-fire"
-            },
-            {
-                "url": [
-                    "assets/sounds/FireNade_fire.mp3"
-                ],
-                "type": "audio",
-                "key": "fire-bomb-fire"
-            },
-            {
-                "url": [
-                    "assets/sounds/FireNade_impact.mp3"
-                ],
-                "type": "audio",
-                "key": "fire-bomb-impact"
-            },
-            {
-                "url": [
-                    "assets/sounds/misc_explode.mp3"
-                ],
-                "type": "audio",
-                "key": "explode"
-            },
-            {
-                "url": [
-                    "assets/sounds/Railgun_explode.mp3"
-                ],
-                "type": "audio",
-                "key": "railgun-explode"
-            },
-            {
-                "url": [
-                    "assets/sounds/Railgun_hold.mp3"
-                ],
-                "type": "audio",
-                "key": "railgun-charge"
-            },
-            {
-                "url": [
-                    "assets/sounds/Railgun_powerup.mp3"
-                ],
-                "type": "audio",
-                "key": "railgun-power"
-            },
-            {
-                "url": [
-                    "assets/sounds/Railgun_shot.mp3"
-                ],
-                "type": "audio",
-                "key": "railgun-fire"
-            },
-            {
-                "url": [
-                    "assets/sounds/Railgun_shot2.mp3"
-                ],
-                "type": "audio",
-                "key": "railgun-fire2"
-            },
-            {
-                "url": [
-                    "assets/sounds/RayGun_hit.mp3"
-                ],
-                "type": "audio",
-                "key": "raygun-impact"
-            },
-            {
-                "url": [
-                    "assets/sounds/RayGun_shot.mp3"
-                ],
-                "type": "audio",
-                "key": "raygun-fire"
-            },
-            {
-                "url": [
-                    "assets/sounds/RPG_shot.mp3"
-                ],
-                "type": "audio",
-                "key": "rpg-fire"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": ["assets/sounds/Buddy_itemselect.mp3"],
+        "type": "audio",
+        "key": "itemselect"
+      },
+      {
+        "url": ["assets/sounds/Buddy_scream.mp3"],
+        "type": "audio",
+        "key": "scream"
+      },
+      {
+        "url": ["assets/sounds/Buddy_swear.mp3"],
+        "type": "audio",
+        "key": "swear"
+      },
+      {
+        "url": ["assets/sounds/chainsaw_motor.mp3"],
+        "type": "audio",
+        "key": "chainsaw-fire"
+      },
+      {
+        "url": ["assets/sounds/Buddy_menuclick.mp3"],
+        "type": "audio",
+        "key": "click"
+      },
+      {
+        "url": ["assets/sounds/Buddy_menuDeny.mp3"],
+        "type": "audio",
+        "key": "click-deny"
+      },
+      {
+        "url": ["assets/sounds/coin_drop.mp3"],
+        "type": "audio",
+        "key": "coin-drop"
+      },
+      {
+        "url": ["assets/sounds/coin_pickup.mp3"],
+        "type": "audio",
+        "key": "coin-pickup"
+      },
+      {
+        "url": ["assets/sounds/deagleCock.wav"],
+        "type": "audio",
+        "key": "deagle-cock"
+      },
+      {
+        "url": ["assets/sounds/deagleFire.wav"],
+        "type": "audio",
+        "key": "deagle-fire"
+      },
+      {
+        "url": ["assets/sounds/Buddy_death.mp3"],
+        "type": "audio",
+        "key": "death"
+      },
+      {
+        "url": ["assets/sounds/Dyna_flick.mp3"],
+        "type": "audio",
+        "key": "dynamite-flick"
+      },
+      {
+        "url": ["assets/sounds/Dyna_fuze.mp3"],
+        "type": "audio",
+        "key": "dynamite-fuze"
+      },
+      {
+        "url": ["assets/sounds/misc_explode.mp3"],
+        "type": "audio",
+        "key": "explode"
+      },
+      {
+        "url": ["assets/sounds/FireNade_fire.mp3"],
+        "type": "audio",
+        "key": "fire-bomb-fire"
+      },
+      {
+        "url": ["assets/sounds/FireNade_impact.mp3"],
+        "type": "audio",
+        "key": "fire-bomb-impact"
+      },
+      {
+        "url": ["assets/sounds/Buddy_grunt.mp3"],
+        "type": "audio",
+        "key": "grunt"
+      },
+      {
+        "url": ["assets/sounds/kar_cock.mp3"],
+        "type": "audio",
+        "key": "kar98-cock"
+      },
+      {
+        "url": ["assets/sounds/kar_shot.mp3"],
+        "type": "audio",
+        "key": "kar98-fire"
+      },
+      {
+        "url": ["assets/sounds/kata_pullout.mp3"],
+        "type": "audio",
+        "key": "katana-pullout"
+      },
+      {
+        "url": ["assets/sounds/kata_slash.mp3"],
+        "type": "audio",
+        "key": "katana-slash"
+      },
+      {
+        "url": ["assets/sounds/mg42_shoot.mp3"],
+        "type": "audio",
+        "key": "mg-fire"
+      },
+      {
+        "url": ["assets/sounds/misc_bloodspurt.mp3"],
+        "type": "audio",
+        "key": "bloodspurt"
+      },
+      {
+        "url": ["assets/sounds/Nade_pinpull.mp3"],
+        "type": "audio",
+        "key": "grenade-pinpull"
+      },
+      {
+        "url": ["assets/sounds/Buddy_ouch.mp3"],
+        "type": "audio",
+        "key": "ouch"
+      },
+      {
+        "url": ["assets/sounds/Buddy_journal.mp3"],
+        "type": "audio",
+        "key": "page-turn"
+      },
+      {
+        "url": ["assets/sounds/Railgun_hold.mp3"],
+        "type": "audio",
+        "key": "railgun-hold"
+      },
+      {
+        "url": ["assets/sounds/Railgun_explode.mp3"],
+        "type": "audio",
+        "key": "railgun-explode"
+      },
+      {
+        "url": ["assets/sounds/Railgun_shot.mp3"],
+        "type": "audio",
+        "key": "railgun-fire"
+      },
+      {
+        "url": ["assets/sounds/Railgun_shot2.mp3"],
+        "type": "audio",
+        "key": "railgun-fire2"
+      },
+      {
+        "url": ["assets/sounds/Railgun_powerup.mp3"],
+        "type": "audio",
+        "key": "railgun-charge"
+      },
+      {
+        "url": ["assets/sounds/RayGun_shot.mp3"],
+        "type": "audio",
+        "key": "raygun-fire"
+      },
+      {
+        "url": ["assets/sounds/RayGun_hit.mp3"],
+        "type": "audio",
+        "key": "raygun-impact"
+      },
+      {
+        "url": ["assets/sounds/RPG_shot.mp3"],
+        "type": "audio",
+        "key": "rpg-fire"
+      },
+      {
+        "url": ["assets/sounds/Saber_active.mp3"],
+        "type": "audio",
+        "key": "lightsaber-active"
+      },
+      {
+        "url": ["assets/sounds/Saber_close.mp3"],
+        "type": "audio",
+        "key": "lightsaber-close"
+      },
+      {
+        "url": ["assets/sounds/Saber_hit.mp3"],
+        "type": "audio",
+        "key": "lightsaber-hit"
+      },
+      {
+        "url": ["assets/sounds/Saber_ignite.mp3"],
+        "type": "audio",
+        "key": "lightsaber-ignite"
+      },
+      {
+        "url": ["assets/sounds/sticky_contact.mp3"],
+        "type": "audio",
+        "key": "sticky-bomb-contact"
+      },
+      {
+        "url": ["assets/sounds/throwknife_impact.mp3"],
+        "type": "audio",
+        "key": "throwknife-impact"
+      },
+      {
+        "url": ["assets/sounds/throwknife_toss.mp3"],
+        "type": "audio",
+        "key": "throwknife-toss"
+      },
+      {
+        "url": ["assets/sounds/Buddy_thump.mp3"],
+        "type": "audio",
+        "key": "thump"
+      },
+      {
+        "url": ["assets/sounds/Tommy_shoot.mp3"],
+        "type": "audio",
+        "key": "tommy-fire"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }
+

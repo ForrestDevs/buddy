@@ -37,7 +37,11 @@ export type GameWeaponKey =
   | "mg"
   | "railgun"
   | "raygun"
-  | "rpg";
+  | "rpg"
+  | "dynamite"
+  | "katana"
+  | "kar98"
+  | "flamethrower";
 
 export interface WeaponConfig {
   texture: string;

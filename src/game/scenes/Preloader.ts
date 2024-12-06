@@ -44,73 +44,6 @@ export default class Preloader extends Phaser.Scene {
       bar.width = 4 + 460 * progress;
     });
 
-    // Create dummy shop items
-    const shopItems = [
-      {
-        id: "weapon1",
-        name: "Basic Pistol",
-        texture: "pistol",
-        price: 100,
-        type: "weapon",
-        unlocked: true,
-        description: "A reliable starter weapon",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-      {
-        id: "weapon2",
-        name: "Shotgun",
-        texture: "shotgun",
-        price: 500,
-        type: "weapon",
-        unlocked: false,
-        description: "Powerful short-range weapon",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-      {
-        id: "weapon3",
-        name: "Assault Rifle",
-        texture: "rifle",
-        price: 1000,
-        type: "weapon",
-        unlocked: false,
-        description: "High rate of fire",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-      {
-        id: "weapon4",
-        name: "Sniper Rifle",
-        texture: "sniper",
-        price: 2000,
-        type: "weapon",
-        unlocked: false,
-        description: "Long range precision",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-      {
-        id: "weapon5",
-        name: "Rocket Launcher",
-        texture: "rocket",
-        price: 5000,
-        type: "weapon",
-        unlocked: false,
-        description: "Explosive area damage",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-      {
-        id: "weapon6",
-        name: "Ray Gun",
-        texture: "raygun",
-        price: 10000,
-        type: "weapon",
-        unlocked: false,
-        description: "Advanced energy weapon",
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
-      },
-    ];
-
-    // Add shop items to registry
-    this.registry.set("shopItems", shopItems);
-
     // Add weapons data to registry
     const weapons = [
       {
@@ -120,7 +53,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 1,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, -100, 300, 100),
+        hitbox: new Phaser.Geom.Rectangle(-25, -75, 250, 150),
       },
       {
         id: "weapon2",
@@ -129,7 +62,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 1,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(-100, 100, 200, 100),
+        hitbox: new Phaser.Geom.Rectangle(-100, 100, 200, 250),
       },
       {
         id: "weapon3",
@@ -138,7 +71,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 1,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(100, 100, 100, 300),
+        hitbox: new Phaser.Geom.Rectangle(75, 75, 150, 300),
       },
       {
         id: "weapon4",
@@ -147,7 +80,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 2,
         price: 1000,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, -100, 300, 100),
+        hitbox: new Phaser.Geom.Rectangle(-25, -100, 300, 150),
       },
       {
         id: "weapon5",
@@ -156,16 +89,16 @@ export default class Preloader extends Phaser.Scene {
         tier: 2,
         price: 1500,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, 40, 300, 100),
+        hitbox: new Phaser.Geom.Rectangle(-25, 40, 300, 150),
       },
       {
         id: "weapon6",
-        name: "fire-bomb",
-        texture: "firebomb-button",
+        name: "sticky-bomb",
+        texture: "sticky-bomb-button",
         tier: 2,
-        price: 1500,
+        price: 3500,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(-20, 200, 150, 120),
+        hitbox: new Phaser.Geom.Rectangle(-25, 200, 300, 150),
       },
       {
         id: "weapon7",
@@ -174,7 +107,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 3,
         price: 2000,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, -100, 400, 100),
+        hitbox: new Phaser.Geom.Rectangle(0, -100, 350, 100),
       },
       {
         id: "weapon8",
@@ -183,16 +116,16 @@ export default class Preloader extends Phaser.Scene {
         tier: 3,
         price: 3500,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, 40, 400, 100),
+        hitbox: new Phaser.Geom.Rectangle(0, 40, 350, 100),
       },
       {
         id: "weapon9",
-        name: "sticky-bomb",
-        texture: "sticky-bomb-button",
+        name: "fire-bomb",
+        texture: "firebomb-button",
         tier: 3,
-        price: 3500,
+        price: 1500,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(20, 200, 150, 120),
+        hitbox: new Phaser.Geom.Rectangle(-20, 175, 150, 150),
       },
       {
         id: "weapon10",
@@ -201,7 +134,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 4,
         price: 8000,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, -50, 350, 100),
+        hitbox: new Phaser.Geom.Rectangle(20, -75, 350, 150),
       },
       {
         id: "weapon11",
@@ -210,7 +143,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 4,
         price: 12000,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, 45, 300, 100),
+        hitbox: new Phaser.Geom.Rectangle(0, 45, 300, 75),
       },
       {
         id: "weapon12",
@@ -219,7 +152,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 4,
         price: 25000,
         unlocked: false,
-        hitbox: new Phaser.Geom.Rectangle(0, 200, 200, 150),
+        hitbox: new Phaser.Geom.Rectangle(20, 175, 200, 200),
       },
     ];
 
@@ -233,7 +166,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 1,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(-25, -100, 350, 200),
       },
       {
         id: "gasnade",
@@ -242,7 +175,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 1,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(-25, 125, 350, 200),
       },
       {
         id: "katana",
@@ -251,7 +184,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 2,
         price: 0,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(-125, 25, 150, 450),
       },
       {
         id: "battle-axe",
@@ -260,7 +193,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 2,
         price: 1000,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(75, 25, 150, 450),
       },
       {
         id: "kar98",
@@ -269,7 +202,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 3,
         price: 1500,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(-100, -25, 200, 350),
       },
       {
         id: "flamethrower",
@@ -278,7 +211,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 3,
         price: 2000,
         unlocked: true,
-        hitbox: new Phaser.Geom.Rectangle(0, 0, 100, 100),
+        hitbox: new Phaser.Geom.Rectangle(50, 150, 200, 250),
       },
     ];
 
