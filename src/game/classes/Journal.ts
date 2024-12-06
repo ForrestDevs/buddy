@@ -74,6 +74,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private currentSkin: number = 1;
   private currentShop: number = 1;
   private isAnimating: boolean = false;
+  private isAdvancing: boolean = false;
 
   // UI Elements
   private basePaper: Phaser.GameObjects.Image;
@@ -524,8 +525,27 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private advanceShop(): void {
+    // Prevent multiple advances while animation is playing
+    if (this.isAdvancing) return;
+    this.isAdvancing = true;
+
     const currentContent = this.shopContents.get(this.currentShop);
-    if (!currentContent) return;
+    if (!currentContent) {
+      this.isAdvancing = false;
+      return;
+    }
+
+    // Ensure current content is visible and at full alpha before starting fade
+    currentContent.setVisible(true);
+    currentContent.setAlpha(1);
+
+    // Calculate next shop number
+    const nextShop = this.currentShop === 3 ? 1 : this.currentShop + 1;
+    const nextContent = this.shopContents.get(nextShop);
+    if (!nextContent) {
+      this.isAdvancing = false;
+      return;
+    }
 
     // Fade out current content
     this.scene.tweens.add({
@@ -537,21 +557,19 @@ export class JournalManager extends Phaser.GameObjects.Container {
         currentContent.setVisible(false);
         currentContent.setAlpha(1);
 
-        // Update shop number (1-3)
-        this.currentShop = this.currentShop === 3 ? 1 : this.currentShop + 1;
-
-        // Get and show new content
-        const newContent = this.shopContents.get(this.currentShop);
-        if (!newContent) return;
-
-        newContent.setAlpha(0);
-        newContent.setVisible(true);
+        // Update shop number and prepare next content
+        this.currentShop = nextShop;
+        nextContent.setAlpha(0);
+        nextContent.setVisible(true);
 
         // Fade in new content
         this.scene.tweens.add({
-          targets: newContent,
+          targets: nextContent,
           alpha: 1,
           duration: 200,
+          onComplete: () => {
+            this.isAdvancing = false;
+          },
         });
       },
     });
@@ -581,10 +599,10 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private createItemButton(item: ShopItem, index: number) {
     const button = new Phaser.GameObjects.Container(this.scene, 0, 0);
 
-    const itemTexture = item.unlocked ? item.texture : item.texture + "-locked";
+    // const itemTexture = item.unlocked ? item.texture : item.texture + "-locked";
     // Create weapon display
     const itemSprite = this.scene.add
-      .image(0, 0, itemTexture)
+      .image(0, 0, item.texture)
       .setOrigin(0.5)
       .setScale(JOURNAL_SCALE);
 
@@ -615,6 +633,15 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private handleItemSelection(item: ShopItem): void {
     this.scene.sound.play("click");
     console.log("Item Selected", item.name);
+
+    if (!item.unlocked) {
+      this.scene.sound.play("click-deny");
+      return;
+    }
+
+    EventBus.emit("set-weapon", item.name);
+
+    this.closeJournal();
   }
 
   // SKINS FUNCTIONALITY
@@ -654,6 +681,13 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private advanceSkin(): void {
+    if (this.isAnimating || this.isAdvancing) {
+      return;
+    }
+
+    this.isAdvancing = true;
+    this.isAnimating = true;
+
     this.currentSkin = (this.currentSkin % 4) + 1;
 
     this.scene.tweens.add({
@@ -667,6 +701,10 @@ export class JournalManager extends Phaser.GameObjects.Container {
           targets: [this.skinPage],
           alpha: 1,
           duration: 200,
+          onComplete: () => {
+            this.isAnimating = false;
+            this.isAdvancing = false;
+          },
         });
       },
     });
@@ -724,10 +762,16 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.add(container);
     container.setVisible(false);
   }
-
   private advanceBox(): void {
-    // Increment tier or loop back to 1
-    this.currentBox = (this.currentBox % 6) + 1;
+    if (this.isAnimating || !this.boxPage) return;
+    this.isAnimating = true;
+
+    // Increment box or loop back to 1, ensuring box exists in BOX_INFO
+    let nextBox = (this.currentBox % 6) + 1;
+    while (!this.BOX_INFO[nextBox] && nextBox > 1) {
+      nextBox--;
+    }
+    this.currentBox = nextBox;
 
     // Create a fade transition
     this.scene.tweens.add({
@@ -735,20 +779,24 @@ export class JournalManager extends Phaser.GameObjects.Container {
       alpha: 0,
       duration: 200,
       onComplete: () => {
-        // Update the texture and text
-        this.boxPage.setTexture(this.BOX_INFO[this.currentBox].texture);
-        // this.tierText.setText(this.TIER_INFO[this.currentTier].name);
+        // Update the texture if it exists
+        const boxInfo = this.BOX_INFO[this.currentBox];
+        if (boxInfo && boxInfo.texture) {
+          this.boxPage.setTexture(boxInfo.texture);
+        }
 
         // Fade back in
         this.scene.tweens.add({
           targets: [this.boxPage],
           alpha: 1,
           duration: 200,
+          onComplete: () => {
+            this.isAnimating = false;
+          },
         });
       },
     });
 
-    // Play page turn sound
     this.scene.sound.play("page-turn");
   }
 

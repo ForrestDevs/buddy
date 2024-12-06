@@ -461,15 +461,19 @@ export class Character {
     if (healthPercentage <= this.DAMAGE_THRESHOLDS.DEAD) {
       console.log("updateDamageState DEAD");
       this.currentDamageState = DamageState.DEAD;
+      EventBus.emit("damage-state-changed", DamageState.DEAD);
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.HEAVY) {
       console.log("updateDamageState HEAVY");
       this.currentDamageState = DamageState.HEAVY;
+      EventBus.emit("damage-state-changed", DamageState.HEAVY);
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.LIGHT) {
       console.log("updateDamageState LIGHT");
       this.currentDamageState = DamageState.LIGHT;
+      EventBus.emit("damage-state-changed", DamageState.LIGHT);
     } else {
       console.log("updateDamageState CLEAN");
       this.currentDamageState = DamageState.CLEAN;
+      EventBus.emit("damage-state-changed", DamageState.CLEAN);
     }
   }
 

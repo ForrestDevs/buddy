@@ -174,7 +174,7 @@ export default class Preloader extends Phaser.Scene {
         texture: "gasnade-item",
         tier: 1,
         price: 0,
-        unlocked: true,
+        unlocked: false,
         hitbox: new Phaser.Geom.Rectangle(-25, 125, 350, 200),
       },
       {
@@ -192,7 +192,7 @@ export default class Preloader extends Phaser.Scene {
         texture: "battleaxe-item",
         tier: 2,
         price: 1000,
-        unlocked: true,
+        unlocked: false,
         hitbox: new Phaser.Geom.Rectangle(75, 25, 150, 450),
       },
       {

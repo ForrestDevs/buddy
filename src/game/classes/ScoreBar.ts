@@ -16,7 +16,11 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   // Health Bar Elements
   private healthBarBackground: Phaser.GameObjects.Image;
   private healthBarFill: Phaser.GameObjects.Rectangle;
+  private healthBarMarker: Phaser.GameObjects.Image;
   private healthText: Phaser.GameObjects.Text;
+
+  private skin: string = "paper";
+  private damageState: string = "clean";
 
   // Kill Count
   private killCountText: Phaser.GameObjects.Text;
@@ -45,7 +49,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   private createHealthBar(initialHealth: number): void {
     // Health Bar Fill
     this.healthBarFill = this.scene.add
-      .rectangle(0, 0, this.healthBarWidth, 20, 0x30cfd0)
+      .rectangle(0, 10, this.healthBarWidth, 20, 0x30cfd0)
       .setOrigin(0.5)
       .setDepth(1)
       .setScrollFactor(0);
@@ -53,22 +57,21 @@ export class ScoreBar extends Phaser.GameObjects.Container {
 
     // Health Bar Background
     this.healthBarBackground = this.scene.add
-      .image(0, 0, "healthbar")
+      .image(0, 10, "healthbar")
       .setScale(0.45)
       .setOrigin(0.5)
       .setDepth(4)
       .setScrollFactor(0);
     this.add(this.healthBarBackground);
 
-    // Health Text
-    // this.healthText = this.scene.add
-    //   .text(0, 0, `${initialHealth}%`, {
-    //     fontSize: "16px",
-    //     color: "#ffffff",
-    //   })
-    //   .setOrigin(0.5)
-    //   .setScrollFactor(0);
-    // this.add(this.healthText);
+    // Health Bar Marker
+    this.healthBarMarker = this.scene.add
+      .image(200, 8, "paper-clean")
+      .setScale(0.2)
+      .setOrigin(0.5)
+      .setDepth(5)
+      .setScrollFactor(0);
+    this.add(this.healthBarMarker);
   }
 
   private createKillCount(initialKills: number): void {
@@ -109,12 +112,24 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     EventBus.on("health-update", this.setHealth, this);
     // Listen to health changes
     EventBus.on("health-changed", this.updateHealth, this);
-
     // Listen to kill count changes
     EventBus.on("kill-count-changed", this.updateKills, this);
-
     // Listen to coins changes
     EventBus.on("coins-changed", this.updateCoins, this);
+    // Listen to Skin changes
+    EventBus.on("skin-equipped", this.updateSkin, this);
+    // Listen to Damage State changes
+    EventBus.on("damage-state-changed", this.updateDamageState, this);
+  }
+
+  private updateSkin(skin: string): void {
+    this.skin = skin;
+    this.healthBarMarker.setTexture(this.skin + "-" + this.damageState);
+  }
+
+  private updateDamageState(damageState: string): void {
+    this.damageState = damageState;
+    this.healthBarMarker.setTexture(this.skin + "-" + this.damageState);
   }
 
   public updateKills(): void {
@@ -127,6 +142,19 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     this.health = amount;
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
+    this.moveHealthBarMarker(healthPercent);
+  }
+
+  private moveHealthBarMarker(healthPercent: number): void {
+    // Stop marker movement at 5% health
+    const minHealthPercent = 0.05;
+    if (healthPercent < minHealthPercent) {
+      healthPercent = minHealthPercent;
+    }
+
+    const newWidth = this.healthBarWidth * healthPercent;
+    const markerX = 200 - (this.healthBarWidth - newWidth); // Start at 200 and move right based on remaining health
+    this.healthBarMarker.setX(markerX);
   }
 
   public updateHealth(amount: number): void {
@@ -135,13 +163,19 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     // this.healthText.setText(`${this.health.toFixed(2)}%`);
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
-
+    this.moveHealthBarMarker(healthPercent);
     if (this.health <= 0) {
       this.updateKills();
-      this.health = 100;
-      // this.healthText.setText(`${this.health.toFixed(2)}%`);
-      this.healthBarFill.width = this.healthBarWidth;
+      this.resetHealthBar();
     }
+  }
+
+  private resetHealthBar(): void {
+    this.health = 100;
+    this.healthBarFill.width = this.healthBarWidth;
+    this.moveHealthBarMarker(1);
+    this.damageState = "clean";
+    this.healthBarMarker.setTexture(this.skin + "-" + this.damageState);
   }
 
   public updateCoins(amount: number = 1): void {
