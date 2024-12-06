@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IRefPhaserGame, PhaserGame } from "./game/PhaserGame";
 import { MainMenu } from "./game/scenes/MainMenu";
 
 function App() {
+  // The sprite can only be moved in the MainMenu Scene
   // The sprite can only be moved in the MainMenu Scene
   const [canMoveSprite, setCanMoveSprite] = useState(true);
 
@@ -46,6 +47,8 @@ function App() {
             maxWidth: "600px",
             margin: "0 auto",
             color: "#888888",
+            letterSpacing: "0.05em",
+            // fontFamily: "Ultra",
           }}
         >
           The first kick-the-buddy game on the blockchain! Choose your tier,

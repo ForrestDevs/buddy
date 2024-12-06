@@ -70,9 +70,9 @@ export class Weapon {
         width: 300,
         height: 150,
         name: "tommy",
-        fireRate: 50,
-        burstSize: 3,
-        burstDelay: 300,
+        fireRate: 60,
+        burstSize: 4,
+        burstDelay: 400,
         sound: "deagle-fire",
         damage: 0.3,
         projectileSpeed: 50,
@@ -167,7 +167,7 @@ export class Weapon {
         fireRate: 200,
         burstSize: 1,
         sound: "raygun-fire",
-        damage: 0.3,
+        damage: 25,
         projectileSpeed: 50,
         projectileScale: { x: 1, y: 1 },
       },
@@ -288,7 +288,6 @@ export class Weapon {
   public fireWeapon(): void {
     const config = this.getCurrentWeaponConfig();
     if (!config) return;
-
     this.playWeaponAnimation();
     this.playWeaponSound(config);
     this.spawnProjectile();
@@ -500,6 +499,7 @@ export class Weapon {
         frictionStatic: 0,
         frictionAir: 0,
         restitution: 1,
+        density: 0.005,
         angle: angle + Math.PI,
         ignorePointer: true,
         shape: {
@@ -519,25 +519,26 @@ export class Weapon {
           }
 
           // Calculate damage based on weapon type
-          let damage = 0.05; // default damage
-          switch (this.weapon) {
-            case "rpg":
-              damage = 1;
-              break;
-            case "deagle":
-              damage = 0.5;
-              break;
-            case "tommy":
-              damage = 0.3;
-              break;
-            case "mg":
-              damage = 0.4;
-              break;
-            case "raygun":
-              damage = 0.3;
-              break;
-            // Add other weapon damage values as needed
-          }
+          // let damage = 0.05; // default damage
+          // switch (this.weapon) {
+          //   case "rpg":
+          //     damage = 1;
+          //     break;
+          //   case "deagle":
+          //     damage = 0.5;
+          //     break;
+          //   case "tommy":
+          //     damage = 0.3;
+          //     break;
+          //   case "mg":
+          //     damage = 0.4;
+          //     break;
+          //   case "raygun":
+          //     damage = 0.3;
+          //     break;
+          //   // Add other weapon damage values as needed
+          // }
+          const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
 
           const characterPos = this.character.getPosition();
 

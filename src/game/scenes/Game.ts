@@ -27,8 +27,8 @@ export default class Game extends Phaser.Scene {
   }
 
   init() {
-    this.matter.world.autoUpdate = true;
-    this.matter.world.setBounds(0, 0, 1280, 720, 100, true, true, true, true);
+    this.matter.world.autoUpdate = false;
+    this.matter.world.setBounds(50, 50, 1180, 620, 1000);
     this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
       this.scene.scene,
       this.matter.world,
@@ -38,6 +38,7 @@ export default class Game extends Phaser.Scene {
       }
     );
     this.matter.add.pointerConstraint(this.pointerConstraint.constraint);
+
     this.soundManager = new SoundManager(this);
     this.scoreBar = new ScoreBar({
       scene: this,
@@ -78,12 +79,17 @@ export default class Game extends Phaser.Scene {
     EventBus.on("skin-equipped", (skin: string) => {
       this.character.changeSkin(skin);
     });
+    EventBus.on("character-out-of-bounds", () => {
+      this.pointerConstraint.stopDrag();
+    });
     this.input.on("pointerdown", () => {
       if (!this.weaponObject) return;
+      this.pointerConstraint.active = false;
       this.weaponObject.startFiring();
     });
     this.input.on("pointerup", () => {
       if (!this.weaponObject) return;
+      this.pointerConstraint.active = true;
       this.weaponObject.stopFiring();
     });
     this.events.emit("scene-awake");
@@ -99,6 +105,7 @@ export default class Game extends Phaser.Scene {
   }
 
   update(time: number, delta: number): void {
+    this.updatePhysics(delta);
     // Display FPS counter
     const fps = Math.round(1000 / delta);
     if (!this.fpsText) {
@@ -110,8 +117,24 @@ export default class Game extends Phaser.Scene {
     } else {
       this.fpsText.setText(`FPS: ${fps}`);
     }
+
     this.character.update();
     this.weaponObject.updateWeaponPosition();
+  }
+
+  private updatePhysics(delta: number) {
+    // Run physics at 60Hz (16.666ms per step) for smooth simulation
+    // This is a common refresh rate that balances smoothness and performance
+    const fixedTimeStep = 1000 / 300; // Increased to 120Hz for smoother physics
+
+    // Allow up to 3 steps per frame to prevent spiral of death
+    // if frame rate drops temporarily
+    const maxSteps = Math.min(3, Math.floor(delta / fixedTimeStep));
+
+    // Run physics updates to catch up with any accumulated time
+    for (let i = 0; i < maxSteps; i++) {
+      this.matter.world.step(fixedTimeStep);
+    }
   }
 
   changeScene() {

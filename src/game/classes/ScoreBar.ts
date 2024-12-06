@@ -70,8 +70,11 @@ export class ScoreBar extends Phaser.GameObjects.Container {
 
   private createKillCount(initialKills: number): void {
     this.killCountText = this.scene.add
-      .text(250, 0, `Kills: ${initialKills}`, {
-        fontSize: "16px",
+      .text(350, 0, `Kills: ${initialKills}`, {
+        fontFamily: "Ultra",
+        fontSize: "24px",
+        stroke: "#000000",
+        strokeThickness: 4,
         color: "#ffffff",
       })
       .setOrigin(0.5)
@@ -81,17 +84,20 @@ export class ScoreBar extends Phaser.GameObjects.Container {
 
   private createCoins(initialCoins: number): void {
     this.coinsText = this.scene.add
-      .text(470, 0, `${initialCoins}`, {
-        fontSize: "16px",
+      .text(525, 0, `${initialCoins}`, {
+        fontFamily: "Ultra",
+        fontSize: "24px",
+        stroke: "#000000",
+        strokeThickness: 4,
         color: "#ffffff",
       })
       .setOrigin(0.5)
       .setScrollFactor(0);
 
     this.coinImage = this.scene.add
-      .image(425, 0, "coin")
+      .image(455, 0, "coin")
       .setOrigin(0.5)
-      .setScale(0.05)
+      .setScale(0.07)
       .setScrollFactor(0);
     this.add([this.coinsText, this.coinImage]);
   }

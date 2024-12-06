@@ -15,6 +15,7 @@ const config: Phaser.Types.Core.GameConfig = {
   physics: {
     default: "matter",
     matter: {
+      // constraintIterations: 10,
       enableSleeping: true,
       // debug: {
       //   showAxes: false,

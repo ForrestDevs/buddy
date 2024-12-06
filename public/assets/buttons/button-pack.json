@@ -2,12 +2,7 @@
   "section1": {
     "files": [
       {
-        "url": "assets/buttons/back.png",
-        "type": "image",
-        "key": "advance"
-      },
-      {
-        "url": "assets/buttons/BackARROW.png",
+        "url": "assets/buttons/icons/BackARROW.png",
         "type": "image",
         "key": "backarrow"
       },
@@ -137,7 +132,7 @@
         "key": "FreeBud"
       },
       {
-        "url": "assets/buttons/FREETier.png",
+        "url": "assets/buttons/levels/FREETier.png",
         "type": "image",
         "key": "FREETier"
       },
@@ -367,7 +362,7 @@
         "key": "tier1-bg"
       },
       {
-        "url": "assets/buttons/Tier2.png",
+        "url": "assets/buttons/levels/Tier2.png",
         "type": "image",
         "key": "Tier2"
       },
@@ -377,12 +372,12 @@
         "key": "tier2-bg"
       },
       {
-        "url": "assets/buttons/Tier2LOCKED.png",
+        "url": "assets/buttons/levels/Tier2LOCKED.png",
         "type": "image",
         "key": "Tier2LOCKED"
       },
       {
-        "url": "assets/buttons/Tier3.png",
+        "url": "assets/buttons/levels/Tier3.png",
         "type": "image",
         "key": "Tier3"
       },
@@ -392,12 +387,12 @@
         "key": "tier3-bg"
       },
       {
-        "url": "assets/buttons/Tier3LOCKED.png",
+        "url": "assets/buttons/levels/Tier3LOCKED.png",
         "type": "image",
         "key": "Tier3LOCKED"
       },
       {
-        "url": "assets/buttons/Tier4.png",
+        "url": "assets/buttons/levels/Tier4.png",
         "type": "image",
         "key": "Tier4"
       },
@@ -407,7 +402,7 @@
         "key": "tier4-bg"
       },
       {
-        "url": "assets/buttons/Tier4LOCKED.png",
+        "url": "assets/buttons/levels/Tier4LOCKED.png",
         "type": "image",
         "key": "Tier4LOCKED"
       },
@@ -442,14 +437,19 @@
         "key": "twitter-active"
       },
       {
-        "url": "assets/buttons/LogosSelect.png",
+        "url": "assets/buttons/icons/LogosSelect.png",
         "type": "image",
         "key": "logo-select"
       },
       {
-        "url": "assets/buttons/CLOSEicon.png",
+        "url": "assets/buttons/icons/CLOSEicon.png",
         "type": "image",
         "key": "close"
+      },
+      {
+        "url": "assets/buttons/levels/levels-page.png",
+        "type": "image",
+        "key": "levels-page"
       }
     ]
   },

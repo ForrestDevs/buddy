@@ -304,7 +304,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
     console.log("handleJournalOpen", journalType);
     if (this.isAnimating) return;
 
-    if (this.currentJournal === journalType && this.currentState === "main") {
+    if (
+      this.currentJournal === journalType &&
+      (this.currentState === "main" ||
+        this.currentState === "tier" ||
+        this.currentState === "shop")
+    ) {
       this.closeJournal();
       return;
     }
@@ -483,7 +488,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.scene.sound.play("page-turn");
     if (this.currentState === "tier") {
       // Return to main level select
-      this.basePaper.setTexture("Page");
+      this.basePaper.setTexture("levels-page");
       this.tierContents.get(this.currentTier)?.setVisible(false);
       this.journalContents.get("levels")?.setVisible(true);
       this.currentState = "main";
@@ -733,10 +738,9 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
     switch (type) {
       case "levels":
-        this.basePaper.setTexture("Page");
+        this.basePaper.setTexture("levels-page");
         this.currentTier = 1;
         this.tierPage.setTexture(this.TIER_INFO[1].texture);
-        //   this.tierText.setText(this.TIER_INFO[1].name);
         break;
       case "boxes":
         this.currentBox = 1;
@@ -775,37 +779,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
     });
   }
 
-  private closeJournal(): void {
-    if (this.currentState === "tier") {
-      this.tierContents.get(this.currentTier)?.setVisible(false);
-      this.backButton.setVisible(false);
-    }
-
-    if (this.currentState === "shop") {
-      this.shopContents.get(this.currentShop)?.setVisible(false);
-    }
-
-    if (this.isAnimating) return;
-
-    this.isAnimating = true;
-
-    // Slide out animation
-    this.scene.tweens.add({
-      targets: this,
-      x: this.HIDDEN_X,
-      duration: 500,
-      ease: "Power2",
-      onComplete: () => {
-        this.isAnimating = false;
-        this.setVisible(false);
-        this.currentJournal = null;
-        this.currentState = "closed";
-        EventBus.emit("journal-closed");
-        // this.scene.sound.play("journal-close");
-      },
-    });
-  }
-
   private switchJournal(newType: JournalType): void {
     this.scene.sound.play("page-turn");
     this.basePaper.setTexture("Page");
@@ -821,6 +794,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
     }
 
     switch (newType) {
+      case "levels":
+        this.basePaper.setTexture("levels-page");
+        this.currentState = "main";
+        this.currentTier = 1;
+        this.tierPage.setTexture(this.TIER_INFO[this.currentTier].texture);
+        break;
       case "shop":
         this.basePaper.setTexture("shop-page");
         this.currentState = "shop";
@@ -852,6 +831,37 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
     // Update button visibility
     this.advanceButton.setVisible(true);
+  }
+
+  private closeJournal(): void {
+    if (this.currentState === "tier") {
+      this.tierContents.get(this.currentTier)?.setVisible(false);
+      this.backButton.setVisible(false);
+    }
+
+    if (this.currentState === "shop") {
+      this.shopContents.get(this.currentShop)?.setVisible(false);
+    }
+
+    if (this.isAnimating) return;
+
+    this.isAnimating = true;
+
+    // Slide out animation
+    this.scene.tweens.add({
+      targets: this,
+      x: this.HIDDEN_X,
+      duration: 500,
+      ease: "Power2",
+      onComplete: () => {
+        this.isAnimating = false;
+        this.setVisible(false);
+        this.currentJournal = null;
+        this.currentState = "closed";
+        EventBus.emit("journal-closed");
+        // this.scene.sound.play("journal-close");
+      },
+    });
   }
 
   // Utility methods
