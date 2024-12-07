@@ -29,15 +29,31 @@ export default class Game extends Phaser.Scene {
   init() {
     this.matter.world.autoUpdate = false;
     this.matter.world.setBounds(50, 50, 1180, 620, 1000);
-    this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
-      this.scene.scene,
-      this.matter.world,
-      {
-        length: 0.1,
-        stiffness: 1,
-      }
-    );
-    this.matter.add.pointerConstraint(this.pointerConstraint.constraint);
+    // this.pointerConstraint = new Phaser.Physics.Matter.PointerConstraint(
+    //   this.scene.scene,
+    //   this.matter.world,
+    //   {
+    //     length: 0.1,
+    //     stiffness: 1,
+    //   }
+    // );
+    // this.matter.add.pointerConstraint({});
+    const canDrag = this.matter.world.nextGroup();
+    // this.matter.add.pointerConstraint({
+    //   collisionFilter: {
+    //     category: COLLISION_CATEGORIES.POINTER,
+    //     mask: COLLISION_CATEGORIES.BOUNDS,
+    //   },
+    // });
+
+    // this.matter.add.mouse
+
+    this.matter.add.mouseSpring({
+      length: 1,
+      stiffness: 0.6,
+      // @ts-ignore
+      collisionFilter: { group: canDrag },
+    });
 
     this.soundManager = new SoundManager(this);
     this.scoreBar = new ScoreBar({
@@ -64,6 +80,7 @@ export default class Game extends Phaser.Scene {
       x: 512,
       y: 200,
       tier: this.characterTiers[this.data.get("tier")] ?? "paper",
+      collisionGroup: canDrag,
     });
     this.effects = new Effects(this);
     this.weaponObject = new Weapon(this, this.character, this.effects);
@@ -80,16 +97,16 @@ export default class Game extends Phaser.Scene {
       this.character.changeSkin(skin);
     });
     EventBus.on("character-out-of-bounds", () => {
-      this.pointerConstraint.stopDrag();
+      // this.pointerConstraint.stopDrag();
     });
     this.input.on("pointerdown", () => {
       if (!this.weaponObject) return;
-      this.pointerConstraint.active = false;
+      // this.pointerConstraint.active = false;
       this.weaponObject.startFiring();
     });
     this.input.on("pointerup", () => {
       if (!this.weaponObject) return;
-      this.pointerConstraint.active = true;
+      // this.pointerConstraint.active = true;
       this.weaponObject.stopFiring();
     });
     this.events.emit("scene-awake");

@@ -43,10 +43,26 @@ export type GameWeaponKey =
   | "kar98"
   | "flamethrower";
 
+export type SpecialWeaponKey =
+  | "chainsaw"
+  | "katana"
+  | "lightsaber"
+  | "flamethrower"
+  | "railgun";
+
 export interface WeaponConfig {
   texture: string;
   width: number;
   height: number;
   name: string;
 }
+
+export const COLLISION_CATEGORIES = {
+  HEAD: 0x0001, // 0000 0000 0000 0001
+  BODY: 0x0002, // 0000 0000 0000 0010
+  ARMS: 0x0004, // 0000 0000 0000 0100
+  LEGS: 0x0008, // 0000 0000 0000 1000
+  BOUNDS: 0x0010, // 0000 0000 0001 0000
+  POINTER: 0x0020, // 0000 0000 0010 0000
+};
 

@@ -119,7 +119,7 @@
       {
         "url": ["assets/sounds/Nade_pinpull.mp3"],
         "type": "audio",
-        "key": "grenade-pinpull"
+        "key": "grenade-fire"
       },
       {
         "url": ["assets/sounds/Buddy_ouch.mp3"],
@@ -194,7 +194,7 @@
       {
         "url": ["assets/sounds/sticky_contact.mp3"],
         "type": "audio",
-        "key": "sticky-bomb-contact"
+        "key": "sticky-bomb-impact"
       },
       {
         "url": ["assets/sounds/throwknife_impact.mp3"],
@@ -204,7 +204,7 @@
       {
         "url": ["assets/sounds/throwknife_toss.mp3"],
         "type": "audio",
-        "key": "throwknife-toss"
+        "key": "throwknife-fire"
       },
       {
         "url": ["assets/sounds/Buddy_thump.mp3"],

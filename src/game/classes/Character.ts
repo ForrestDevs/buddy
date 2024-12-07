@@ -6,6 +6,7 @@ interface CharacterConfig {
   x: number;
   y: number;
   tier?: string;
+  collisionGroup: number;
 }
 
 type BodyPartConfig = Record<
@@ -52,6 +53,7 @@ interface DamageThresholds {
 }
 
 export class Character {
+  private collisionGroup!: number;
   private scene: Phaser.Scene;
   private health: number = 100;
   private characterSkin: string;
@@ -84,6 +86,7 @@ export class Character {
   constructor(config: CharacterConfig) {
     this.scene = config.scene;
     this.characterSkin = config.tier || "paper";
+    this.collisionGroup = config.collisionGroup;
     this.createCharacter(config.x, config.y);
     this.setupEventListeners();
     this.loadSounds();
@@ -224,6 +227,7 @@ export class Character {
         .setDisplaySize(width, height)
         .setCollisionCategory(1)
         .setDepth(depth)
+        .setCollisionGroup(this.collisionGroup)
     );
   }
 

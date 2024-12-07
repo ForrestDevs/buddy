@@ -1,4 +1,5 @@
 import { EventBus } from "../EventBus";
+import { InputState } from "./InputState";
 
 interface ButtonConfig {
   scene: Phaser.Scene;
@@ -8,6 +9,7 @@ interface ButtonConfig {
 }
 
 export class GameButtons extends Phaser.GameObjects.Container {
+  private inputState: InputState;
   private buttons: Map<string, Phaser.GameObjects.Image> = new Map();
   private buttonStates: Map<string, "default" | "hover" | "selected"> =
     new Map();
@@ -22,6 +24,7 @@ export class GameButtons extends Phaser.GameObjects.Container {
     this.scene = config.scene;
     this.spacing = config.spacing || 60;
     this.scene.add.existing(this);
+    this.inputState = InputState.getInstance();
     this.createButtons();
     this.setupEventListeners();
   }
@@ -51,6 +54,8 @@ export class GameButtons extends Phaser.GameObjects.Container {
       .image(0, 440, "logo-select")
       .setDisplaySize(100, 100)
       .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.onExtraButtonHover())
+      .on("pointerout", () => this.onExtraButtonOut())
       .on("pointerdown", () => this.onSocialsButtonClick());
 
     this.add(this.socialsButton);
@@ -59,6 +64,8 @@ export class GameButtons extends Phaser.GameObjects.Container {
       .image(0, -110, "unmuted")
       .setDisplaySize(100, 100)
       .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.onExtraButtonHover())
+      .on("pointerout", () => this.onExtraButtonOut())
       .on("pointerdown", () => this.onMuteButtonClick());
 
     this.add(this.muteButton);
@@ -66,6 +73,14 @@ export class GameButtons extends Phaser.GameObjects.Container {
 
   private setupEventListeners(): void {
     EventBus.on("journal-closed", this.resetButtonStates, this);
+  }
+
+  private onExtraButtonHover(): void {
+    this.inputState.lock("extra");
+  }
+
+  private onExtraButtonOut(): void {
+    this.inputState.unlock("extra");
   }
 
   private onMuteButtonClick(): void {

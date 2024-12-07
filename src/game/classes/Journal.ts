@@ -1,4 +1,5 @@
 import { EventBus } from "../EventBus";
+import { InputState } from "./InputState";
 
 type JournalType = "levels" | "shop" | "skins" | "boxes";
 type JournalState = "closed" | "main" | "tier" | "shop";
@@ -67,6 +68,7 @@ const JOURNAL_SCALE = 0.6;
 const HITAREA_ALPHA = 0;
 
 export class JournalManager extends Phaser.GameObjects.Container {
+  private inputState: InputState;
   private currentJournal: JournalType | null = null;
   private currentState: JournalState = "closed";
   private currentTier: number = 1;
@@ -186,6 +188,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
   constructor(config: JournalManagerConfig) {
     super(config.scene, config.x, config.y);
+    this.inputState = InputState.getInstance();
     this.setDepth(100);
     this.scene.add.existing(this);
 
@@ -311,6 +314,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private handleJournalOpen = (journalType: JournalType): void => {
+    this.inputState.lock("journal");
     console.log("handleJournalOpen", journalType);
     if (this.isAnimating) return;
 
@@ -937,6 +941,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
         this.setVisible(false);
         this.currentJournal = null;
         this.currentState = "closed";
+        this.inputState.unlock("journal");
         EventBus.emit("journal-closed");
         // this.scene.sound.play("journal-close");
       },
