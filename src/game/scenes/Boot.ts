@@ -9,7 +9,12 @@ export default class Boot extends Scene {
     this.load.pack("pack", "assets/boot-asset-pack.json");
   }
 
+  private createMarketcap(): void {
+    this.registry.set("marketcap", "0");
+  }
+
   create() {
+    this.createMarketcap();
     this.scene.start("MainMenu");
   }
 }

@@ -120,6 +120,8 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     EventBus.on("skin-equipped", this.updateSkin, this);
     // Listen to Damage State changes
     EventBus.on("damage-state-changed", this.updateDamageState, this);
+
+    EventBus.on("set-coins", this.setCoins, this);
   }
 
   private updateSkin(skin: string): void {
@@ -143,6 +145,12 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
     this.moveHealthBarMarker(healthPercent);
+  }
+
+  private setCoins(value: number) {
+    this.coins = value;
+    this.coinsText.setText(`${this.coins}`);
+    localStorage.setItem("coins", this.coins.toString());
   }
 
   private moveHealthBarMarker(healthPercent: number): void {

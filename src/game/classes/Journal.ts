@@ -1,3 +1,4 @@
+import { getPurchasedStates } from "@/lib/utils";
 import { EventBus } from "../EventBus";
 import { InputState } from "./InputState";
 
@@ -10,62 +11,56 @@ interface JournalManagerConfig {
   y: number;
 }
 
-interface Weapon {
-  id: string;
+export interface WeaponButton {
   name: string;
-  texture: string;
   price: number;
-  unlocked: boolean;
+  purchased: boolean;
   tier: number;
   hitbox: Phaser.Geom.Rectangle;
 }
 
-interface BoxReward {
-  type: string;
-  item: string;
-  rarity: string;
-}
-
-interface ShopItem {
-  id: string;
+export interface ShopItemButton {
   name: string;
-  texture: string;
   tier: number;
   price: number;
+  purchased: boolean;
   unlocked: boolean;
   hitbox: Phaser.Geom.Rectangle;
 }
 
-interface Skin {
-  name: string;
-  texture: string;
-  price: number;
-  unlocked: boolean;
-  purchased: boolean;
-}
+export type SkinButtons = Record<
+  number,
+  {
+    name: string;
+    price: number;
+    unlocked: boolean;
+    purchased: boolean;
+  }
+>;
 
-interface TierData {
-  name: string;
-  texture: string;
-  bg: string;
-}
+export type TierButtons = Record<
+  number,
+  {
+    name: string;
+    bg: string;
+    unlocked: boolean;
+  }
+>;
 
-interface Box {
-  name: string;
-  texture: string;
-  bg: string;
-  price: number;
-  unlocked: boolean;
-  purchased: boolean;
-}
-
-interface SkinData {
-  name: string;
-  texture: string;
-}
+export type BoxButtons = Record<
+  number,
+  {
+    name: string;
+    bg: string;
+    price: number;
+    purchased: boolean;
+  }
+>;
 
 const JOURNAL_SCALE = 0.6;
 const HITAREA_ALPHA = 0;
+
+// TODO: Make market cap event handler to update journal unlocked prop on items
 
 export class JournalManager extends Phaser.GameObjects.Container {
   private inputState: InputState;
@@ -84,98 +79,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private backButton: Phaser.GameObjects.Container;
   private advanceButton: Phaser.GameObjects.Container;
 
-  // Content containers
-  private journalContents: Map<JournalType, Phaser.GameObjects.Container>;
-  private tierContents: Map<number, Phaser.GameObjects.Container>;
-  private shopContents: Map<number, Phaser.GameObjects.Container>;
-
-  private readonly TIER_INFO: Record<number, TierData> = {
-    1: { name: "PAPER", texture: "FREETier", bg: "tier1-bg" },
-    2: { name: "MUSK", texture: "Tier2", bg: "tier2-bg" },
-    3: { name: "MIL", texture: "Tier3", bg: "tier3-bg" },
-    4: { name: "SOL", texture: "Tier4", bg: "tier4-bg" },
-  };
-  private readonly BOX_INFO: Record<number, Box> = {
-    1: {
-      name: "CARDBOARD",
-      texture: "main-box",
-      bg: "bg-main",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-    2: {
-      name: "BASKET",
-      texture: "basket-box",
-      bg: "bg-basket",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-    3: {
-      name: "BLOOD",
-      texture: "blood-box",
-      bg: "bg-bloody",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-    4: {
-      name: "PRESENT",
-      texture: "present-box",
-      bg: "bg-present",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-    5: {
-      name: "SHOE",
-      texture: "shoe-box",
-      bg: "bg-shoe",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-    6: {
-      name: "COMING SOON",
-      texture: "coming-soon-box",
-      bg: "bg-coming-soon",
-      price: 0,
-      unlocked: true,
-      purchased: false,
-    },
-  };
-  private readonly SKIN_INFO: Record<number, Skin> = {
-    1: {
-      name: "paper",
-      texture: "FreeBud",
-      price: 0,
-      purchased: false,
-      unlocked: true,
-    },
-    2: {
-      name: "musk",
-      texture: "Stage3G",
-      price: 0,
-      purchased: false,
-      unlocked: true,
-    },
-    3: {
-      name: "mil",
-      texture: "Stage3T",
-      price: 0,
-      purchased: false,
-      unlocked: true,
-    },
-    4: {
-      name: "sol",
-      texture: "Stage3S",
-      price: 0,
-      purchased: false,
-      unlocked: true,
-    },
-  };
-
   // Position constants
   private readonly HIDDEN_X = 1480;
   private readonly VISIBLE_X = 1000;
@@ -186,6 +89,20 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private shopPage!: Phaser.GameObjects.Image;
   private pointerOver: boolean = false;
 
+  // Content containers
+  private journalContents: Map<JournalType, Phaser.GameObjects.Container>;
+  private tierContents: Map<number, Phaser.GameObjects.Container>;
+  private shopContents: Map<number, Phaser.GameObjects.Container>;
+
+  private WEAPON_INFO!: WeaponButton[];
+  private SHOP_INFO!: ShopItemButton[];
+  private SKIN_INFO!: SkinButtons;
+  private TIER_INFO!: TierButtons;
+  private BOX_INFO!: BoxButtons;
+
+  // three states: locked by mc, unlocked by mc, purchased by user
+  // ex. musk-skin-locked, musk-skin-unlocked, musk-skin-purchased
+
   constructor(config: JournalManagerConfig) {
     super(config.scene, config.x, config.y);
     this.inputState = InputState.getInstance();
@@ -195,6 +112,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.journalContents = new Map();
     this.tierContents = new Map();
     this.shopContents = new Map();
+
+    this.TIER_INFO = this.scene.registry.get("tier-buttons");
+    this.SHOP_INFO = this.scene.registry.get("shop-buttons");
+    this.WEAPON_INFO = this.scene.registry.get("weapon-buttons");
+    this.SKIN_INFO = this.scene.registry.get("skin-buttons");
+    this.BOX_INFO = this.scene.registry.get("box-buttons");
 
     this.createBase();
     this.createNavigationButtons();
@@ -311,13 +234,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
   private setupEventListeners(): void {
     EventBus.on("open-journal", this.handleJournalOpen, this);
+    EventBus.on("marketcap-changed", this.onMarketcapChange, this);
   }
 
   private handleJournalOpen = (journalType: JournalType): void => {
     this.inputState.lock("journal");
-    console.log("handleJournalOpen", journalType);
     if (this.isAnimating) return;
-
     if (
       this.currentJournal === journalType &&
       (this.currentState === "main" ||
@@ -335,22 +257,17 @@ export class JournalManager extends Phaser.GameObjects.Container {
     }
   };
 
-  private purchaseWeapon(weaponData: Weapon): void {
-    const currentCoins = this.scene.registry.get("coins") || 0;
-    this.scene.registry.set("coins", currentCoins - weaponData.price);
-
-    // Update weapon unlock status in your game state
-    EventBus.emit("weapon-purchased", weaponData.id);
-    this.scene.sound.play("purchase");
-  }
-
   // LEVELS FUNCTIONALITY
   private createLevelsJournal(): void {
     const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
 
+    const texture = this.TIER_INFO[this.currentTier].unlocked
+      ? `tier${this.currentTier}-button`
+      : `tier${this.currentTier}-button-locked`;
+
     // Create the tier page that will change textures
     this.tierPage = this.scene.add
-      .image(0, 0, this.TIER_INFO[1].texture)
+      .image(0, 0, texture)
       .setOrigin(0.5)
       .setScale(JOURNAL_SCALE);
 
@@ -371,7 +288,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
         this.tierPage.setScale(JOURNAL_SCALE);
       })
       .on("pointerdown", () => {
-        this.scene.sound.play("page-turn");
         this.openTier(this.currentTier);
       });
 
@@ -381,19 +297,18 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.add(container);
     container.setVisible(false);
 
-    // Create tier content for tier 1
-    this.createTierContent();
-  }
-
-  private createTierContent(): void {
     // Create containers for each tier
     for (let tier = 1; tier <= 4; tier++) {
-      const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
+      const container = new Phaser.GameObjects.Container(
+        this.scene,
+        0,
+        0
+      ).setName(`tier${tier}-container`);
       // Add weapon buttons for this tier
-      const weapons = this.scene.registry
-        .get("weapons")
-        .filter((weapon: Weapon) => weapon.tier === tier);
-      weapons.forEach((weapon: Weapon, index: number) => {
+      const weapons = this.WEAPON_INFO.filter(
+        (weapon: WeaponButton) => weapon.tier === tier
+      );
+      weapons.forEach((weapon: WeaponButton, index: number) => {
         const weaponButton = this.createWeaponButton(weapon, index);
         container.add(weaponButton);
       });
@@ -408,6 +323,10 @@ export class JournalManager extends Phaser.GameObjects.Container {
     // Increment tier or loop back to 1
     this.currentTier = (this.currentTier % 4) + 1;
 
+    const texture = this.TIER_INFO[this.currentTier].unlocked
+      ? `tier${this.currentTier}-button`
+      : `tier${this.currentTier}-button-locked`;
+
     // Create a fade transition
     this.scene.tweens.add({
       targets: [this.tierPage],
@@ -415,9 +334,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
       duration: 200,
       onComplete: () => {
         // Update the texture and text
-        this.tierPage.setTexture(this.TIER_INFO[this.currentTier].texture);
-        // this.tierText.setText(this.TIER_INFO[this.currentTier].name);
-
+        this.tierPage.setTexture(texture);
         // Fade back in
         this.scene.tweens.add({
           targets: [this.tierPage],
@@ -432,20 +349,20 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private createWeaponButton(
-    weaponData: Weapon,
+    weaponData: WeaponButton,
     index: number
   ): Phaser.GameObjects.Container {
     const button = new Phaser.GameObjects.Container(this.scene, 0, 0);
 
-    const weaponTexture = weaponData.unlocked
-      ? weaponData.texture
-      : weaponData.texture + "-locked";
+    const weaponTexture = weaponData.purchased
+      ? `${weaponData.name}-button`
+      : `${weaponData.name}-button-locked`;
     // Create weapon display
-    const weaponSprite = this.scene.add
+    const weaponButton = this.scene.add
       .image(0, 0, weaponTexture)
       .setOrigin(0.5)
-      .setScale(JOURNAL_SCALE);
-
+      .setScale(JOURNAL_SCALE)
+      .setName(`${weaponData.name}-button`);
     // Create hit area
     const hitArea = this.scene.add
       .rectangle(
@@ -458,47 +375,65 @@ export class JournalManager extends Phaser.GameObjects.Container {
       )
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
-        weaponSprite.setScale(JOURNAL_SCALE + 0.01);
+        weaponButton.setScale(JOURNAL_SCALE + 0.01);
       })
       .on("pointerout", () => {
-        weaponSprite.setScale(JOURNAL_SCALE);
+        weaponButton.setScale(JOURNAL_SCALE);
       })
       .on("pointerdown", () => this.handleWeaponSelection(weaponData));
 
-    button.add([hitArea, weaponSprite]);
+    button.add([hitArea, weaponButton]);
 
     return button;
   }
 
-  private handleWeaponSelection(weaponData: Weapon): void {
-    console.log("Weapon Selected", weaponData.name);
-    // if (!weaponData.unlocked && !this.canAfford(weaponData.price)) {
-    //   this.scene.sound.play("click-deny");
-    //   this.showCannotAffordMessage();
-    //   return;
-    // }
+  private handleWeaponSelection(weaponData: WeaponButton): void {
+    this.scene.sound.play("click");
 
-    // if (!weaponData.unlocked) {
-    //   this.purchaseWeapon(weaponData);
-    // }
+    if (!weaponData.purchased) {
+      if (!this.canAfford(weaponData.price)) {
+        this.scene.sound.play("click-deny");
+        return;
+      }
+      // deduct coins, update config/ localstore, update texture
+      this.scene.sound.play("coin-pickup");
+      EventBus.emit("coins-changed", -weaponData.price);
 
+      const page = this.tierContents
+        .get(this.currentTier)
+        ?.getByName(
+          `tier${this.currentTier}-container`
+        ) as Phaser.GameObjects.Container;
+
+      const texture = page.getByName(
+        `${weaponData.name}-button`
+      ) as Phaser.GameObjects.Image;
+
+      texture.setTexture(`${weaponData.name}-button`);
+      // set purchased state in local storage
+      this.updatePurchaseState("weapon", weaponData.name);
+    }
+    this.scene.registry.set("equiped-item", weaponData.name);
     EventBus.emit("set-weapon", weaponData.name);
     this.closeJournal();
+    return;
   }
 
   private openTier(tier: number): void {
+    if (!this.TIER_INFO[tier].unlocked) {
+      this.scene.sound.play("click-deny");
+      return;
+    }
+
+    this.scene.sound.play("page-turn");
     this.currentTier = tier;
     this.currentState = "tier";
-
     // Change tier page texture
-    this.basePaper.setTexture(this.TIER_INFO[tier].bg);
-
+    this.basePaper.setTexture(this.TIER_INFO[this.currentTier].bg);
     // Hide main content
     this.journalContents.get(this.currentJournal!)?.setVisible(false);
-
     // Show tier content
-    this.tierContents.get(tier)?.setVisible(true);
-
+    this.tierContents.get(this.currentTier)?.setVisible(true);
     // Show back button, hide advance button
     this.backButton.setVisible(true);
     this.advanceButton.setVisible(false);
@@ -525,7 +460,22 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.journalContents.set("shop", container);
     this.add(container);
     container.setVisible(false);
-    this.createShopContent();
+
+    for (let i = 1; i < 4; i++) {
+      const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
+
+      const items = this.SHOP_INFO.filter(
+        (item: ShopItemButton) => item.tier === i
+      );
+      items.forEach((item: ShopItemButton, index: number) => {
+        const itemButton = this.createItemButton(item, index);
+        container.add(itemButton);
+      });
+
+      this.shopContents.set(i, container);
+      this.add(container);
+      container.setVisible(false);
+    }
   }
 
   private advanceShop(): void {
@@ -582,33 +532,22 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.scene.sound.play("page-turn");
   }
 
-  private createShopContent(): void {
-    for (let i = 1; i < 4; i++) {
-      const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
+  private createItemButton(item: ShopItemButton, index: number) {
+    const button = new Phaser.GameObjects.Container(this.scene, 0, 0).setName(
+      item.name
+    );
 
-      const items = this.scene.registry
-        .get("items")
-        .filter((item: ShopItem) => item.tier === i);
-      items.forEach((item: ShopItem, index: number) => {
-        const itemButton = this.createItemButton(item, index);
-        container.add(itemButton);
-      });
-
-      this.shopContents.set(i, container);
-      this.add(container);
-      container.setVisible(false);
-    }
-  }
-
-  private createItemButton(item: ShopItem, index: number) {
-    const button = new Phaser.GameObjects.Container(this.scene, 0, 0);
+    const texture = item.purchased
+      ? `${item.name}-item`
+      : `${item.name}-item-locked`;
 
     // const itemTexture = item.unlocked ? item.texture : item.texture + "-locked";
     // Create weapon display
     const itemSprite = this.scene.add
-      .image(0, 0, item.texture)
+      .image(0, 0, texture)
       .setOrigin(0.5)
-      .setScale(JOURNAL_SCALE);
+      .setScale(JOURNAL_SCALE)
+      .setName(`${item.name}-texture`);
 
     // Create hit area
     const hitArea = this.scene.add
@@ -634,26 +573,54 @@ export class JournalManager extends Phaser.GameObjects.Container {
     return button;
   }
 
-  private handleItemSelection(item: ShopItem): void {
+  private handleItemSelection(item: ShopItemButton): void {
     this.scene.sound.play("click");
-    console.log("Item Selected", item.name);
-
     if (!item.unlocked) {
+      // un released item, deny and return
       this.scene.sound.play("click-deny");
       return;
     }
 
-    EventBus.emit("set-weapon", item.name);
+    if (!item.purchased) {
+      if (!this.canAfford(item.price)) {
+        this.scene.sound.play("click-deny");
+        return;
+      }
+      // deduct coins, update config/ localstore, update texture
+      this.scene.sound.play("coin-pickup");
+      EventBus.emit("coins-changed", -item.price);
 
+      const page = this.shopContents
+        .get(this.currentShop)
+        ?.getByName(item.name) as Phaser.GameObjects.Container;
+
+      const texture = page.getByName(
+        `${item.name}-texture`
+      ) as Phaser.GameObjects.Image;
+
+      texture.setTexture(`${item.name}-item`);
+      // set purchased state in local storage
+      this.updatePurchaseState("item", item.name);
+    }
+    this.scene.registry.set("equiped-item", item.name);
+    EventBus.emit("set-weapon", item.name);
     this.closeJournal();
+    return;
   }
 
   // SKINS FUNCTIONALITY
   private createSkinsJournal(): void {
     const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
 
+    const config = this.SKIN_INFO[this.currentSkin];
+    const texture = config.unlocked
+      ? config.purchased
+        ? `${config.name}-skin-purchased`
+        : `${config.name}-skin-unlocked`
+      : `${config.name}-skin-locked`;
+
     this.skinPage = this.scene.add
-      .image(0, 0, this.SKIN_INFO[1].texture)
+      .image(0, 0, texture)
       .setOrigin(0.5)
       .setScale(JOURNAL_SCALE);
 
@@ -674,7 +641,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
         this.skinPage.setScale(JOURNAL_SCALE);
       })
       .on("pointerdown", () => {
-        this.scene.sound.play("click");
         this.handleSelectSkin(this.SKIN_INFO[this.currentSkin]);
       });
 
@@ -685,21 +651,24 @@ export class JournalManager extends Phaser.GameObjects.Container {
   }
 
   private advanceSkin(): void {
-    if (this.isAnimating || this.isAdvancing) {
-      return;
-    }
-
+    if (this.isAnimating || this.isAdvancing) return;
     this.isAdvancing = true;
     this.isAnimating = true;
+    this.currentSkin = (this.currentSkin % 7) + 1;
 
-    this.currentSkin = (this.currentSkin % 4) + 1;
+    const config = this.SKIN_INFO[this.currentSkin];
+    const texture = config.unlocked
+      ? config.purchased
+        ? `${config.name}-skin-purchased`
+        : `${config.name}-skin-unlocked`
+      : `${config.name}-skin-locked`;
 
     this.scene.tweens.add({
       targets: [this.skinPage],
       alpha: 0,
       duration: 200,
       onComplete: () => {
-        this.skinPage.setTexture(this.SKIN_INFO[this.currentSkin].texture);
+        this.skinPage.setTexture(texture);
 
         this.scene.tweens.add({
           targets: [this.skinPage],
@@ -716,26 +685,45 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.scene.sound.play("page-turn");
   }
 
-  private handleSelectSkin(skin: Skin): void {
-    // if (!skin.purchased) {
-    //   if (!this.canAfford(skin.price)) {
-    //     this.scene.sound.play("click-deny");
-    //     return;
-    //   }
-    // } else {
-    //   this.scene.registry.set(`equipped-${skin.name}`, skin.name);
-    //   EventBus.emit("skin-equipped", skin.name);
-    // }
-    this.scene.registry.set(`equipped-${skin.name}`, skin.name);
+  private handleSelectSkin(skin: SkinButtons[number]): void {
+    this.scene.sound.play("click");
+    // If the skin isnt unlocked by MC
+    if (!skin.unlocked) {
+      this.scene.sound.play("click-deny");
+      return;
+    }
+    // If the skin isn't purchased
+    if (!skin.purchased) {
+      if (!this.canAfford(skin.price)) {
+        this.scene.sound.play("click-deny");
+        return;
+      }
+      // deduct coins, update config/ localstore, update texture
+      this.scene.sound.play("coin-pickup");
+      EventBus.emit("coins-changed", -skin.price);
+      this.SKIN_INFO[this.currentSkin].purchased = true;
+      this.skinPage.setTexture(`${skin.name}-skin-purchased`);
+      // set purchased state in local storage
+      this.updatePurchaseState("skin", skin.name);
+    }
+    // Equip Skin
+    this.scene.registry.set("equipped-skin", skin.name);
     EventBus.emit("skin-equipped", skin.name);
+    this.closeJournal();
+    return;
   }
 
   // BOXES FUNCTIONALITY
   private createBoxesJournal(): void {
     const container = new Phaser.GameObjects.Container(this.scene, 0, 0);
 
+    const config = this.BOX_INFO[this.currentBox];
+    const texture = config.purchased
+      ? `${config.name}-box`
+      : `${config.name}-box-locked`;
+
     this.boxPage = this.scene.add
-      .image(0, 0, this.BOX_INFO[1].texture)
+      .image(0, 0, texture)
       .setOrigin(0.5)
       .setScale(JOURNAL_SCALE);
 
@@ -756,7 +744,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
         this.boxPage.setScale(JOURNAL_SCALE);
       })
       .on("pointerdown", () => {
-        this.scene.sound.play("click");
         this.handleSelectBox(this.BOX_INFO[this.currentBox]);
       });
 
@@ -766,28 +753,24 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.add(container);
     container.setVisible(false);
   }
+
   private advanceBox(): void {
-    if (this.isAnimating || !this.boxPage) return;
+    if (this.isAnimating || this.isAdvancing) return;
+    this.isAdvancing = true;
     this.isAnimating = true;
+    this.currentBox = (this.currentBox % 6) + 1;
 
-    // Increment box or loop back to 1, ensuring box exists in BOX_INFO
-    let nextBox = (this.currentBox % 6) + 1;
-    while (!this.BOX_INFO[nextBox] && nextBox > 1) {
-      nextBox--;
-    }
-    this.currentBox = nextBox;
+    const config = this.BOX_INFO[this.currentBox];
+    const texture = config.purchased
+      ? `${config.name}-box`
+      : `${config.name}-box-locked`;
 
-    // Create a fade transition
     this.scene.tweens.add({
       targets: [this.boxPage],
       alpha: 0,
       duration: 200,
       onComplete: () => {
-        // Update the texture if it exists
-        const boxInfo = this.BOX_INFO[this.currentBox];
-        if (boxInfo && boxInfo.texture) {
-          this.boxPage.setTexture(boxInfo.texture);
-        }
+        this.boxPage.setTexture(texture);
 
         // Fade back in
         this.scene.tweens.add({
@@ -796,6 +779,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
           duration: 200,
           onComplete: () => {
             this.isAnimating = false;
+            this.isAdvancing = false;
           },
         });
       },
@@ -804,12 +788,25 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.scene.sound.play("page-turn");
   }
 
-  private handleSelectBox(box: Box): void {
-    if (box.name === "COMING SOON") {
-      this.scene.sound.play("click-deny");
-      return;
+  private handleSelectBox(box: BoxButtons[number]): void {
+    this.scene.sound.play("click");
+    if (!box.purchased) {
+      if (!this.canAfford(box.price)) {
+        this.scene.sound.play("click-deny");
+        return;
+      }
+      // deduct coins, update config/ localstore, update texture
+      this.scene.sound.play("coin-pickup");
+      EventBus.emit("coins-changed", -box.price);
+      this.BOX_INFO[this.currentBox].purchased = true;
+      this.boxPage.setTexture(`${box.name}-box`);
+      // set purchased state in local storage
+      this.updatePurchaseState("box", box.name);
     }
+    this.scene.registry.set(`equipped-bg`, box.name);
     EventBus.emit("bg-change", box.bg);
+    this.closeJournal();
+    return;
   }
 
   // JOURNAL FUNCTIONALITY
@@ -822,22 +819,15 @@ export class JournalManager extends Phaser.GameObjects.Container {
     switch (type) {
       case "levels":
         this.basePaper.setTexture("levels-page");
-        this.currentTier = 1;
-        this.tierPage.setTexture(this.TIER_INFO[1].texture);
         break;
       case "boxes":
-        this.currentBox = 1;
         this.basePaper.setTexture("boxes-page");
-        this.boxPage.setTexture(this.BOX_INFO[1].texture);
         break;
       case "skins":
-        this.currentSkin = 1;
         this.basePaper.setTexture("skins-page");
-        this.skinPage.setTexture(this.SKIN_INFO[1].texture);
         break;
       case "shop":
         this.currentState = "shop";
-        this.currentShop = 1;
         this.basePaper.setTexture("shop-page");
         this.shopContents.get(this.currentShop)?.setVisible(true);
         break;
@@ -878,28 +868,21 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
     switch (newType) {
       case "levels":
-        this.basePaper.setTexture("levels-page");
         this.currentState = "main";
-        this.currentTier = 1;
-        this.tierPage.setTexture(this.TIER_INFO[this.currentTier].texture);
+        this.basePaper.setTexture("levels-page");
         break;
       case "shop":
-        this.basePaper.setTexture("shop-page");
         this.currentState = "shop";
-        this.currentShop = 1;
+        this.basePaper.setTexture("shop-page");
         this.shopContents.get(this.currentShop)?.setVisible(true);
         break;
       case "skins":
-        this.basePaper.setTexture("skins-page");
         this.currentState = "main";
-        this.currentSkin = 1;
-        this.skinPage.setTexture(this.SKIN_INFO[this.currentSkin].texture);
+        this.basePaper.setTexture("skins-page");
         break;
       case "boxes":
         this.currentState = "main";
-        this.currentBox = 1;
         this.basePaper.setTexture("boxes-page");
-        this.boxPage.setTexture(this.BOX_INFO[this.currentBox].texture);
         break;
     }
 
@@ -943,16 +926,48 @@ export class JournalManager extends Phaser.GameObjects.Container {
         this.currentState = "closed";
         this.inputState.unlock("journal");
         EventBus.emit("journal-closed");
-        // this.scene.sound.play("journal-close");
       },
     });
   }
 
   // Utility methods
+  private onMarketcapChange(newMarketcap: number): void {
+    this.closeJournal();
+    this.scene.registry.set("marketcap", newMarketcap);
+
+    this.TIER_INFO[2].unlocked = newMarketcap >= 1000000;
+    this.TIER_INFO[3].unlocked = newMarketcap >= 5000000;
+    this.TIER_INFO[4].unlocked = newMarketcap >= 10000000;
+
+    this.SKIN_INFO[2].unlocked = newMarketcap >= 1000000;
+    this.SKIN_INFO[3].unlocked = newMarketcap >= 5000000;
+    this.SKIN_INFO[4].unlocked = newMarketcap >= 10000000;
+  }
+
+  public updatePurchaseState(
+    type: "weapon" | "item" | "box" | "skin",
+    itemName: string
+  ): void {
+    const storageKey = `${type}-purchases`;
+    const currentPurchases = getPurchasedStates(storageKey);
+    currentPurchases[itemName] = true;
+    localStorage.setItem(storageKey, JSON.stringify(currentPurchases));
+  }
+
+  private getCoins(): number {
+    const currentCoins = localStorage.getItem("coins");
+    if (!currentCoins) {
+      localStorage.setItem("coins", "0");
+      return 0;
+    }
+    const coinNum = parseInt(currentCoins);
+    return coinNum;
+  }
+
   private canAfford(price: number): boolean {
     // Get current coins from game state
-    const currentCoins = this.scene.registry.get("coins") || 0;
-    return currentCoins >= price;
+    const coins = this.getCoins();
+    return coins >= price;
   }
 
   private showCannotAffordMessage(): void {
@@ -971,32 +986,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
       duration: 1000,
       onComplete: () => message.destroy(),
     });
-  }
-
-  private getBoxPrice(type: string): string {
-    const prices = {
-      common: "100",
-      rare: "250",
-      epic: "500",
-      legendary: "1000",
-    };
-    return prices[type as keyof typeof prices];
-  }
-
-  private generateBoxRewards(type: string): BoxReward[] {
-    // This should be replaced with your actual reward generation logic
-    const rewards: BoxReward[] = [];
-    const rewardCount = type === "legendary" ? 3 : type === "epic" ? 2 : 1;
-
-    for (let i = 0; i < rewardCount; i++) {
-      rewards.push({
-        type: "weapon", // or "skin" or other reward types
-        item: "random-item-id",
-        rarity: type,
-      });
-    }
-
-    return rewards;
   }
 
   public destroy(): void {

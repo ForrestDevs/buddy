@@ -40,14 +40,14 @@ function App() {
       </div>
       <div
         className="game-info"
-        style={{ 
+        style={{
           display: "flex",
           padding: "20px",
           color: "#fff",
-          gap: "20px"
+          gap: "20px",
         }}
       >
-        <div style={{ flex: 1, textAlign: "center" }}>
+        {/* <div style={{ flex: 1, textAlign: "center" }}>
           <p
             style={{
               fontSize: "1.2rem",
@@ -60,15 +60,22 @@ function App() {
             pick your weapons, and unleash chaos. Earn while you play - the more
             you kick, the more you earn!
           </p>
-        </div>
+        </div> */}
 
-        <div style={{ flex: 1, maxWidth: '400px' }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            maxWidth: "400px",
+            gap: "40px",
+          }}
+        >
           <div style={{ marginBottom: "1rem" }}>
-            <label 
-              style={{ 
-                display: "block", 
+            <label
+              style={{
+                display: "block",
                 marginBottom: "0.5rem",
-                color: "#888888"
+                color: "#888888",
               }}
             >
               Health:
@@ -81,7 +88,7 @@ function App() {
                 borderRadius: "4px",
                 border: "1px solid #30cfd0",
                 background: "transparent",
-                color: "#fff"
+                color: "#fff",
               }}
               defaultValue={100}
               onChange={(e) => {
@@ -95,26 +102,54 @@ function App() {
             <label
               style={{
                 display: "block",
-                marginBottom: "0.5rem", 
-                color: "#888888"
+                marginBottom: "0.5rem",
+                color: "#888888",
               }}
             >
               Market Cap:
             </label>
             <input
-              type="number" 
+              type="number"
               style={{
                 width: "100%",
                 padding: "0.5rem",
                 borderRadius: "4px",
                 border: "1px solid #30cfd0",
                 background: "transparent",
-                color: "#fff"
+                color: "#fff",
               }}
-              defaultValue={1000000000}
+              defaultValue={0}
               onChange={(e) => {
                 const value = parseInt(e.target.value);
-                EventBus.emit("marketcap-update", value);
+                EventBus.emit("marketcap-changed", value);
+              }}
+            />
+          </div>
+
+          <div>
+            <label
+              style={{
+                display: "block",
+                marginBottom: "0.5rem",
+                color: "#888888",
+              }}
+            >
+              Coins:
+            </label>
+            <input
+              type="number"
+              style={{
+                width: "100%",
+                padding: "0.5rem",
+                borderRadius: "4px",
+                border: "1px solid #30cfd0",
+                background: "transparent",
+                color: "#fff",
+              }}
+              defaultValue={1000}
+              onChange={(e) => {
+                const value = parseInt(e.target.value);
+                EventBus.emit("set-coins", value);
               }}
             />
           </div>
