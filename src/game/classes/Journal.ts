@@ -939,9 +939,9 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.TIER_INFO[3].unlocked = newMarketcap >= 5000000;
     this.TIER_INFO[4].unlocked = newMarketcap >= 10000000;
 
-    this.SKIN_INFO[2].unlocked = newMarketcap >= 1000000;
-    this.SKIN_INFO[3].unlocked = newMarketcap >= 5000000;
-    this.SKIN_INFO[4].unlocked = newMarketcap >= 10000000;
+    this.SKIN_INFO[3].unlocked = newMarketcap >= 1000000;
+    this.SKIN_INFO[4].unlocked = newMarketcap >= 5000000;
+    this.SKIN_INFO[6].unlocked = newMarketcap >= 10000000;
   }
 
   public updatePurchaseState(

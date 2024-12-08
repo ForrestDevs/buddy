@@ -2,305 +2,724 @@
   "section1": {
     "files": [
       {
-        "url": "assets/character/military/BodyMili.png",
+        "url": "assets/character/buddy/ArmLBuddyv2.png",
         "type": "image",
-        "key": "mil-Body"
+        "key": "buddy-larm-clean"
       },
       {
-        "url": "assets/character/military/HeadMili.png",
+        "url": "assets/character/buddy/ArmRBuddyv2.png",
         "type": "image",
-        "key": "mil-Head"
+        "key": "buddy-rarm-clean"
       },
       {
-        "url": "assets/character/military/LarmARMY.png",
+        "url": "assets/character/buddy/BodyBuddy2.png",
         "type": "image",
-        "key": "mil-Larm"
+        "key": "buddy-body-clean"
       },
       {
-        "url": "assets/character/military/LlegARMY.png",
+        "url": "assets/character/buddy/FootBuddyv2L.png",
         "type": "image",
-        "key": "mil-Lleg"
+        "key": "buddy-lleg-clean"
       },
       {
-        "url": "assets/character/military/ArmMili.png",
+        "url": "assets/character/buddy/FootBuddyv2R.png",
         "type": "image",
-        "key": "mil-Rarm"
+        "key": "buddy-rleg-clean"
       },
       {
-        "url": "assets/character/military/LegMilli.png",
+        "url": "assets/character/buddy/HeadPaperv2.png",
         "type": "image",
-        "key": "mil-Rleg"
+        "key": "buddy-head-clean"
       },
       {
-        "url": "assets/character/injured/Mili_heavy_Larm.png",
+        "url": "assets/character/military/Mili_CLEAN.png",
         "type": "image",
-        "key": "Mili_heavy_Larm"
+        "key": "mil-body-clean"
       },
       {
-        "url": "assets/character/injured/Mili_heavy_Rarm.png",
+        "url": "assets/character/military/Mili_CLEAN_head.png",
         "type": "image",
-        "key": "Mili_heavy_Rarm"
+        "key": "mil-head-clean"
       },
       {
-        "url": "assets/character/injured/Mili_light_Larm.png",
+        "url": "assets/character/military/Mili_CLEAN_Larm.png",
         "type": "image",
-        "key": "Mili_light_Larm"
+        "key": "mil-larm-clean"
       },
       {
-        "url": "assets/character/injured/Mili_light_Rarm.png",
+        "url": "assets/character/military/Mili_CLEAN_Lleg.png",
         "type": "image",
-        "key": "Mili_light_Rarm"
+        "key": "mil-lleg-clean"
       },
       {
-        "url": "assets/character/injured/Musk_dead_head.png",
+        "url": "assets/character/military/Mili_CLEAN_Rarm.png",
         "type": "image",
-        "key": "Musk_dead_head"
+        "key": "mil-rarm-clean"
       },
       {
-        "url": "assets/character/injured/Musk_heavy_Larm.png",
+        "url": "assets/character/military/Mili_CLEAN_Rleg.png",
         "type": "image",
-        "key": "Musk_heavy_Larm"
+        "key": "mil-rleg-clean"
       },
       {
-        "url": "assets/character/injured/Musk_heavy_Rarm.png",
+        "url": "assets/character/military/Mili_dead_body.png",
         "type": "image",
-        "key": "Musk_heavy_Rarm"
+        "key": "mil-body-dead"
       },
       {
-        "url": "assets/character/injured/Musk_light_head.png",
+        "url": "assets/character/military/Mili_dead_head.png",
         "type": "image",
-        "key": "Musk_light_head"
+        "key": "mil-head-dead"
       },
       {
-        "url": "assets/character/injured/Musk_light_Larm.png",
+        "url": "assets/character/military/Mili_dead_Larm.png",
         "type": "image",
-        "key": "Musk_light_Larm"
+        "key": "mil-larm-dead"
       },
       {
-        "url": "assets/character/injured/Musk_light_Rarm.png",
+        "url": "assets/character/military/Mili_dead_Lleg.png",
         "type": "image",
-        "key": "Musk_light_Rarm"
+        "key": "mil-lleg-dead"
       },
       {
-        "url": "assets/character/musk/Body.png",
+        "url": "assets/character/military/Mili_dead_Rarm.png",
         "type": "image",
-        "key": "musk-Body"
+        "key": "mil-rarm-dead"
       },
       {
-        "url": "assets/character/musk/muskhead.png",
+        "url": "assets/character/military/Mili_dead_Rleg.png",
         "type": "image",
-        "key": "musk-Head"
+        "key": "mil-rleg-dead"
       },
       {
-        "url": "assets/character/musk/Larm.png",
+        "url": "assets/character/military/Mili_heavy_body.png",
         "type": "image",
-        "key": "musk-Larm"
+        "key": "mil-body-heavy"
       },
       {
-        "url": "assets/character/musk/Lleg.png",
+        "url": "assets/character/military/Mili_heavy_head.png",
         "type": "image",
-        "key": "musk-Lleg"
+        "key": "mil-head-heavy"
       },
       {
-        "url": "assets/character/musk/Rarm.png",
+        "url": "assets/character/military/Mili_heavy_Larm NEW.png",
         "type": "image",
-        "key": "musk-Rarm"
+        "key": "mil-larm-heavy"
       },
       {
-        "url": "assets/character/musk/Rleg.png",
+        "url": "assets/character/military/Mili_heavy_Lleg.png",
         "type": "image",
-        "key": "musk-Rleg"
+        "key": "mil-lleg-heavy"
       },
       {
-        "url": "assets/character/injured/Must_heavy_head.png",
+        "url": "assets/character/military/Mili_heavy_Rarm.png",
         "type": "image",
-        "key": "Must_heavy_head"
+        "key": "mil-rarm-heavy"
       },
       {
-        "url": "assets/character/injured/Paper_dead_head.png",
+        "url": "assets/character/military/Mili_heavy_Rleg.png",
         "type": "image",
-        "key": "paper-Head-dead"
+        "key": "mil-rleg-heavy"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_head.png",
+        "url": "assets/character/military/Mili_light_body.png",
         "type": "image",
-        "key": "paper-Head-heavy"
+        "key": "mil-body-light"
       },
       {
-        "url": "assets/character/injured/Paper_light_head.png",
+        "url": "assets/character/military/Mili_Light_head.png",
         "type": "image",
-        "key": "paper-Head-light"
+        "key": "mil-head-light"
       },
       {
-        "url": "assets/character/injured/Paper_dead_body.png",
+        "url": "assets/character/military/Mili_light_Larm.png",
         "type": "image",
-        "key": "paper-Body-dead"
+        "key": "mil-larm-light"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_body.png",
+        "url": "assets/character/military/Mili_light_Lleg.png",
         "type": "image",
-        "key": "paper-Body-heavy"
+        "key": "mil-lleg-light"
       },
       {
-        "url": "assets/character/injured/Paper_light_body.png",
+        "url": "assets/character/military/Mili_light_Rarm.png",
         "type": "image",
-        "key": "paper-Body-light"
+        "key": "mil-rarm-light"
       },
       {
-        "url": "assets/character/injured/Paper_dead_Larm.png",
+        "url": "assets/character/military/Mili_light_Rleg.png",
         "type": "image",
-        "key": "paper-Larm-dead"
+        "key": "mil-rleg-light"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_Larm.png",
+        "url": "assets/character/musk/Musk_CLEAN.png",
         "type": "image",
-        "key": "paper-Larm-heavy"
+        "key": "musk-body-clean"
       },
       {
-        "url": "assets/character/injured/Paper_light_Larm.png",
+        "url": "assets/character/musk/Musk_CLEAN_head.png",
         "type": "image",
-        "key": "paper-Larm-light"
+        "key": "musk-head-clean"
       },
       {
-        "url": "assets/character/injured/Paper_dead_Rarm.png",
+        "url": "assets/character/musk/Musk_CLEAN_Larm.png",
         "type": "image",
-        "key": "paper-Rarm-dead"
+        "key": "musk-larm-clean"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_Rarm.png",
+        "url": "assets/character/musk/Musk_CLEAN_Lleg.png",
         "type": "image",
-        "key": "paper-Rarm-heavy"
+        "key": "musk-lleg-clean"
       },
       {
-        "url": "assets/character/injured/Paper_light_Rarm.png",
+        "url": "assets/character/musk/Musk_CLEAN_Rarm.png",
         "type": "image",
-        "key": "paper-Rarm-light"
-      },
-
-      {
-        "url": "assets/character/injured/Paper_dead_Lleg.png",
-        "type": "image",
-        "key": "paper-Lleg-dead"
+        "key": "musk-rarm-clean"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_Lleg.png",
+        "url": "assets/character/musk/Musk_CLEAN_Rleg.png",
         "type": "image",
-        "key": "paper-Lleg-heavy"
+        "key": "musk-rleg-clean"
       },
       {
-        "url": "assets/character/injured/Paper_Light_Lleg.png",
+        "url": "assets/character/musk/Musk_dead_body.png",
         "type": "image",
-        "key": "paper-Lleg-light"
+        "key": "musk-body-dead"
       },
       {
-        "url": "assets/character/injured/Paper_dead_Rleg.png",
+        "url": "assets/character/musk/Musk_dead_head.png",
         "type": "image",
-        "key": "paper-Rleg-dead"
+        "key": "musk-head-dead"
       },
       {
-        "url": "assets/character/injured/Paper_heavy_Rleg.png",
+        "url": "assets/character/musk/Musk_dead_Larm.png",
         "type": "image",
-        "key": "paper-Rleg-heavy"
+        "key": "musk-larm-dead"
       },
       {
-        "url": "assets/character/injured/Paper_Light_Rleg.png",
+        "url": "assets/character/musk/Musk_dead_Lleg.png",
         "type": "image",
-        "key": "paper-Rleg-light"
+        "key": "musk-lleg-dead"
       },
       {
-        "url": "assets/character/paper/Torso.png",
+        "url": "assets/character/musk/Musk_dead_Rarm.png",
         "type": "image",
-        "key": "paper-Body"
+        "key": "musk-rarm-dead"
       },
       {
-        "url": "assets/character/paper/Head.png",
+        "url": "assets/character/musk/Musk_dead_Rleg.png",
         "type": "image",
-        "key": "paper-Head"
+        "key": "musk-rleg-dead"
       },
       {
-        "url": "assets/character/paper/Larm.png",
+        "url": "assets/character/musk/Musk_heavy_body.png",
         "type": "image",
-        "key": "paper-Larm"
+        "key": "musk-body-heavy"
       },
       {
-        "url": "assets/character/paper/Lleg.png",
+        "url": "assets/character/musk/Musk_heavy_Larm NEW.png",
         "type": "image",
-        "key": "paper-Lleg"
+        "key": "musk-larm-heavy"
       },
       {
-        "url": "assets/character/paper/Rarm.png",
+        "url": "assets/character/musk/Musk_heavy_Lleg.png",
         "type": "image",
-        "key": "paper-Rarm"
+        "key": "musk-lleg-heavy"
       },
       {
-        "url": "assets/character/paper/Rleg.png",
+        "url": "assets/character/musk/Musk_heavy_Rarm.png",
         "type": "image",
-        "key": "paper-Rleg"
+        "key": "musk-rarm-heavy"
       },
       {
-        "url": "assets/character/injured/Sol_dead_head.png",
+        "url": "assets/character/musk/Musk_heavy_Rleg.png",
         "type": "image",
-        "key": "Sol_dead_head"
+        "key": "musk-rleg-heavy"
       },
       {
-        "url": "assets/character/injured/Sol_heavy_head.png",
+        "url": "assets/character/musk/Musk_light_body.png",
         "type": "image",
-        "key": "Sol_heavy_head"
+        "key": "musk-body-light"
       },
       {
-        "url": "assets/character/injured/Sol_heavy_Larm2.png",
+        "url": "assets/character/musk/Musk_light_head.png",
         "type": "image",
-        "key": "Sol_heavy_Larm2"
+        "key": "musk-head-light"
       },
       {
-        "url": "assets/character/injured/Sol_heavy_Rarm2.png",
+        "url": "assets/character/musk/Musk_light_Larm.png",
         "type": "image",
-        "key": "Sol_heavy_Rarm2"
+        "key": "musk-larm-light"
       },
       {
-        "url": "assets/character/injured/Sol_light_head.png",
+        "url": "assets/character/musk/Musk_light_Lleg.png",
         "type": "image",
-        "key": "Sol_light_head"
+        "key": "musk-lleg-light"
       },
       {
-        "url": "assets/character/injured/Sol_light_Larm2.png",
+        "url": "assets/character/musk/Musk_light_Rarm.png",
         "type": "image",
-        "key": "Sol_light_Larm2"
+        "key": "musk-rarm-light"
       },
       {
-        "url": "assets/character/injured/Sol_light_Rarm2.png",
+        "url": "assets/character/musk/Musk_light_Rleg.png",
         "type": "image",
-        "key": "Sol_light_Rarm2"
+        "key": "musk-rleg-light"
       },
       {
-        "url": "assets/character/sol/BodySOLANA.png",
+        "url": "assets/character/musk/Must_heavy_head.png",
         "type": "image",
-        "key": "sol-Body"
+        "key": "musk-head-heavy"
       },
       {
-        "url": "assets/character/sol/HeadSOLANA.png",
+        "url": "assets/character/paper/Paper_CLEAN.png",
         "type": "image",
-        "key": "sol-Head"
+        "key": "paper-body-clean"
       },
       {
-        "url": "assets/character/sol/LarmSOLANA.png",
+        "url": "assets/character/paper/Paper_CLEAN_head.png",
         "type": "image",
-        "key": "sol-Larm"
+        "key": "paper-head-clean"
       },
       {
-        "url": "assets/character/sol/LlegSOLANA.png",
+        "url": "assets/character/paper/Paper_CLEAN_Larm.png",
         "type": "image",
-        "key": "sol-Lleg"
+        "key": "paper-larm-clean"
       },
       {
-        "url": "assets/character/sol/RarmSOLANA.png",
+        "url": "assets/character/paper/Paper_CLEAN_Lleg.png",
         "type": "image",
-        "key": "sol-Rarm"
+        "key": "paper-lleg-clean"
       },
       {
-        "url": "assets/character/sol/RlegSOLANA.png",
+        "url": "assets/character/paper/Paper_CLEAN_Rarm.png",
         "type": "image",
-        "key": "sol-Rleg"
+        "key": "paper-rarm-clean"
+      },
+      {
+        "url": "assets/character/paper/Paper_CLEAN_Rleg.png",
+        "type": "image",
+        "key": "paper-rleg-clean"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_body.png",
+        "type": "image",
+        "key": "paper-body-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_head.png",
+        "type": "image",
+        "key": "paper-head-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_Larm.png",
+        "type": "image",
+        "key": "paper-larm-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_Lleg.png",
+        "type": "image",
+        "key": "paper-lleg-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_Rarm.png",
+        "type": "image",
+        "key": "paper-rarm-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_dead_Rleg.png",
+        "type": "image",
+        "key": "paper-rleg-dead"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_body.png",
+        "type": "image",
+        "key": "paper-body-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_head.png",
+        "type": "image",
+        "key": "paper-head-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_Larm.png",
+        "type": "image",
+        "key": "paper-larm-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_Lleg.png",
+        "type": "image",
+        "key": "paper-lleg-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_Rarm.png",
+        "type": "image",
+        "key": "paper-rarm-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_heavy_Rleg.png",
+        "type": "image",
+        "key": "paper-rleg-heavy"
+      },
+      {
+        "url": "assets/character/paper/Paper_light_body.png",
+        "type": "image",
+        "key": "paper-body-light"
+      },
+      {
+        "url": "assets/character/paper/Paper_light_head.png",
+        "type": "image",
+        "key": "paper-head-light"
+      },
+      {
+        "url": "assets/character/paper/Paper_light_Larm.png",
+        "type": "image",
+        "key": "paper-larm-light"
+      },
+      {
+        "url": "assets/character/paper/Paper_Light_Lleg.png",
+        "type": "image",
+        "key": "paper-lleg-light"
+      },
+      {
+        "url": "assets/character/paper/Paper_light_Rarm.png",
+        "type": "image",
+        "key": "paper-rarm-light"
+      },
+      {
+        "url": "assets/character/paper/Paper_Light_Rleg.png",
+        "type": "image",
+        "key": "paper-rleg-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_body.png",
+        "type": "image",
+        "key": "buddy-body-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_head.png",
+        "type": "image",
+        "key": "buddy-head-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_Larm.png",
+        "type": "image",
+        "key": "buddy-larm-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_Lleg.png",
+        "type": "image",
+        "key": "buddy-lleg-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_Rarm.png",
+        "type": "image",
+        "key": "buddy-rarm-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_dead_Rleg.png",
+        "type": "image",
+        "key": "buddy-rleg-dead"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_body.png",
+        "type": "image",
+        "key": "buddy-body-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_head.png",
+        "type": "image",
+        "key": "buddy-head-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_Larm.png",
+        "type": "image",
+        "key": "buddy-larm-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_Lleg 2.png",
+        "type": "image",
+        "key": "buddy-lleg-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_Rarm.png",
+        "type": "image",
+        "key": "buddy-rarm-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_heavy_Rleg 2.png",
+        "type": "image",
+        "key": "buddy-rleg-heavy"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_body.png",
+        "type": "image",
+        "key": "buddy-body-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_head.png",
+        "type": "image",
+        "key": "buddy-head-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_Larm.png",
+        "type": "image",
+        "key": "buddy-larm-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_Lleg.png",
+        "type": "image",
+        "key": "buddy-lleg-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_Rarm.png",
+        "type": "image",
+        "key": "buddy-rarm-light"
+      },
+      {
+        "url": "assets/character/buddy/PaperV2_light_Rleg.png",
+        "type": "image",
+        "key": "buddy-rleg-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_body.png",
+        "type": "image",
+        "key": "santa-body-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_head.png",
+        "type": "image",
+        "key": "santa-head-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_Larm.png",
+        "type": "image",
+        "key": "santa-larm-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_Lleg.png",
+        "type": "image",
+        "key": "santa-lleg-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_Rarm.png",
+        "type": "image",
+        "key": "santa-rarm-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_dead_Rleg.png",
+        "type": "image",
+        "key": "santa-rleg-dead"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_body.png",
+        "type": "image",
+        "key": "santa-body-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_head.png",
+        "type": "image",
+        "key": "santa-head-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_Larm.png",
+        "type": "image",
+        "key": "santa-larm-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_Lleg 2.png",
+        "type": "image",
+        "key": "santa-lleg-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_Rarm.png",
+        "type": "image",
+        "key": "santa-rarm-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_heavy_Rleg 2.png",
+        "type": "image",
+        "key": "santa-rleg-heavy"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_body.png",
+        "type": "image",
+        "key": "santa-body-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_head.png",
+        "type": "image",
+        "key": "santa-head-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_Larm.png",
+        "type": "image",
+        "key": "santa-larm-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_Lleg.png",
+        "type": "image",
+        "key": "santa-lleg-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_Rarm.png",
+        "type": "image",
+        "key": "santa-rarm-light"
+      },
+      {
+        "url": "assets/character/santa/Santa_light_Rleg.png",
+        "type": "image",
+        "key": "santa-rleg-light"
+      },
+      {
+        "url": "assets/character/santa/SantaArmL.png",
+        "type": "image",
+        "key": "santa-larm-clean"
+      },
+      {
+        "url": "assets/character/santa/SantaArmR.png",
+        "type": "image",
+        "key": "santa-rarm-clean"
+      },
+      {
+        "url": "assets/character/santa/SantaBody.png",
+        "type": "image",
+        "key": "santa-body-clean"
+      },
+      {
+        "url": "assets/character/santa/SantaHead.png",
+        "type": "image",
+        "key": "santa-head-clean"
+      },
+      {
+        "url": "assets/character/santa/SantaLegL.png",
+        "type": "image",
+        "key": "santa-lleg-clean"
+      },
+      {
+        "url": "assets/character/santa/SantaLegR.png",
+        "type": "image",
+        "key": "santa-rleg-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_body.png",
+        "type": "image",
+        "key": "sol-body-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_head.png",
+        "type": "image",
+        "key": "sol-head-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_Larm.png",
+        "type": "image",
+        "key": "sol-larm-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_Lleg.png",
+        "type": "image",
+        "key": "sol-lleg-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_Rarm.png",
+        "type": "image",
+        "key": "sol-rarm-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_CLEAN_Rleg.png",
+        "type": "image",
+        "key": "sol-rleg-clean"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_body.png",
+        "type": "image",
+        "key": "sol-body-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_head.png",
+        "type": "image",
+        "key": "sol-head-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_Larm.png",
+        "type": "image",
+        "key": "sol-larm-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_Lleg.png",
+        "type": "image",
+        "key": "sol-lleg-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_Rarm.png",
+        "type": "image",
+        "key": "sol-rarm-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_dead_Rleg.png",
+        "type": "image",
+        "key": "sol-rleg-dead"
+      },
+      {
+        "url": "assets/character/sol/Sol_heavy_body.png",
+        "type": "image",
+        "key": "sol-body-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_heavy_head.png",
+        "type": "image",
+        "key": "sol-head-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_heavy_Larm2.png",
+        "type": "image",
+        "key": "sol-larm-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_Heavy_Lleg.png",
+        "type": "image",
+        "key": "sol-lleg-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_heavy_Rarm2.png",
+        "type": "image",
+        "key": "sol-rarm-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_Heavy_Rleg.png",
+        "type": "image",
+        "key": "sol-rleg-heavy"
+      },
+      {
+        "url": "assets/character/sol/Sol_light_body.png",
+        "type": "image",
+        "key": "sol-body-light"
+      },
+      {
+        "url": "assets/character/sol/Sol_light_head.png",
+        "type": "image",
+        "key": "sol-head-light"
+      },
+      {
+        "url": "assets/character/sol/Sol_light_Larm2.png",
+        "type": "image",
+        "key": "sol-larm-light"
+      },
+      {
+        "url": "assets/character/sol/Sol_Light_Lleg.png",
+        "type": "image",
+        "key": "sol-lleg-light"
+      },
+      {
+        "url": "assets/character/sol/Sol_light_Rarm2.png",
+        "type": "image",
+        "key": "sol-rarm-light"
+      },
+      {
+        "url": "assets/character/sol/Sol_Light_Rleg.png",
+        "type": "image",
+        "key": "sol-rleg-light"
       }
     ]
   },

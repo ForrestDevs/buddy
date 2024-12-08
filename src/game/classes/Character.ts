@@ -52,6 +52,10 @@ interface DamageThresholds {
   DEAD: number;
 }
 
+
+//TODO: Change character arm sizing
+//TODO: Santa rleg asset backwards
+
 export class Character {
   private collisionGroup!: number;
   private scene: Phaser.Scene;
@@ -101,7 +105,7 @@ export class Character {
         width: CHARACTER_WIDTH,
         height: CHARACTER_HEIGHT,
         depth: 3,
-        texture: `${this.characterSkin}-Head`,
+        texture: `${this.characterSkin}-head-${this.currentDamageState}`,
         shape: characterShapes.head,
         config: {
           friction: 0.6, // Reduced
@@ -116,7 +120,7 @@ export class Character {
         width: CHARACTER_WIDTH,
         height: CHARACTER_HEIGHT,
         depth: 2,
-        texture: `${this.characterSkin}-Body`,
+        texture: `${this.characterSkin}-body-${this.currentDamageState}`,
         shape: characterShapes.body,
         config: {
           friction: 0.6,
@@ -128,10 +132,10 @@ export class Character {
       leftArm: {
         x: x - 62, // 750 - 512 = 238
         y: y + 100, // 200 - 200 = 0
-        width: CHARACTER_WIDTH,
-        height: CHARACTER_HEIGHT,
+        width: CHARACTER_WIDTH - 20,
+        height: CHARACTER_HEIGHT - 20,
         depth: 1,
-        texture: `${this.characterSkin}-Rarm`,
+        texture: `${this.characterSkin}-rarm-${this.currentDamageState}`,
         shape: characterShapes.larm,
         config: {
           friction: 0.6,
@@ -143,10 +147,10 @@ export class Character {
       rightArm: {
         x: x + 138, // 350 - 512 = -162
         y: y + 100, // 200 - 200 = 0
-        width: CHARACTER_WIDTH,
-        height: CHARACTER_HEIGHT,
+        width: CHARACTER_WIDTH - 20,
+        height: CHARACTER_HEIGHT - 20,
         depth: 1,
-        texture: `${this.characterSkin}-Larm`,
+        texture: `${this.characterSkin}-larm-${this.currentDamageState}`,
         shape: characterShapes.rarm,
         config: {
           friction: 0.6,
@@ -161,7 +165,7 @@ export class Character {
         width: CHARACTER_WIDTH - 30,
         height: CHARACTER_HEIGHT - 30,
         depth: 1,
-        texture: `${this.characterSkin}-Rleg`,
+        texture: `${this.characterSkin}-rleg-${this.currentDamageState}`,
         shape: characterShapes.lleg,
         config: {
           friction: 0.6,
@@ -175,7 +179,7 @@ export class Character {
         width: CHARACTER_WIDTH - 30,
         height: CHARACTER_HEIGHT - 30,
         depth: 1,
-        texture: `${this.characterSkin}-Lleg`,
+        texture: `${this.characterSkin}-lleg-${this.currentDamageState}`,
         shape: characterShapes.rleg,
         config: {
           friction: 0.6,
@@ -497,12 +501,12 @@ export class Character {
 
   private getPartBaseName(partName: string): string {
     const nameMap: Record<string, string> = {
-      head: "Head",
-      body: "Body",
-      leftArm: "Larm",
-      rightArm: "Rarm",
-      leftLeg: "Lleg",
-      rightLeg: "Rleg",
+      head: "head",
+      body: "body",
+      leftArm: "larm",
+      rightArm: "rarm",
+      leftLeg: "lleg",
+      rightLeg: "rleg",
     };
     return nameMap[partName] || partName;
   }
@@ -694,12 +698,24 @@ export class Character {
 
   public changeSkin(newTier: string): void {
     this.characterSkin = newTier;
-    this.bodyParts.get("head")?.setTexture(`${this.characterSkin}-Head`);
-    this.bodyParts.get("body")?.setTexture(`${this.characterSkin}-Body`);
-    this.bodyParts.get("leftArm")?.setTexture(`${this.characterSkin}-Rarm`);
-    this.bodyParts.get("rightArm")?.setTexture(`${this.characterSkin}-Larm`);
-    this.bodyParts.get("leftLeg")?.setTexture(`${this.characterSkin}-Rleg`);
-    this.bodyParts.get("rightLeg")?.setTexture(`${this.characterSkin}-Lleg`);
+    this.bodyParts
+      .get("head")
+      ?.setTexture(`${this.characterSkin}-head-${this.currentDamageState}`);
+    this.bodyParts
+      .get("body")
+      ?.setTexture(`${this.characterSkin}-body-${this.currentDamageState}`);
+    this.bodyParts
+      .get("leftArm")
+      ?.setTexture(`${this.characterSkin}-rarm-${this.currentDamageState}`);
+    this.bodyParts
+      .get("rightArm")
+      ?.setTexture(`${this.characterSkin}-larm-${this.currentDamageState}`);
+    this.bodyParts
+      .get("leftLeg")
+      ?.setTexture(`${this.characterSkin}-rleg-${this.currentDamageState}`);
+    this.bodyParts
+      .get("rightLeg")
+      ?.setTexture(`${this.characterSkin}-lleg-${this.currentDamageState}`);
   }
 
   public update(): void {
