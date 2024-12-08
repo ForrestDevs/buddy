@@ -790,6 +790,10 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
   private handleSelectBox(box: BoxButtons[number]): void {
     this.scene.sound.play("click");
+    if (box.name === "coming-soon") {
+      this.scene.sound.play("click-deny");
+      return;
+    }
     if (!box.purchased) {
       if (!this.canAfford(box.price)) {
         this.scene.sound.play("click-deny");

@@ -52,9 +52,9 @@ interface DamageThresholds {
   DEAD: number;
 }
 
-
-//TODO: Change character arm sizing
-//TODO: Santa rleg asset backwards
+//TODO: Fix scorebar and death sequence, make it bug free
+//TODO: Finish weapon projectiles
+//TODO: Make it work on mobile
 
 export class Character {
   private collisionGroup!: number;
@@ -108,10 +108,8 @@ export class Character {
         texture: `${this.characterSkin}-head-${this.currentDamageState}`,
         shape: characterShapes.head,
         config: {
-          friction: 0.6, // Reduced
-          restitution: 0.1, // Reduced
-          density: 0.001, // Reduced
-          frictionAir: 0.02, // Increased air
+          friction: 1, // Reduced
+          density: 0.5, // Reduced
         },
       },
       body: {
@@ -123,10 +121,8 @@ export class Character {
         texture: `${this.characterSkin}-body-${this.currentDamageState}`,
         shape: characterShapes.body,
         config: {
-          friction: 0.6,
-          restitution: 0.1,
-          density: 0.003, // Main body slightly heavier
-          frictionAir: 0.02,
+          friction: 1,
+          density: 2, // Main body slightly heavier
         },
       },
       leftArm: {
@@ -138,10 +134,8 @@ export class Character {
         texture: `${this.characterSkin}-rarm-${this.currentDamageState}`,
         shape: characterShapes.larm,
         config: {
-          friction: 0.6,
-          restitution: 0.1,
-          density: 0.0005,
-          frictionAir: 0.001,
+          friction: 1,
+          density: 0.05,
         },
       },
       rightArm: {
@@ -153,10 +147,8 @@ export class Character {
         texture: `${this.characterSkin}-larm-${this.currentDamageState}`,
         shape: characterShapes.rarm,
         config: {
-          friction: 0.6,
-          restitution: 0.1,
-          density: 0.0005,
-          frictionAir: 0.001,
+          friction: 1,
+          density: 0.05,
         },
       },
       leftLeg: {
@@ -168,9 +160,8 @@ export class Character {
         texture: `${this.characterSkin}-rleg-${this.currentDamageState}`,
         shape: characterShapes.lleg,
         config: {
-          friction: 0.6,
-          density: 0.02,
-          frictionAir: 0.001,
+          friction: 1,
+          density: 3,
         },
       },
       rightLeg: {
@@ -182,9 +173,8 @@ export class Character {
         texture: `${this.characterSkin}-lleg-${this.currentDamageState}`,
         shape: characterShapes.rleg,
         config: {
-          friction: 0.6,
-          density: 0.02,
-          frictionAir: 0.001,
+          friction: 1,
+          density: 3,
         },
       },
     };
@@ -236,181 +226,105 @@ export class Character {
   }
 
   private createJoints(): void {
-    // Create neck joints
-    // const jointConfigs: JointConfig = {
-    //   neck: {
-    //     bodyA: "head",
-    //     bodyB: "body",
-    //     length: 10,
-    //     stiffness: 1,
-    //     options: {
-    //       pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
-    //       pointB: { x: 0, y: -CHARACTER_HEIGHT / 2.6 },
-    //       angularStiffness: 1,
-    //       stiffness: 1,
-    //     },
-    //   },
-    //   neckLeft: {
-    //     bodyA: "head",
-    //     bodyB: "body",
-    //     length: 10,
-    //     stiffness: 0.1,
-    //     options: {
-    //       pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
-    //       pointB: { x: -25, y: -CHARACTER_HEIGHT / 2.6 },
-    //       angularStiffness: 0.2,
-    //       stiffness: 0.2,
-    //     },
-    //   },
-    //   neckRight: {
-    //     bodyA: "head",
-    //     bodyB: "body",
-    //     length: 10,
-    //     stiffness: 0.1,
-    //     options: {
-    //       pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
-    //       pointB: { x: 25, y: -CHARACTER_HEIGHT / 2.6 },
-    //       angularStiffness: 0.2,
-    //       stiffness: 0.2,
-    //     },
-    //   },
-    //   leftShoulder: {
-    //     bodyA: "leftArm",
-    //     bodyB: "body",
-    //     length: 3,
-    //     stiffness: 0.5,
-    //     options: {
-    //       pointA: { x: 35, y: -15 },
-    //       pointB: { x: -25, y: -35 },
-    //       angularStiffness: 0.5,
-    //     },
-    //   },
-    //   rightShoulder: {
-    //     bodyA: "rightArm",
-    //     bodyB: "body",
-    //     length: 3,
-    //     stiffness: 0.5,
-    //     options: {
-    //       pointA: { x: -35, y: -15 },
-    //       pointB: { x: 25, y: -35 },
-    //       angularStiffness: 0.5,
-    //     },
-    //   },
-    //   leftKnee: {
-    //     bodyA: "leftLeg",
-    //     bodyB: "body",
-    //     length: 2,
-    //     stiffness: 0.6,
-    //     options: {
-    //       pointA: { x: 0, y: -20 },
-    //       pointB: { x: -25, y: 35 },
-    //       angularStiffness: 0.6,
-    //     },
-    //   },
-    //   rightKnee: {
-    //     bodyA: "rightLeg",
-    //     bodyB: "body",
-    //     length: 2,
-    //     stiffness: 0.6,
-    //     options: {
-    //       pointA: { x: 0, y: -20 },
-    //       pointB: { x: 25, y: 35 },
-    //       angularStiffness: 0.6,
-    //     },
-    //   },
-    // };
-
     const jointConfigs: JointConfig = {
       neck: {
         bodyA: "head",
         bodyB: "body",
-        length: 8, // Increased length
-        stiffness: 0.8, // Reduced stiffness
+        length: 6, // Increased length
+        stiffness: 0.9, // Reduced stiffness
         options: {
           pointA: { x: 0, y: CHARACTER_HEIGHT / 2.6 },
           pointB: { x: 0, y: -CHARACTER_HEIGHT / 2.6 },
-          angularStiffness: 0.8,
-          stiffness: 0.8,
         },
       },
       neckLeft: {
         bodyA: "head",
         bodyB: "body",
-        length: 10,
-        stiffness: 0.5,
+        length: 6,
+        stiffness: 0.8,
         options: {
           pointA: { x: -15, y: CHARACTER_HEIGHT / 2.6 },
           pointB: { x: -25, y: -CHARACTER_HEIGHT / 2.6 },
-          angularStiffness: 0.4,
-          stiffness: 0.4,
         },
       },
       neckRight: {
         bodyA: "head",
         bodyB: "body",
-        length: 10,
-        stiffness: 0.5,
+        length: 6,
+        stiffness: 0.8,
         options: {
           pointA: { x: 15, y: CHARACTER_HEIGHT / 2.6 },
           pointB: { x: 25, y: -CHARACTER_HEIGHT / 2.6 },
-          angularStiffness: 0.4,
-          stiffness: 0.4,
         },
       },
       leftShoulder: {
         bodyA: "leftArm",
         bodyB: "body",
-        length: 5,
+        length: 10,
+        stiffness: 0.9,
+        options: {
+          pointA: { x: 30, y: -15 },
+          pointB: { x: -25, y: -35 },
+        },
+      },
+      leftElbow: {
+        bodyA: "leftArm",
+        bodyB: "body",
+        length: 40,
         stiffness: 0.8,
         options: {
-          pointA: { x: 35, y: -15 },
-          pointB: { x: -25, y: -35 },
-          angularStiffness: 0.2,
+          pointA: { x: -30, y: 20 },
+          pointB: { x: -30, y: 35 },
         },
       },
       rightShoulder: {
         bodyA: "rightArm",
         bodyB: "body",
-        length: 5,
-        stiffness: 0.8,
+        length: 10,
+        stiffness: 0.9,
         options: {
           pointA: { x: -35, y: -15 },
           pointB: { x: 25, y: -35 },
-          angularStiffness: 0.2,
+        },
+      },
+      rightElbow: {
+        bodyA: "rightArm",
+        bodyB: "body",
+        length: 40,
+        stiffness: 0.8,
+        options: {
+          pointA: { x: 30, y: 20 },
+          pointB: { x: 30, y: 35 },
         },
       },
       leftKnee: {
         bodyA: "leftLeg",
         bodyB: "body",
-        length: 5,
+        length: 10,
         stiffness: 0.9,
         options: {
-          pointA: { x: 0, y: -20 },
+          pointA: { x: -5, y: -20 },
           pointB: { x: -30, y: 35 },
-          angularStiffness: 0.5,
         },
       },
       rightKnee: {
         bodyA: "rightLeg",
         bodyB: "body",
-        length: 5,
+        length: 10,
         stiffness: 0.9,
         options: {
           pointA: { x: 0, y: -20 },
           pointB: { x: 30, y: 35 },
-          angularStiffness: 0.5,
         },
       },
-
       legConnector: {
         bodyA: "leftLeg",
         bodyB: "rightLeg",
-        length: 50,
+        length: 25,
         stiffness: 0.8,
         options: {
           pointA: { x: 20, y: 0 }, // Connect at heel of left leg
           pointB: { x: -20, y: 0 }, // Connect at heel of right leg
-          angularStiffness: 0.8,
         },
       },
     };

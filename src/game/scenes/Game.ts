@@ -50,7 +50,7 @@ export default class Game extends Phaser.Scene {
 
     this.matter.add.mouseSpring({
       length: 1,
-      stiffness: 0.6,
+      stiffness: 1,
       // @ts-ignore
       collisionFilter: { group: canDrag },
     });
