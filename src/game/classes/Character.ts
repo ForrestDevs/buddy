@@ -370,6 +370,9 @@ export class Character {
     // If already dead or will be dead after damage, handle death immediately
     if (this.health <= 0 || this.health - damage <= 0) {
       this.health = 0;
+      this.currentDamageState = DamageState.DEAD;
+      EventBus.emit("damage-state-changed", DamageState.DEAD);
+      this.updateCharacterAppearance();
       this.initiateDeathSequence();
       return;
     }

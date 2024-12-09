@@ -2,11 +2,10 @@ import { Scene } from "phaser";
 import { Character } from "./Character";
 import { EventBus } from "../EventBus";
 
-type EffectType =
+export type EffectType =
   | "b1"
   | "b2"
   | "b3"
-  | "b4"
   | "explosion"
   | "explosion2"
   | "fire"
@@ -36,12 +35,6 @@ export class Effects {
       timer: undefined,
     },
     b3: {
-      animKey: "b3",
-      texture: "bloodgut3_022",
-      isPlaying: false,
-      timer: undefined,
-    },
-    b4: {
       animKey: "b4",
       texture: "darkerblood1_00018",
       isPlaying: false,
@@ -238,7 +231,9 @@ export class Effects {
                       duration: Phaser.Math.FloatBetween(500, 700),
                       ease: "Back.easeIn",
                       onComplete: () => {
-                        this.scene.sound.play("coin-pickup");
+                        this.scene.sound.play("coin-pickup", {
+                          volume: 0.4,
+                        });
                         EventBus.emit("coins-changed", 2);
                         coin.destroy();
                       },
