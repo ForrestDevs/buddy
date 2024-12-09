@@ -10,7 +10,7 @@ export default class Boot extends Scene {
   }
 
   private createMarketcap(): void {
-    this.registry.set("marketcap", "0");
+    this.registry.set("marketcap", "10000000");
   }
 
   create() {

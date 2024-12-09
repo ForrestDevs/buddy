@@ -3,6 +3,7 @@ import { Character } from "./Character";
 import { GameWeaponKey, SpecialWeaponKey } from "../types";
 import { Effects } from "./Effects";
 import { InputState } from "./InputState";
+import { Events } from "phaser";
 
 interface WeaponConfig {
   texture: string;
@@ -34,6 +35,17 @@ export class Weapon {
   private firingTimer?: Phaser.Time.TimerEvent;
   private barrelPoint: Phaser.Math.Vector2;
   private stickyBombNumber = 0;
+
+  private chargeStartTime?: number;
+  private isCharging: boolean = false;
+  private readonly RAILGUN_CONFIG = {
+    minChargeTime: 500, // 0.5 seconds minimum charge
+    maxChargeTime: 2000, // 2 seconds before overcharge
+    overchargeDelay: 3000, // 3 seconds penalty for overcharging
+    chargeSound: "railgun-charge",
+    fireSound: "railgun-fire2",
+    overchargeSound: "railgun-explode",
+  };
 
   private static readonly WEAPON_CONFIGS: Record<GameWeaponKey, WeaponConfig> =
     {
@@ -208,7 +220,7 @@ export class Weapon {
         fireSound: ["raygun-fire"],
         impactSound: ["raygun-impact"],
         animationKey: "raygunFire",
-        damage: 25,
+        damage: 5,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -286,6 +298,7 @@ export class Weapon {
   private setupEventListeners(): void {
     // Add any event listeners needed
     EventBus.on("set-weapon", this.setWeapon, this);
+    EventBus.on("stop-firing", this.stopFiring, this);
   }
 
   private getCurrentWeaponConfig(): WeaponConfig | undefined {
@@ -315,59 +328,241 @@ export class Weapon {
       .removeFromDisplayList();
   }
 
+  private railgunOvercharge(): void {
+    // Stop charging
+    // this.stopFiring();
+
+    // Play overcharge effects
+    this.scene.sound.play(this.RAILGUN_CONFIG.overchargeSound);
+    this.effects.playEffect(
+      "explosion",
+      this.barrelPoint.x,
+      this.barrelPoint.y
+    );
+
+    this.currentWeapon?.stop();
+
+    // Lock the weapon for penalty duration
+    // this.inputState.isLocked = true;
+    this.scene.time.delayedCall(this.RAILGUN_CONFIG.overchargeDelay, () => {
+      // this.inputState.isLocked = false;
+    });
+  }
+
+  private updateChargeEffect(chargeTime: number): void {
+    // Calculate charge percentage
+    const chargePercent = Math.min(
+      (chargeTime - this.RAILGUN_CONFIG.minChargeTime) /
+        (this.RAILGUN_CONFIG.maxChargeTime - this.RAILGUN_CONFIG.minChargeTime),
+      1
+    );
+
+    // Update visual effects (e.g., glow, particle effects, etc.)
+    // This is where you'd add your visual feedback
+    // this.currentWeapon?.setTint(
+    //   Phaser.Display.Color.GetColor(
+    //     255,
+    //     255 - chargePercent * 255,
+    //     255 - chargePercent * 255
+    //   )
+    // );
+  }
+
+  private updateRailgunCharge = (): void => {
+    if (!this.chargeStartTime) return;
+
+    const currentTime = this.scene.time.now;
+    const chargeTime = currentTime - this.chargeStartTime;
+
+    // Visual feedback based on charge (you'll need to implement these methods)
+    this.updateChargeEffect(chargeTime);
+
+    // Check for overcharge
+    if (chargeTime >= this.RAILGUN_CONFIG.maxChargeTime) {
+      this.railgunOvercharge();
+    }
+  };
+
+  private startRailgunCharge(): void {
+    this.isCharging = true;
+    this.chargeStartTime = this.scene.time.now;
+
+    // Play charge animation
+    this.currentWeapon?.play("railgunCharge");
+    this.currentWeapon?.on("animationcomplete", () => {
+      this.currentWeapon?.play("railgunHold");
+    });
+
+    // Play charging sound
+    this.scene.sound.play(this.RAILGUN_CONFIG.chargeSound, {
+      loop: true,
+    });
+
+    // Start the charge timer
+    this.firingTimer = this.scene.time.addEvent({
+      delay: 16,
+      callback: this.updateRailgunCharge,
+      callbackScope: this,
+      loop: true,
+    });
+  }
+
   public startFiring(): void {
     if (this.inputState.isLocked) return;
     const config = this.getCurrentWeaponConfig();
     if (!config || !this.weapon) return;
+
     // Show current weapon if it exists but isn't displayed
     if (this.currentWeapon && !this.currentWeapon.getDisplayList()) {
       this.currentWeapon.addToDisplayList();
     }
-    // Clear any existing firing timer when changing weapons
+
+    // Clear any existing firing timer
     if (this.firingTimer) {
       this.firingTimer.destroy();
       this.firingTimer = undefined;
     }
-    let lastFired = 0;
-    let burstCount = 0;
-    let canFire = true;
-    // Initial fire
-    this.fireWeapon(config);
-    lastFired = this.scene.time.now;
-    this.firingTimer = this.scene.time.addEvent({
-      delay: 11,
-      callback: () => {
-        const currentTime = this.scene.time.now;
-        if (!this.scene.input.activePointer.isDown) {
-          canFire = true;
-          burstCount = 0;
-          return;
+
+    switch (this.weapon) {
+      case "railgun":
+        if (!this.isCharging) {
+          this.startRailgunCharge();
         }
-        // Check if enough time has passed since last shot
-        if (currentTime - lastFired >= config.fireRate && canFire) {
-          if (config.burstSize > 1) {
-            // Burst fire logic
-            this.fireWeapon(config);
-            burstCount++;
-            lastFired = currentTime;
-            if (burstCount >= config.burstSize) {
-              canFire = false;
-              burstCount = 0;
-              // Reset after burst delay
-              this.scene.time.delayedCall(config.burstDelay || 300, () => {
-                canFire = true;
-              });
-            }
-          } else {
-            // Single shot logic
-            this.fireWeapon(config);
-            lastFired = currentTime;
+        break;
+
+      case "lightsaber":
+        this.currentWeapon?.play("lightsaberOpen");
+        this.scene.sound.play("lightsaber-ignite");
+        this.scene.sound.play("lightsaber-active", {
+          loop: true,
+        });
+        break;
+
+      case "chainsaw":
+        this.currentWeapon?.play("chainsawFire");
+        this.scene.sound.play("chainsaw-fire");
+        break;
+
+      default: {
+        let lastFired = 0;
+        let burstCount = 0;
+        let canFire = true;
+
+        const attemptFire = () => {
+          const currentTime = this.scene.time.now;
+          if (!this.scene.input.activePointer.isDown) {
+            canFire = true;
+            burstCount = 0;
+            return;
           }
-        }
-      },
-      loop: true,
-    });
+
+          // Only fire if enough time has passed and we can fire
+          if (currentTime - lastFired >= config.fireRate && canFire) {
+            this.fireWeapon(config);
+            lastFired = currentTime;
+
+            if (config.burstSize > 1) {
+              // Burst fire logic
+              burstCount++;
+              if (burstCount >= config.burstSize) {
+                canFire = false;
+                burstCount = 0;
+                // Reset after burst delay
+                this.scene.time.delayedCall(config.burstDelay || 300, () => {
+                  canFire = true;
+                });
+              }
+            }
+          }
+        };
+
+        // Start the firing timer without an initial fire
+        this.firingTimer = this.scene.time.addEvent({
+          delay: 16,
+          callback: attemptFire,
+          loop: true,
+        });
+
+        // Do initial fire check
+        attemptFire();
+        break;
+      }
+    }
   }
+
+  // public startFiring(): void {
+  //   if (this.inputState.isLocked) return;
+  //   const config = this.getCurrentWeaponConfig();
+  //   if (!config || !this.weapon) return;
+  //   // Show current weapon if it exists but isn't displayed
+  //   if (this.currentWeapon && !this.currentWeapon.getDisplayList()) {
+  //     this.currentWeapon.addToDisplayList();
+  //   }
+
+  //   switch (this.weapon) {
+  //     case "railgun":
+  //       if (!this.isCharging) {
+  //         this.startRailgunCharge();
+  //       }
+  //       break;
+  //     case "lightsaber":
+  //       this.currentWeapon?.play("lightsaberOpen");
+  //       this.scene.sound.play("lightsaber-ignite");
+  //       this.scene.sound.play("lightsaber-active", {
+  //         loop: true,
+  //       });
+  //       break;
+  //     case "chainsaw":
+  //       this.currentWeapon?.play("chainsawFire");
+  //       this.scene.sound.play("chainsaw-fire");
+  //       break;
+  //     default:
+  //       // Clear any existing firing timer when changing weapons
+  //       if (this.firingTimer) {
+  //         this.firingTimer.destroy();
+  //         this.firingTimer = undefined;
+  //       }
+  //       let lastFired = 0;
+  //       let burstCount = 0;
+  //       let canFire = true;
+  //       // Initial fire
+  //       this.fireWeapon(config);
+  //       lastFired = this.scene.time.now;
+  //       this.firingTimer = this.scene.time.addEvent({
+  //         delay: 16,
+  //         callback: () => {
+  //           const currentTime = this.scene.time.now;
+  //           if (!this.scene.input.activePointer.isDown) {
+  //             canFire = true;
+  //             burstCount = 0;
+  //             return;
+  //           }
+  //           // Check if enough time has passed since last shot
+  //           if (currentTime - lastFired >= config.fireRate && canFire) {
+  //             if (config.burstSize > 1) {
+  //               // Burst fire logic
+  //               this.fireWeapon(config);
+  //               burstCount++;
+  //               lastFired = currentTime;
+  //               if (burstCount >= config.burstSize) {
+  //                 canFire = false;
+  //                 burstCount = 0;
+  //                 // Reset after burst delay
+  //                 this.scene.time.delayedCall(config.burstDelay || 300, () => {
+  //                   canFire = true;
+  //                 });
+  //               }
+  //             } else {
+  //               // Single shot logic
+  //               this.fireWeapon(config);
+  //               lastFired = currentTime;
+  //             }
+  //           }
+  //         },
+  //         loop: true,
+  //       });
+  //   }
+  // }
 
   public stopFiring(): void {
     if (this.firingTimer) {
@@ -375,9 +570,64 @@ export class Weapon {
       this.firingTimer = undefined;
     }
 
-    if (this.currentWeapon && this.currentWeapon.getDisplayList()) {
-      this.currentWeapon.removeFromDisplayList();
+    switch (this.weapon) {
+      case "lightsaber":
+        this.currentWeapon?.play("lightsaberClose");
+        this.scene.sound.stopByKey("lightsaber-active");
+        this.scene.sound.stopByKey("lightsaber-ignite");
+        this.scene.sound.play("lightsaber-close");
+        break;
+      case "railgun":
+        if (this.isCharging && this.chargeStartTime) {
+          const chargeTime = this.scene.time.now - this.chargeStartTime;
+
+          // Only fire if minimum charge time is met
+          if (
+            chargeTime >= this.RAILGUN_CONFIG.minChargeTime &&
+            chargeTime < this.RAILGUN_CONFIG.maxChargeTime
+          ) {
+            this.fireRailgun(chargeTime);
+          }
+
+          // Reset charging state
+          this.scene.sound.stopByKey(this.RAILGUN_CONFIG.chargeSound);
+          this.currentWeapon?.setTint(0xffffff);
+          this.isCharging = false;
+          this.chargeStartTime = undefined;
+        }
+        break;
+      default:
+        if (this.currentWeapon && this.currentWeapon.getDisplayList()) {
+          this.currentWeapon.removeFromDisplayList();
+        }
+        break;
     }
+
+    return;
+  }
+
+  private fireRailgun(chargeTime: number): void {
+    // Calculate damage multiplier based on charge time
+    const chargePercent = Math.min(
+      (chargeTime - this.RAILGUN_CONFIG.minChargeTime) /
+        (this.RAILGUN_CONFIG.maxChargeTime - this.RAILGUN_CONFIG.minChargeTime),
+      1
+    );
+
+    const config = this.getCurrentWeaponConfig();
+    if (!config) return;
+
+    // Play fire animation and sound
+    this.currentWeapon?.play("railgunFire");
+    this.scene.sound.play(this.RAILGUN_CONFIG.fireSound);
+
+    // Spawn projectile with increased damage based on charge
+    // You'll need to modify your projectile spawning to handle the damage multiplier
+    const baseDamage = config.damage;
+    const chargedDamage = baseDamage * (1 + chargePercent);
+
+    // TODO: Modify your projectile spawning to use chargedDamage
+    this.spawnProjectile(chargedDamage);
   }
 
   public fireWeapon(config: WeaponConfig): void {
@@ -414,12 +664,13 @@ export class Weapon {
           this.scene.sound.play(sound);
         });
       }
+      this.spawnProjectile();
     }
   }
 
-  private spawnProjectile(): void {
+  private spawnProjectile(chargedDamage?: number): void {
+    let hasCollided = false;
     const characterPos = this.character.getPosition();
-
     // Calculate angle between start and target points
     const angle = Phaser.Math.Angle.Between(
       this.barrelPoint.x,
@@ -427,6 +678,62 @@ export class Weapon {
       characterPos.x,
       characterPos.y
     );
+
+    // Add railgun case
+    if (this.weapon === "railgun") {
+      // Calculate the distance between barrel and target
+      const distance = Phaser.Math.Distance.Between(
+        this.barrelPoint.x,
+        this.barrelPoint.y,
+        characterPos.x,
+        characterPos.y
+      );
+
+      // Create the laser beam
+      const laser = this.scene.add.rectangle(
+        this.barrelPoint.x,
+        this.barrelPoint.y,
+        distance,
+        4,
+        0xff0000,
+        1
+      );
+
+      // Set the origin to left center for proper rotation
+      laser.setOrigin(0, 0.5);
+
+      // Rotate the laser to point at the target
+      laser.setRotation(angle);
+
+      // Add glow effect
+      laser.setPostPipeline("GlowPostFX");
+
+      // Optional: Add some particle effects at the impact point
+      this.effects.playEffect("explosion", characterPos.x, characterPos.y);
+
+      // Apply damage
+      const damage =
+        chargedDamage || this.getCurrentWeaponConfig()?.damage || 0.05;
+      EventBus.emit("health-changed", damage);
+
+      // Fade out and destroy the laser
+      this.scene.tweens.add({
+        targets: laser,
+        alpha: 0,
+        duration: 100,
+        ease: "Power2",
+        onComplete: () => {
+          laser.destroy();
+        },
+      });
+
+      // Spawn coins at character position
+      for (let i = 0; i < 5; i++) {
+        this.effects.spawnCoin(characterPos.x, characterPos.y);
+      }
+
+      return;
+    }
 
     let speed = 50;
     let projectile;
@@ -514,10 +821,13 @@ export class Weapon {
       this.weapon === "sticky-bomb" ||
       this.weapon === "fire-bomb"
     ) {
+      console.log("spawn projectile bomb");
       const matterBomb = this.scene.matter.add.gameObject(projectile, {
         ...projectileConfig,
         ignorePointer: true,
         onCollideCallback: (collision: MatterJS.ICollisionPair) => {
+          if (hasCollided) return;
+          hasCollided = true;
           // //@ts-ignore
           // if (collision.bodyA.label === "grenade") {
           //   return;
@@ -611,10 +921,14 @@ export class Weapon {
               break;
             }
           }
+          this.scene.sound.play("coin-drop");
+          for (let i = 0; i < 3; i++) {
+            this.effects.spawnCoin(characterPos.x, characterPos.y);
+          }
 
           const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
 
-          EventBus.emit("projectile-hit", damage);
+          EventBus.emit("health-changed", damage);
         },
       });
       this.stickyBombNumber++;
@@ -626,6 +940,7 @@ export class Weapon {
         Math.sin(angle) * throwForce - 5 // Negative Y for upward arc
       );
     } else {
+      console.log("spawn projectile");
       const matterBullet = this.scene.matter.add.gameObject(projectile, {
         friction: 0,
         frictionStatic: 0,
@@ -639,6 +954,9 @@ export class Weapon {
           radius: 10,
         },
         onCollideCallback: (collision: MatterJS.ICollisionPair) => {
+          if (hasCollided) return;
+          hasCollided = true;
+
           const collisionPoint = {
             x: collision.collision.supports[0]?.x,
             y: collision.collision.supports[0]?.y,
@@ -676,6 +994,10 @@ export class Weapon {
 
           const isExplosion = this.weapon === "rpg";
           EventBus.emit("health-changed", damage);
+          this.scene.sound.play("coin-drop");
+          for (let i = 0; i < 3; i++) {
+            this.effects.spawnCoin(characterPos.x, characterPos.y);
+          }
           // this.effects.playEffect("coin", collisionPoint.x, collisionPoint.y);
           this.effects.playEffect("b1", characterPos.x, characterPos.y);
           // EventBus.emit("projectile-hit", { damage, isExplosion });
@@ -689,10 +1011,6 @@ export class Weapon {
         speed * Math.cos(angle),
         speed * Math.sin(angle)
       );
-    }
-
-    for (let i = 0; i < 5; i++) {
-      this.effects.spawnCoin(characterPos.x, characterPos.y);
     }
   }
 
@@ -735,16 +1053,28 @@ export class Weapon {
 
     // Scale constants for weapon tip positioning
     // Different weapons need different scale multipliers
-    const GUN_SCALE =
-      this.weapon === "tommy"
-        ? {
-            length: this.currentWeapon.displayWidth * 0.5,
-            barrelOffset: this.currentWeapon.displayHeight * 0.08,
-          }
-        : {
-            length: this.currentWeapon.displayWidth * 0.3,
-            barrelOffset: this.currentWeapon.displayHeight * 0.2,
-          };
+    let GUN_SCALE;
+
+    switch (this.weapon) {
+      case "railgun":
+        GUN_SCALE = {
+          length: this.currentWeapon.displayWidth * 0.3,
+          barrelOffset: this.currentWeapon.displayHeight * 0.001,
+        };
+        break;
+      case "tommy":
+        GUN_SCALE = {
+          length: this.currentWeapon.displayWidth * 0.5,
+          barrelOffset: this.currentWeapon.displayHeight * 0.08,
+        };
+        break;
+      default:
+        GUN_SCALE = {
+          length: this.currentWeapon.displayWidth * 0.3,
+          barrelOffset: this.currentWeapon.displayHeight * 0.2,
+        };
+        break;
+    }
 
     // Calculate weapon tip position
     const totalAngle =

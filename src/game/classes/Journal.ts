@@ -352,7 +352,9 @@ export class JournalManager extends Phaser.GameObjects.Container {
     weaponData: WeaponButton,
     index: number
   ): Phaser.GameObjects.Container {
-    const button = new Phaser.GameObjects.Container(this.scene, 0, 0);
+    const button = new Phaser.GameObjects.Container(this.scene, 0, 0).setName(
+      `${weaponData.name}-button-container`
+    );
 
     const weaponTexture = weaponData.purchased
       ? `${weaponData.name}-button`
@@ -362,7 +364,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
       .image(0, 0, weaponTexture)
       .setOrigin(0.5)
       .setScale(JOURNAL_SCALE)
-      .setName(`${weaponData.name}-button`);
+      .setName(`${weaponData.name}-button-texture`);
     // Create hit area
     const hitArea = this.scene.add
       .rectangle(
@@ -399,14 +401,16 @@ export class JournalManager extends Phaser.GameObjects.Container {
       this.scene.sound.play("coin-pickup");
       EventBus.emit("coins-changed", -weaponData.price);
 
-      const page = this.tierContents
-        .get(this.currentTier)
-        ?.getByName(
-          `tier${this.currentTier}-container`
-        ) as Phaser.GameObjects.Container;
+      const page = this.tierContents.get(
+        this.currentTier
+      ) as Phaser.GameObjects.Container;
 
-      const texture = page.getByName(
-        `${weaponData.name}-button`
+      const buttonContainer = page?.getByName(
+        `${weaponData.name}-button-container`
+      ) as Phaser.GameObjects.Container;
+
+      const texture = buttonContainer?.getByName(
+        `${weaponData.name}-button-texture`
       ) as Phaser.GameObjects.Image;
 
       texture.setTexture(`${weaponData.name}-button`);

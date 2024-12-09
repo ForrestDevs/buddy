@@ -118,7 +118,7 @@ function App() {
                 background: "transparent",
                 color: "#fff",
               }}
-              defaultValue={0}
+              defaultValue={10000000}
               onChange={(e) => {
                 const value = parseInt(e.target.value);
                 EventBus.emit("marketcap-changed", value);

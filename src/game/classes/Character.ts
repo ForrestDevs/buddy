@@ -1,5 +1,6 @@
 import { EventBus } from "../EventBus";
 import { CHARACTER_WIDTH, CHARACTER_HEIGHT, JOINT_LENGTH } from "../config";
+import { InputState } from "./InputState";
 
 interface CharacterConfig {
   scene: Phaser.Scene;
@@ -52,9 +53,9 @@ interface DamageThresholds {
   DEAD: number;
 }
 
-//TODO: Fix scorebar and death sequence, make it bug free
 //TODO: Finish weapon projectiles
 //TODO: Make it work on mobile
+//TODO: Setup CDN Server
 
 export class Character {
   private collisionGroup!: number;
@@ -86,11 +87,14 @@ export class Character {
   private armCategory = 0b0100;
   private legCategory = 0b1000;
   private worldCategory = 0b10000;
+  private inputState: InputState;
+  private isRespawning: boolean = false;
 
   constructor(config: CharacterConfig) {
     this.scene = config.scene;
     this.characterSkin = config.tier || "paper";
     this.collisionGroup = config.collisionGroup;
+    this.inputState = InputState.getInstance();
     this.createCharacter(config.x, config.y);
     this.setupEventListeners();
     this.loadSounds();
@@ -361,7 +365,16 @@ export class Character {
   }
 
   private onHealthChanged = (damage: number): void => {
-    console.log("health-changed character", damage);
+    // console.log("health-changed character", damage);
+
+    // If already dead or will be dead after damage, handle death immediately
+    if (this.health <= 0 || this.health - damage <= 0) {
+      this.health = 0;
+      this.initiateDeathSequence();
+      return;
+    }
+
+    // Otherwise process normal damage
     this.health -= damage;
     const previousState = this.currentDamageState;
     this.updateDamageState();
@@ -370,30 +383,25 @@ export class Character {
       console.log("updateCharacterAppearance");
       this.updateCharacterAppearance();
     }
-
-    if (this.health <= 0) {
-      console.log("initiateDeathSequence");
-      this.initiateDeathSequence();
-    }
   };
 
   private updateDamageState(): void {
     const healthPercentage = (this.health / 100) * 100;
-    console.log("updateDamageState", healthPercentage);
+    // console.log("updateDamageState", healthPercentage);
     if (healthPercentage <= this.DAMAGE_THRESHOLDS.DEAD) {
-      console.log("updateDamageState DEAD");
+      // console.log("updateDamageState DEAD");
       this.currentDamageState = DamageState.DEAD;
       EventBus.emit("damage-state-changed", DamageState.DEAD);
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.HEAVY) {
-      console.log("updateDamageState HEAVY");
+      // console.log("updateDamageState HEAVY");
       this.currentDamageState = DamageState.HEAVY;
       EventBus.emit("damage-state-changed", DamageState.HEAVY);
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.LIGHT) {
-      console.log("updateDamageState LIGHT");
+      // console.log("updateDamageState LIGHT");
       this.currentDamageState = DamageState.LIGHT;
       EventBus.emit("damage-state-changed", DamageState.LIGHT);
     } else {
-      console.log("updateDamageState CLEAN");
+      // console.log("updateDamageState CLEAN");
       this.currentDamageState = DamageState.CLEAN;
       EventBus.emit("damage-state-changed", DamageState.CLEAN);
     }
@@ -417,15 +425,19 @@ export class Character {
     const nameMap: Record<string, string> = {
       head: "head",
       body: "body",
-      leftArm: "larm",
-      rightArm: "rarm",
-      leftLeg: "lleg",
-      rightLeg: "rleg",
+      leftArm: "rarm",
+      rightArm: "larm",
+      leftLeg: "rleg",
+      rightLeg: "lleg",
     };
     return nameMap[partName] || partName;
   }
 
   private async initiateDeathSequence(): Promise<void> {
+    if (this.isRespawning) return;
+    this.isRespawning = true;
+    EventBus.emit("stop-firing");
+    this.inputState.lock("character-death");
     // Play death sound
     // this.sounds.get("death")?.play();
 
@@ -489,7 +501,7 @@ export class Character {
 
     // Additional delay before respawn
     await new Promise((resolve) => setTimeout(resolve, 500));
-
+    EventBus.emit("reset-health-bar");
     // Finally respawn
     this.respawnCharacter();
   }
@@ -523,7 +535,6 @@ export class Character {
     // Reset health
     this.health = 100;
     this.currentDamageState = DamageState.CLEAN;
-
     // Clear existing body parts
     this.bodyParts.forEach((part) => part?.destroy());
     this.bodyParts.clear();
@@ -546,6 +557,8 @@ export class Character {
       }
     });
 
+    this.inputState.unlock("character-death");
+    this.isRespawning = false;
     // Emit respawn event
     EventBus.emit("character-respawned");
   }

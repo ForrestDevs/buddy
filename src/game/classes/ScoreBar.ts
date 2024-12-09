@@ -120,7 +120,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
     EventBus.on("skin-equipped", this.updateSkin, this);
     // Listen to Damage State changes
     EventBus.on("damage-state-changed", this.updateDamageState, this);
-
+    EventBus.on("reset-health-bar", this.resetHealthBar, this);
     EventBus.on("set-coins", this.setCoins, this);
   }
 
@@ -166,19 +166,22 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   }
 
   public updateHealth(amount: number): void {
-    this.health -= amount;
-    this.health = Phaser.Math.Clamp(this.health, 0, 100);
-    // this.healthText.setText(`${this.health.toFixed(2)}%`);
+    // Don't update health if already at 0 (dead and respawning)
+    if (this.health <= 0) {
+      return;
+    }
+
+    // Prevent health from going negative by clamping the amount
+    const newHealth = Math.max(0, this.health - amount);
+    this.health = Phaser.Math.Clamp(newHealth, 0, 100);
+
     const healthPercent = Phaser.Math.Clamp(this.health / 100, 0, 1);
     this.healthBarFill.width = this.healthBarWidth * healthPercent;
     this.moveHealthBarMarker(healthPercent);
-    if (this.health <= 0) {
-      this.updateKills();
-      this.resetHealthBar();
-    }
   }
 
   private resetHealthBar(): void {
+    this.updateKills();
     this.health = 100;
     this.healthBarFill.width = this.healthBarWidth;
     this.moveHealthBarMarker(1);

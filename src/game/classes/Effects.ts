@@ -189,7 +189,6 @@ export class Effects {
   }
 
   public spawnCoin(x: number, y: number): void {
-    this.scene.sound.play("coin-drop");
     const coin = this.scene.add.sprite(x, y, "coin").setDepth(4).setScale(0.2);
 
     // Random initial direction with full 360 degree range
@@ -240,7 +239,7 @@ export class Effects {
                       ease: "Back.easeIn",
                       onComplete: () => {
                         this.scene.sound.play("coin-pickup");
-                        EventBus.emit("coins-changed", 10);
+                        EventBus.emit("coins-changed", 2);
                         coin.destroy();
                       },
                     });

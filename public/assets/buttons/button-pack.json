@@ -124,12 +124,12 @@
             {
                 "url": "assets/buttons/pages/HeatUNLOCKED.png",
                 "type": "image",
-                "key": "firebomb-button"
+                "key": "fire-bomb-button"
             },
             {
                 "url": "assets/buttons/pages/HeatLOCKED.png",
                 "type": "image",
-                "key": "firebomb-button-locked"
+                "key": "fire-bomb-button-locked"
             },
             {
                 "url": "assets/buttons/shop/BuddyBurnerUNLOCKED.png",
