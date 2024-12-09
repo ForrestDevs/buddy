@@ -6,9 +6,9 @@ export type EffectType =
   | "b1"
   | "b2"
   | "b3"
-  | "explosion"
+  | "explosion1"
   | "explosion2"
-  | "fire"
+  | "fire1"
   | "fire2"
   | "coin";
 
@@ -40,27 +40,27 @@ export class Effects {
       isPlaying: false,
       timer: undefined,
     },
-    explosion: {
+    explosion1: {
       animKey: "explosion",
-      texture: "firstexplosion_00094",
+      texture: "firstexplosion_00001",
       isPlaying: false,
       timer: undefined,
     },
     explosion2: {
       animKey: "explosion2",
-      texture: "explosion2_00000",
+      texture: "expl2fixed_00000",
       isPlaying: false,
       timer: undefined,
     },
-    fire: {
+    fire1: {
       animKey: "fire",
-      texture: "fire_00000",
+      texture: "groundfire_00016",
       isPlaying: false,
       timer: undefined,
     },
     fire2: {
       animKey: "fire2",
-      texture: "fire2_00000",
+      texture: "fire2fixed_00012",
       isPlaying: false,
       timer: undefined,
     },
@@ -176,7 +176,7 @@ export class Effects {
     this.scene.tweens.add({
       targets: sprite,
       alpha: 1,
-      duration: 200,
+      duration: 50,
       onComplete: () => sprite.play(config.animKey),
     });
   }

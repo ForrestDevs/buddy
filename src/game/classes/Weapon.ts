@@ -50,6 +50,18 @@ export class Weapon {
   private isCharging: boolean = false;
   private triggerHoldStartTime?: number;
   private static readonly TRIGGER_DELAY = 100; // 100ms hold requirement before firing
+  private debugGraphics?: Phaser.GameObjects.Graphics;
+
+  // Add to class properties
+  private static readonly FLAMETHROWER_CONFIG = {
+    offsetX: 350, // Adjust these values based on your texture
+    offsetY: 175,
+    damageRadius: 50,
+    damageInterval: 100, // How often to apply damage in ms
+    damagePerTick: 1, // How much damage per tick
+  };
+
+  private lastFlameDamageTime: number = 0;
 
   private readonly RAILGUN_CONFIG = {
     minChargeTime: 500, // 0.5 seconds minimum charge
@@ -372,7 +384,7 @@ export class Weapon {
     // Play overcharge effects
     this.scene.sound.play(this.RAILGUN_CONFIG.overchargeSound);
     this.effects.playEffect(
-      "explosion",
+      "explosion1",
       this.barrelPoint.x,
       this.barrelPoint.y
     );
@@ -486,6 +498,23 @@ export class Weapon {
     }
   }
 
+  private updateFlameDamage(): void {
+    const currentTime = this.scene.time.now;
+
+    // Check if enough time has passed since last damage
+    if (
+      currentTime - this.lastFlameDamageTime <
+      Weapon.FLAMETHROWER_CONFIG.damageInterval
+    ) {
+      return;
+    }
+
+    if (!this.currentWeapon) return;
+    EventBus.emit("health-changed", Weapon.FLAMETHROWER_CONFIG.damagePerTick);
+
+    this.lastFlameDamageTime = currentTime;
+  }
+
   public startFiring(): void {
     if (this.inputState.isLocked || this.isOvercharged) return;
     const config = this.getCurrentWeaponConfig();
@@ -516,6 +545,21 @@ export class Weapon {
       case "chainsaw":
         this.currentWeapon?.play("chainsawFire");
         this.scene.sound.play("chainsaw-fire");
+        break;
+
+      case "flamethrower":
+        if (!this.firingTimer) {
+          this.currentWeapon?.play("flamethrowerFire");
+          this.scene.sound.play("flamethrower-fire", { loop: true });
+
+          // Start checking for flame damage
+          this.firingTimer = this.scene.time.addEvent({
+            delay: 16,
+            callback: this.updateFlameDamage,
+            callbackScope: this,
+            loop: true,
+          });
+        }
         break;
 
       default: {
@@ -575,6 +619,11 @@ export class Weapon {
   }
 
   public stopFiring(): void {
+    if (this.weapon === "flamethrower") {
+      this.currentWeapon?.stop();
+      this.scene.sound.stopByKey("flamethrower-fire");
+    }
+
     if (this.firingTimer) {
       this.firingTimer.destroy();
       this.firingTimer = undefined;
@@ -626,6 +675,30 @@ export class Weapon {
     }
 
     return;
+  }
+
+  private debugDrawFlameArea(): void {
+    if (!this.currentWeapon) return;
+
+    // Get or create debug graphics
+    if (!this.debugGraphics) {
+      this.debugGraphics = this.scene.add.graphics();
+    }
+
+    // Clear previous frame
+    this.debugGraphics.clear();
+
+    // Draw flame area
+    this.debugGraphics.lineStyle(2, 0xff0000, 1);
+    this.debugGraphics.strokeCircle(
+      this.barrelPoint.x,
+      this.barrelPoint.y,
+      Weapon.FLAMETHROWER_CONFIG.damageRadius
+    );
+
+    // Optionally draw barrel point
+    this.debugGraphics.fillStyle(0x00ff00, 1);
+    this.debugGraphics.fillCircle(this.barrelPoint.x, this.barrelPoint.y, 5);
   }
 
   public fireWeapon(config: WeaponConfig): void {
@@ -709,7 +782,7 @@ export class Weapon {
       laser.setPostPipeline("GlowPostFX");
 
       // Optional: Add some particle effects at the impact point
-      this.effects.playEffect("explosion", characterPos.x, characterPos.y);
+      this.effects.playEffect("explosion1", characterPos.x, characterPos.y);
 
       // Apply damage
       const damage =
@@ -926,34 +999,21 @@ export class Weapon {
               break;
             }
             case "fire-bomb": {
-              //@ts-ignore
-              if (bodyA.label === "fire-bomb") {
-                return;
-              }
-              // Create fire effect and DOT damage
-              this.effects.playEffect(
-                "fire",
-                collisionPoint.x,
-                collisionPoint.y
-              );
+              this.scene.sound.play("fire-bomb-impact");
+              this.randomFireEffect(characterPos);
               matterBomb.destroy();
               break;
             }
             case "grenade": {
-              //@ts-ignore
-              if (bodyA.label === "grenade") {
-                return;
-              }
-              // Explode immediately on impact
-              // this.effects.playEffect(
-              //   "explosion2",
-              //   collisionPoint.x,
-              //   collisionPoint.y
-              // );
+              this.scene.sound.play("explode");
+              this.randomExplosionEffect(characterPos);
               matterBomb.destroy();
               break;
             }
           }
+
+          this.randomBloodEffect(characterPos);
+
           this.scene.sound.play("coin-drop");
           for (let i = 0; i < 3; i++) {
             this.effects.spawnCoin(characterPos.x, characterPos.y);
@@ -1001,50 +1061,15 @@ export class Weapon {
             this.scene.sound.play("raygun-impact");
           }
 
-          // Calculate damage based on weapon type
-          // let damage = 0.05; // default damage
-          // switch (this.weapon) {
-          //   case "rpg":
-          //     damage = 1;
-          //     break;
-          //   case "deagle":
-          //     damage = 0.5;
-          //     break;
-          //   case "tommy":
-          //     damage = 0.3;
-          //     break;
-          //   case "mg":
-          //     damage = 0.4;
-          //     break;
-          //   case "raygun":
-          //     damage = 0.3;
-          //     break;
-          //   // Add other weapon damage values as needed
-          // }
           const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
-
           const characterPos = this.character.getPosition();
+          this.randomBloodEffect(characterPos);
 
-          const isExplosion = this.weapon === "rpg";
           EventBus.emit("health-changed", damage);
           this.scene.sound.play("coin-drop");
           for (let i = 0; i < 3; i++) {
             this.effects.spawnCoin(characterPos.x, characterPos.y);
           }
-          // this.effects.playEffect("coin", collisionPoint.x, collisionPoint.y);
-          const bloodEffect = `b${
-            Math.floor(Math.random() * 3) + 1
-          }` as EffectType;
-          const offset = {
-            x: 0,
-            y: (Math.random() - 0.5) * 50,
-          };
-          this.effects.playEffect(
-            bloodEffect,
-            characterPos.x + offset.x,
-            characterPos.y + offset.y
-          );
-          // EventBus.emit("projectile-hit", { damage, isExplosion });
           matterBullet.destroy();
         },
       });
@@ -1058,16 +1083,56 @@ export class Weapon {
     }
   }
 
-  public updateWeaponPosition() {
-    if (!this.currentWeapon) {
-      return;
-    }
+  private randomBloodEffect(characterPos: Phaser.Math.Vector2): void {
+    const bloodEffect = `b${Math.floor(Math.random() * 3) + 1}` as EffectType;
+    const offset = {
+      x: 0,
+      y: (Math.random() - 0.5) * 50,
+    };
+    this.effects.playEffect(
+      bloodEffect,
+      characterPos.x + offset.x,
+      characterPos.y + offset.y
+    );
+  }
 
+  private randomExplosionEffect(characterPos: Phaser.Math.Vector2): void {
+    const explosionEffect = `explosion${
+      Math.random() < 0.5 ? 1 : 2
+    }` as EffectType;
+    const offset = {
+      x: 0,
+      y: 0,
+    };
+    this.effects.playEffect(
+      explosionEffect,
+      characterPos.x + offset.x,
+      characterPos.y + offset.y
+    );
+  }
+
+  private randomFireEffect(characterPos: Phaser.Math.Vector2): void {
+    const fireEffect = `fire${Math.random() < 0.5 ? 1 : 2}` as EffectType;
+    const offset = {
+      x: 0,
+      y: 0,
+    };
+    this.effects.playEffect(
+      fireEffect,
+      characterPos.x + offset.x,
+      characterPos.y + offset.y
+    );
+  }
+
+  public updateWeaponPosition() {
+    if (!this.currentWeapon || !this.character) return;
     const characterPos = this.character.getPosition();
     const pointer = this.scene.input.activePointer;
+
     const worldPoint = pointer.positionToCamera(
       this.scene.cameras.main
     ) as Phaser.Math.Vector2;
+
     this.currentWeapon.setPosition(worldPoint.x, worldPoint.y);
 
     // Calculate angle between weapon and body
@@ -1138,6 +1203,36 @@ export class Weapon {
           length: this.currentWeapon.displayWidth * 0.3,
           barrelOffset: this.currentWeapon.displayHeight * 0.05,
         };
+        break;
+      case "flamethrower":
+        GUN_SCALE = {
+          length: this.currentWeapon.displayWidth * 0.3,
+          barrelOffset: this.currentWeapon.displayHeight * 0.2,
+        };
+
+        // Calculate the offset based on rotation
+        const FLAMETHROWER_OFFSET = 200; // Adjust this value as needed
+        const offsetX = Math.cos(normalizedAngle) * FLAMETHROWER_OFFSET;
+        const offsetY = Math.sin(normalizedAngle) * FLAMETHROWER_OFFSET;
+
+        // Adjust the world point position before setting weapon position
+        const adjustedWorldPoint = {
+          x: worldPoint.x - offsetX,
+          y: worldPoint.y - offsetY,
+        };
+
+        // Set position with offset
+        this.currentWeapon.setPosition(
+          adjustedWorldPoint.x,
+          adjustedWorldPoint.y
+        );
+        // Update flame damage if weapon is active
+        if (
+          this.weapon === "flamethrower" &&
+          this.scene.input.activePointer.isDown
+        ) {
+          this.updateFlameDamage();
+        }
         break;
       default:
         GUN_SCALE = {

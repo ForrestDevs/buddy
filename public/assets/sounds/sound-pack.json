@@ -2,6 +2,11 @@
   "section1": {
     "files": [
       {
+        "url": ["assets/sounds/flamethrower-fire.mp3"],
+        "type": "audio",
+        "key": "flamethrower-fire"
+      },
+      {
         "url": ["assets/sounds/Buddy_itemselect.mp3"],
         "type": "audio",
         "key": "itemselect"
