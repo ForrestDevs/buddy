@@ -3,2503 +3,2583 @@
     "files": [
       {
         "type": "image",
+        "key": "slash1_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/1/slash1_00001-aLgYye3uM9PTOgdKfC2QAvNfEUTCs0.png"
+      },
+      {
+        "type": "image",
+        "key": "slash1_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/1/slash1_00002-j8a55uD91Cg2RfEs3BrI1b2KhBwpQS.png"
+      },
+      {
+        "type": "image",
+        "key": "slash1_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/1/slash1_00003-vVZajPKpVIdEAPjtzgqvnLyunDqR7H.png"
+      },
+      {
+        "type": "image",
+        "key": "slash1_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/1/slash1_00004-rICsRIstk75nyb74OkBMNubhO19O1N.png"
+      },
+      {
+        "type": "image",
+        "key": "slash2_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/2/slash2_00010-gKKhNCs0KvbiFLhUJNUmBEXE2OXu4x.png"
+      },
+      {
+        "type": "image",
+        "key": "slash2_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/2/slash2_00011-kUgUpVODq9GXaPQHTP5VrbwPtOibaV.png"
+      },
+      {
+        "type": "image",
+        "key": "slash2_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/2/slash2_00012-CmdJ0uccljpLUjK8xfkVGsExgYRYS0.png"
+      },
+      {
+        "type": "image",
+        "key": "slash2_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/2/slash2_00013-AaD4YoxIon9Z5npsu7BxfzKFSktSOf.png"
+      },
+      {
+        "type": "image",
+        "key": "slash3_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/3/slash3_00016-79whB7ajXJos3Zc1Fldr5voN2zVUV1.png"
+      },
+      {
+        "type": "image",
+        "key": "slash3_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/3/slash3_00017-kO0LWCQIaimabxtWOsiij5p4HxeF0u.png"
+      },
+      {
+        "type": "image",
+        "key": "slash3_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/3/slash3_00018-FfKFRj9Vrrbyw4AQmFdwzNtGoym7Qx.png"
+      },
+      {
+        "type": "image",
+        "key": "slash3_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/3/slash3_00019-KwO0PsvrhuSgy0G1V8Ggvkqcum0sgU.png"
+      },
+      {
+        "type": "image",
+        "key": "slash4_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/4/slash4_00027-JWTBNWNtgqQYexhO7Zx0YEY3eIDSRL.png"
+      },
+      {
+        "type": "image",
+        "key": "slash4_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/4/slash4_00028-Vq7DUYcClkoPyas6r6v1Tc1vzM3lnw.png"
+      },
+      {
+        "type": "image",
+        "key": "slash4_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/4/slash4_00029-CvWUfogsGgHp9rei5eIzItQ00DfuTL.png"
+      },
+      {
+        "type": "image",
+        "key": "slash4_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Slashes/4/slash4_00030-FsySGtpcfwHIJ5RcGHXT1exEuYidxk.png"
+      },
+      {
+        "type": "image",
         "key": "blood1_00001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00001-5Mj7JIQRu2ubExnv9X8DN7upRSWoxJ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00001-1axHqx0f1Mv9Wee1bNnUQ9HF7Ij6HE.png"
       },
       {
         "type": "image",
         "key": "blood1_00002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00002-ocpIamdtyYVKkpE9iYCQPGZg9MK3sr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00002-uG0WBUkkHxiZ6HBPI9X03iyGL2zrV8.png"
       },
       {
         "type": "image",
         "key": "blood1_00003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00003-ZZZjcBzvPKc860mJ4BISCGKsdgBvvb.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00003-Dut1FK5wokq521L1Ss9qRTLt7wbgAT.png"
       },
       {
         "type": "image",
         "key": "blood1_00004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00004-3LP2MGZJgAB6JBJi78QPTrqDHtTC6q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00004-3TqtEsP4iVuBdiUoSPvgacij6UE40V.png"
       },
       {
         "type": "image",
         "key": "blood1_00005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00005-Qu0EnjUEGf9klLXzhcx7otO1E4zFOB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00005-ly1ht1lGit6BK6JT4puLE2WRq4imHa.png"
       },
       {
         "type": "image",
         "key": "blood1_00006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00006-oKZpFeuJmpPhzTKNa0xkgyMsh8nUfq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00006-LlIf46Q8M0iyEhaidatkmAo6VXw9dr.png"
       },
       {
         "type": "image",
         "key": "blood1_00007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00007-fDlWEkmfMOrMahyyzCocKk3hbOpuBj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00007-1i5KI6jAO0RTmWSEreL6TeobILlD5Z.png"
       },
       {
         "type": "image",
         "key": "blood1_00008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00008-6UMF47CqVVSm5vpvAr31Cbjg9OGC3q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00008-ZjixTfz2ZJTX046Vfo1b2GMraAUoXK.png"
       },
       {
         "type": "image",
         "key": "blood1_00009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00009-YYRdQqqeVYkgjJyT5JIAqUA2vnVKC4.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00009-Ms5XWkVReMtUGHKnJk4hvEqcw543bK.png"
       },
       {
         "type": "image",
         "key": "blood1_00010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00010-X4xUkqxtreNgtTwfjogLrsKyBzXZpu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00010-9q0qKtdMsZteNTrg9WjBZA0xWm9ThT.png"
       },
       {
         "type": "image",
         "key": "blood1_00011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00011-w7D3k5utkq8wphvcrn3H7vt8cK20xu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00011-HgrWQkFbpnGfEuEwaU4640UVETbUg9.png"
       },
       {
         "type": "image",
         "key": "blood1_00012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00012-Ber4k7gn1TnPRaGVKmwTgEGH1N0fid.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00012-AxHXp9WHHTfoIN9XwjYWoxIfSnr19B.png"
       },
       {
         "type": "image",
         "key": "blood1_00013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00013-iduUEE3rtOJDxQQkXKWZyv1MhuSAtP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00013-Ry1MNcO6gOmac33yNYqj5XsEDgcuws.png"
       },
       {
         "type": "image",
         "key": "blood1_00014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00014-4mtwKxl8YZ38LxjxrDnHmTDcudUK9r.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00014-2yaj6rGK4QQi8gCjh7MfpEB7C53VzR.png"
       },
       {
         "type": "image",
         "key": "blood1_00015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00015-V2cZPEuOHSYhkKcDSqwyCEaZX7uP1h.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00015-2pnWUaTzyaOwm3yvXEP27jakTN4xlD.png"
       },
       {
         "type": "image",
         "key": "blood1_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00016-mD28GWvWJRXsspXrKQTAYkUeLYNSiz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00016-dj3iKsYdDdA0g21T7L2FmEDk5swx1B.png"
       },
       {
         "type": "image",
         "key": "blood1_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00017-DZE4SG0j4pKlk9fmW6YaATUnaeUqMy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00017-mfKwjnyMx0npguA4h5Rl2y9ojvqp7l.png"
       },
       {
         "type": "image",
         "key": "blood1_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00018-JzwHz2HFh0L8Ccnn4SnAlPR6QylZxz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1/blood1_00018-6gMRKYKVfuc2ZTskeNTup53HhpbpDm.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_001-lcjPyGH8c4q5zBEz2l09Ymuj3uA9BR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_001-zFxUa7LRFP0XeKnVw0pUqHuxzbrLze.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_002-jXBzjJHxmGnfvQANhKeMdjrpENLha1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_002-6qoQyRTarnkOYfKsz6wmAygZFoMtUP.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_003-C5GNYIrmXvrYI4liROXiCrp3dwNQ4s.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_003-Y33LcPtyXu35sQyFtNYN6I8lHJmRn7.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_004-GJxxcfdEb2PxwiQXhPdhLUhZGNBRfA.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_004-WyxCrj1eCkiBAUqH72LrEE0qXvduH3.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_005-vGiObcVp96E5oNUjWvMVuuAfcy1I9Q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_005-JyVIkbrPs7GsGdUxbAZYWJhQ6lM0RQ.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_006-JdR6BJCaKDtUiCYNwGnXtz3r3VCNqB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_006-kOeXWjIfiNugIL0jFCyt0p3zIgjSF7.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_007-AX77GyKrGzBjTWjom24r1cNEwJ10kS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_007-R1aW4cec8Oev8zoHRlGliZbDR7IfrB.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_008-2yVx7zTMOQoCFVjVaP2UreFRzXDfdV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_008-jXNngj5JjzPgEyEwygaLLVYLoUCeS9.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_009-cHRvlucb7Tl6VZSKFQWx9YRLnZ0pUM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_009-gc0Q0jTSl4C4wXqdQ8vvfgcJIWgW1c.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_010-vdiPNlqKV2A1Ga6LNLKFNhfHrilh8R.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_010-iDtjlKp2BvcuBVmFHesipaZkskqoLa.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_011-xwnBp5P55WYPDdjvglYAgh5bpjux2P.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_011-g5qriLsVq6vEkOjqW0MbPzdjfCri1x.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_012-kpZeX2BcTqmBepEDrK4db210j42BSn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_012-L0pHnHe37O6ICIN3y3TN4ZsGpsU5KC.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_013-FLzzJgYW0K89GmSHEfhXh9eSTZ7hK3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_013-qRo4Pux1L1KUYv9KmViadILfjCRgrj.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_014-cGIT1PVe01Z3dziC2y0H7OfmHb8UVt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_014-u7wLqD6nGLb1ojW7ZSvUj9b5SNr88q.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_015-7cBFYW0Eks3kUPwcz2s6FDsB1S1eUn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_015-Ccmkijby8LNCmQAEtGrhzjuOHqertX.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_016-IqZM3sauFW5aCa2JjDRWxQYPMSQj1n.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_016-jr0l1OYjNJfUo1c1I84Jn1vZYR9kFK.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_017-intiUpqetHD1FwlTs9B6e5UaPYIY1A.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_017-4tBpRB0X6569TYtbbuLG8Muvue34NC.png"
       },
       {
         "type": "image",
         "key": "bloodgush3_018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_018-SpKGMixPpijJiKSC3SSXiGeV6dOOdj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt3/bloodgush3_018-6nYRrNckA8WvZB5B98LfGlYRYTAlcf.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_001-7cPhhwDnVBgYVI6ra7YDlDVNLvasMw.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_001-AGwRI8UYX7HUReqQZrZmTQAMVgylun.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_002-vhXFIJP4eyAIrqdsFuqlrOGaoOtf9G.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_002-TLYxKI8W6qvkiXAIhmqshkd07ScvzN.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_003-64N20RFlai2uiIyNVXH5uBeK7C2hY3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_003-nccf5Qx8UfuEDtVJCjnXMmHMqVefug.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_004-ZdnSh7Hj8LnzW1q6dIANDaRHf9SWBy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_004-hJMk4qczvCdEI15wLaFYWqcYZuODlD.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_005-9Dj18NOIJty6f0EySSvOxahZINE8ph.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_005-WsvKTJ2jjuzru1DBY61hicizyoGpbU.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_006-hTDxqHW96p6qqCu3RWajkfVhvPWTjP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_006-UEvY2MsvTKSPBNNfBgXPsV4wIpVkd6.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_007-z49M6VJaKAaOKzYHGgsdMkDe7LsqcV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_007-GObu1fSJRt31VnrFNbDSWGho89UDT1.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_008-S1cZ9YzkQRqL3Xd1EHcVOQLdPTkp4v.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_008-OsMTld30tFrwRKXeOnPeyWwCHxs3a4.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_009-kjNtAVyhjCS5OVssSv6NtXehSUbmTz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_009-2aHI7ASaZYcfhO8IeTdtDLl6ZV9LHx.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_010-RkEeap3nrxrvEumkHJFjGwx0n255kP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_010-XqwjzUYvKkHuWmhsIisuBu7TxQ1Ou7.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_011-2KWBwFdwuoUcIPAxElB4wSu5kKlF3Z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_011-fWKN4b1hqLKfyXRSVvMJYRClNbuVGu.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_012-o6JNT7QzISu3ZfoIFDHBwVDnPnRHVr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_012-Ovuvm3hrFupsS6gmeC3jLjdGLhRC32.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_013-hD9AKuAqVtJnpvji4an4n7TucfsXIG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_013-8kvNsqCPIluZibgfFFiV0fu6V840KW.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_014-vJAC3n0bPPJUDeSVZxPHwpjJl1c0WG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_014-EDPSLINoBMcjb6E7YciMspEhlewq41.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_015-yv2vvnd5HwHmZRSE4NMDV5igUnIz04.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_015-N5ki0jgMEz0fBwg6DAb9F5QK55eTI9.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_016-WY7Uo49xiUMxA8wPYHQ5CAUTmWtu93.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_016-0LYXZ0CNsTzCh6ZzFcopumApmvjtoa.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_017-ohyqgHSi0qDySK0jZXdTcJkN1HTmi9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_017-MvlNPDtGl9gd0Sgvv3qVZNoMoKIojj.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_018-N9E3pGl3WeAt51URwrupTRCeuNfH8X.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_018-TkwbhOlXcyH2MnrXoYHknaHWrLKFqB.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_019",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_019-rGP91saApQnsXMuy8r9kldSigyUOaz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_019-pzTdZKTwflbD2ZgAN7ova4nVhqDdfJ.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_020-668BrpcKcqDqPMaUdyIdY4TAkUz3Dr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_020-iud3itR2YeIX1PWrMtIOUOs6s7Zff3.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_021-zYwVLwfKlZVxPeByR1EGWDXOqaOGUJ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_021-cTI0FVqWHQP29NsvXjObxsPb2axwl2.png"
       },
       {
         "type": "image",
         "key": "bloodgut3_022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_022-Bka9fizfhe5zYZjHazwzxCFfpZrphi.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt2/bloodgut3_022-AVoux6uY6Pwrpe9abrNYYLLYTmNUr4.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00001-mSK0XuLnJLoYCuneFfuWGvSr40CHqW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00001-D5GIy6sVR0x9cNPBazYmRsVEyJe0Nf.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00002-1vMgQmEIYwGrn1ezFn6qcscYPZ4gMK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00002-3cXJxtYDhTn5BRaV9a3ZY7dTwl6uc5.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00003-iUo74XnAotiWEmum1LIzvslmk6NOaQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00003-2Fv5USNOsWljfCBI7oOkoZURhJrWDh.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00004-fbXbk3unh3EemcAUERSdoq9GJI0c1N.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00004-FUE5wcC2jLuCmWCbT4FD4hkRkaRP0C.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00005-Ct2gqLouuqlv8C4BSqiAn0LPFgDqBS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00005-ClC0W2NYk8mahe0r8UJkyHkQwiDVoM.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00006-EX0I1mdnkhFON1UiV7qsay34FaF7nP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00006-eeqCNC0Nuikg8Ii0o4UrAZSxecTO3s.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00007-A4Rcpe5APzBHRY6al0QOZr2hDctGDc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00007-gfMcWdq5DxaiPVpKWX3Udb4lVihnJF.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00008-SZklhIM4RVuVnglfkPO5nHJCi0wR14.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00008-fgXDbVLX0LU5QseK0ZdosYkWC0JIys.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00009-2sxoyddU3vLygRp8lKgZ0AMcLsjn5M.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00009-NbOW2Wmzz7XucWEQPlekFKdeFBMJ65.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00010-ewEJnO9XZ78chwtQedX9P5O7WoaRXh.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00010-IQg46Mflr2epQEXeiDbfh1JMmgqoWt.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00011-WrPB5ST7XkvMqOvfjjKF6AOI0BWiBk.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00011-CyykLkUaHBTroRWmNeYWN3olSOTjzS.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00012-RzsirHsodmKP9bpgc70wBK331oecU2.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00012-Y9vdhot3rw8nJfcVNNT9drBRwqusc6.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00013-rwYghdUb9BoMZ7rDSvHyDvPILb50T5.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00013-yoezY7xDZTeP2DpTLZVCNw2MAt2HcU.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00014-zeT9hFY4Uqkdl9QOohW679ylwr4RCT.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00014-rZosSnTh06DNLZQN7PcXtgiR597NMT.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00015-p2xRpCsnpZaUyAzMzHsBKQUB9Xp9vd.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00015-JPdLtgd9WH3o8etaZAqCKrv0XqIHJG.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00016-7FSU1fPOc7lPv2NOtz5LDLdlOp5vBq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00016-Rx9hCQIiXoQXzvJDqi9UbZUjDLJeat.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00017-F4iuWAfSXELUZE9fuZexkPPsSna3fP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00017-QOFDFZZbiPrOSczUv7ZsixC8f7q2Ma.png"
       },
       {
         "type": "image",
         "key": "darkerblood1_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00018-8iTXO0Tyb2LDf8cgoO8kiDb3WnHpKo.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Blood/bloodspurt1DARKER/darkerblood1_00018-g68N4DXG80iQKisBNvrD6Wt2lWUufU.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00000",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00000-hdGdsZJHvzSAFmoUVTj3KJZaQL6MRH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00000-HsmVzpBdM68websPbMSUl3XVE7EQ5N.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00001-9QFnTJiaepAnfJmz3R4mBabUhRSTrh.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00001-vXyrY1FHO0mGcutL8Ez0BNycX73sH5.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00002-Jyu8NtGsZ5PJhJBGHY4vbARcYzETpX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00002-Syu4pwlXTo5gBjKoiLW7oAGvTYWv9Z.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00003-TOiQJfFQO3uHcIUQS28x3v8SkH5qmr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00003-wvGt4ka0qsMezn8bGJLgme8gn5AxeG.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00004-3jWoMJLJXjTnef7qZCqr4AD92X8Qfx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00004-eeYQyNTIsPotqgqzkDzcZqmnhefQOK.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00005-NpF1zduwPWnok1GwIp73wfKqnHiG5i.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00005-cCSPKZgj9essO7nW4iHq32y9GJOlgl.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00006-ScEOmAXInMk9LzB1kjwSlZJ3fcNTYl.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00006-AKd25EMQDkE92oJJZ4VVjnxEWxSCiN.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00007-dz4UfR0ymtx83iXPOqC9PIIxh3LBNZ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00007-KH4qNAK9Qk4MJGpUKlclTs67q1j4rX.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00008-nmH6H9fj1hpSG8Bwl2rD851GnEKJeB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00008-29bTHDx15y5Vv37swdHTO74LtuVZpc.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00009-4IILJbpJj9shLte5XCQspLbS7sv3vW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00009-wAl10NRzq00zDHXYCKUu9SyuclZ9D0.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00010-lS6yOFstgCbqBjekHBqRYgzQMDmUV0.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00010-EUtp01aTiZATZO5kO2EfWjo1pVlnKF.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00011-fDwPQvngrH7oxLWozaRDUZ3fMQYVXB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00011-ur9kovXjZR9AXmmKky5e5rYpqHJbmh.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00012-JPaT4xVa3K3dcWAO2PXPRnVCrzIiYY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00012-tGgxQ7QGz7yS7UVvJ5BeHyGpMSwIol.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00013-cqjWlImPamBXeqNnZiEJt4xOq9GrOy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00013-1JWyzsDpcSz9bmS81nYp8KJLmkX73d.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00014-CbOOsWSLTVIrhHJBFKamAnGEC2seYs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00014-Abcxjn75hYg5PTo78VZIGDqtYXUP8r.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00015-sihOqJUdHr2vBT5JBxDvqAeQIbUavL.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00015-O3zEM2loJu8hs8bZRbpdBJRwrUXfhd.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00016-GADjk2P1Hv8Y8leOtOsVNcWt5nhv5d.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00016-NlmbxQHNBTSbCdMjEUX6z0t5tkkKjX.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00017-LUH9MsYcT687LnlhSwxOkXudwOsjmP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00017-mDYQrcOuOwEgSKJQI6Q2vn14wTy7DF.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00018-wSW235677GGIeCjXLWRiPWW6pguPg9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00018-1kbGw0c49S4GPOjSE4QpzgphB2WAml.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00019",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00019-BbpN0PF4LYOMy0eTlYJV1BhoEtU1UO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00019-SuC8wDHpwH0ZOEM7xN60hGIFXa6lif.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00020-VmTK6qA0pvVGeQoVs24KmmXYr3uyil.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00020-7tf56LPnRtdx5mVZLYw5fYqOSmQwNK.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00021-5c9aF0wa0iF9JoMYtMaxPMQyzBDYV8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00021-CdHDeUcZJhFORP5DqGxTOZvrh18gsZ.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00022-jP5u89PJK5aW8vJ7zWe5pop8xcNgHl.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00022-vv6paodSXkyY3Z9mrIAGdWMN3e0Qg9.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00023",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00023-z3W0ISniwmwWSfQLItoGKFQPngahOP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00023-BwhZgZlB8JafS9GUzaRUfX1KihwvYr.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00024",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00024-Qt6KYKZIZNC5szMn2b8Eusie7gKmIj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00024-MMFLdriq6WxUVBCmTh3h8HLFFxDPb3.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00025",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00025-sprBM5Dl4jIjAPOOXIRp9kiodVBg3F.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00025-R161nXUPQ7rIkFBv4N64fFzkSN333U.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00026",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00026-fxuUy35qOsLAL4qms8J4uXRa2jweQn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00026-X06s8M7tgotFmanLA6nP85fdea9911.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00027",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00027-GFV2CdOj9ocVjUvxjuGTyYFGHdmP9z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00027-YhSqrwMmcZiLM0pnYvqO3eJhtTwCmF.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00028",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00028-ypRqrHPSye6JleP4gybV4TNN5n8blc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00028-rBi2qzrGEZpv72PleAJM0FElNY65sm.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00029",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00029-mce9oCyA5oRrDQN4VcqyMbl56tiVjJ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00029-t647FdrsAfVH0jT4fyuTQ5itBMtCai.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00030",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00030-S4VwVzb46CDnQujCfjbmkQb6FlBMsr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00030-CJnFZRuOtgfUXVPk0F4hmt0t7gqyvE.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00031",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00031-IrXNkdjvAwbx8Fs5VUT4FPVjbBJoLO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00031-w0p3QwogpHe0iFz09GJ2hZaE0YmBog.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00032",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00032-QYbBzPU7j9orNLZwL9y8fwQNizeLzp.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00032-vpjFEfgWgMRkiua77LJqR1zygLDAli.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00033",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00033-mCQQisoDwjuGf4OWtr7vgdeZTkKRWj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00033-iZJKoB5jo92TE8GzdNdzkSddRko9mc.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00034",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00034-hTlVxaZaExNLZM1wfZ459pLByQAG9j.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00034-1UuW6Vhyj2R91K9v7b62jPZVr9DWHh.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00035",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00035-kZxEzPSU0fDH6KfF2Ei4uE7ieDRVVg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00035-tdYSCNAiD9Ao2iIjcSiBUFyyKRlJms.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00036",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00036-vaFI9ORzS3EXpwNeMIhn1SeTXUWisO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00036-kqL5NuXCbeEYQNg9JX1Bt4g0d1NjEx.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00037",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00037-V6augBvxk5shw4tHrm5ea4HlklEZ6n.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00037-lElvBSAQmglrUVJlzbPkM0KVBAXtZO.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00038",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00038-AIUHLI75dWLOcBTrwAcA1uotMtJynN.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00038-QRBtNgwKsGh2TNnRGb8Je84fvpJC7P.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00039",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00039-3yrrQoQxSePXmpOkXwOjYHo39jefqU.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00039-a1xo9uogteARBDk8HCWbfJhjIfg13e.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00040",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00040-J6DSNfZuzozDRitqsmlT3rr7Dk3fAm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00040-RrEXXIWiIu16dOFW6BctiqSIz46iUN.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00041",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00041-yhbv2xx40KHMxFOGivvRy1niRkTjTY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00041-lzVJ9s5sa0bi5XotSi2zOSlf89H70O.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00042",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00042-7ZppcZuxaH9KiUFFPHakCPEvdhDvnm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00042-VjgFFy8PHelqomsxrumBWO7JFCHyWu.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00043",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00043-txVrEHFJiaW8ijRy6ToBmN7zdUkzKv.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00043-1rUesrHgiP2u7TFGDHJLV4HuuKeK48.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00044",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00044-yetlwC59dUouCulCa2L96GY4LzblEV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00044-9A1C5bDpP7vhmscqRxzvAaYAeenbbf.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00045",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00045-SA9FOQuHGgMv5qGH5D4e1CbAdUOIog.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00045-xFP6WvuaJA6zBTwpkR54vcNgeN5MBW.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00046",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00046-reovmgab6z0qEe7qGsntevBMSH7BgB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00046-UMa8FyDKTtWNijLphP35PZLcnqeJtl.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00047",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00047-qOeDCMBlF25oS3Eb7bZCXwkh8E2ZhP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00047-08GUfY1so6JiUQmG0vIve3cKgxfSKb.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00048",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00048-V7L98QHkcyBuSPlv0LhuKtGCelaZe9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00048-k1nZ0td1YkKwZRTAj94iSCHle1ZH84.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00049",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00049-A2iBp5SIeKARDFKssv0hPZKB7OCKtg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00049-AFcpgv4p5cg5cTxrLHHOlRVlV5IUtX.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00050",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00050-q8ThR1ZZPIhclx8IDQqTW0XcM3eucm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00050-JQcBSJ1aVbuCcv3XM5AtF4wDcs1DdR.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00051",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00051-ZgMje3XpBLMhGBkaEscmFDzkaE2NL1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00051-4Jjh8rlhGR5Plu1qv04HUJZPsL6oDQ.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00052",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00052-6avpahKiRDB6aBhvf7A6CMGr899EWK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00052-ERNyQomUiMhkxAW2HcXzIzXYdy5EDY.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00053",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00053-RorEl6pYCLKwEQO7XkQ0rwkOeDChNS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00053-FMP9n0eAztY3dPkgzdoAYRlmPWN8RQ.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00054",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00054-TDOwlw6aiXSHbKebLwvw5xtVvTeqwW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00054-Y0Q7kTjPCBReKqazEPjW3VWIYmLdRl.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00055",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00055-mk4TOdV5FcoormhOMGIj5t0Rjeuvl9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00055-M5OD557dxzkM1WDLG4i7ykLogS3sWF.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00056",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00056-WMQkYJVavs41b5qE8y3wWiocNKsDbs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00056-A6nJLhV5ZDJKaUplh35h0Ku93eTyxm.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00057",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00057-9FwAbMNDX9SMxx6uhjpKguAjgmsrnD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00057-8gCX2YbfppICQfaMGF6SsFlKnL2QuL.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00058",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00058-WERJb1OIvc4Vhc6THcwqc4hMHVuyT4.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00058-1VaaR59C1vUeANBp5iHLtn7s5SnvVn.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00059",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00059-0fAGqZflsWk4RiLJf1TSIa5hB0MdzK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00059-p7kgP6EknCQnh4JppCTbLtOBDy6ydA.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00060",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00060-HEHhEn0B7pKv0vLK4G8KIVyrfMBXiV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00060-FXJgcosVjbOhDR6DyV3KNzHDH468H1.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00061",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00061-aNUpJbhCeuO4pQMIBbPMaicgzDMg78.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00061-QQlNHsw1LwkagumKtslBlIpZWQozUj.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00062",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00062-b22gjbzlmVxhHoOPAxyRcW6koTyVm1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00062-w7SwnPKrThh9OfUoK1W3AwjtVcM685.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00063",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00063-8qnnIiU6GgRQmqPbA2jUilakwkcnsV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00063-mnfOy2M0tfvyMdTlXyCNPAsGD9Mf94.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00064",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00064-oe9xeHgovbWxrTAhXflLIIDtRA4Tvu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00064-WZhfOh83QjT1RkEooxUJihfFkIMnDL.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00065",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00065-2iwvVwB4kKBjQzFUXhk3tU0BRTNU1R.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00065-zejL1Fuv8qh19m3loRspiazWgeCR14.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00066",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00066-2JtuhDuFYIFoM6sdrJPWui4XnPKXYk.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00066-UCmVPa6VA9jn2meQQnotq27WxNzUla.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00067",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00067-21fSD9qmezNaaF14NXRg0sijsSMbLX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00067-lNEtzmjDrElikqM8Z7gFDrX0WPN5aM.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00068",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00068-ZeGz0Vz3tcjJ0n2ARXHWhBpWZytgVD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00068-WqFf2AV3KuYqhJK7BXqc0GPrX7maOk.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00069",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00069-GL8dypSDhaS6riLYb3bU46QerdYq7H.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00069-FcTD7QcY2TEuxljXOIUB8LVHbdhQLq.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00070",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00070-YBL8iNoRnX8T7C7P8LeBaTFIpMYy98.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00070-8VjWSbQrBWtQPZdGj3PaFC8O4olJF9.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00071",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00071-ri9oPYqOtAYKjLbPD15pQS8GdK9GIB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00071-8adSWFVujKcYFinHfvvO1zMGl5jqaU.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00072",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00072-TUBlqI6BoMS5DAX7fZpNJFYavXVcQr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00072-QhcrwFmwEIJAykZlfoo6je3zQYPywt.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00073",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00073-XCiKZIVuOjXV5ZOrxMLX8GoulEVmKX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00073-HGj8IEcQ4zkMYV0RV53LsJtIGBZWl7.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00074",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00074-bFpHWVzZbdNo9qufMkUfNyYT33j5iQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00074-cMAnk9NJZuCsFsSMzu1P33r8GvhEOW.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00075",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00075-5IfoLeB6J1baMANvyA3OO5DhMtKQ7y.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00075-niVUT7Vi6gD75ZNFOYI4wL15wFaLax.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00076",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00076-B2ie9U5EyS0Sde4u05Y9bbBySAymPl.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00076-Qkm2FPASF0PmxSuqvrhtVXNUWradyn.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00077",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00077-rwD4569MB5d5BNhF22no0VAY8q0mPq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00077-usDX0ofG7aG3iCw9X9e0LF2iEkxKUh.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00078",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00078-om1r6JI1TqjtFgc62K3H0N8alKk4BB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00078-BC07p7SZ7yO8U7BSHYqJJvv3Jbn1I3.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00079",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00079-FgjqKnCJb1cfEHlce6aJUEUXcEs4HF.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00079-jqOX8wZaObZttsNDUgRG2zexuZ9U25.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00080",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00080-KbjnhbN22Oyyw7K0hmuNbnHaZqvKsz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00080-r8QnZdo10ozxGjWrhwEJrx1T8qHLDT.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00081",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00081-KKXtH51sDQwlPCmDCDZqCuK6K1dO2z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00081-U6tnRv0tfyvsmSVsws34kSLD4xz4jw.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00082",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00082-CSCrMRPmtQeJDkXtbrGmaGUMwWjv8E.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00082-cwecsOLoKuRaoQqCzPB6hMddhBdJ4k.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00083",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00083-6AsNUJag0e3NteS7E4Egq1UlPDrkKG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00083-VkoOkuS1rayLKvCgK1eaAOPGIoCY78.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00084",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00084-TWffqXy7828CyqEFIqqEfuvwztOkmo.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00084-qs6cnzLiPRcwqayJ4y698oJVHaVDsT.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00085",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00085-v2OzG4cAheKN2tGGnDDlZPlqEDbZjA.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00085-EoN3AHQTZn0SHwBXInN87cEZLEdnGg.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00086",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00086-X3wdGzEHs50E6HjtMkaJV1UhgeA7wQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00086-TcIuKzcpS2AoqU2NKEdShCHZ7GcgZl.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00087",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00087-5S8130n97MTGFmrj8K3U2VbtMk8cFR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00087-cXGbfaBYC9DNhOCOozDJ1O1kAoQX7f.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00088",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00088-2J0puQ1KySg41RdrDpcLAj6tXQfsl8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00088-W9t2G4bnq7OSyufDUt38aCOhk2e1AC.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00089",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00089-vIRDliXYffQ3J6NECPjecZa1xSVRAj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00089-QLudSMOqt5WPcMvG8XtIUkSV8MJ1ng.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00090",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00090-UJ7NPvzBdIqpzXnPjwoU8tplS3RP8x.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00090-JTC6rQ57Kx4poY96qriBJiIHTaC0yc.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00091",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00091-LzwlU8QB2xKz5muipNp61ohc394I4i.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00091-7Tyl725DXJApuTmCWLxCeSWjrL4tTv.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00092",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00092-e8ujqBwMum3qfudcmfZHqsXensjU3Q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00092-5krs49bLl7knU9og6JNBNoiFoQhnmG.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00093",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00093-tvgJRlgtbcOrCk7k76P3FBIOATESKH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00093-CgrhoCjc8v3LvW7Z6pAOOhpsjqrqVF.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00094",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00094-6x14UxZTrOaXIkj8NlJkQW5fSD04WR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00094-fCxk04qx1QHknsedKneUiw5qCep1c0.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00095",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00095-RyPwxcHn5bpksKeXg9SqQzSloYq0Hq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00095-CFvh2vTPTpczd92ozOPD7VsjbvAadU.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00096",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00096-DehCPWIlXux9xfjsCVRNKzAVu7720R.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00096-uZxGM5EiASNi8vILSRvCGKl99Uwzk6.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00097",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00097-kVRAcW7qae6uN64lKOK2uI0V7XSqaa.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00097-rKIHEHH9iQutiwUxVeAmfuY40wYvZO.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00098",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00098-RO66HmsGeliAXo8O5BnabgrcTFSQSH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00098-CykN9ukQacHYAqf9PYCqXtUZLIZtYJ.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00099",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00099-bPYsqYtu2eBIknYhm6qG45lykdiuU0.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00099-flF6ClWwmBgHcoI4uulOByCsRaBOQ7.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00100",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00100-dmT3BMXfDhJHGFQa752zF0dvQfefak.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00100-VlMRNT1iA8Zhw7AdMDsaue55yePQU8.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00101",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00101-p2V4I2oRgeqIp4qXI01r3FZtiSJsoS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00101-48kuJTXA8r22By3rf2G7F8gnhUYfhW.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00102",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00102-acQTAO70lMNzjkmMafSuubEEC9qCzA.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00102-zVe5ZOQe7tZ34dq2BNlz7w5IjhHItB.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00103",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00103-1fU1PWcbvv58vpdxqvfPqmbug9z4yO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00103-2ZIlWzHQpqk1kAN2KaKOvyX070rmg6.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00104",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00104-Im1FKDWkkcJuDaL3WgQVj47Fzhg5ob.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00104-IFxMOVr47vYEEMGZI33mUedqkD4El9.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00105",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00105-B3rnltFZrghZ8JWlhGXf7F9UDBrZ15.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00105-GJWPlwxWKi9QnOESvgRgHcKn42mj6q.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00106",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00106-BvTlbQj7oTsyaXjgFXTsPp1aq9bH51.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00106-MqVeIcfIPIQx6B9yRQkCVs3roKZ6iB.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00107",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00107-65lI0GQhM9wwStGVgKhQALmBIpJ4yq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00107-7NnQlpzAWigAZhgG1gloXXvymbRqwp.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00108",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00108-AS6rYItstu5Vz2fGqNyRWjmlYonMxf.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00108-GRvGvZ5og5Q92ivCscDJ7IEGNJRh5q.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00109",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00109-63gwmhZvoh6sWBnm6AKrNERdxBErca.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00109-lOBZjxeoVAXrTeUocDVzomKtFPdpnP.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00110",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00110-PQe13mj18LIrFhf5YREq1w0cseZZ9c.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00110-0Fe2tY8D9QouEAlMpmFsZAeqkUJDmb.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00111",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00111-MFcZLG6vXInwJkf8MYCXCb9kUnr6hA.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00111-ahTrxLjjOvHKWwqXCoH1ZnLx1d8z0t.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00112",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00112-Xbztc8oRnqs7OMG3jp1nprpZ9V2ovg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00112-eqFZFBSxY6AjoCZ6uwaJfgBT91PKuO.png"
       },
       {
         "type": "image",
         "key": "expl2fixed_00113",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00113-MbBD3eO8NohQzHOY95PIIl6831g343.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion2/expl2fixed_00113-hd8CQQBU8k1KUoDRZbnn7YnrDztncY.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00012-gGU0pl0prrnZJfM5JXXSFjhKYBPCtF.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00012-lR4uMRqGba5ayh0mPITuWkt263vmlF.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00013-eIBiSMkrj1R6Vgg1YZK7KzPsTw8CPk.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00013-9zN1OLq8PJGvF99ke6Xf4piF242vmo.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00014-QZvVpTv3x1FD4CvQnWGDAk2yMLANJg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00014-Boj5078wDWeIrr59qaW3F1hvt4uCnH.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00015-1AjCM2nluQ44SZHY0Be5ILpHPHnGKu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00015-PnGFPSXDOSce62fsnTzdrdP0V9d0d9.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00016-s7bnqBtwcQd7xHOvBkpBk4DmxgZJEs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00016-PPhUmbEtistX845993kJOqGV0uHkd4.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00017-2fOO7FpTEKBn5Zm07rTbsS8LpdI4E9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00017-gnsoItgNgn41YBxFcyh3J9Ko4Yl8JD.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00018-qtTwRd629hikLNiAgMXazp1AYxMYfX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00018-59hoO0tQFWqgxtHi9F40RCy8qvHMz0.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00019",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00019-vQTcGLtVhcikzEsaiHygbP4n2DQwhc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00019-X0nwJ6IT69sEAaKEbPBrqoETJB7P1e.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00020-XAhyqdwk4xnJ06EAL4h2NiYrFI95Ii.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00020-MYIwnKADpCuG933vTHcrPRiCUICVW4.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00021-iWEFOc7P9FExHlTLVWcXkbkAqQ8ewg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00021-EShcaADhuvXmcS6CFpP4UGX4VeNWRH.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00022-w5fF9DNdPDS2nn1WAIsui58IKuKf1T.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00022-SfKsfYK0B2aMeBNd0q2GVJexkqq9G2.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00023",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00023-gOmQuTxnRlcVvMdVDltJbs9zGvblUa.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00023-eV8cQKNElKDgl5KNdb6mamDSbNpKdh.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00024",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00024-jAf9siRwLvU7m5Tf2AqOxGXoHrHhcQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00024-PbZ26VlQ5waqc56eC5uWgJ58pKDzpD.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00025",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00025-x7pW5msiaJwMLp2ezQZwZJQ3EoEhpv.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00025-AqQdoI2Ifnh0buvKc9MPJFD80rY6Vm.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00026",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00026-7rwPssCDwXmgg9udWUCry6UkOY2Ass.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00026-IUUqGjnxI7Z3LoMsKNEAsCJAcSTwlE.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00027",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00027-x7cFG57d20QY0X4HE9SehZqA4bOQ7J.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00027-CV4NKs6nQ8N8sR6NvGEBTa50P09Req.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00028",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00028-XpfiTphvPsMbakaaMpbuA1F5Uy9vFW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00028-7jzqjYWPGmB9iMPDopRD8u3pW8qyni.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00029",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00029-a7b5tNxqfPm1FS1xphdyrP1wYASNl7.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00029-bVrLmonyUpcQEIHUYdFGDPGPpAGrQz.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00030",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00030-EJfVHkBd22AqfhKI7qy0U6BB5PVLlP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00030-SyiCkO3hWxqOxtAl7C7FkqvV1YMoI8.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00031",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00031-TdUTeAyoVZFl6BBL7WSudfZmEg60gz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00031-wkovdkdjtgYUWLozAtQfJjVkvkziJE.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00032",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00032-91mFaJ5lvC2HM1e2fAz114o3RiplBR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00032-SIhMKtnzbyLQBBBPoxkG0XnkzD5KAI.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00033",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00033-ED6gCVCOECCCXDiq0l1AtqpM8b6QCU.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00033-9BA6G0046c6b7ntgUkve195MipwsFI.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00034",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00034-B3q3sLqXElKT7d6p5of3X84pbmCtte.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00034-uAFXylMCVNt98NHLs233Y13jwikrcA.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00035",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00035-elIE0h9nEAyr69iQkNqq2MzRrrb7GD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00035-XAspKl9Lty7Ewi3vDorcLyRQobnb6f.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00036",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00036-z0Avv0PbqXA5rNskEUMxvHh69XxLo7.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00036-wdwyWYeXH7a8k3GkYLxs9p4v1bjzwD.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00037",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00037-7EVFzQFHuFv4uiusV223SpyoNYUS2g.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00037-eDrOGeeqHqjK3R94VEs0nAz1IABQSk.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00038",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00038-3lL49F7jCdLgyCzdDU2fCX6xGN3PP4.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00038-xwyXcNcPHWJ7t9OONrK9GfYFn9vn88.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00039",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00039-NhNxjZWtiiTTcZGJjC8ujNRJDZOojj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00039-1ys9Q1ZFIbtRnG9z1We9Mw2NRJPpRJ.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00040",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00040-U7hjGvZFqODLj8zWhihaNU65pN8zCO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00040-h6slKsRJHAp3ECapGTWIYtnIFhr4Ha.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00041",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00041-OTOCBHRRK3ETRyJKAomQdYnu3i2DbU.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00041-yMDGhPTJq82qAvGSmEUlOd09NWi7KR.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00042",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00042-M6SX8VFclbMHTNev7RXtuF7qrnSpYj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00042-DCc763je1FhvC7vndc9ful3uLwcmGc.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00043",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00043-8e64VEReaBPmtuNretpVnFyqXRXPIS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00043-QUmjyVqInEuJjMwwVDjvsc7XDtqj1w.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00044",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00044-UTR0LnNuuqOwlw4ebhxGDCEdexMSJw.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00044-tTVQmgHnbgqpj8Ew3OeTZj1j8ycLd6.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00045",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00045-hnkOFIIPCH6udi1lmr7O1e5AW7tmsa.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00045-8PskHR2LLT3J9uFxmjlT2yYtIHiBia.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00046",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00046-feCPWFA6bAOf255fka3KIF3M3XLDjV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00046-RHuOcn9h60RqhL7Auby8CDwNBQQdPa.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00047",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00047-7RJwvhCNlU5Tp0fvwGIccduHL6YmQ3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00047-srnYJPF8WKB1DgB8G7BJawkePkaYuy.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00048",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00048-58G5xSm3jk6sEh9sC4mTrt45g7LgwU.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00048-NEpDnIKiXCqvEYdovvMuk7uBk2hKUn.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00049",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00049-UCZrku5zBOsBjPjsXiD8aIKLmNO7Oe.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00049-WeTAN6sj4Zee01LymyATDrG0fstGkO.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00050",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00050-efRpVnFDIGVNtrVqwqSSfm9hBPnh3S.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00050-9sFrPhHUBTff2ExEAB0vKf07w7OovK.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00051",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00051-qVtE9lA770m6sbSctAURTdN3mWUqoq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00051-wIAePlfT1gF3zknZEfvroiO4FmVkEi.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00052",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00052-AMlw6CRIG2OGek86YZeDbNQEczZFV2.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00052-ZW6T1jrdOOwnq3i2erPD5WB1K3aeCH.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00053",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00053-cu0AjMxbpwvHMrvw6jOI2APDagsamQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00053-60HYWBrEVYamNwV7Zse9gfhBquukWX.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00054",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00054-UdKgyMafFXQWd5HmBgdi5l2ga7Ik5m.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00054-9H8F2mEAcbsCyPeQFWA8VjsUVUq4bm.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00055",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00055-8EaW2skHU6e4CmLpOmEoP6Ug05ScWt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00055-bzli8Or1NYd1LiRukp2i7ic6SQBGii.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00056",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00056-Rwh8bFh9pYdguLb8ji8ISJl2YH5vc1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00056-ydInJBr2mVgakaum3pwYvffit0JrUN.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00057",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00057-A5WT52rBI3egqEqNY2XIMrvmj7ig0W.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00057-BZQa1KatE91N3k6U8Ru3TA9DQvzTAM.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00058",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00058-SsohB3BeAPUGnciDmEPna89nSK62Ub.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00058-soadoNQLWrXxEo1DNI8HWAF9C4iY2j.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00059",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00059-sXp3vbSFqVP7N3hTyQQmF4EAfFJMCD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00059-b4jeuxkZTAn0D6em6MyG5AR3qeHc18.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00060",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00060-4PoXLrzLOXVhs4fOoiBXhgPa6mYK3C.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00060-wKfmtXZNbnEuyBj9OzD3f7grfQZgBC.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00061",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00061-t9whROPaSANWKhKlXLx3cpspT3Q3gN.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00061-3zKJEroplskrTA1oFNy8A3AWSkazix.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00062",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00062-5qR6Q58pATdMMkY70mfUBXhwTZ5Z9U.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00062-eiJYs1Qbzs4auPdCLSiqw3ZFCH7cwF.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00063",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00063-lmhereTdRA6YqngumgKIWOl3u4l3aW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00063-bJs5xNRbLILMAENYf5qCEQ4rt6LgiB.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00064",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00064-BfqeeqZrYv0U3mZvuP7nZci69XgrZ1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00064-GvrcvjRNt0hDvntemd2M1t1thnPGjW.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00065",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00065-2XI8nGvmyIK6zmEb44bKwB8w4RVzEQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00065-nkQjtPT9PnjbIsH45ZhccMLhR47q4g.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00066",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00066-fwWlKOQBvpZ9hGGbdbKrK5zliDEW2Z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00066-ateH6cuvH9NPpWrBUHWEVkMvZq1qDn.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00067",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00067-3MrYsl6TrU92xGROqvN16K4qa5hUwc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00067-Vj9pf8izzZOzYhWSMoGxXT9bSobXYG.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00068",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00068-4aH9YXBF6KYceAuklPHpxYW0rddGDC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00068-OkrYnoFJDcRvpxVfHfRCX8bEIvZnYf.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00069",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00069-kFdY9hpXfGvnd1oQmOUsGFupKY2W5L.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00069-f4O9ngLMvTxkMnPETEmT3HgPnCxXeD.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00070",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00070-jaLhd7m6KnxJTFJ40OAOofDnYh1O44.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00070-MPLlzCoeTT83RmdQTHYTnzcMwsZAs1.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00071",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00071-1WuZIgZaimXPJPRwudVHC9PTqtQ66u.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00071-MVmYsmiBdaSA7uvIANyWnkt1eomefq.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00072",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00072-btIO1w5frSGJoR4pJnGTfSEO0MUoDJ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00072-MlS0pifiorZp83lfwNbySnLBxPVGng.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00073",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00073-Hl9VSCBzHlloRURoUmPH5oBMCkEOxS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00073-CRYpAfqks5u691rLzGjhJDZxBMEapy.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00074",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00074-1cSJcdS5spZvNiPnOCfKEAdOwtEKia.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00074-oz15lAIOwrytNKt96T6r8PPQAuzvnq.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00075",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00075-hda4owX3eMw6sSTtnJhblfA5XYACMn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00075-qjbfYFAtEfEG60GhEAdMdYgrjDbDby.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00076",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00076-WkINHLMrEs0WBXl679GCgXSqEkpuC6.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00076-oFxRVu3As4WHlMhZSaw4V7lAUpCrBW.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00077",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00077-eHX9QItlsjIO6xKRSHGgYRYHg7B97q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00077-Ld5CZB0rjQJwCgtUVdhARbMCqvo2LE.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00078",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00078-iADmhTFHA83Q7J3MNJY5gSTsoPmmIx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00078-vAAHC3GX6mDLKaxB6Zm5Z25hsCNMKI.png"
       },
       {
         "type": "image",
         "key": "fire2fixed_00079",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00079-w9Mv3aGlv1tQrXOkE6MxEn6xXDc5Cx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames2/fire2fixed_00079-HSYGwZGHDLBrksWPQewq8axCSeOQxZ.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00001-hUlrXdfnK26a8DRFgNRDKuP16m4fV7.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00001-3NVsetGas6g9tw7pUdWEYSl0M7aJro.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00002-pnIqw0Va1Xc2jTMb35c36pfUlNxb1m.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00002-QxsrOYNaGFCtZGYeVfU7v4AmW70pKa.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00003-Ty2hW7O1b6oawbXiKxvqaBjLuSvOtV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00003-3SeifUGPzlD5yhDXKFCAj2kJLVff2X.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00004-r4ybcIuruqptqGgpAJZIDCNIcG79w0.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00004-UZnUTYN1Xw02YC228g16unMwFXWKR7.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00005-FhKa9oV4ndefOzCPXoI2peY7I6aEQR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00005-dxJQY96qxlI1RrOY3GKJJeRbqiYyv9.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00006-XEb7U9yBXO6D352dW0canDrBdfrERq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00006-upgW3b9KmvRAov3Ulrm9zvsSSRHvuf.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00007-uMDJidrpFQVLgIZJFMaknaNsTFMocu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00007-OiyYwaXY6sShNDCIjAW00VARZeD1Zu.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00008-8yp8u0lhxHsX2WJyKaX9eaei0yPgbC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00008-jMZOsCga3gDxE7FHh8qVmLAwNjRylx.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00009-izpsgTABiJYtpkdxgbbK3OcYNxhMuO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00009-2wt7yuc4xGYwSuWtRMcWmTdnDXGr17.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00010-ZpkpxiqSQ879SnGtznmLBKEPxj8mpC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00010-AH8sNSapu4g3YF7bPJPoG8DnFVqets.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00011-QtvCLyatiZpCPNVQkRHFW1vUsVgFLY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00011-u0j91sR3zi00Nhi5RN9ROo2CkHQz7v.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00012-aqs3VyCaqKQzPAhPEri8vUPGxRpuOj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00012-LDl9jiSTQ69CVlsVLfMbkVgVevWl3J.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00013-11AcZMum8jp0RQjMUw3642M7kiicNK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00013-GAwB8ISCyiWgeG9QG64wPJnDu8osai.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00014-FWY08H2Wpo6bfB9isB1SChmHFJdUSK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00014-71mse0kvS2qaKFycqj6inxGY9Qf836.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00015-LGDjqqJVc8J2hIqBl0hfy6bAfRzaQz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00015-eh7ItRN9OFiE87oIE3omSw7RpC7JTV.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00016-YXAbq4Ex3eA2M2N6IDXwy3Ni4Vhtwm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00016-nlElz6j38CTk0s8MyM1nPRP31V3b6Y.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00017-Mz0N6rA5KGU7MRAUXLliJ4EcG1ph72.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00017-AjiCNv7H29cBcIgt9mr2PGSuPZdLqO.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00018-ol7gnPu49TLVKdHbV3H2TOrZ3uCKBY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00018-SyRSIVRPtHOBBT5Ua8OPktr2VFOakF.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00019",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00019-Fsi2DKDI1d3mbElsSZd6Q4nfhslxKK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00019-nMgsAXFJLUr4mtM7yJhj0MI63zoZwv.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00020-nzXEAxyEkslcQHhIgKOOL7osctN9dD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00020-jTmKWuUTydL8KmfTgtuhRenNKJEk5o.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00021-zAYsQugZDAIeEApB0HgmEZTYiKicYQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00021-jCun84B1f6JBPkTLZehMdeE8Xw8kns.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00022-3CoBHSItJLnGCUDvotkjdjngKcURjB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00022-WAHGK9gEGpz7IbczJrIGZg7ICfSkIQ.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00023",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00023-uIKdc3TN8szYSiqBOJDCBr4KIBSn9R.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00023-WbFfYGMSalIIghQ7MfoHzjKtCvXPc6.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00024",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00024-pMKvwy3lDa2OC4awyBgC8mlyOEi34n.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00024-Lxc3rpwwp9d81MZiy4rYGtB3lrM1X7.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00025",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00025-3gUaF2vpjZDG8C1yEDZK8cZiITYSrt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00025-m9uXlUOa1iFFAhrjcMyAaSXnMcq3Fn.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00026",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00026-wiMYevUjpRmUBWLHrJXqvpbBbTy84V.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00026-XErymS2uTwOECCLCyOS04xQwJS0mNe.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00027",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00027-D1fmtND0Jq5D5xe0aWASinSgy9cVHt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00027-ZVqXhEkEqs4jkjjYAHE1wh4nWeXiCM.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00028",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00028-nkPwT9fQskOcGG7CrwAKrft11jlXWM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00028-zaSyRdTs58ASO89rmE49qoD7KqMXBf.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00029",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00029-2PuDbpvmBl7U1nUkptYLHDODKMl99Z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00029-pqSuK7tI7KVB7RntpdM1uJmlDJ3Opx.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00030",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00030-XUEG9PNlL1kkyATq3Pye8RsStCkhrh.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00030-vNCeXUFSo0lo5126IHjdFK2jNS4i34.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00031",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00031-E3DouBoh2kmFAjFrKZRKlwsYQ8mDSr.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00031-QTZOmJ6Aore8MRdh4Ywz1QJkqy5c4o.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00032",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00032-nfSfkIrrytsRnNb74RsDsruTDnII3Z.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00032-EFITKQf2iI1rjHejzZcEaL11OojnLb.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00033",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00033-7nmSrWVXvrlrX1X6LeiMcRJHtDeqAP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00033-51fUPUCtbzoKSFZzuThY9olYafQkxd.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00034",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00034-cfp3L3uPFcjNbgwCy8WmADjLlBc1UI.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00034-ygQPvnIxgScXGbxle58tdv9Xf4bhKR.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00035",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00035-kqCka9s1Ja2JgatzptjMVFVPBMHeOb.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00035-VW1KGQ7meIirZH9BXzdtQ8JUkWeEVz.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00036",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00036-Hm7n3L9y6rMXr2aL5QnEdeRCs6emyy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00036-uNiB0rgAmldDZVaUxV28ZvYH3DU6y8.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00037",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00037-Nx5mmPbe28fNxSTpylgSVCPrpgSswq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00037-PQsTBQ5rgTEhlUoFXJfLSnHLiHyH7p.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00038",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00038-6FO0Zxn5AfOPMStN2hBpFF2r7zXazV.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00038-rUbHt5lORPij267EUqaCyjTjRXFOw2.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00039",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00039-Lf1iojn5eI1J1u8cL31vVyaTvPSDcL.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00039-OxyaVPtWZtJ7fFx2PUzqDpDiOf8DIY.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00040",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00040-0glXpGFaUEAmTZbjEIHe9U4ZHCvwFX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00040-qGwX445orNka3ye5TH2lUM4ajPKE9B.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00041",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00041-FLYnMZ93GqcsZ21i9QIdBNp1bN5Hql.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00041-NjRSi6Fd44pRkSARlInhuF38Jls9R1.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00042",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00042-j4BpQgTCsizOkPyHzOwlCWqJlGY26M.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00042-CgPWgvJlRRzAqKNrqMjEz2ta2I2ucz.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00043",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00043-nERhZvss1zGqUFL1MLWHtoWCP0W8bT.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00043-lf50X5kbIBMnBEyhQiFl3SXURuTo5V.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00044",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00044-FWqxwIMI2k2KaiWOYCvS8CO2fINx6f.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00044-zxRBOklLIJthFihPuAKa9VSCLdlulE.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00045",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00045-VxdkuT3VRs98IpFM6G9WHGt0YgbDsM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00045-xouQNQzQrdxssHBn0PdnSWYvSlpYmL.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00046",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00046-YnKp6mxFCzgpUkDQnDfHWspkjGYQWq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00046-Lgxive0NnVpftthybv5xCfiLzgZGeU.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00047",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00047-RYPLJdBFfZVQBMaPkkGg1a1mW5k1S2.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00047-G4i14fxGgrVlg0dZv534OU57yeaOw9.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00048",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00048-XnO3lCCQZcV2mcM7L4mPJ3oOQaV9QP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00048-1BKfZ20Pt15usbbSTMyRKhjdwCemDC.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00049",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00049-JwbMpn5yJl5gkKNJzIavTJ55JHBWJj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00049-G7E31r2KcI3YJ1RPnUryJ1FkB2HxxV.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00050",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00050-fduZwDauILlk4pxoOOcQG5xOfjz87t.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00050-UgmnGaQYTXnNk31Bw4lM5ZbVeuWF91.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00051",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00051-vkIDWu9jNTrzgWMG1X8vZvPqCQN7ta.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00051-RIcTcrZymFbfsm7XbX5rnMZSanpoEO.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00052",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00052-Hz3pgAqN89yzuucrvmMykG2q6UHLve.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00052-yhupemWVNfCTApWkrB0psJ1HDHN6Vh.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00053",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00053-LEsAwRPEh207bz3VO99izjQfXnm97u.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00053-0QI57V6TmFzZphroHDi4GLyTvzLreK.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00054",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00054-5TQnZQTskkKAXzPOPJPrhr8wz0kmJG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00054-Ko2kM5F8JcnFDTknO4EZnvMnAOraEr.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00055",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00055-ZY9L99ppWacnFZwlGCtjdDGmk6DpVd.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00055-li2TllilqVnPnM9pvFYpK55MCzLiyI.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00056",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00056-fs0jlovD7rOKjRy0EngkODZNt55wi6.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00056-w5nAfS4tOqqRuqZKuaV4SHinp10Hjs.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00057",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00057-TVkI0jiqdJ70wpVbYeebl2J2iQZskE.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00057-XPLexc8nOA9HGqHxSx1KaRJtsOfbnO.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00058",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00058-wQhtG0naY5Kqyf8OPDMK7dRs4PlAUO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00058-qKOfXscnATNJChY92L6m8lC4HDuHTq.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00059",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00059-n8dR3eyUIy2Bf7flll0GvjbJH4A0B8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00059-fcGsoz7PUx8VDhydOFj1J0yMe8MdzR.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00060",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00060-hZrcL3Lcef2KOvz77TjpwAdblaKV3s.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00060-mIak2lK1RG49nySPPsSY5UnXEkgkaV.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00061",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00061-pCVvw0dgP4w1WtTMj4Vqk1m8L6dhMo.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00061-RUqTLyrKthnhvBpNswGGRr0rTkcPWg.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00062",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00062-LHZv2ZrrYHmPOxU20AeZgOcB0RzmLi.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00062-XzJi9CaN7agQvzLGxhqMrv2cGD8LHj.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00063",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00063-NNoHXUyEw1Mzcp6kyXkhqWCZBuTYQM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00063-eIOkEDIk1V2NMHfY56QjRSl0NptQLz.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00064",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00064-DkSuJX47vAOWkWn5GNz94zo3h9lL3d.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00064-pRAfuZv4ivZaNrPJs1gfn3KyQGAJWa.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00065",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00065-JOG4Q4rjo9JlmDTNTk8rvpdYY0RLxo.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00065-KP95Ao4grYfJ9maoAdM28O1dllA2qt.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00066",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00066-kVr97SbnOUvrFT1DLjyf4j3phW2Yil.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00066-qK2Ot6IrvGWiMToNiWNPVxzBmBq0h3.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00067",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00067-QN3EKALSkGd1WWvS5AjyXEUX1hZlAK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00067-RI1KFMVmI4tDtG9JIgEVPs87qTjyFr.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00068",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00068-jrVBGszZVGMXi58ZnTyxCoDi0uCo5k.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00068-zBWxXLi50KaVP6MV3TjQ1dufRbNWj5.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00069",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00069-PuNjUMtJKwoTLxYTMOXu7YPWfenHcy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00069-eR2f58QLm18G4vVoyMNfgTH2UnygVQ.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00070",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00070-9fDtLrjh7HArafpYyWZ4TfYprYaeBc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00070-hLDHefD6CbVK2E81x7cARITFCRu8Bw.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00071",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00071-Mm7OQ2Kq9EqCADkYegdHEwmY0oN0VO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00071-rC8aNVxf2BlL4kw1LMXfF4fs2t3jJe.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00072",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00072-tFWfqIYpxUKUe1LZMbEkwgYxqMkCdp.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00072-4K26qsEXsSEBPWfYYsp7Ar32XZ4pIH.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00073",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00073-vbCIplS4wlnzzmEep07E8ENAmVL0Gw.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00073-P8FZHa6kMEMi8lGbBXT3ATkQ7PMMSC.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00074",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00074-I38sUenIHdY9bZpoedMQjPjVEcQpd8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00074-mcynAW3v1v6wI4a6UQVSbnPo38B9Wf.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00075",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00075-ZVjCe6wmKpPaP0KRQ4VV65t14sJHgX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00075-fQgmDhQ2j3pyJn7EB3Cy1IY7NR78F0.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00076",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00076-N8OFMULNCaF1B91gOeLgyLO2537ZLM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00076-PtmqvrGKuJKVQ5x0QkinDM7zFw8taA.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00077",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00077-0LXB4sq8ddFvx47ybtRPN0CWT9QUtB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00077-pCAEtzUbgykdXvB543B8PCTHQhfMkj.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00078",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00078-nvKM5g11rIJwSjML5VHus8FwwE3P4o.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00078-h1ch2yfH87HzkqzKTCCXZ3swHRySlU.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00079",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00079-D8fMiq4tbicTIgWTI7ypKS85BfUGey.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00079-ndMhL5rMlBNB5w6iV4CaldwCKEVriR.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00080",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00080-9i5XrxbqnyHoJA4t6iYTIW3xm9jzfD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00080-hXzxrEPvI1MDzXSZlTlhzxMdWnMNRy.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00081",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00081-w1QbCXyWko2U1tQjBw0WTyYMLi2aut.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00081-Hca3i2LuXifn3x1WT9wsgMD4623BqF.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00082",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00082-FE0kaS6j0RnvMHKXMgEwBVhh9Uik0y.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00082-VshswuEMtnIehGZJyz0WY5AOJQCEFe.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00083",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00083-df2FOFX45hOC7vAlpPgSCZnA0DvZ6i.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00083-VHDchs1zk5DIamX1j2U5CuIaq1ZwUt.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00084",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00084-Ob5KCpPaxHS5IR3SOFl6e3XNrCu2gu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00084-gQrmIW1IUZTU9QuBplPsHTzhsePm31.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00085",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00085-v2ATUSqNFEnsi8UFupjEueKFd10Qip.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00085-N8VTZNf7LIRuGvYf24VkficWtN8IQa.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00086",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00086-jjwwXVbXVymNkeNDmM0RSJvVORl4fs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00086-oXMhyEEBK8vjK31XA3O2irDNk0xPDQ.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00087",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00087-X6ZXmpmBd7pF3JwZm4GOrmVIrP7rZn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00087-442SKhy5xYLKeX0HhBOoPS99fWvx8x.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00088",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00088-QqHwqjK5WviQKitUQZN04ff7HpZvz4.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00088-gqPA63FAscuuMrzOWYhFkBn6CC1brh.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00089",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00089-nLe4WlpqoWccnO8aeOZ6nJjom5fCdK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00089-ay5UmsB6Eb1yDpYmAmiRWYlgpJCcBS.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00090",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00090-xvNkzruoQFmYXTtSprQ8Qdsmb9vWn3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00090-SY8s81GQTKunStUWc4Ja8jgFnBaS2r.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00091",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00091-0Bb3oHk1OH1bb8IufLpkcuXMsu3i47.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00091-qBAdCtzFTkcPCfCxu9dJoiCOHetGXU.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00092",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00092-f71p4RWeCTWuf3pdN7YnXeLFzraHUj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00092-jG4AqlhvNMjnNnc5gE1eKxQOzCzyWV.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00093",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00093-uhAZVmTpYqAGpF1Rx2NEEydtBA7xpT.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00093-8rWh4mGXIu4hP1PSPUOF6f0uyoxkV9.png"
       },
       {
         "type": "image",
         "key": "firstexplosion_00094",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00094-PqKa3aqWl9uEcrP3cxiI8PEtDNTeMu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/Explosions/explosion1/firstexplosion_00094-ZgmdY0MnUQrz7mmEF2a4z8HDhsNZyU.png"
       },
       {
         "type": "image",
         "key": "groundfire_00016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00016-e27h8EYaqxyTiRGBWmc9A9CHhg3UcD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00016-te03uIXBhIaqblm7ItZ0uUpGO37bUe.png"
       },
       {
         "type": "image",
         "key": "groundfire_00017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00017-xbVK1uSrVifbJeAEdo8etSIzqsKBr5.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00017-y33DrONfKZeEp6LHFublDf4wBlfhpF.png"
       },
       {
         "type": "image",
         "key": "groundfire_00018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00018-FgEgxfCnKHTmr314iCQ2qz9CwfIx9J.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00018-bqFyWGTdMN8xh0LsdDCfDnUfJDkSHk.png"
       },
       {
         "type": "image",
         "key": "groundfire_00020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00020-OkHMOPeZCPicvssp1YUhQVY4Uo9N7u.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00020-FjCxs7yzvDFvRIBjCoJiziY9cF0TQV.png"
       },
       {
         "type": "image",
         "key": "groundfire_00021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00021-E1869FJ4fooxiVYeeID7syNRg83Mbm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00021-RVJN8LyAVcWnRvk723eFvt1Jm00IGK.png"
       },
       {
         "type": "image",
         "key": "groundfire_00022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00022-SOm6m6iOANJSxLfWjWJgv64ftZVKXS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00022-uuy9VzP8fqe2g0mU9EuKHRLD4hoBB6.png"
       },
       {
         "type": "image",
         "key": "groundfire_00023",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00023-BlbajH8BIKqdoPwnpbdKdZKaffdBVZ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00023-1jFaXrryhISgFxUrsXKxp4CSz1fHPK.png"
       },
       {
         "type": "image",
         "key": "groundfire_00024",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00024-VL3ypGyaHZYDmGpZ2PGR2bOtnSNvxe.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00024-WOVoHS6gfXRdFwDa6NM3vlrjxzIEon.png"
       },
       {
         "type": "image",
         "key": "groundfire_00025",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00025-luVEeg0EpHvDKZTLiNH24NE1wErDOK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00025-sXhEQe5FXxgfV6vt9kER8zEaKrCrF7.png"
       },
       {
         "type": "image",
         "key": "groundfire_00028",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00028-ycT7oxgmgTvn7MHqnrp2LTzJhRtJTI.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00028-qgordl5BDX7cNfl32L3BIrXAcQEUZz.png"
       },
       {
         "type": "image",
         "key": "groundfire_00029",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00029-6Kfqn4dEsykIc57zIycHUtd54ECQJG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00029-rT1SeLbdEvwUN9GdfKQArznOJDTTHV.png"
       },
       {
         "type": "image",
         "key": "groundfire_00030",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00030-mdsyYhp7j5ybhkJPe48p9ODOPwJfus.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00030-jnlVHKEssuyBuDg9FN0bJB6dyLb5UC.png"
       },
       {
         "type": "image",
         "key": "groundfire_00034",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00034-QolwpxzRjC9YmkjySkkNhNnnVjAbvD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00034-ysMgvhhAwG5JhDeJPeDzmEwWsVzF2e.png"
       },
       {
         "type": "image",
         "key": "groundfire_00035",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00035-JKNvDikZz3Dztx11XygqXcBv143LWC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00035-sxI2U0vdBImpVfImcA9ZIrAbYPnrCR.png"
       },
       {
         "type": "image",
         "key": "groundfire_00036",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00036-EQ0zbEYPfafN9NIWLZC4TTTJQ9dKvH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00036-TYnd7YGpiDOs1Lncv2mAuN6vXqLt38.png"
       },
       {
         "type": "image",
         "key": "groundfire_00037",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00037-nW372PpElSsWSZRu4tvKBEzweMVYdn.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00037-MHtbiLHbpDu5N8DA7F6lKx2LcGjvlT.png"
       },
       {
         "type": "image",
         "key": "groundfire_00038",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00038-W5pOWaRp0qNihCHU17XIIpOIyfMxHD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00038-DXCmJGu7R0ZVQ1wnA0QL7alAdLGjnZ.png"
       },
       {
         "type": "image",
         "key": "groundfire_00039",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00039-5Pn6fA7rAXD96umNcy3BcejNSWGgTg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00039-BliF1nkF9bHOIxww2qrSgMPQVotF3o.png"
       },
       {
         "type": "image",
         "key": "groundfire_00040",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00040-UvXPiErzFq78kx4Sw0FZWa6IK8IDxY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00040-ZOiS032tUUAefWiWzXVEEa0DIXat0i.png"
       },
       {
         "type": "image",
         "key": "groundfire_00041",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00041-hr84cGYmH4qWKptvcSAtPEyiWuk4WW.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00041-a5xtMkUmjgrFOonT7CyEvAHWkmcgWQ.png"
       },
       {
         "type": "image",
         "key": "groundfire_00042",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00042-m0bmUpnY5kQGKsntYG7YxqJBbN0ZGB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00042-7jomWh5dbnOypTyt0ttjpfawkJrdPH.png"
       },
       {
         "type": "image",
         "key": "groundfire_00043",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00043-hR2ytY92masOaI1xWRxN0HUvzvkiVN.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00043-GfXHush4Dv8NjKv1VmSJweIZywi9Sf.png"
       },
       {
         "type": "image",
         "key": "groundfire_00044",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00044-HasNRSo9r71hxQbMUWMRZFbzgrCdUX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00044-5jeQG1NimBc729duXaNUbufXxBvre0.png"
       },
       {
         "type": "image",
         "key": "groundfire_00045",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00045-OX6VmfULPx2pNfyIFgPUOEbTPZ27QN.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00045-Mz4ULTGD4wFfCoX1uwqQKXqlwgNuPG.png"
       },
       {
         "type": "image",
         "key": "groundfire_00046",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00046-oxgN1v23zpzAzQQjyfP8uc5qdmmetx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00046-CBheQ7wVmgDZCc4AZjNo6oYpblGJRl.png"
       },
       {
         "type": "image",
         "key": "groundfire_00047",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00047-Mto5Yqb4em0LvuR5gj0sRKdP2zwOsB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00047-VxJv6I4Blt5sy2OUlymDH3YsaUnzmJ.png"
       },
       {
         "type": "image",
         "key": "groundfire_00048",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00048-GDuwg4rNqjK3ZfSbsk8OR8DStswibQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00048-OWvCZZHjr5tQaKI77dZQVIiUBJf4Q7.png"
       },
       {
         "type": "image",
         "key": "groundfire_00049",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00049-Cu9ZSQ1MnsHx0OIccv0b93zpKqSZrO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00049-FfXZemUnIdQCbt0MMW9nNDPbKOGHtR.png"
       },
       {
         "type": "image",
         "key": "groundfire_00050",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00050-oD1AvuE51r4uxa2ZY8zfULONGkWXz4.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00050-iVB9BMf4OH1jErqV7KB9ox8WVhZ0sT.png"
       },
       {
         "type": "image",
         "key": "groundfire_00051",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00051-hUPFnv86RMp8hCcTOuQ8LmQncCAOA0.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00051-pQTjvjPPnEUWc9AV1xG0m86OrG4u2t.png"
       },
       {
         "type": "image",
         "key": "groundfire_00052",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00052-SLVwpzCpNT3BTzV8KBIK8nHulbIu0O.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00052-ipmO266Z9DlpE01sovj0HxQmDv9HR6.png"
       },
       {
         "type": "image",
         "key": "groundfire_00053",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00053-Fxcng8HptmD3Hfu11JLqJYDoBCIwhC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00053-xLveZ0qHAks8eEHG8AwDlEAfPdQ8Qy.png"
       },
       {
         "type": "image",
         "key": "groundfire_00054",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00054-5QgwPYP2kv4rhKfpdbINjdk6EGtByC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00054-XNP0jkazpFMZXMBnPhibDX0xWkcaNo.png"
       },
       {
         "type": "image",
         "key": "groundfire_00055",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00055-YoGT0GFIKocrxBy6m9grydr2ex326Y.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00055-VepVsmvYO3k8vEb7nC0mjUT5pyaQSy.png"
       },
       {
         "type": "image",
         "key": "groundfire_00056",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00056-h4sLNJYFb8tuExBX6Namykint0pPx0.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00056-CSBW22lODoSgi0iVkba18GGBLEZ831.png"
       },
       {
         "type": "image",
         "key": "groundfire_00057",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00057-4WDPthWZ8ks1AaaYjSJjR2ltIBPZ3F.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00057-Zpwf0gZdr488XUeQcRi10zWSApM40y.png"
       },
       {
         "type": "image",
         "key": "groundfire_00058",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00058-SF5O3bZ4wFG2TRUf4KkWR6me8gN58v.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00058-Hb745ewqbYnqHB0JeDUTFpVSYWUZrE.png"
       },
       {
         "type": "image",
         "key": "groundfire_00059",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00059-5uIIowGWRyqkdU87SgfCdkubOJob5g.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00059-isOC08RQEGAk53f0zv80M3a8Pa0pVT.png"
       },
       {
         "type": "image",
         "key": "groundfire_00060",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00060-zR4BBox1mqCd7Dn4DX00rjvObj5igO.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00060-4CV0lvTZYlFlVXM5Uks15Ge1q7YDEL.png"
       },
       {
         "type": "image",
         "key": "groundfire_00061",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00061-mzMlp9S5hPFpq0W84DhizGdDoMwQ1d.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00061-Szgq2KIirnUVYSMerMCNLWDErRh25O.png"
       },
       {
         "type": "image",
         "key": "groundfire_00062",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00062-Ux6RSJOfBv3EHM5ATMpkIQ5dOR2XCv.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00062-tITcF7uRPpNgrzaOsgiSjywJVmWXpo.png"
       },
       {
         "type": "image",
         "key": "groundfire_00063",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00063-70nJAuUi24eqD0cjFLplyiLqwLSeum.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00063-eqGPraExaUvy8ig4goTwzLCZMgwo6b.png"
       },
       {
         "type": "image",
         "key": "groundfire_00064",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00064-t9ZYmdaIvr78xsHIft6N2ceVXQDNHs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00064-S2J0ISZ1jArr34a0TXYNo7FqNfBgWM.png"
       },
       {
         "type": "image",
         "key": "groundfire_00065",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00065-9JOOicslBJmqwpAktWnfUmkKW3nohF.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00065-RWBQGvU36jJwvz7ikIj8jic1bO6o8d.png"
       },
       {
         "type": "image",
         "key": "groundfire_00066",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00066-XBDdLIihKRNn43eCa9WPZHgsGmmpQI.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00066-Zsyl0QgIB2lgSQ14TOowpo2C8n0SBr.png"
       },
       {
         "type": "image",
         "key": "groundfire_00067",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00067-OsvBCrpFdpq7W0yUKQUdEDE2UmbKmX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00067-7Ot1o4FngP9lsC6RpUH7V1GCQBsTIu.png"
       },
       {
         "type": "image",
         "key": "groundfire_00068",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00068-sRvB3MUuo6bQmj8xarLzPTcN14SRZb.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00068-w3eJHHrnW7b779eJ6UH5gpF32X51rY.png"
       },
       {
         "type": "image",
         "key": "groundfire_00069",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00069-m7NpZVTWdlpUvVOdkzJ17rFb00T8Mu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00069-G4jTCDmVc4YUAx4YFC5B0VufDqNSuO.png"
       },
       {
         "type": "image",
         "key": "groundfire_00070",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00070-nY0jcfTKZef6gL5SHXcTmgunB10Fbt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00070-zXggsIZ9rhthEwB9SD02ukG1q2urTf.png"
       },
       {
         "type": "image",
         "key": "groundfire_00071",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00071-9kyOWOON9xVFG4orLxiwK4vxIdJiXj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00071-KyCDP4G6C6cF3k8FgVPuHxltTumUta.png"
       },
       {
         "type": "image",
         "key": "groundfire_00072",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00072-7nuHLsROWJpqwplLpl3jVfbyXshTat.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00072-bzNt28R0TqyFLs5Lz1RnaA8mxNbCqB.png"
       },
       {
         "type": "image",
         "key": "groundfire_00073",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00073-q3tT9PWvTM9Iwl1QC1eyA0Fob82JK3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00073-ND0LERwxXbMC2j9g6UuRaHAU2HPQaC.png"
       },
       {
         "type": "image",
         "key": "groundfire_00074",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00074-VXkbOpEw8vhr1CPVCDPGVym9cYIqBt.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00074-DrYBMGZyaFuUUHQ8TQcxzGw39IodiJ.png"
       },
       {
         "type": "image",
         "key": "groundfire_00075",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00075-HWmwMag7YswDhz9cOaoXTtEV22BVBM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00075-SI4HmkhjZPYzXmymaMvrbAmoPLA8p8.png"
       },
       {
         "type": "image",
         "key": "groundfire_00076",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00076-1z3DbFOkXMSncRiJCCOIaKjOOtH1AB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00076-ZooQKgXpV8cG66RfvVBAOvxYcQLvuw.png"
       },
       {
         "type": "image",
         "key": "groundfire_00077",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00077-BxMUqQdbEsDOD09Eo1RFr21zbtvhXH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00077-omnB6WFnjG0u6IRttYMjbrP7grmbt9.png"
       },
       {
         "type": "image",
         "key": "groundfire_00078",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00078-eoqEWMcm4hMI569U3YxjvTocmcQSny.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00078-UgaNvBRbW8SxCdvqbsBVrMLuFDQQvL.png"
       },
       {
         "type": "image",
         "key": "groundfire_00079",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00079-SG4FLQq9nWCrG1qvAhRgFsLxCvDlfp.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00079-PU0goLxK86PUccfkkbpRjAQ8TytTkd.png"
       },
       {
         "type": "image",
         "key": "groundfire_00080",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00080-Qlu7nSBavpLAww9TrPyyOlfM5lxdRz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00080-pqzm0SrBlZ5Obo4kcjeWtSv4ljbhNe.png"
       },
       {
         "type": "image",
         "key": "groundfire_00081",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00081-9oyGvKn505J8Ko2iOkqMoHdzEJ4qO8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00081-WlWz1ro1IddOJ6J3X7rC6Sim2DnnG6.png"
       },
       {
         "type": "image",
         "key": "groundfire_00082",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00082-TLVgO3kA2Kln1jsBW6wcIKrVuyV2co.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00082-jAKZu4Oo8k9gAwJhMdNvDM2a23v7Bz.png"
       },
       {
         "type": "image",
         "key": "groundfire_00083",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00083-OC0qGsZW4SfZRGu5Ls1Sn71Zikh1jU.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00083-DRdJbMOiRSkDAh8FxIMzVNI9LjOsez.png"
       },
       {
         "type": "image",
         "key": "groundfire_00084",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00084-EWW7aPrj6tFVOghMHd1fH4R2WjhkYb.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00084-HsJdjcHlAqlIhdlR3oPaeWZPjJHcne.png"
       },
       {
         "type": "image",
         "key": "groundfire_00085",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00085-m4iXeG6oKAD7EqnzmRyXCZfZUSweEH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00085-SYI03WnsKXIYlChckK9FjNMpUF3P75.png"
       },
       {
         "type": "image",
         "key": "groundfire_00086",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00086-afK48GyudX3ozR5pUFkKARfBpVqOEP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00086-gvQxYP90hXltAmrSItsdmRg86rTRf1.png"
       },
       {
         "type": "image",
         "key": "groundfire_00087",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00087-3gyBkSSCrwUEc6vtUAEDIPaAXRwXGj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00087-j1KJ8WTmzzsNJBm8MLFXJhVfx6X2f5.png"
       },
       {
         "type": "image",
         "key": "groundfire_00088",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00088-y5uo4EqLBnYaXuena22PGyHa5PBB0u.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00088-20pEva4dBmfi3DcQgSlAng7tvPmeE3.png"
       },
       {
         "type": "image",
         "key": "groundfire_00089",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00089-mspIiUFVyPCtJr6nQyxshTL95ULmFj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00089-mD2XrOZHolnfB3obU4IZac56HUxp4N.png"
       },
       {
         "type": "image",
         "key": "groundfire_00090",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00090-i3BrXdx2v21tZnGzmkwSRQQGB20Jzm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00090-e7iCPWAh04to9ABmOeUvLZYyRtJGJe.png"
       },
       {
         "type": "image",
         "key": "groundfire_00091",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00091-zKgFq1nbPlCqCQMC3EvdoysR80icOj.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00091-2SLWSJFvLbKLk6LwBKstLtpzpnjzSL.png"
       },
       {
         "type": "image",
         "key": "groundfire_00092",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00092-aJyXcxkYil85aE5r5MvW5QbFnJ4sxv.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00092-sEOj3ApY4oUjz7wg879yHLTV6iyzEs.png"
       },
       {
         "type": "image",
         "key": "groundfire_00093",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00093-VuWPRgHjYNF9gZHdCYMdfkfzWP2cvx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00093-sH5op7xABSAJ7D1XEhMI5DEikK9c14.png"
       },
       {
         "type": "image",
         "key": "groundfire_00094",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00094-gVUYSN0ljLH0c3F4arcj6svWEMfwSq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00094-SxLHkhiuzu6R2j3twUWuKudeyuJrnH.png"
       },
       {
         "type": "image",
         "key": "groundfire_00095",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00095-JHvgW2LMcIwKqBseUNTcjkYiJ2mwTP.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00095-ysoPuvySb4wzsbN8KgKqwnIYpLWsij.png"
       },
       {
         "type": "image",
         "key": "groundfire_00096",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00096-Vmu1v9UUmfnnmMZmM7n00TzZ25e4UD.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00096-xyQnY0N057vrLGkE5LcMX91qyGMHQG.png"
       },
       {
         "type": "image",
         "key": "groundfire_00097",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00097-eqoSk2cIucGgzxpkneIejgHYZadAwX.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00097-MfMj6EC804mSyV63pfCa4ef7FJoBTm.png"
       },
       {
         "type": "image",
         "key": "groundfire_00098",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00098-xuj9onQIzseJrAdGEc163zZr095gnx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00098-emIImmvkwAZs25S1GY83ZDoBWrU7cX.png"
       },
       {
         "type": "image",
         "key": "groundfire_00099",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00099-MT7NUP3tWyXoHdDR5hOXjguQCVbls9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00099-4vfPWHn6YeCRr2AUtt7PowwInMfLs3.png"
       },
       {
         "type": "image",
         "key": "groundfire_00100",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00100-lgrwH12vDITid3qJtjrWV9SI600gk8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00100-9X4bdQxtSZbcVw15oXcJ3bOhQFQ4lI.png"
       },
       {
         "type": "image",
         "key": "groundfire_00101",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00101-bEDNxksGbJgCymEtIRrzwIruMXVFR1.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00101-10gDDipRLUE5ySCoN5Mn5gzQ3ZLO6x.png"
       },
       {
         "type": "image",
         "key": "groundfire_00102",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00102-A8TIRydI0xZOwHsXdppKYwoo9tcfTG.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00102-3kfUCoUEzXM5dquD4DAZRRV7UJgfh1.png"
       },
       {
         "type": "image",
         "key": "groundfire_00103",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00103-e2kfVQBbjdnsOmzHAYIViewyvjeJAq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00103-nrAwRt4y2V8u8m8MYVOnQPIBjKP9w7.png"
       },
       {
         "type": "image",
         "key": "groundfire_00104",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00104-ZhvfX5ike7StV9stxtHmlbdIDhxwho.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00104-djNiHOLaxBMjbVDXLhRvToxo04QL2Q.png"
       },
       {
         "type": "image",
         "key": "groundfire_00105",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00105-7MPPSuB3BTJkWZlI1Qac5Hib46L8Bw.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00105-X9iKj0aaBjv6pTAZ0zxInK2s3AFxfj.png"
       },
       {
         "type": "image",
         "key": "groundfire_00106",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00106-SO4drG1Nirt7HsvcxKYhwPY1aGRLVK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00106-jw8MGTlyjkHK7fdjoY7BbSpsRMpSx4.png"
       },
       {
         "type": "image",
         "key": "groundfire_00107",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00107-SFSGkPPGWkDHOMgoRjAdc0EzCy7MG9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00107-2xbc7X4Bx5eSNflm22mJl05I7PTESY.png"
       },
       {
         "type": "image",
         "key": "groundfire_00108",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00108-PePOqt4TFC6qN5yp2P0cCDxD1Pc9Hz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00108-3pAsEJnLsoPMI49peNQ9eY7R0yOh50.png"
       },
       {
         "type": "image",
         "key": "groundfire_00109",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00109-PqUtDwRM81qlBzMgEXpFUd9RMr9E0x.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00109-KXTK8KYw8JhnP0gtAIXa2xktnXvTnE.png"
       },
       {
         "type": "image",
         "key": "groundfire_00110",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00110-n7lmVueK9wZlBzAzUaG0MizGBhfDMg.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00110-JySh5EQA6x0gPLWIgXEixNFHxpzvxU.png"
       },
       {
         "type": "image",
         "key": "groundfire_00111",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00111-y9fcoQ93uJuuz8dQyn9XhqOMLGnRms.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00111-89wBYtyKi2gFYBLt6sonvs9ff8ZbO7.png"
       },
       {
         "type": "image",
         "key": "groundfire_00112",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00112-yf4dPxi9JCXHzUiYk93iiG2uSmQY9W.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00112-ll0vqVbRuztoIl0ZAOuKcapUIlCw6q.png"
       },
       {
         "type": "image",
         "key": "groundfire_00113",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00113-L4dbx9wiYjYW0onmNh1XaaGmg2YeCm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00113-YwzJ3I93Kx93Q6RKzcyQPWmo8dlKTg.png"
       },
       {
         "type": "image",
         "key": "groundfire_00114",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00114-IoQWwfgHntxE3Kq81WfKpBEEhzppa8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00114-pLOy30cz6eYRwFQRNQbScY4vCHVab3.png"
       },
       {
         "type": "image",
         "key": "groundfire_00115",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00115-7O0ar34XjDyM6qms5SHmd8LztLdrk7.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00115-NfreJJdyWDljyLe1TWVbBcfJatnknu.png"
       },
       {
         "type": "image",
         "key": "groundfire_00116",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00116-4oucdg8oxozfTUmhU1WT2gLZpwipIc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00116-NZb5leYLdG44prWpKs3LaJFTNrcLsI.png"
       },
       {
         "type": "image",
         "key": "groundfire_00117",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00117-SnTvxLYpfrzMyrlfcs4u5G9bzbW7kq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00117-FaVpNkhNXQ7juptF2vm0JJARLlyMo5.png"
       },
       {
         "type": "image",
         "key": "groundfire_00118",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00118-pjetkxS1TXOsBwe46JTQSBw3aaiy9k.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00118-ySN8XhOEKfhIRIJUaByZSV8jhYziMH.png"
       },
       {
         "type": "image",
         "key": "groundfire_00119",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00119-aJ3Uca1wEJGolaMfKtbvu6c3BwO0vR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00119-ab6u5EQ0s35VMJHPMCtFf44OeGzQrQ.png"
       },
       {
         "type": "image",
         "key": "groundfire_00120",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00120-lNg1dLe26hi28CwhBKUrptTNbi0SYR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00120-H3ysRghiBQZZ0nfs9NzU8cojFyU5hX.png"
       },
       {
         "type": "image",
         "key": "groundfire_00121",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00121-f0DPO9SquSpfCGS6GsxxxrUAcV6hCa.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/GroundFlames/flames1/groundfire_00121-UOQIBDzM3SThfyM5n0W7jgNyVfwUpK.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0001",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0001-DqCbpRTS2MWataI6oIBDQlWOfCNcww.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0001-swMeGIfFLUdDBe5Zylu7QeUcL0FmsC.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0002",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0002-b372otKNdqEVlHG80rQwmqTmgspRw3.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0002-c9q0fPTRrgVYhZ3RFzGP8FIFKg6Dcf.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0003",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0003-wFFER8HvH75wnm1DVpHRXbcdVuZCzs.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0003-PZI7wcsZffLdMl5HRAPVJlle7eQQgs.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0004",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0004-uE0HumSWsj3ispr2kya0DZPCJf7eIJ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0004-LiTbBNcpWk8ifQ95n3kjohIpxjqMxP.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0005",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0005-VXsFEIHIMzHldNKQDVFT9Fy9zuGm3q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0005-zqx7374EZplSqIQ7nWrz9SuUVPbFVc.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0006",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0006-4iiywtSAPLWFEyi7QF82GAaOW401MH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0006-zXRc2KPsw4BKgmvARhazaZ0l1WA7gI.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0007",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0007-u7PDNAWPNZ3cSXjswuxCP0VBz4KI0N.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0007-NqHMPzFBec5vFhwpcxRtdTObXlffOW.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0008",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0008-8vBMJX812R2gJ7uRwxSWPaFJ7TKLhy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0008-xnTWwHTLFOaLU6gUJ0N7XgVvnIbIn2.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0009",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0009-qyB8HD7csfyrIDC5uYv5vcXRsrKyJI.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0009-KVj2ScerVjVQDdMRmjNunAaLdB4Wip.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0010",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0010-ZoIjG2EUXUuFb3FMWmCrvWgu9Gk2ZM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0010-J5ynpkJpmiDGHhx60jXsUfcxRrpRev.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0011",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0011-8BoMn8LpbwB0L2q4QTYiguVlcVKhNZ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0011-sh0xVAl16r8t2VaAMJHwMDo0K72j7C.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0012",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0012-9TLWoDk0hauzjgJWWgeIFA4KbXhqAc.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0012-MLscloZDsrP9psOxKpRJwwAkGweUnZ.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0013",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0013-Wvw0OhjfJbem0y1ewgV8DCuAayWvE8.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0013-PBfcmzp0JAlzea7G7WAoPtrfyvDpyW.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0014",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0014-s8O8mcNbonVHdXy8OTt7Y2nlBMc5Xh.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0014-kjRu4lENpdHnuVvsKjOyA2y36Eogpu.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0015",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0015-JlEGonsiliyGdWHcMx2MdtJBJJeEkF.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0015-k8ergEofpaQUtf7bsLoL6zIeA1f8vH.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0016",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0016-GnxCyxZpcGrpUkqAM8yKng35vwVbG5.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0016-4MgfXI2DkSj4iDNDx1asjv9WyVCuZz.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0017",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0017-04BfNjsqtr8oEUYipaZgwznRiLy7xR.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0017-PUFwfn7cSBsJc5xUZTScaPgf7mhWbD.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0018",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0018-UoUCCFMx1zLQie7N0EFhS3p0A5wfQK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0018-PJaZt4a9WQHsGI9JqyJJpuLd510U9g.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0019",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0019-IgS0qZS1ew3ozoyyyPpJSvWSeqP26Q.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0019-BCTesYxwOX9m6M25XaglglvWLoq6Dv.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0020",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0020-gWO8V49W3T7miP3kjzPmn5vwEthA3H.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0020-SMqaHMKwUtdB9vEU49ETmyGdRJHMEz.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0021",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0021-xFzzQ5HExbPwdA1eDAeqMCResU06mS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0021-gTfCsO7w5ISec76PNsu7UUupcpLY4G.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0022",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0022-pju6ww5HXpOFVGKMp7NAVBVQ8riFzL.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0022-wo2Pb779anqGAAgGtzJUZq4Q43ixcV.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0023",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0023-uNTSRJY5ajBmNXdiGd9Ok3l93moo9J.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0023-4S6oXW7VKWowtubcHJME5UIH4lQ3ZN.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0024",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0024-yEM0cnZDzJmV16xZfdYeHeHqxuLiHb.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0024-a7S1tzPlEQqQegs7MhC4ZQEMYDpDI5.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0025",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0025-ChVmtuUmXUQ7ZciQWW3TYZBQbVGKnM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0025-p2vxImQcZ7FfJizAzZyV2bxbkP7qRM.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0026",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0026-673ZRUxHIAmgJliYehNAHecr5yrjrS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0026-ASglzPc2gT6mtzupQZ14cDEPmAUau2.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0027",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0027-jgAsh7XjfHGGttuYipFRNygdLCnsDQ.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0027-gcqbkaVxxCvNQIM9Uhsc7OvTUYfkAs.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0028",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0028-RTZVWsDLooR1QmTkqetrbTMZAjdKHN.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0028-l0fAfSFQ0OrcKW5tc0G9eZslAwacKz.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0029",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0029-z9I5NDEgzUtlNGy11t33DFyzk6ULZm.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0029-nO4Cq0qQxuE6OXSX094RvCj6hvdbE3.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0030",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0030-Esw5wsrRJ2V7vxT44aBAgMctnyLBaz.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0030-2pf6mlShhWaA0WCI9nW9N36JipMD19.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0031",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0031-nVpoD9QPvhKZTPCn0KNgNz74xW6vtu.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0031-KwIikw2Lji8iv2xrjtxOBp4cSrPkkp.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0032",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0032-hW0K6EHzNbeW29maiTX5ZHeHaSpxEK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0032-a9EFrFubZv0bq4CnjVJMei1o3FIaiN.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0033",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0033-Ch2Sbpu6ZgzB5qGZGykWyAVHO1WEOx.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0033-hg1QqoJQyhXzWr8i9ruoCP41v8lcWo.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0034",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0034-G0pnlSdzVzysJHUz6GlET1ewAZUhvq.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0034-kCXmQz5QXOpJuyUz9vXAoKpvig2dk2.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0035",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0035-b1NymfmvpUTvT0QV0tPFRWtORu1EKY.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0035-UXUyWe6lGPAyWCQda3xrZSxgED6nRa.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0036",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0036-pgpDYFqOTic7MxBpJe2hSsF1dWmaSy.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0036-HyrTaEiHoUop0Ee6121NweEQQNPXBf.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0037",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0037-F5Zl8X1XTQy8JWbLkq5s8xbwSqYndH.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0037-vlgIlZRZmXxoQ7iaEQIYgfWUMLQ4Z2.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0038",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0038-j0DyebRlwyhzcEIoOHrRQLNcMO7IUK.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0038-6dRifbyqPisvcY80YaMB96Ziv314n2.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0039",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0039-vG9CVs2EblEGunMi0gqOIYsOy4uS00.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0039-hjt3TiAZq0Vz7eCc995xniUwKfNUuq.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0040",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0040-sRBii9Il63fIobdsRGUnYHrLmzUlX9.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0040-p1Hd8vCO92Eh7JBMkP3CyeMrl2lXQi.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0041",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0041-q8fTXUflklyj2Uv8JYJKH3EdlhzVaM.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0041-DMwN2B6sOGXOcWdwBDxOhyuRWvl3Hx.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0042",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0042-7QBGZSpb9EVqc3cFridB5qs72OT61W.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0042-8rwnxRfo93ZDGjg35krzKutBURPgDK.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0043",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0043-6CNWw5NOcM5vtRqrlVBTxp2KZc4URp.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0043-BObqWqJfgISmmH54lStmHaeNent4Ut.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0044",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0044-r8aGoAOz0EIK2fH12UBT43DSAFEeGS.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0044-1U5ez82QwKFu4DMmEI77ucU9hw1Yxj.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0045",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0045-sM2OvTooGSzyoCn7RLlOCCNbhdwq2L.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0045-t3tAuwwRQ7oI1enazb8x0cwgw3X9c3.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0046",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0046-3k7e9YIaKPSPtvqAjS9je2VltqgeCC.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0046-SL4hp7jmfc6Qf3ZsZNbgaL4dtJUga1.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0047",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0047-wUZthg1GWEMOh0jbdH47bsPX1P7CRB.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0047-coQeDDCU4a6eKDd7ixpHMY5WagbzW3.png"
       },
       {
         "type": "image",
         "key": "SpinningMoney0048",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0048-UHXxtajNR2jTHOP0DJFGdftR53zp3t.png"
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/effects/coin/SpinningMoney0048-UDy3nye21TtWJJyQx697Xnp0XMqVr6.png"
       }
     ]
   }
