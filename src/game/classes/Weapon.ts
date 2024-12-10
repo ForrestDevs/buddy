@@ -248,7 +248,7 @@ export class Weapon {
         name: "railgun",
         fireRate: 1000,
         burstSize: 1,
-        damage: 4,
+        damage: 34,
         isThrowable: false,
         specialCase: true,
       },
@@ -262,7 +262,7 @@ export class Weapon {
         fireSound: ["raygun-fire"],
         impactSound: ["raygun-impact"],
         animationKey: "raygunFire",
-        damage: 2,
+        damage: 4,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -335,7 +335,7 @@ export class Weapon {
     };
 
   private static CHAINSAW_CONFIG = {
-    damagePerTick: 1.5,
+    damagePerTick: 0.8,
     damageInterval: 100,
     range: 150, // Range in pixels for chainsaw damage
   };
