@@ -262,7 +262,7 @@ export class Effects {
                         this.scene.sound.play("coin-pickup", {
                           volume: 0.4,
                         });
-                        EventBus.emit("coins-changed", dropAmount ?? 2);
+                        EventBus.emit("coins-changed", dropAmount ?? 3);
                         coin.destroy();
                       },
                     });

@@ -55,7 +55,7 @@ export class Weapon {
 
   // Add to class properties
   private static readonly FLAMETHROWER_CONFIG = {
-    damagePerTick: 1,
+    damagePerTick: 0.5,
     damageInterval: 100,
     range: 250, // Adjust this value to set flame range
   };
@@ -83,7 +83,7 @@ export class Weapon {
         impactSound: ["throwknife-impact"],
         fireRate: 500,
         burstSize: 1,
-        damage: 0.4,
+        damage: 0.8,
         isThrowable: true,
         specialCase: false,
         projectileSpeed: 40,
@@ -99,7 +99,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["deagle-fire", "deagle-cock"],
         animationKey: "deagleFire",
-        damage: 0.5,
+        damage: 1,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 75,
@@ -114,7 +114,7 @@ export class Weapon {
         fireRate: 1000,
         burstSize: 1,
         fireSound: ["grenade-fire"],
-        damage: 0.8,
+        damage: 2,
         isThrowable: true,
         specialCase: false,
         projectileSpeed: 25,
@@ -136,7 +136,7 @@ export class Weapon {
         burstDelay: 400,
         fireSound: ["tommy-fire"],
         animationKey: "tommyFire",
-        damage: 0.3,
+        damage: 0.8,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -152,7 +152,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["throwknife-fire"],
         impactSound: ["sticky-bomb-impact"],
-        damage: 0.7,
+        damage: 3,
         isThrowable: true,
         specialCase: false,
         projectileSpeed: 25,
@@ -186,7 +186,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["rpg-fire"],
         animationKey: "rpgFire",
-        damage: 1.0,
+        damage: 3,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -202,7 +202,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["mg-fire"],
         animationKey: "mgFire",
-        damage: 0.4,
+        damage: 0.5,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -218,7 +218,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["fire-bomb-fire"],
         impactSound: ["fire-bomb-impact"],
-        damage: 0.6,
+        damage: 2,
         isThrowable: true,
         specialCase: false,
         projectileSpeed: 25,
@@ -248,7 +248,7 @@ export class Weapon {
         name: "railgun",
         fireRate: 1000,
         burstSize: 1,
-        damage: 0.5,
+        damage: 4,
         isThrowable: false,
         specialCase: true,
       },
@@ -262,7 +262,7 @@ export class Weapon {
         fireSound: ["raygun-fire"],
         impactSound: ["raygun-impact"],
         animationKey: "raygunFire",
-        damage: 5,
+        damage: 2,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -278,7 +278,7 @@ export class Weapon {
         burstSize: 1,
         fireSound: ["dynamite-fuze", "dynamite-flick"],
         animationKey: "dynamiteFire",
-        damage: 0.7,
+        damage: 2,
         isThrowable: true,
         specialCase: false,
         projectileSpeed: 25,
@@ -297,7 +297,7 @@ export class Weapon {
         name: "katana",
         fireRate: 500,
         burstSize: 1,
-        damage: 0.4,
+        damage: 1,
         isThrowable: true,
         specialCase: true,
         projectileSpeed: 40,
@@ -313,7 +313,7 @@ export class Weapon {
         fireSound: ["kar98-fire", "kar98-cock"],
         fireRate: 1000,
         burstSize: 1,
-        damage: 0.5,
+        damage: 2,
         isThrowable: false,
         specialCase: false,
         projectileSpeed: 50,
@@ -335,7 +335,7 @@ export class Weapon {
     };
 
   private static CHAINSAW_CONFIG = {
-    damagePerTick: 5,
+    damagePerTick: 1.5,
     damageInterval: 100,
     range: 150, // Range in pixels for chainsaw damage
   };
@@ -344,7 +344,7 @@ export class Weapon {
 
   // Add lightsaber config similar to chainsaw and flamethrower
   private static readonly LIGHTSABER_CONFIG = {
-    damagePerTick: 8,
+    damagePerTick: 5,
     damageInterval: 100,
     range: 200,
     swingDelay: 300, // Time to wait after opening before swinging

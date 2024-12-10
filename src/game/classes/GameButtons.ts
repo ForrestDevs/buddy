@@ -16,6 +16,8 @@ export class GameButtons extends Phaser.GameObjects.Container {
   private spacing: number;
   private muteButton: Phaser.GameObjects.Image;
   private muteButtonState: "muted" | "unmuted" = "unmuted";
+  private infoButton: Phaser.GameObjects.Image;
+  private infoButtonState: "open" | "closed" = "closed";
   private socialsButton: Phaser.GameObjects.Image;
   private socialsButtonState: "open" | "closed" = "closed";
   private socialButtons: Map<string, Phaser.GameObjects.Image> = new Map();
@@ -52,6 +54,12 @@ export class GameButtons extends Phaser.GameObjects.Container {
       .on("pointerout", () => this.onExtraButtonOut())
       .on("pointerdown", () => this.onSocialsButtonClick());
 
+    this.infoButton = this.scene.add
+      .image(-25, 400, "info-button-active")
+      .setDisplaySize(this.SMALL_BUTTON_SIZE, this.SMALL_BUTTON_SIZE)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => this.onInfoButtonClick());
+
     // Create social media buttons (initially hidden)
     const socialTypes = ["twitter", "telegram", "dex"];
     socialTypes.forEach((type, index) => {
@@ -78,7 +86,17 @@ export class GameButtons extends Phaser.GameObjects.Container {
       this.add(button);
     });
 
-    this.add([this.muteButton, this.socialsButton]);
+    this.add([this.muteButton, this.socialsButton, this.infoButton]);
+  }
+
+  private onInfoButtonClick(): void {
+    this.scene.sound.play("click");
+    this.infoButtonState = this.infoButtonState === "open" ? "closed" : "open";
+    EventBus.emit("show-info", this.infoButtonState === "open");
+    // Update info button texture based on state
+    this.infoButton.setTexture(
+      this.infoButtonState === "open" ? "info-button" : "info-button-active"
+    );
   }
 
   private createMainButtons(): void {

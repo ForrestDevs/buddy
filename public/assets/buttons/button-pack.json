@@ -2,6 +2,16 @@
   "section1": {
     "files": [
       {
+        "url": "assets/buttons/icons/InfoIcon.png",
+        "type": "image",
+        "key": "info-button"
+      },
+      {
+        "url": "assets/buttons/icons/InfoActive.png",
+        "type": "image",
+        "key": "info-button-active"
+      },
+      {
         "url": "assets/buttons/icons/drop-active.png",
         "type": "image",
         "key": "drop-button-active"
@@ -597,3 +607,4 @@
     "showAllFilesInBlocks": false
   }
 }
+
