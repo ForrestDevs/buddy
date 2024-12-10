@@ -1,0 +1,3561 @@
+{
+  "weapons": {
+    "files": [
+      {
+        "type": "image",
+        "key": "chainsaw",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/chainsaw-qxnmnLgNzvFnUlgvk4KIDkAgNABxhj.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00000-NSvJ6BtYiPmVyHmfn8tS8tXCrSbuVB.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00001-A3KJv5kyidxJlZE066xZSBgHuLLBuw.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00002-Beg9dm4hWfMjwkb2BQZhemwIcXoCfx.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00003-74Xo3EcngKXQKPstci944UVZYlLBU5.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00004-svgbdc2AHAXBZFWgpnCURwTKPVvxbH.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00005-BqOQws8EBh4k4lHHmrUsrrEw1ar4dh.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00006-CmGfhtTCpm3FgDCAOpQSlcHUIydVxP.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00007-8d1gIFTtJCDlWM4BVtNXXUps3KtKqj.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00008-YeEi10WoKkA98zqMfrvgiisJoxxQAZ.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00009-nEv8T5ZihQGnpxdipAIAbBiiKqtdni.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00010-q7KciuW5ldaYsD7eRyG9fq7u2KIRQ9.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00011-aHpoe7E7uEhxf4IhwWuFY7DM8fqkOx.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00012-Ydsy5w4vVRwugpGm7txNjHYUxVRfKf.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00013-6YQ57ASjtAnlKImrriLW1Ziu5AJOiL.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00014-iKXiMnjgCY2JwGe4q0ISyhXuo8hRoU.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00015-MBIWHoDD3JaKjIlf0HJOG2xCWmus0E.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00016-hpQoBg4qS6AtG6NdaG9ZeL4mTXJCOr.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00017-jdBbpv9Y0I9ME6V8RqbJYYfnvLmv65.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00018-G6EzDf89KPSfM7ragcmXvxaPGXx02Y.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00019-oxqR0YddYfFtU9J6tjvnBPp4j9T08h.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00020-i5azYPJzcElzmtoMsybqJVInRVNxjF.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00021-SEKRtaLTjLpMrrfqmiEmaqy1zk0QZg.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00022-H5clMScgYc7TKFDVSJZSVmKhdoizjK.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00023-ni5LM3C2sJR3SgMFwjXDG3489ypgKM.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00024-Wa4PoXtvhfWqgI7OCj053oU3V89VLe.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00025-wLTS9yGtdqbFgBSGxYRc4ykPtkfvc2.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00026-EfdESXKXtL8tOj371yXFvVNI1VDVda.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00027-MwolwtPXdKVRlfgBS4NCNm7fUvpS0x.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00028-yNuOfOYebSIGmzYuk7QrGPSyN4PPka.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00029-4mhHVtbqWVWj90uY3paXJI5u910ZGZ.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00030-HWgdCYNEciyAuAtWlNf8utXMHjJwrx.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00031-Zwt3hv5GZDdMcxyCuPC10ARcoRu7fD.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00032-ytP8RBzQia4ks3KJpyytMGNR1MKFZ8.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00033-8FDyhlUApquPk2d4RN0GVuLkA3fgyP.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00034-DJO2kbZfVBoGQChf47lXv9yhD2coqW.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00035-5fb8cmcWaqpZwsFlxtQVOGjMfPPedx.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00036",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00036-hRloAh7xZ1Z9HZ4NdgKjM2UXp1Uln3.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00037",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00037-Ip9Jm2M4lRoLalK93HKAyLaGqSpqHG.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00038",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00038-yjbFjdkY6zjTr8IgX04DOTczP8zuxh.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00039",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00039-7ZcCDg8LLb1fZPbpUXMRiS5TznbPPf.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00040",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00040-3g3JbMOoGqP3JmC5u3hO1B0nrWuRpJ.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00041",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00041-HhuiEONhzQ8XkjocigzQjSdazO7qDU.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00042",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00042-VOFro4QJX53QFgnlCEQod84O4MwAzO.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00043",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00043-RzKx8RR57iPMKZC7CG1St9cHHNTxXr.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00044",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00044-XmUjt88Gytes2UsaaHB2Nz3aqwULds.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00045",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00045-2MWfCAouvaSvUH8CMoSCGOOsuXQhCH.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00046",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00046-SJk0WVqYRME2NLeRv36Mdn3wyxSprR.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00047",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00047-nNyNYCs2dKKnKF7E3IA8R7tLmZY96J.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00048",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00048-Agklm7mexKxPJPFCtETF5C2Uq3hH1o.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00049",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00049-YAEcz4yEiR0bt9aerICRoQa9WUgpoP.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00050",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00050-8UhMVosjMCUNKcsjsB3XDENemrqA1G.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00051",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00051-IHqKoaBQSak59Zy1GxxGVSXCOZn9FL.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00052",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00052-RPKH4kGcNDf1B5xgmTMpqw65Z1OyfS.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00053",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00053-3dCSs4U7dDZtmKiaKNvkvQMnfk4dEU.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00054",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00054-Y6PUpYlsjzjwwc1e2PcY7oYlB5aFkz.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00055",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00055-KjKeKebPjVHsVEQafdQtcdcfKNbyad.png"
+      },
+      {
+        "type": "image",
+        "key": "chargeuprail_00056",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/chargeuprail_00056-pvDUXsjKSHntTbriWzb3XK0dmd0jHm.png"
+      },
+      {
+        "type": "image",
+        "key": "deagle-bullet",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/bullet-JfbAhi0OWgKT8gIfpibOzotGNFUyz1.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00000-pmJIPXYGm0WVLqAZ3flkYJhxZX7DhB.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00001-zxgUvd2cY3pN1jFfCAKL6aLl2YPBUd.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00002-55ffY3SjejTO4sanmVuNqeZOXbYchT.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00003-HznfPCNLHafkGIGUklVCbhfVz0eK93.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00004-4zedOFYyReiY48IoUsiuGzhbfTMn1Q.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00005-zz496c84ZtmX9hGA7eVNPGBzPSneH2.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00006-7bT432el4JC4aw1f1Ma9QV3sJwyMKR.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00007-UQBNqAL4qdLSVfPUWIubSo6FZ2jrCK.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00008-AWL4Oyy4NLOjhjtyX4XcQVwSZ6NyLp.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00009-rXHN21cECvdLCiOu56MyZaoCMvKGUP.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00010-rYR9LzPOxCs4j8MsVfWurfkA1tzH1t.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00011-epP9CSoZrX1HjMKbRYghGhkVKWKZrF.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00012-iHKpCdZEevwcOshcLVVEwdQclYzygM.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00013-8i7odGFbVZP0kwksx9n786bNIEtK8a.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00014-LWkp46EV3AA2o6FAWA9yLKYF897zsj.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00015-QWF2yoZ886M01ONucnnD80xUNZPRad.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00016-TXIKbngusI1Ov9eYVwtPcNthP0dKJr.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00017-yN64gTH12ajxa9SXNFiByRlRzT1nsU.png"
+      },
+      {
+        "type": "image",
+        "key": "deaglefiring_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/deagle/deaglefiring_00018-oGTCwAFp8qh4vZZoAUDMNLlqbpROTt.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamite",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/RealDynamiteIDLE-Rz1SIKyHYp5F4mIYVqs2pVkMlCV9kt.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00000-9APBmAwP4GfeZnA2XKYKihitB9SpTV.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00001-P4CWrdMTEwuKcACwDwJHKkWNYmnp17.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00002-WalEEFqbc9MeSxr6kzVZa1cCWOfiaV.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00003-kKsKYQuAuYoc3oRXweToSiAbk84IX7.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00004-TKW3g2UQ3GRbTazZbFHc9V0XMC595I.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00005-KvRoXCck8LYltJdFfHmttlLNpeHzYH.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00006-lnjnU9Awmuaszjhh8B2PQ2G7AhHySk.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00007-JddW1QytFpUOuRijUjQNBY04Tg2wGo.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00008-LraqNQLzWVYeolSE5uDsJS5TUIVrfu.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00009-12ZJR4HEMJsdHQBghKsaBOVHxms3SR.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00010-EgsclgPDZkQ8SBuDm94ytixoZe9wMh.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00011-aRHaiYdIymiIAW2X9E1BucLlIg6LpA.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00012-tkdfje16macE4H02VT5wYiSCyQRJKx.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00013-H0svF59YwQnTw7XliWVOqPvYwCnXlx.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00014-h8nR3jI6ndCpHGNTlGfAKnNougn7kD.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00015-x5uhjGoTZzuqGGlOLX9K6RhrsyeHM6.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00016-yhglo9tqtz7dtAXBvECnKJXGYGnnfA.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00017-r3hkVaauIIFtTdjMqQwvXipka6TOPl.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00018-G95XSiOyPJhtHJf65ByAy3WfpVHPkf.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00019-CRLAqHDndUgTZ5Dmm2aLYy2ofIA18j.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00020-cBI9bNqgOt7TfK5dWAew7xnOe8tIpK.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00021-mS7UBwpPYyXQhAgUZUf6HccyYttC0C.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00022-VDW69m70bhenXO4vmdhb5OJRZqlRLo.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00023-P9V5OrsvEabpABOXIpPqqo5d3MjXt7.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00024-rZjvR9bljhd5FE9nzzw8TQhWWBRIa7.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00025-Q30bY6fSMb7cKzgzxUXIjXXlicLjMO.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00026-FusqwSEhGgRno69qMsEhPhiguNBAhl.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00027-G5fwfZ2ZWcOy9bFwPZVj4jbbiSakXX.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00028-v6nF28Qoe7KqT1ix1u4DTVwpYmLWwZ.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00029-mFSDOwZXOl98yPTPCphvUoRTQMvmkp.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00030-QCQHCtgsaTuuUS2sIy9BpBJkgy54Yb.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00031-4gg8XteiVo9yboXSW19Q9ExISce8ZT.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00032-CmNvSt9J7M6NzFAbGuhOIAXsXHkRYX.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00033-I0oRiJmWy7qcnIgiPeX8DrXf6Ms2wi.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00034-pKF7gTwef9qNTwpW1gIgaRrgp4Iioj.png"
+      },
+      {
+        "type": "image",
+        "key": "dynamiteanimsauce_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/dynamite/dynamiteanimsauce_00035-Wd5USV8R7ZYXUEhpvT9O5YIHeSHEPr.png"
+      },
+      {
+        "type": "image",
+        "key": "fire-bomb",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/fire-bomb/FireNade-Um6EdrgedGvdC7HhcSMvnB2g8mWlvU.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00000-QtoSh5wkH9zv8vtqPd0WN6VzzvLuy8.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00001-xQYx6EBlDMsKu2gpUGLpfmCtDM8Kdq.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00002-fCcqfw9j2nVAOEgu88Pwiz1FKoUrJ7.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00003-R342fs4CezIXxROJ2EZ9CZanl2QaN6.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00004-kp7xCsZ9z95RItlFlXutjQB4fKeLCz.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00005-bjBOVOT5ns0mM6SBsE3SAqEeKdokOy.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00006-VLImhaPP5gUrrrUtZi6o0pp8VVMLKX.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00007-dwQ653LWOsGkZQCyJIPTzvtp9jMqOQ.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00008-LeWCGZRKoUvsllWCeSXc6w2GwtU63e.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00009-WZpK7iqtoKtZnnXNoFyFhQjjza9Uhe.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00010-pZ83SuAtrCtZZUV1bpaHyJZWac1Idg.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00011-jJF5NWAXvlndjJnuGgpK00ceQIbCBu.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00012-CmpKJuzzrhbBd2EbN6id9fACZV0vjX.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00013-kZnB2tVU0iyhC8cdpoGvBcCofVxMGO.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00014-CACpnZAEeMpewVvZsJzdFQEso6gpG0.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00015-6n1sI5BrHGHOdrW6fKyAGJFdqEGxRm.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00016-rtY52FhyMQzPlXFpJsjM52Bm4vfF4C.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00017-eA7sEgDHcdyKD51aIjpZVB28g5n1lV.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00018-gQZ3cfcM1yiKyDvQdQ039AuCMDN7G1.png"
+      },
+      {
+        "type": "image",
+        "key": "fixedsaber_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/fixedsaber_00019-tG4tQVcanoFwsPQ4Q9T5n3gebt2vFW.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrower",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrower%20idle-PeWMIPfNfgR275j28v9kwJvd7H6TUQ.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00000-qT95JP6aTQQ1Xag0t7jftrQbwVWOFb.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00001-vkmRfdlznXOCUzEezmpV1AACTuWwJV.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00002-TEOQwoG8h7TaOd7aM8IRbyIhetd36J.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00003-vyuOMLplBml1LewnK5sxwCSrT6gQ9q.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00004-Tmpb4Zs6gVl8w1Jz9oJtn87bIYii0g.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00005-DaCYK9kMlUkdXEe16WMMPDRjXnbDTS.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00006-j0cnAv9inn9qnEqvlAAlkXtAXek17h.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00007-LiJfznzjjhZx5NI2iVmKBDSsXU4fge.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00008-MP0vnlmgCAnVkMLnsEHE9btTxOPLYC.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00009-BSFoHfXZ9XO9HyBqNaeMtyA88AZtDm.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00010-W6zXdv3P7H2kdHYNXBvGWHP2O08IHF.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00011-NAZAqMOW7tvZYAwXbwHhwTiBULzSOk.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00012-2a184GQ6BWpvEqDP4k0V6pGe58EGQz.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00013-9SSRNwrBOdgqQldksgaK0GsvUfCTVv.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00014-U329B8IsQSJ0EgtG8x7fNwvxUMaUSa.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00015-h05AIqa6OZmp9QjeIbnKzVkbpQdISj.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00016-yCyXpUuKBiVtL7xmt7n76B0aJmyvVe.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00017-wuZ5WYEP8ZWg1Y7kgqpmrxJFXZa7CW.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00018-uejLfAQVUsP5bU64KuOBam9kM1VE1I.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00019-wNfpXcQ6qzcLbJ8RkMGiQBaUX9bP5c.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00020-3dg7Tf0DWjo7EBbxxCGhrofpuU2A7i.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00021-7MFL7b16VmcC0TNNjz2E17PTUYAqpy.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00022-TWgKx3kDQGXNjy9PFiSUKaUhcbrpXi.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00023-bBvOhqWbxURjAgF1DSJ6KGRginL11Y.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00024-YmZmFlNiwPVKbqp3q7YahZnMnoUsrj.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00025-OXRc4B9Bqc5otRCSWlD5QRkpSxcDAs.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00026-17wj7yB744msz6lKwULYB8juNbLzcv.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00027-5CEwff6uUkfJRfQeTbJFnnYgOybYUf.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00028-NaSPIb951Urc4CFg7VfTx0WrM84yl9.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00029-Ut8HNh5Ch2HgqKvMCwbDLB5bwIwu8c.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00030-Gw5nfKDzdz2qqyXEkBnyhXrrNv56r3.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00031-1agiDxaPYiz01V39r1inqC7HHEWcb8.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00032-Sm1ckv85LFs8LcyjemBE3ESgwalteT.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00033-KiDK02FDY3q5IxXR5llQG9MQELjJgk.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00034-hOoW6sWinduMFpNPqAUp2vgAPy9kbw.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00035-DzjtGXD375tisqI4kAypU0T00ntNdm.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00036",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00036-ybTeBECmi2naZH8YhOrYRHNtnkeYYo.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00037",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00037-38VeUptAKY5Xxq9i2EMyta2pL3Ml1s.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00038",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00038-aoKYsObYdtvVLlOdBqghW768ALB3tm.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00039",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00039-QckK9KxnX4d107DpuGcCnmLhHmn8DI.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00040",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00040-akogACcojWboXiA2Yz0zZXVNbVBrsb.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00041",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00041-HTm4bCpLUlq89ZnYdyuTtfCx3rpIHe.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00042",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00042-Nw8RB5uWfHBIjWKuYeBYeNxYBHaTFb.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00043",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00043-eotcNG7I7Ifhc4cBim904HkiiawXBn.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00044",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00044-flS7QNCxSsrdho1WVF1crxCHso0VpW.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00045",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00045-Z4Zuy6ljiPyclKsAlApf1djfcgg3TZ.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00046",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00046-dJihZIGT4020TzKV3qA9uBFDQC95nB.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00047",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00047-Zf3PlmcSJ6mrhawmHtYqc0gz8nve08.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00048",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00048-yixDXnJoVNTwfPF4Ds4p2yIeaafCBc.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00049",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00049-GDWT58NpdDrRhIZxDgBxc8o5Q9YKQR.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00050",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00050-Qxp532iu8VrCH8NN8uLf3XOvoXHgD3.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00051",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00051-2EjdaiQvVj8lbSvOuEk3brJ66VnBBb.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00052",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00052-U9RuSMmmw45h2RBZR9xGBeAF9vqL4q.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00053",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00053-lhjqfwlFUfyg7wX1jaRnjuI2pNCM61.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00054",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00054-E3t2WWIpvnqhJCAHBZYI9y1WhlsfMQ.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00055",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00055-QTBHpZkpY6sGAq1We103si8E9axPVX.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00056",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00056-AjHx51bcqLWCkbhIdsXX0JTsNMVrzG.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00057",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00057-Zh29gfYcRvWwlZJbjLsOWZHZ4QhDcY.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00058",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00058-vVsle7OyrDI9mtyRAazJqCt4BaymTq.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00059",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00059-HxJEYUk6j9tO3PE0HwViO7keFNkRHk.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00060",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00060-usfcFBcs5N3PQkpg9xjSk0G6PUv1AN.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00061",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00061-Kdfh0MqunxnvDZLJHOWef3aa5zjUx8.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00062",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00062-7xcHKYLn1BQQa8TeXAFKy6bmEhTZiO.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00063",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00063-bPKku9Sq21BJS97U5ZF9ugfamhe5aW.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00064",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00064-oIEMdWCyXQxW6ldq7QP5nKwaiVUr6P.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00065",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00065-3r48CZvsvNyyZTDMecM0uHXjq9addW.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00066",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00066-USpNlI0GOqMZV38dKz6GpdcauPwzjS.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00067",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00067-dM1bDt8gNAOzwzvBlFNeDOuL4Qh7JE.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00068",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00068-pk3drx1H7VC5nXxJ6ZnHmc3ANzTc7j.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00069",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00069-dGDkPbi9trR55uaYFRlm1QLlgLdK0y.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00070",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00070-ZkVOM04kkT4V5YDXp2xQLvydlC1PbL.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00071",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00071-tAi6rUvcQ2pAWPUpYBTPUAzsD9kVIP.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00072",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00072-1sjmSPI3N49FWbYFjKFUvNC4eHhMSK.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00073",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00073-EHjQYmhcaRtHJUfZ9dTGtwFu0zuUlI.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00074",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00074-qAiCEqpfebE4RUvfKls1XL9RNw7jBN.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00075",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00075-esVZnbakNPlohdCgEBEUjVGsUIRI9c.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00076",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00076-EIu6xUkJGfOpZ9b2cXpZ5XjcgICJwl.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00077",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00077-vFCFy3SQ9TxGvwbdQ4y3Qs6npfkkxz.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00078",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00078-aJeEO7mGuVBoDdtedXwdgtENIDn8X1.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00079",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00079-MYkVGJo0JdBTO4LK1WLFQ02BnnZtNu.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00080",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00080-lGz9x5c4JNfGtNSy5QASR10G41KQz9.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00081",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00081-u9ZIjAko9B1DftkhIYkarM8CNEnRFh.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00082",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00082-f00O4jSqUByNVo0zhaVzPqdhN7zxid.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00083",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00083-l2UCqlBtZGUWsVDglkIyKN4q2H3AaE.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00084",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00084-QuFS5Y93QXz9C8UmI5Y4bR5tVakBMC.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00085",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00085-W3RKD23F6xJvhNPrGNHbN26BaNSgW9.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00086",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00086-Ii5q57Yqo5jZZW1aKOy6BM1tRE4Cgw.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00087",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00087-7PqvXgcRD3DxJYLizJO7o0KGBpiIR2.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00088",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00088-TRaNpQqa0p9PI6kil8oceGlJatnQdw.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00089",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00089-WaPRPZabOqwUX1iTRr1NKt80AwhRCM.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00090",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00090-ziWFUInhHtmH2i65n5khyfoyeTJkF4.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00091",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00091-lkGgyEOtmSW86wWuMyzWYhPGW63lpF.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00092",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00092-WhayEUhxwwCSEIw1fRqykXbrFc9y93.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00093",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00093-d7epQvTASd7Mut1ae8L1eBj6k6YmMr.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00094",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00094-Eq3saXEac87LMt1KCX3BFBG0m4qbq4.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00095",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00095-fpExLnrnIQctc7gHNb93YMc7LEEN4F.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00096",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00096-7QnoShtiAbbN9xIkYehHhlc15h96fG.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00097",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00097-PwZEKVi7e0NxmimYCCowjOJ98ND96o.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00098",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00098-eTCRixXdkAwkofcZfX7eY7TN46zAOa.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00099",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00099-SFTwrNcIKoLLcZnEXls4C6qdC7Pu5o.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00100",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00100-FrUylW8lXDsdVIzukpIquZabwB9Tz5.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00101",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00101-TKs3JympHoJP6942vwDAFO6DWq4tKu.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00102",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00102-pAhfoxspbNN8myPkh0aOQS3FKKY1sI.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00103",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00103-QveELsLA7QAIf7TYcHEnrWeIPxHLEE.png"
+      },
+      {
+        "type": "image",
+        "key": "flamethrowerignition_00104",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/flamethrowerignition_00104-nRgPZmVq0OBaG2Wf0zmAgv2TlW9DTE.png"
+      },
+      {
+        "type": "image",
+        "key": "grenade",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/grenade/nade-rsR3np9jdGOlbgxeKS9Xrzo7kLhrWD.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00056",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00056-U0J0TUyNweuY6fTbWPTZrlkdujz3qg.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00057",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00057-CGsoyG500oLe1GVSKiwZwYi1O2fycd.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00058",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00058-h1sgk5JOSX1eu2pjNgwXnGEUtJOjju.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00059",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00059-KedluMAFNsxaDqRyKxjk0lmA4WfZrC.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00060",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00060-ABgcuE6O5LPDmmdZVBReYLUJS91tBu.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00061",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00061-SsofjcUTCdwdAhDAJNz7AHBnuR5qeE.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00062",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00062-MCad2zBVnRnGG160OkY9V0FkY0Pyy7.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00063",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00063-BShI5XmwEWMDk6VcfHU33d0Y9E5yc2.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00064",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00064-wCiZ3TpnqCstLYsKHZCm2ySJCoyOrR.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00065",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00065-eJ2MYiezXLYDSDxOBbnBoKoAOO5ZEg.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00066",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00066-YmX7vfu1nL9UKbFdOJjUvtgB1l1EFZ.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00067",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00067-qjJmqgT101JcAGz5pjj99BMvddThvb.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00068",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00068-nRkPHywPAEw3Af69PpGQ2RsqcqDX1Q.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00069",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00069-Xvf3IJKmwJR1LbKiFzgrxQIebSbzE0.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00070",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00070-JKrdR6ge62alXjkEM6l65IuVQa62cD.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00071",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00071-ehfBy95BmYQN7rR0d9tMEgu0qd8uSO.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00072",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00072-gmhX61r0sOSIt2tY2ElUrHL8jciLnQ.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00073",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00073-3FBprms6UDh5ndV0zkdSYiMPte9xKN.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00074",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00074-zGPmZMPkKeHpMT91evhMCIo4Q6kYnx.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00075",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00075-pStKz0G3gmrmVSbkqgEkwyDyk3xOuo.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00076",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00076-LiihqernAblrCTmeWtOT7d9yurp3lt.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00077",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00077-G1Q9h4wf8G2U5buNSidm8GtpCHrOml.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00078",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00078-AMXkWA2ZMriHjOyNJB92eiPoAuGZi1.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00079",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00079-TegJnwnUnEeGMQd1SrtIJLL9BqngMy.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00080",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00080-KoGAtR8VxcmzmYHxPqxh02ZX3BWbHZ.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00081",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00081-72vSgBQFbGoTbDNtX08fCBtdNeX9R4.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00082",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00082-UXsoULMDFr7X0uV2kyqmqYftJnbrwf.png"
+      },
+      {
+        "type": "image",
+        "key": "holder_00083",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/holder_00083-PG2JSZl28M9g4OU5YyrnLeChyTG65H.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00104",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00104-zlHIs6wlh7TanCiFf5aofzA4pSt1sb.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00105",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00105-irvNULrEbUdEPpexrbkydfNkSJyjbR.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00106",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00106-Dld5vcPVRwUdXBzt87x5J4YXeZ8CAl.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00107",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00107-ew5le6TQr4lgk1e0yLIubCDuMsjAdT.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00108",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00108-4WXjZHfmhJjlbhQpz2YPNycC67CbdL.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00109",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00109-3fNGrkA5hgwfpxWVIIUFTWuEiWLaJZ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00110",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00110-T1lGWI0d3QFFWZKopYulNwqcMSJb4F.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00111",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00111-DS2qlCscvc6LwZi5jd3B3R0aqyizBB.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00112",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00112-EBWztB7vl0sanpUMg1NcbCqRUkB2EO.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00113",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00113-uTc2WU8B8xGDADlnvKVF9YD5ryiEDI.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00114",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00114-9gSs5AfOOeStiALMxY3jCdh6VQ4xF2.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00115",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00115-PXWvPLZq8Pl1uyP6RV60JSco1njker.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00116",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00116-GwdfrCUjZpvVBW5LduhVWCzE9rGo4I.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00117",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00117-UxhpIgD10G5fZX28VmbLzXGxJjLS7a.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00118",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00118-4XTLSK3ZVU2knrccqvtBDPX4kXLgJw.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00119",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00119-IXbT4WNbr8A0aEyPHhfoOEsgmlRfnS.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00120",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00120-m5w3fY47hLXMgPnMfPkLlTGk6VDJtP.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00121",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00121-wzZZvNM9UwKH6mUIVrO1MXkzMBZC9C.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00122",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00122-W2JD8z8jS5Ht0ugbkivoaZXAO6CmrM.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00123",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00123-TSozph7EwX5ZRuPNPv77CAQr1pvQcN.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00124",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00124-5y6QDfqhBp4GZRKUAiOitp4TEL7jqW.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00125",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00125-xBasQmiKmxduiFhPgnJkk8Jpu3MvgQ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00126",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00126-mVdgmXyyRJl90YmFRemd3ynzYv5dOE.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00127",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00127-bActaeOmj0WDkFxc7fmmcpZ0bgKZf9.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00128",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00128-Zra5QAQz5ZMNDR1ITHvi2ruVqWZh6o.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00129",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00129-2q9w0KiTOSDqBvwSC2rkpM6NxDvINs.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00130",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00130-3qTOaZtkWnN4RJoCPZVrbLSdEk4MpC.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00131",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00131-kEyrcHXTcPmYWPxpCm8IRrUMXRwbuz.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00132",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00132-DDrTd7cM1U1ZdBPoqq33RHr0hqtDzs.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00133",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00133-bqf63Tzmsq1Qxo31KXRE00U9GvHTCY.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00134",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00134-bvTFCjJRN9QY8WoneiXIEYzzApZimh.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00135",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00135-4uoDjWbIjd4Wi1Va5rn1qDzwctLKej.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00136",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00136-r639HcLLn37i1pzZuDT7xBlOjsCuKL.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00137",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00137-QEddxMM2ZGv4XrZEhhZytpj2HLVxMI.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00138",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00138-kdqgwVkIudQNr9MFjBkWFhKFn31PqK.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00139",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00139-APqPAklfxNZfGdtgIukQ0g4kkaXwPu.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00140",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00140-wshKpVObwTLS9aT8jvEjVSdJGZD5Ms.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00141",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00141-vo1IviS7qN7ssRqkVX7QnTnFCej1Ef.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00142",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00142-TzBD8xr5Z7LqjJd7JZhtHoLwJ0VlVH.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00143",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00143-eCvSJPxZb0Cs1MZspKCPCk3FylgqVp.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00144",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00144-8ryzMj5GbRc0V6hma4dYleFHNOiZya.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00145",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00145-LkscJXe5yfsRMnV3XoJfFLBLxLgGOs.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00146",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00146-3yY5reUJSR9sgBTjnTDW9nD43SjR67.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00147",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00147-w2fLzpecMQJLAUGiu2VuYd4T4OJPuY.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00148",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00148-h4BFkLT5sJz67BK9zdPyzIl1VfIast.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00149",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00149-eALavx6KeaqFC8ljW0rU2KtnEBEqrC.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00150",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00150-HOxfXHxJoP5suIJgyID8wDSBLqNJur.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00151",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00151-SoVFCP9tlOpIjNxjzWlMk8zEU6aWYm.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00152",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00152-6VeBhZsSSSzXWfMIXSS4ioxU9rCbYY.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00153",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00153-90fE8d1dTs3Stfz6Dibu7NkoawC6yR.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00154",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00154-iNBGelF1TjRlfmOvOKJIjXGHkLV6CM.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00155",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00155-mnYhbIfuN8q3lIKKJqWuUZv5rPXd2C.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00156",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00156-l4mOwGhZ9jFVRMYLvK2rvilIwHXaGI.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00157",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00157-p3lXhwTP2EvxixogdUeJAGqpEtbC41.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00158",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00158-JuxXQqeoFhGIIEMmI1QhQwYs68vBvZ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00159",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00159-Q1N6zXrO9bgUj9THb3TpIg1xIZf9Lv.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00160",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00160-ozAw0KM595hWMquZ3oJcSzaWDNUejb.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00161",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00161-Eo2fZH42EVuOawQSDI30K5EsNnBdGN.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00162",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00162-q5L9JLZXZVng4DpqTs8aPHxelKT1F2.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00163",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00163-4hTbSDdAGLgnsRUf1V625mMVfEQMfY.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00164",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00164-POdOn46HCarv1g9yt5u9Ca0L8kJrkK.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00165",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00165-79VsPANMgEVzfStCCPxrFXTMkPQvI2.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00166",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00166-VbUcQtTyfXuZTQvxxlBYT52Fp7rFTP.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00167",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00167-BW6tCw6SQUSSeoR2zfT0cVVHlXgIJ9.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00168",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00168-QSY0nxq9bmxlRCxoZQOk2CCuKYp9I0.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00169",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00169-4PRQCGSBHWQp4TfNDTVPEWWTiAKjvx.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00170",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00170-pbDFRryoARzx1P0cHhlpHnSuO4hPgt.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00171",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00171-8bUFErjjHXrwSNlmGqPIsAJuCHIBQV.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00172",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00172-3RQkBPgNVD0gHDCP4vK322xytInm2I.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00173",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00173-pLgFOxEhJoImoTAUauyYGnPILIt4gh.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00174",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00174-SjctSJqDCD3Jyvro660XkjiPpY7DjF.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00175",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00175-8BAdviY7RdF5SKSloKnNG7QzzVe8ul.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00176",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00176-zmtUQyIZhJrPftHaCtxNZ9ge3Z8g21.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00177",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00177-3ytbv6xszKH3RabNjnrhmHNVkbF4rp.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00178",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00178-ggGFdImCjmURZ19VqmA5A7SQVEmjXO.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00179",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00179-LWllTTBgKFvrrJXKswxxapXN1NmmQR.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00180",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00180-cnYjGV4Ob80Y3rek7imuJZEo7Z7yNi.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00181",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00181-ARZHf57wiNVn84hCTD0Nh3YPSJjdk0.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00182",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00182-HD8fa4lBMBA5ACP8dp0gklMbQy8MIc.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00183",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00183-KDL0sQLeiWOHMXeAkQD6S1BxfDnZSW.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00184",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00184-kzQYvEh9gfA0gg9uWnMbbE7b76wzfP.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00185",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00185-oLGcCyoByn8JOr4GZvz3PMgdqmixTJ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00186",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00186-jCEOCUKXEaQnwT7dbfiDPU7I5qjpmG.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00187",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00187-dbFwlDSMiy9tdArd9oNDDfFjrGzyXY.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00188",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00188-Gctvz0W4nLxn7soGNoV47NJuDrSH58.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00189",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00189-I9e9VyO7dmIo1dhfI6jnQP2XTYpLzz.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00190",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00190-lCPE5wplGChGze9dDcLkObwB66QdEi.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00191",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00191-ghjskwNukjVh8BTkMf51joE39AkF6p.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00192",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00192-bYRPkoqo1OMaAgn55TVYFIUJYjnHwJ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00193",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00193-H2EewMy1YwIaSXJwXKZ95dOKEUEE55.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00194",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00194-xrhd2Cjt6PMVZqUylYjxKxrB5SGA6O.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00195",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00195-fbekVPkVsE8mNQecjoN0HvTC7q4AE6.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00196",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00196-3lEmKmzvpF5Q18V8TYz9oSulqCHXxw.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00197",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00197-vG0a3DrT4Kxng4fXaCUaTNgW6nxO96.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00198",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00198-SnwCDLZiEjnE0ekxP6XOb9I0nkGgMy.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00199",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00199-CkFxqFxVCAI8Zjt1TD8jtmUPWB3ZlT.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00200",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00200-aR6zZErj9BEtEE0NtSiq5Y1DHHYOB7.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00201",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00201-65PJ8TGuHTARjfAwKYwnSVy2VVfR1C.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00202",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00202-xRkLtOBVJHvXfItlOZKSpo8zPvGGW1.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00203",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00203-u9G8actTbhaV351EZO4SWfjKjw7VPQ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00204",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00204-kLgh4o2sNbXdY8q4G6QT5AirzQiFWw.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00205",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00205-Go5RmhIuejkqIqgcT6kEMqrcpJ4ipZ.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00206",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00206-9KaY9lFvt0wRLY6IRsKm7q1MmJ3D4J.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00207",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00207-T92t3ESNHJBGJcyW31avbislLKZrUx.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00208",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00208-DfosCDwRg3GAxRDCdnJ5BhwWczXIdV.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00209",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00209-tSO2Z5qwPxuH2V96SMaEY5r5wZD6vq.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00210",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00210-lB99IaXPa6Fv6uRgZ2BCfDgBMUfD4A.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00211",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00211-VhuNWJDxD9D2rPpCxF7sWBdHoHKhb0.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00212",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00212-yFo0bTcWvPbuv3ceRCIa5BYmE1VLHl.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00213",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00213-bCQ5PdpFN8oLkp3ASqnZwOeyg9TFpK.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00214",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00214-3FumpNeiFoDjBLuLnRzMdkxh8iOlbU.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00215",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00215-tWPgx7d8KCuM5cjdeKsPhzA6U3vlCE.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00216",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00216-5HoIhkPXqYGhtYTVnvOPNb1JXGM6Nb.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00217",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00217-fQtpp7vvZDq5INxPCxSFMXAQL2if8x.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00218",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00218-uQeUN8M7scfCr99kT0rujs2TBCDlIu.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00219",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00219-G7ZppgQ2vsru8rudG0KlDp6GSlj00k.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00220",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00220-Sy16jGld9JUp2SHiYvB4dN7d3nPrKr.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00221",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00221-ztGrokHPSrn2udxoSvnmJIJX89RCkP.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00222",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00222-npXQrgBKVYf7Sp8tEDCVvfVPFnBDc7.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00223",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00223-RRaf9mGB8M6PgM2hCYijXcDNXJj4Cu.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00224",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00224-CPU7vPROX2cqL86nWtH3cGPV4r1e77.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00225",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00225-sjc0714rIGvveFMizJDe6tDsWuJtZ8.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00226",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00226-jkbaxRruby0jTyuHJ72yxEA9iTPYen.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00227",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00227-qdcI5hVvR16KWuyR8IneQtWQwlzea8.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00228",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00228-4aCUM0LgV2Giznyl4YbJBBNlC9vLYL.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00229",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00229-ZPyXWWWrR3mXTGRq0jWzEPKMt7anKp.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00230",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00230-d52a6aHT9AIlYqojDxdsclB11qKSkn.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00231",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00231-HhtdiGVQlEpxpspGGBZaRlXTBThoUe.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00232",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00232-2OKXJnIV2CJ8mwZutrWayvKSuE4GsB.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00233",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00233-YSNzLu7zXtb6EX0j7duBl4mtnC3fIR.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00234",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00234-3WxGCK1cZtgeLGi20zQEacndSDmcgv.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00235",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00235-e3wR5IxGqiSwKpOejmj86LaOvJHEQD.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00236",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00236-BKXyEJbk3cKVoubwTEWAQFt7TOomnb.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00237",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00237-l6C7bdhSkTnNA8u52Hw45IBwe5eSWX.png"
+      },
+      {
+        "type": "image",
+        "key": "holdingflames_00238",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/flamethrower/holdingflames_00238-A7t71eh8yTfnA9BZsrm1nm15BgPrqN.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98idle-cLormOLMxesrutXvVeUhfs6bmpxw8y.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00000-Up290GXOgdk4MhdNLbqL46u6XxudYC.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00001-YOHxof50RaptPts0wsbAv6LO9CPYwU.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00002-NGFXxbcOci1Y8QyJNT3FQlz4Cqqxxs.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00003-ZneOeqB2JwucgxTg5I0IM9DH4YEgqe.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00004-5oakJUFZmRKZBHKmJm5QwokrNOun8x.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00005-W6hDiZNEjJ1tiLPFrTErYlC9ND7aGH.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00006-uev8oJVxt4a5UF4yhs5x6ieOrx14PI.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00007-h45BNi68aaSZjslVhKDMVuQV0C7KsV.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00008-9mtnNhUfGnktLEihxb8XcnpvhGbEjk.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00009-xXm1NIwEUXeAmtM58vwZgOJOg7VMnl.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00010-bIIWm20WkhdEWIQqrEeW4jLXNQ9DXy.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00011-h7UfXeKsmiJh2TEtcr9xlTOdV2WXzo.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00012-6zBN65glshCYQPwTQUoRCexCm5zzRI.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00013-0kAcUfvJXNm43YTf7d2kC6WyAYIYiE.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00014-OqZitGFXixioIyuQo9Ys32ZJYSaU7q.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00015-4TAxmnC6aliPpdk5bJ7EZF6ooEcWVO.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00016-RDDQReb4gdefQIokGZHhwnrmGVzb8a.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00017-T0DcF668OFOwQdyTni7RLTrS2dm6DX.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00018-rcxw9SeHrJLQFtef1S9uhCwFgZntNH.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00019-FJ2RfeX3aAMEFyliA49XTOP7LOKFKl.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00020-WLqkh2D3ECM2Y3tmSIb8y8HejuaYz7.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00021-9Zjkk745rG7jWQeDjDCpqSoJIh31Z4.png"
+      },
+      {
+        "type": "image",
+        "key": "kar98kanimation_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/kar98/kar98kanimation_00022-BU9Qg93GCXH9GABdH9K1GIaLF390ar.png"
+      },
+      {
+        "type": "image",
+        "key": "katana",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/katana/Katana-mhZJfeifO4MfT8IJIUXOmtZv7UJIuN.png"
+      },
+      {
+        "type": "image",
+        "key": "knife",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/knife/knife-szPurNpY6olcnfFJflZI8H8xCOBhuQ.png"
+      },
+      {
+        "type": "image",
+        "key": "lightsaber-lit",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/SaberLit-7aShZvnyYBfGpApGRHlT1hGWnAbVYR.png"
+      },
+      {
+        "type": "image",
+        "key": "lightsaber-unlit",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/lightsaber/SaberUnlit-WtVADUag1gHEIWSB3dAPAzqaoWzzvR.png"
+      },
+      {
+        "type": "image",
+        "key": "mg",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/MG42GunStart-BDZxuLYisylphXpXB0x85gceY7BRRu.png"
+      },
+      {
+        "type": "image",
+        "key": "mg-bullet",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/mg42bullet-mZK9CGmUIOm7u2L4wkMjufv9LpVkEP.png"
+      },
+      {
+        "type": "image",
+        "key": "railgun",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailIdle-h68W1h6nyCU6ZZp6ewELkViBWPapW3.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00085",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00085-i4xzLpgTiDG0ZCk3KGjTxOzyXoUz0H.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00086",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00086-gh2LwQIR5wQv2qsGq39yEmQ5srQSg8.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00087",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00087-tL8I9ORG77kE08bS3A61210qCljzVA.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00088",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00088-Id6aADX9x7F0NzBTXE9R7qRMxUL3Wf.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00089",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00089-2aovPeq8Cmcz3GIYNwVdT6zc0Lq8fv.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00090",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00090-WKwpWhQOQZy4kwIZBNcLmfvBPmIAWO.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00091",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00091-wuKUBqOLp5Znyh1IT0bcnK6gvpWwUw.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00092",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00092-XFdreX7FXpkjq2nKn1AEq0ZBDt5Xkg.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00093",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00093-adM3MyjLxfF9zYeFqIV2Mja8fNiabc.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00094",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00094-cT3GELOCyXZwMJ9e65ATXnAym7zJXk.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00095",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00095-IuMK8FyYb84Em5T1vxxzRX78Dyh65K.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00096",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00096-UJKbDp4FI9MioDTOrFCEETZ5vKUFuR.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00097",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00097-tVa6QxwwzJe6cnfRJaz8uNvbuC35ns.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00098",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00098-AYPLsdwQq5NAsnh97ugwKEOGqZu5Ak.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00099",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00099-qZHcIboFx7sF6e6nliMp0VPiRS1nd7.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00100",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00100-OWKHrLfWkIoDrVBUKRI8Onaps9IOrr.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00101",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00101-otSCV3Kb5Eo70OWQRXSHGvidePlNfe.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00102",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00102-N9P9C4eVXwq35PREvQACtnTSZOzvHU.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00103",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00103-7uAYFNcbaOxQZQgIfPPwqXmsbkKdQ3.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00104",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00104-wHvRio1L57Uask7IUYtpZDrwixRojW.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00105",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00105-uR34TV4JMNxFwRu2udWAUVzTUnBg6N.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00106",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00106-9dLktt2IZDVPwPuJ5yEhPEN7b3kEgZ.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00107",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00107-cFKuCIqWIWR5i367Zp0if5KWpGZuKD.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00108",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00108-bgh8FUuXDbhKi451WxL9pKdg8yWcNb.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00109",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00109-VFN9APxBZKQ1IEL4rfBuctna9yzPpg.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00110",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00110-KIeiLzrcmzlS1CHC3yYgvuyX0sygOn.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00111",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00111-3THnhu5t14E0lzdhtSjkM31iLPwxWq.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00112",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00112-XvAgPYeLgncd0L6kRdGTewhzR3HHnB.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00113",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00113-u08i21rg6liUnU161NdvTaCiLD287l.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00114",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00114-cDrvmwvUncS1WbkrH6cVts5h9T05lr.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00115",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00115-0ovRyglSADRNY10vZtqs8E5yr5OlhR.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00116",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00116-koAmEBrmIC4E7or7cHkSg8VK8PU95p.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00117",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00117-xs1vp5g8Zo24r6dNiGDZEDcQMgTl6H.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00118",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00118-ODmCnzLQtg5p1teMLkKfCSmZGybonV.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00119",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00119-14BowvUgKaXIeqQ2Lr75QpxTBoICHv.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00120",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00120-ZyLbvUTkILEFkCIW0vDu6yfAkDtArM.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00121",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00121-PrFCmljUKRABsvww4FnjchGTIXc1NZ.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00122",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00122-ndnjo8NuQkvNNHPezA6OsM4AzGnQY5.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00123",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00123-la3Qj6C8c35tiTXHDhvjpqxbi6sxhh.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00124",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00124-HiMOzpdfLnSsbZMsHZCSBM7NpafjwI.png"
+      },
+      {
+        "type": "image",
+        "key": "RailShoot_00125",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rail-gun/RailShoot_00125-DxdsCYELPq8LmZHEi99RXXFsWWEH7f.png"
+      },
+      {
+        "type": "image",
+        "key": "raygun",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygun-eHsqTOhCfKbB77MUpcKH2l4yALn55x.png"
+      },
+      {
+        "type": "image",
+        "key": "raygun-bullet",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygun-bullet-UznO3HHgo5rggY5nKityoAf8EreMqy.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00000-4WnV7M3qaUtsfuIjqsmBbFmw4UFSzN.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00001-McLIEI39afQSk5wSLkNMa5tUI5cAM4.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00002-vhtCpWCXv36yMKYnhdQtotMhqOFGc3.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00003-QqdQT3GJe600hOSnDhsthOeJKI9Cj3.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00004-dVNkGhgCYPmcEovcB1jMW0Mj75jZkv.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00005-aO9aXbFl3Gn8teGgFVRAsH5atK10Ej.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00006-WqpAzjUzgNQFIT3HmXLovBJFHV65ae.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00007-NcykXwnfoFzZuTBETBUZ7U9dWzMSUL.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00008-WUQHchWEVOm2nuczfI7pxeqzDdWWlG.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00009-rMrrbP302V6hcnxrm2Baz8Y2bmzIR1.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00010-VzajZTGgPKL016ImQWFVd4jnJZCWhD.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00011-q6Xggdz26oiqXoaCMeO9jTId5fmJit.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00012-6paGmBUyVx0q82pW0PQhm9qd8QMExo.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00013-d8Q0j3zNStLMlcuUM8OJNUFLlY5d9s.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00014-wyamZxjbHlip840tGy6dTGCj8DGH8t.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00015-XelyD4Sd7obsRg2H9er0WbQuC1DTgj.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00016-vGmEcZK8y4yFhl4A1VFBW9DzSpZtt0.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00017-LbeIvgZlPEefr7WL7ECgbPrF8S9uUu.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00018-X0LK4YdcLQvHfUvgqAkHs6W4SYibWf.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00019-fMvaQUAhe4fmMhg8Uu0YgOQxwd4o9L.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00020-sT1OctHnLpan1Mu5HFncp2UJDPaeZo.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00021-47uLo9wBsCYmTkiQEg73we3g1BAsjI.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00022-9nVcQVYNoBtQNXtIf78AWtMGhN86aY.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00023-ggvAiJy0Z9FsWqWuMt3FUEhJksqZfG.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00024-awcqJR4IMUCdQitBUv6CnIcQdAXR2p.png"
+      },
+      {
+        "type": "image",
+        "key": "raygunfire_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/ray-gun/raygunfire_00025-vuAK0I6JxoJcSptlkZjdIlRvjZG8q9.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00000-p4St1B3C2yE6NemV7bmm4KMYhrvzoe.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00001-rwq980nrpsE17ptYOm2ysTKbk20JLw.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00002-CUAb5VCBjgIQfcRtJh1MqHYm6erWFp.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00003-mNR4WnU0DdQWmLNVe4zxmScuregH2T.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00004-1yhfgus9H7FIt7aFHuL8xyV18YjOc5.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00005-oribl4HTqSLV43gJztsiz1kD7Om9Zj.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00006-Qq2PSEjkv90IM428AtgF1uBPFn9tHA.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00007-4mhWI0aMFa9ge53ocQsxfQYv2YOp0U.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00008-2H4RNTgDe9u5vJEu0Ilj2p7J4m99BO.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00009-crIQ7iMAYQDEQOvXkclrX0igxXGAMq.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00010-REg1XxfeTKMTU9ysXoUXmNMxZUGEnr.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00011-9eKI4hF8gq4fTpTvQuTzU0BIQSanpy.png"
+      },
+      {
+        "type": "image",
+        "key": "rocketblast_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/rocketblast_00012-veOnNRC8vxvHtgteVHaoOQsGFcq5Cc.png"
+      },
+      {
+        "type": "image",
+        "key": "rpg",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/RocketLauncher-5HwbS5NjdIHMDd4mY712JTZiF2h8qH.png"
+      },
+      {
+        "type": "image",
+        "key": "rpg-bullet",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/rpg/RocketLauncher%20Ammo-hFgaloX2hzEe6vSIkWHxYOIwtSeNgT.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00000-Uufyj0bQlbttrCLzjmj15Ar7Wumiri.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00001-Ngqjnkw5RRW2vjSkh5n3kRSRM6ixXx.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00002-fopckDXS253yrsFl6WZjyUNA62YQuZ.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00003-XfpgbXXEDvHLjqJydZcsgVZhYRWkRR.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00004-wpoO9fW2qqWIC9wvhi44Mpcvlrz1A1.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00005-X9Y892NnZ9i2Md4etz80jLyKviHMOU.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00006-byTRH5BRR6gN5x6Xzo3C8msGmRG3Lx.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00007-W0vyDpffsRDG8E6gduBrPewsBcqC6h.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00008-I1RFHvRhFKpA9yLmkMYT8scw8nqxrH.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00009-mHTP31LBc10Vp6cTJRfABsTvZnF4nG.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00010-u7JbqzhozoH9Kkg5YduSgGXb4AwIyd.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00011-zj8s3ZDpnkgYpnvy4nREm4rmryKs5R.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00012-JKJVOSUQxDeFq6FZJTqEChC1XcB5bm.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00013-LRrpjGdzGHqeNU9f6rHg17ch6R5gk5.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00014-nSokD1lYuisUVe1JaFGjRHRrS934yF.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00015-3gwWswtLX3Yl6nAs8z0jUzcJNUGdq9.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00016-QTB40WhxGm5zBEwm5fNnESkA06YEFY.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00017-gB0R7VXuWUivdhxVFrfFzcv19I1Ir1.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00018-xc1VN21VVVM9YCV387sCb24HlNGuHc.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00019-aZkM2SYU7WsZtS3cWBNJqsExmrH1qz.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00020-LekSIFAv2QQvMfOuVzhfLluPG5HlEv.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00021-da4YYZ4f66kII2VzbddbK0f84goZIi.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00022-pvKyq7VFdGFZ57YPZkMJQzO3JM1vzs.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00023-PjMPI57VfxpH1DViHRsUivigoygAj9.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00024-4NIz7sepQEHL4tCFXrjmcSA6LxLkRt.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00025-FqdjzNL606BMGiToG1V1d8XoCrnCmQ.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00026-B5rhLtnbI34cMivEzwb3OurYGsOj1p.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00027-wnM75HH2Fc2Hg6LcBoDumfpoCHTzlf.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00028-QSePA9jnUyk4ymALT7A3RwNoLcJASO.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00029-3fd166Qn1G5ZuiXDyeuaw9TkSRD8Yi.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00030-WJUkNm4vaWdwY92MtJUcj5C7Px6brY.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00031-9tmO8V6R9mXlM7oldwKdVO8jSvrkYw.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00032-64phI4ytFo0AZLNpTPkjbsjzAU8XzF.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00033-0SFU88e5goukkqt4Sleyug4DSPM9Xn.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00034-4pjesVsm2l6VEuBPOb9njoxwPD50Pl.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00035-WIGz4ZCgpw8GcRAR0ukpoLFumHxhoL.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00036",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00036-1oyu8xSMa4wLjyVTUvX4ZI112zeEel.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00037",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00037-AQ8YRhslmvBrSrcja8CFsq5SQ1H687.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00038",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00038-hYbkCpamogZCpLsIU9k7RwMEmESQbP.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00039",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00039-co6reliqsXAtiwYyiSAmqCgYRbRFWc.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00040",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00040-evvF1gfWyNcWJYpsEF3GiFicLYWIpk.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00041",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00041-cWshMbcJmNoB6eB8nneSr9QL5KGrYY.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00042",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00042-UVkaO1zLJMEyPvFhMnQPZ1h2OR4vbD.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00043",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00043-yUyMy1DAYhnUINtMXzv3R1i34lF0xF.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00044",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00044-fwfFXaSdQv5OFzqdE03Ubaj6DIkb0n.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00045",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00045-D0h6wBzsstctElMxZdNozrD4pWxMyc.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00046",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00046-q3bC9QQdjtiC3v3kT9gAtqgwP7x7mN.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00047",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00047-Wzc7mFgbogxOwKy92RLfnJWeYpim0L.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00048",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00048-eCDYvN8XOSmqHuIgkMUwUGNvcMp0sl.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00049",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00049-aDWRH7EXnyku8Ov6TKJVLGjOEimysI.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00050",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00050-Eld8OmETKl3RAuBDWGg58BDR1CFuxd.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00051",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00051-KDp3TifaX9OvWUeYMEkAlqSzmJBOHu.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00052",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00052-1NqF1hmLYRK5h82KClu5pW9UkA6n3z.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00053",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00053-1XMqnui8LOVbqU3HI2NgzHJycaKnWA.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00054",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00054-uRE45MDTlsfBOriaue8CgeQNso49O7.png"
+      },
+      {
+        "type": "image",
+        "key": "sawfixed_00055",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/chainsaw/sawfixed_00055-qlWOVG7bjRwitU1Sf3p7mqUC6PnbVd.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00000-fVIGJfmzyBx4RwVm2zRTQ86OBPbj60.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00001-qlflCkoA1nvmvHC9Qb65nXLI69GLiT.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00002-FZoOSKTvryV0gZ2IigJ9UL0K0bmyRj.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00003-dNm413vc2PyTYEr0wv2imJfgwk5m9B.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00004-dz4rezxa3t6nmcHhZILVaaKxfy3Toi.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00005-HuQNbg07IUPFod8tYKbY5T5L2Eqpiw.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00006-sH72bizNuhL2AtqOViVlLQhvQ5w4ru.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00007-D9e6IrjxxI2AjUyRjjaEMBVhq94CTA.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00008-4LTvVmDhAv7bRizYKqRDuXWoqhnZCR.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00009-BIqmvAjXdajOgz60PRq5iEmWmC9O4R.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00010-lF1efBVXA5oXirPYkCv7Dls0p7zmSw.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00011-8zyQ2trUIJCmgu4yQSqY3LUM0BaSbX.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00012-TPUR5IgrQo4fFrCq43dNBrN1y6or9B.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00013-Z4ofTy20u1BIKbn0aE3n5Rc6IBbqVx.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00014-El90MW7wMvTcIhp4M7lFdfRmFasSU4.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00015-1AGBAGlxULone3Dz15p5QtUiPT8SO3.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00016-fUMveS9KoiCAolEB7AVZY31T44IfVp.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00017-MIL8sCdfQkrsNjHlDpcaIQsqIC0EZ2.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00018-PNhPVw4DgKqJ5NcDyg8lmDVrIG9ty6.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00019-njLDW74LV23fQIGzQ43ss8AEFGwffx.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00020-COD17aNFbxsqmKWTkXUoM1ZkC5Nlvj.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00021-vAaiiTj4lFmTkAp1ZSwkxEpwZw25hr.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00022-Dt0NlwOiCJlYYgYRk5JPYFwmPaqD3z.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00023-h3qLuxIkOjU6wx0f4NFAmlJ3q9oZtN.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00024-nttHcnIzizIbmfN8nEVeOQuwMZNK5H.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00025-YGfk5UWYPN6d78RiAe1xYeudVDvUU8.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00026-VNY61Bfh1RZz8lpwjT2MqBGrMPdAHh.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00027-SDmRBBQw8ootQOFPizG2gafAwmTYl0.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00028-65Wso3KlXFzCY5v29tV6zpwjstuPTu.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00029-mswTImPuZMBdG3Nd2jb75MWXsN5hZ6.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00030-scGTYkd7kbGu7sy6vTCZ1BA7yf5xUQ.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00031-7PFd2jKnybkZazUC7pDHmpOgqOFCv5.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00032-GO51wrz5bxdAR1KfF6EcOQrhU4vntc.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00033-BwUi9N2LJwzcuSYXFMSflmXGsDXZER.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00034-gRskFqombq44gRm5RdLh1eRXF8W4zV.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00035-3dYJVGKbRmgW4IagMpA0YxUBQJesFc.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00036",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00036-JGLkBt2ypgFKy5oMs3NVRHkMfTkr8w.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00037",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00037-8bkBn9lYPfXf3IS0SCHpn6Hnpqse6W.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00038",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00038-b8K4Mbp2VPVEePh6rKXo9NE2Fvfm8K.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00039",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00039-JgDvER8Mv4gsVeP34VRzYPGkMKL7Cq.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00040",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00040-ptX2SzIDlpKv1W6MVeVYDi8Zn2exOY.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00041",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00041-XBzeITlbL7N3o7hu4Am7tbu2aaqTIR.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00042",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00042-DFL3Z4AyMp9vhbMOrm1y1kwpwCyJFq.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00043",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00043-sxzUzbhmc65Dlg9VwShmKkRyO5lZXd.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00044",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00044-ZSPwECBNL9KfnsAw6BQhjaCefijgjr.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00045",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00045-qpClLsVfRDMnF4nalEP19QOXr2LFfN.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00046",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00046-vrSXAqN75K5xnJBy31foKLKqiYpyR1.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00047",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00047-tJ5OU32AWZvDHvgAI5Ne5hqurLHoAi.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00048",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00048-LeZEmaSKEQZr2T2V6HUlDm1Mqmte0G.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00049",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00049-JKccu5goZ4XOJztS9svAlBr8ibrzHL.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00050",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00050-ywuMuCiqxdYbEAaJZC54n6ihImqPJr.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00051",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00051-YTXPqbSBJtVdWy0XTKLhkWTXIDLM6X.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00052",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00052-8SzeycLQSeqjyGJlrp6C87esq3dypb.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00053",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00053-PtIH5mpmyzmzNEbcew40BVyxsUQ1Kh.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00054",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00054-kSuDMdTKE1VAdJjrXZFUUD5Vlxg3VW.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00055",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00055-cdzYDurGjnOwsxtiUEtNiylb7NPP9S.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00056",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00056-8HShCVxFkdSwCCRVQp2SCDlYtsFyQ0.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00057",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00057-254MDkoopSh1x8b1EyMje8JF8USTEq.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00058",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00058-9ALYj7sxKW9TeQOYjDneq8qdtTWZOI.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00059",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00059-dwRRfp5sx3tgdo0Eke7CwROhA19YJb.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00060",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00060-1nNCnfxsfuFXiNdZZ6NPqvcDk3jx0n.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00061",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00061-abiBmLiRn1Ip3aGlLFcdGehU3kM4IM.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00062",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00062-PeeOdBj5ZniYRuFn60D772ZRpqxXKu.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00063",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00063-1lyUv2vC3nNWYMDqS5hofGYap8ZTyB.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00064",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00064-CeEjnCVO06fJX4zNrTO97f1Xqq9xpa.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00065",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00065-124BZBGjOJqnGTupLf08Nh2iirwb1W.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00066",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00066-cZ3qcINZn3RlWeLsNhULcxHlWFVINf.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00067",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00067-RScpP7kZFFu0hYJriG5OkfONjMOSiF.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00068",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00068-zIAKoSYp4jMgIqS0xP8pX0LmLuqJqa.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00069",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00069-v3rHuhIRD8rgpYr8kV36NlOqw2yTFR.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00070",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00070-RhXgLEfeEZXi5errYtgbbA6U8lTGpF.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00071",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00071-xU0jDEax7YRypmOzSCU5YpX995NTBK.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00072",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00072-MvWEqUdWlhsC0511QZb22bv1ZItpmA.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00073",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00073-2WpeG0lrQ4iwCemCIwnogVIIAizWE4.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00074",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00074-7bi0x5eR6BApNau7XFjNjxJG7HODen.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00075",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00075-nbM0SvSjdimjjsaMyhXuFow7exhmrw.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00076",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00076-LVq9WHGQwH4cs4gJCpcOP609GUQ5Dj.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00077",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00077-R3IIXLxNEvgQUNejHbvOnirWXhf29k.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00078",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00078-NGIJVaCrw5PIQZJHsVaIV0A4ltI9db.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00079",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00079-RsSNC7be5aiBYIqwEPcGrxUaIsE5ts.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00080",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00080-5MsrsQ8uqfxw8ltbGoBOwlkQudG46r.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00081",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00081-9CkOjR0tILBfSmlvUYxBScEobIuGdi.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00082",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00082-qoIwJRsKygQLRMZzKewpta3V7NFgWU.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00083",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00083-h3WX1FYa9mxC88y1GVJKOy6HkOvRxg.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00084",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00084-iORfYH6lapado7LEVHfIUkJsGTGb0U.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00085",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00085-UIDz3awM5tczcwowwdylrqvfNIOZyS.png"
+      },
+      {
+        "type": "image",
+        "key": "shootingMG42_00086",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/mg/shootingMG42_00086-CPQQVKdjUbnSgOnEGR3S0Mwn5PSW3H.png"
+      },
+      {
+        "type": "image",
+        "key": "sticky-bomb",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/sticky-bomb/sticky-bomb-iv6Us4NxAcKMzTTRPXqTM6tpwMu4mx.png"
+      },
+      {
+        "type": "image",
+        "key": "tommy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/base-tommy-QmevRy740ljJilX1LqKiKnT0g5yTY5.png"
+      },
+      {
+        "type": "image",
+        "key": "tommy-bullet",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommy-bullet-7eniYcIVMp2IGy2MeYLrRmdtriYsts.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00000",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00000-Z5FfTHGSR2p3rB9tNjrZ4642R4Dvz5.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00001",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00001-ximxBOGRO60kWXvNAnAbfY6Ve8tJ7d.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00002",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00002-w1gujDka2SWGV6mF8So5rvEqgcCSIQ.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00003",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00003-x4iJ07Hiqb62U1gMRGaQ7w5oHCaeAY.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00004",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00004-ykwKKYbWlqWadTPYH2CPKF5CnYatro.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00005",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00005-dm62ypVEk0OCr9KBlZ6lZ1NL65KwZ6.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00006",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00006-HHTtA23i77rZq1KFF9XMJcpOXfPw6f.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00007",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00007-ij2jg1kyAiyOxs8M6a7HpiDw2nSx7p.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00008",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00008-8KKZnExBE2yRmRrKnJOxgb9Rt8ZOOC.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00009",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00009-34x6h2vLC9x7aDWU1nIWW6H59iBgE0.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00010",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00010-XOHxmOwVIbOqtOE6IAfJ06R0v1ggMK.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00011",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00011-rAD0pUeMKYLilqTNY0iPEKNlqzH7VZ.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00012",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00012-YdOoU4IDO09BYYQhTqFF2v7YQBMfKC.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00013",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00013-dr76LlFRhwkmaKFK9V3EhVWwzwpmwQ.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00014",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00014-ccxiXhBNUfRfYbaIJZnHgp1z3M7dku.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00015",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00015-G7EYpBF35Z8QnpMdDFsO05I0JtbLxn.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00016",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00016-bG6LgxJ9uiSIh4VFoe62b1lwkGcMj5.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00017",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00017-6OM5ilN8my1Z63gxY71sWDATn85nXB.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00018",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00018-g8FbYvBPcMhateu3VoumrwrhhtYWb5.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00019",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00019-crW75UGZSWtLNsh3VHqlPynlMSRqoJ.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00020",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00020-SJIhbQAKwKb0oiV9cIOobSRXBpK96s.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00021",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00021-I4PbYTX6ARa9Ad0DTi0AOY9MHnB2xU.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00022",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00022-utAHFSGLroCFrCvyE3Rdf5y773Qdnr.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00023",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00023-UhbYWBkjjOZpFLfIWP91WPQmqiYukC.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00024",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00024-Gk7ZtgmGP3RUZQkIGBF1J9jK3o2Fs6.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00025",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00025-vIdraHF75KuXAPcf8WTI0QGUdbRSZq.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00026",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00026-PXM4FWIo2uAP6cJK6TBqKVK1xBTtiF.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00027",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00027-h9zSWBqLWkmjUQRSLK0ga7esikCTGm.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00028",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00028-mlg5OQ6NKKhjji3jYtQsd7W3oQREtY.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00029",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00029-tzhZKUFWb92wmGKjkxCthV5W0sQvkz.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00030",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00030-qkYjlEOGVjlEbmv8N0VTndvgM0Dqkd.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00031",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00031-rPe25TIysNioo7y5qMLh2Jjx0bOC1x.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00032",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00032-D2BHwY06BM8flbZiE6BzGnZ0CYzhQo.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00033",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00033-T7lvbRXLvNTfYeYLm5bP5eJpVDjmWi.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00034",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00034-ORAXZwPfGy5NPePxoGiEq5n41S0ygR.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00035",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00035-xTOY3mbe2Tk6msGBKtW1trmUqjHHXW.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00036",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00036-8yiH4Ff8C401EgJNFkqTqtvZAsYOPc.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00037",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00037-w6qDWQkXrux368UipwoHHEbKx0UUKZ.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00038",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00038-ShwVawfsFB2vc2QMepj7YXHXF2CJCd.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00039",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00039-JlOwEEGv2hGI6WFAIGpUZajRg0OMXU.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00040",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00040-YK23v7IjkONo3P74OuLqxVCKBEk0Ws.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00041",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00041-RwMYwdyk9JWr2b4LBlDhxjW3k7L0RF.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00042",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00042-C1NMDoBtGQYbrkWGPcWQ7GFy2yaoUL.png"
+      },
+      {
+        "type": "image",
+        "key": "tommygunfiring_00043",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/weapons/tommy/tommygunfiring_00043-SBiugOBTl7xpd2XTxurDT7OJHQXlNK.png"
+      }
+    ]
+  }
+}

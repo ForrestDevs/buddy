@@ -1,0 +1,726 @@
+{
+  "character": {
+    "files": [
+      {
+        "type": "image",
+        "key": "buddy-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/ArmLBuddyv2-4FUNdOVuvGxaNbvD6jecsJ8vto56Qq.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/ArmRBuddyv2-oA2qmflpEr0e4f43zuOJxkE8bZ4Ad4.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/BodyBuddy2-7EpcI7xtHE5T0L2cvmxEIJeU98B0jP.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/FootBuddyv2L-spHXVGjhMRHfu5iZLvCHhhC8uAJI9o.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/FootBuddyv2R-IfZr5DGZYlCfFuwIbzgX3BnhqR1n1p.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/HeadPaperv2-LS4jgKkYD1bJI36D0Vjebq1ModVQD7.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN-rtSO1aOY54dAGlYvO4T7se3jawjHLx.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN_head-dTbvkSChFStDkOnPxVzvi7jOFNCxaj.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN_Larm-m35MZ9cxMOnKgP0sDyCI6lDbLveojt.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN_Lleg-t1P0kPLJ2HQWQHxUPk3Sl7lnSHc4Zk.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN_Rarm-RS07NzWwo0JqQuqk8GUJLY1myIBK1i.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_CLEAN_Rleg-OJ7yuzHi3Tux6VMpHJ4rWbxfVwxlBZ.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_body-nme4fmQLKPmbuIMtE3e5ibrxmLMrkY.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_head-0AyIJoi8NgDOBb0tyLvjtDXtIh3UT9.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_Larm-eoF1IeanKae0g6q2A1yNjcVHvooTFP.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_Lleg-r0MoZmhk8pcKhjB3Oz7cQtZUpqqopX.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_Rarm-D0I6qJNaaQwvG643LL1dmhO3BZwodv.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_dead_Rleg-bsoF2H5A52zYCVoZGDa00LPdk8bLue.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_body-qWDkUG7v6ro357kZWilcnrkQW7KKGo.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_head-9yIJ6tIEusdhxelQ5gBaSl7RRL2oA6.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_Larm%20NEW-C7UXPQJoRPPJERUi0IXZiSqPRTTbC0.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_Lleg-fuuOMvMz7ENuLMwgLNJtJHO5ArnZJU.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_Rarm-Ln4evBzNMCzXbCJX7mJvj00hKj47Kv.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_heavy_Rleg-7gJVVbMWQTZ8E8w0ZSL5I8ska0YPmq.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_light_body-1HmXRgwu9liHKwENBwhg7d71ALJNkI.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_Light_head-qk1NtkfLQeyVosUPPeORyCFhwrU7Y3.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_light_Larm-svs29fSQRhY9NbG36p90EOdDO4U5vV.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_light_Lleg-899ey7fk0gMgAV7ZYMeeX9TYfUToxk.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_light_Rarm-fOFryc8DAh7E2ebdxUVkDHBjL6g8lM.png"
+      },
+      {
+        "type": "image",
+        "key": "mil-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/military/Mili_light_Rleg-E9ATRcxONVh7vLhbWzRWmhYoD07eaj.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN-Te2JoONLpL5JY2SsKPnn5bVPU44EeX.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN_head-kxaOEA8QI27YTJvNI2lpB4tt24NrLd.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN_Larm-hzZ69PEwgqaaTTVGk5A6FLXdAGILLj.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN_Lleg-dbKs1LcM5QW6SOOC2MQ033wOwC2wQU.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN_Rarm-T2aYMn2DseSzPzu5sXifg6QfBgaAhu.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_CLEAN_Rleg-d3tZixfEwi3kehuCQmgZV7SywrKD3c.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_body-E3Miu1e6NMyIxwaMYNq8AsgS9MVDfP.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_head-CrDzyl3OzYwOp0tC3rlLG8vznqxtTN.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_Larm-OjZolwMDzwcrm00nXPE7BXieEikO7w.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_Lleg-56HQVeR92OH79cxgrW4wbHG9XimMFd.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_Rarm-mPErHdKsMP660BGL9C2HTOFHdm3JNK.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_dead_Rleg-vdGX51LlhOydLxUScA6xfrAtwApflL.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_heavy_body-GWXQAv03H7pWnMvHTDZFV5fLtUmHJo.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_heavy_Larm%20NEW-bKPq840M9YeoRBH92M8KJpK0eIWP1l.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_heavy_Lleg-vV6r87hG1GAmx1cVxXD0komSvAoIUY.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_heavy_Rarm-xuVOiGvfGghvcpAvtLYOenULhssFg9.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_heavy_Rleg-x26OaEgqWoCxXwPeoc6ELN2UdtTFTH.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_body-SyE3obNyC0fS4FHI9ae8fBN0sCPVP0.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_head-fX38thWErsV7bcvImjUyIemNajURsW.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_Larm-BEbBSjekFWwDRZWwvnyfX6olo8Qd3U.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_Lleg-0W7oYcc1k1LvVxWedU1HdveXUae5ha.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_Rarm-6s6BdSj5rkgr1mAVEEP5Mt2qyJCKuM.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Musk_light_Rleg-ZKzaFQzeW4pbx9lkYw8ckADttgnivm.png"
+      },
+      {
+        "type": "image",
+        "key": "musk-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/musk/Must_heavy_head-JqlmYLyEhydz5I8pvhjKgcfB7kUGNj.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN-oA8YtB86unMZK6U4Iqa5xsYnlQBi4q.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN_head-k4L0gKo3llDpGcjiJm2lT8dK7b66Pa.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN_Larm-VRyawKFsf3jjnz1MV5vkSeGipbkTA7.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN_Lleg-wUyIUnmgfc1uppxdRyjISzXdt0YRMO.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN_Rarm-YjbTsekhGYQRSALNvfyVzmg13hGSVT.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_CLEAN_Rleg-GtTUJ05jw51KV0JHLu5utr1iKz6nHi.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_body-ttx5zdPYaDccrs4HxyZfjBRi5aSqQh.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_head-u7DC3Cfu17kbk9EK0HhZGC63sisYOX.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_Larm-GnECafcFcoN400BQYUgGGHWYC6tidF.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_Lleg-fldW165FSEK6j5Grisz57GJpIzB8IN.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_Rarm-wDlddw3soCnWqt9U742UnnnBKlEcvD.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_dead_Rleg-kcQ50TrGTkDTrMcwHZtfTFLb6sbpeq.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_body-eUgNb1getE6Fha4Z8ci1Y7KcoOyEl7.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_head-nY06eAT3PkHpwhVx96lu3TSjBFyX2J.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_Larm-sW9aC0dm0cwqpnN7dd3QimhxQ4CiK3.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_Lleg-SFxtPH1NnVapgKFPAzuhjoG15HRckC.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_Rarm-ujAQp747bJ1AqgMwaKNMN0KKZuSoEG.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_heavy_Rleg-j4bo3WOwkd5BhC7Mqt2qbzblRQu5Ke.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_light_body-KXbHAfHQOzZJ2MTGrN0CRvAPtWoQNv.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_light_head-zzQ9WoCHZmOcsHpfSnoJPqy7TXKdGJ.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_light_Larm-lQ6BGn1AgSSr09VtK7r1F32uDq0f3E.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_Light_Lleg-PGxn389IkNmMGkchcvt0fGzjxk7bQL.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_light_Rarm-mgyuhIKRY9yMbqJ7l0otZY1ukJ8CfF.png"
+      },
+      {
+        "type": "image",
+        "key": "paper-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/paper/Paper_Light_Rleg-tcBrY3p0fivnqLHNlobWjKH4ivac51.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_body-dBeirBpCMn9RDuezxHXAY9G5ysgMav.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_head-IZGMek511x9BTegeYMkeQrSn4yuSoS.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_Larm-Q1VBLM6DuYV3S1jk9bnw04Npe0fIWp.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_Lleg-tGhtVy27j2m7S0j4K1qLUxcHDvEyoB.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_Rarm-erTNSsOoZKHMGIAEldA44xDqUvu4Vc.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_dead_Rleg-UYePUpnovCcXSUnMkpjibIuv5oQckm.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_body-mabViumAMVuuViZ2XxUtdvJyyToFih.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_head-KVLCzZu6vqJwcdkDwmhf9eC0izF3p0.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_Larm-ctGWX8FJu08EaLkV988cwlfxhh8IPG.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_Lleg%202-oTpA84GSzb5MnIvT4YYctiCJq3VSa7.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_Rarm-ijAfN6uRUPSkZHlzxADhd0VNRdooLt.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_heavy_Rleg%202-EvEVWk2mgsFQeAAoiAeRyrbK7GxGx7.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_body-Ntdy37D0NL8kXO1j8wzXDApGAvJ3pe.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_head-6gtEQiIgBvITUFJjtfiUXMoqUiffQR.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_Larm-mKclCyphC8cbrFjhELj9CC05QJZZhq.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_Lleg-Rffz4p4YwGBFqwKIpc6rKD22FyChPN.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_Rarm-MG0w3kbdWRiEWhuBsKD7KqXJsWc47X.png"
+      },
+      {
+        "type": "image",
+        "key": "buddy-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/buddy/PaperV2_light_Rleg-AtWUrAzjE53JyHknvIIfvoZaOTNvd7.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_body-Q1KOhh6bFgeDoyMPPNQYGAx9XaOAY8.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_head-z1QOlAI8XCEPiokQmldOo2ZMFLvTjY.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_Larm-4SpAJR2WRDBxHwFsf2wJbOrJcyPkvh.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_Lleg-aASVn2hmJ4cdEDqdqwnzWXROUTUNYJ.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_Rarm-KrFwREC27yetLz93LnGmIVJwaYGB0O.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_dead_Rleg-I7Dm7lR7CWMzDrgPjcXaRWXinxlJGe.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_body-hK2UCrQyWhBT47thjEgZtSJ9E7UtcH.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_head-BsyLRbRJF36IrHiaQF2zXJYYJN1BMj.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_Larm-FlHIgzlGS11O9OEy8sRTxY3p7V3PRx.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_Lleg%202-iHOJ6QyZApNywLKEUYVEQXrSDXaHyb.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_Rarm-pKeO0XOPR7HbbNAUAAQUhPCdSCZo7X.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_heavy_Rleg%202-fNaqyUyNswliq3xjnJ7meyy1hIgr0u.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_body-XccIdjw8RDrwCVo5svC1B0pWfiu9Qx.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_head-goWhM2AVtyLUbKMPWQ2tHIDZZV0afb.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_Larm-F72Yige3zWUl2qVUAQIDt7350UzCy5.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_Lleg-0Eas5QlSGdrJyXAVO0sGM2EoBE4tlT.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_Rarm-kaITcGjltmQ3nW7jdU4QNuNZe2ttdx.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/Santa_light_Rleg-mHF87z5udNMvG3pYkuFiCPuEV1ASNa.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaArmL-odHSpQZy5l1KGsqOC6njEDzMbwFs8s.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaArmR-DPiOr0SZrMZhmYaFTxW5icZSWTWY9v.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaBody-GATyKegFnJHYXwJ1v6ZX6yqHWNx0UR.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaHead-5rhhmiBy7HApP0qrsXcU6i2iSzkWbb.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaLegL-9KT0uxM3kZbflfq5jAqRFvrM3uzTBj.png"
+      },
+      {
+        "type": "image",
+        "key": "santa-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/santa/SantaLegR-HgCKsXjmy5dT3nWRfuuq3SnD5KphrV.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-body-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_body-4tgxkZipkP0b1bYuZ7egX9G139O2JA.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-head-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_head-4ciYUsYLW6bfJhmdEf5i0zMPD0LILI.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-larm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_Larm-imJsXgEvhxqvzqQiedijp5kXqKp99k.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-lleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_Lleg-2EDQJYUyW44G9nBpWRtxsr56QJdBzJ.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rarm-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_Rarm-lS8laJh0K0xvMLkIyHnYlhgSEyFytb.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rleg-clean",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_CLEAN_Rleg-OWoAR1mPKeh8MnmIunH7llT9e6aCC6.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-body-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_body-qEllDAditolnxfYFDNuLrGO42TLkEh.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-head-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_head-Q51P5aHoUksSwBRLyqkKuLDzjMijTB.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-larm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_Larm-GFcGg4lh2COTHVhj8xl1Bpne7t25j8.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-lleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_Lleg-ope7n9gyJv4vo8UTB8QCvkaWm8vo0X.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rarm-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_Rarm-g0Reqk9rku1mCwZgjdCvAFFhaGebws.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rleg-dead",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_dead_Rleg-GXmk1SYxN11Cb6NVt4PeTBdsAKzJZo.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-body-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_heavy_body-yphxjd1T8kc0keEIhJx0cDEHoOjWRr.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-head-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_heavy_head-kk99XzHnP6HrqMCM1CT5oHD7O0CNZy.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-larm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_heavy_Larm2-0aaNMiNIVAciwKOEkLsOYBqjJgGdGo.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-lleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_Heavy_Lleg-iPzxxuBaSwqET7l9l5Y8FcoZDVc7JY.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rarm-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_heavy_Rarm2-xvesK5dbgL6w9w2YKGraH6PmC1G42C.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rleg-heavy",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_Heavy_Rleg-gzG6iIoL3ZrW3JdawKq9JRkaznFkAw.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-body-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_light_body-6ttf8MhDcnEoLUHueqzdkqvJtBxWyK.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-head-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_light_head-DY8dovJ147fT5agf72h0nzGwalRYx6.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-larm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_light_Larm2-24XDtlEQOIGD3prGQH8O7tjMGm9UA2.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-lleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_Light_Lleg-ubKrZp8iJtPiW3tRcpG6o3Ez6KKICc.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rarm-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_light_Rarm2-I8AVKEz0mb1fUqbEGlYu2UyarbcBXt.png"
+      },
+      {
+        "type": "image",
+        "key": "sol-rleg-light",
+        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/character/sol/Sol_Light_Rleg-AceGX4U2NMFDWhVRaqY1zRByeCOvp8.png"
+      }
+    ]
+  }
+}

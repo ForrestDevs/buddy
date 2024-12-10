@@ -1,0 +1,314 @@
+{
+  "sounds": {
+    "files": [
+      {
+        "type": "audio",
+        "key": "flamethrower-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/flamethrower-fire-Dbr4twdUNrI89L1FJSAxWIroGR4jnT.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "itemselect",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_itemselect-hqnig4pfKxIa7gkgsxErruH3GYDcxh.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "scream",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_scream-IRU7H5WziPFChQ7rb0X65GorHWt3Zr.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "swear",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_swear-nrAnxK3Ouw1dytKMLaAECMclLfcy3M.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "chainsaw-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/chainsaw_motor-5wKYQiaCPxqj1DSTEFSws7g00Zav6k.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "click",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_menuclick-9qvWPLzt11QFZN6DnQB6wYWJb0LTjh.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "click-deny",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_menuDeny-IFJPcnRNt5mrH3H2Dgpp9yl1EstpNy.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "coin-drop",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/coin_drop-LrQXQJ0DyTMxsq7wmrlqGCIp8klm9W.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "coin-pickup",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/coin_pickup-DSQ9IR81QKq2SZSvb9XtUMZxSnXFz7.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "deagle-cock",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/deagleCock-gDZiaMjACIifyFNXUKlKDfIBTLPqUQ.wav"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "deagle-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/deagleFire-dj6oKPGDn5qXc9DzLsmCSWM5MyJRgJ.wav"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "death",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_death-DNfdZ2O7UbAd2M3WuuAV2c1aO5QYnR.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "dynamite-flick",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Dyna_flick-NCs9pzgCm3cHYz07zgVrO241NOLOyG.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "dynamite-fuze",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Dyna_fuze-xgRio2GC1pA6XV0zobrZU17rkaediD.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "explode",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/misc_explode-5zmbRsRaoe5LZan2VEyIwdm21aCTdw.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "fire-bomb-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/FireNade_fire-qdleHft7IL0tjvhfU5wV4XFvNPr1K6.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "fire-bomb-impact",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/FireNade_impact-1UmjsFPCEWOubPNQBTHMpghOstS2am.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "grunt",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_grunt-MIiNtW0ZgVVj7xE9gag0ETdHgNxNyG.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "kar98-cock",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/kar_cock-hLinyqUxMDLatJE7JdYADmgSwyMSNj.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "kar98-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/kar_shot-OjiQB4stZEdu6VSN3wOtxthtitbedZ.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "katana-pullout",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/kata_pullout-kXPXoE84YEfCZgkNBdBSF927TMzaQv.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "katana-slash",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/kata_slash-FKXcFcsi8k7mJgJkACrtPupixMx977.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "mg-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/mg42_shoot-igpV4VpyaOpqmzGtla2TtdQ2vfYJMW.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "bloodspurt",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/misc_bloodspurt-GGZcFSFj4O5Xpa267HiPzKmRXdnroX.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "grenade-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Nade_pinpull-991OADPKAXLM7QoBFGSrq7zsP9DKli.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "ouch",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_ouch-XLUGIyDbH01KZVUk5zvwO9y0ktSnKW.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "page-turn",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_journal-mqvZJ5YbaXHFZWhCUzNF2bjrvRM4DB.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "railgun-hold",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Railgun_hold-TMkK5PN2XkrFMQPO5U1nPDNowWI4a9.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "railgun-explode",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Railgun_explode-lG3kizimnIEZ3KYmVw7Dh8QVZAq7eQ.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "railgun-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Railgun_shot-EEskkZkQqdf5vD0F80wTp6AfIB4AdJ.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "railgun-fire2",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Railgun_shot2-Fz5QmgP1FuiaC3VmVY3IjpENIFRBNa.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "railgun-charge",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Railgun_powerup-nbTXgSJ8MSs5LI0bfzayiKPWodbjK6.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "raygun-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/RayGun_shot-v8Jn3zpPChIGCeG1ihI8uUin8bSp57.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "raygun-impact",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/RayGun_hit-GgPx46zYkhv1wYhlT5zv5pUJsGlqG8.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "rpg-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/RPG_shot-uHOQFC0Y8435zKyV1x5b9YPKAad3fO.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "lightsaber-active",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Saber_active-LQRqi3x77uZym2JKLmYLWPdleFUpaA.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "lightsaber-close",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Saber_close-uF7TfcpLBpwdpJVg3hiZE5XIS1hGlI.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "lightsaber-hit",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Saber_hit-8EplhA03OV3aehpvtwCvU7cvaGGnOe.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "lightsaber-ignite",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Saber_ignite-opxKkaH0MTgUdsSEHqaU1BA16Cty0h.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "sticky-bomb-impact",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/sticky_contact-LimswTWExoIuIWeiqbo2VOhhZEXcCI.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "throwknife-impact",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/throwknife_impact-EUj5eYVbVdEoZm8rBH7MTP3cIsLVaC.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "throwknife-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/throwknife_toss-TCijUq5eWNA6VJX5wJzJ5IvkkVGGye.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "thump",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Buddy_thump-PPmJAM9QSbUdDlRJiRXyTYVv4miMyU.mp3"
+        ]
+      },
+      {
+        "type": "audio",
+        "key": "tommy-fire",
+        "url": [
+          "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/sounds/Tommy_shoot-KEREPkG39oO6YC3m4AQ97AgHBY2h3A.mp3"
+        ]
+      }
+    ]
+  }
+}

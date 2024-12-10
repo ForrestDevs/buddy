@@ -8,6 +8,12 @@ import { SoundManager } from "../classes/SoundManager";
 import { Weapon } from "../classes/Weapon";
 import { Effects } from "../classes/Effects";
 
+//TODO: Fix sticky bomb, and lightsaber
+//TODO: make big coin drop on death
+//TODO: add buddy sounds
+//TODO: fix blob asset key for social buttons
+//TODO: optimize pack loading, split into smaller packs to make parallel loading possible
+
 export default class Game extends Phaser.Scene {
   private bg!: Phaser.GameObjects.Image;
   private character!: Character;

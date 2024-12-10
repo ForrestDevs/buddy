@@ -23,10 +23,10 @@ export default class MainMenu extends Phaser.Scene {
       .setDepth(-3);
     EventBus.emit("current-scene-ready", this);
     this.music = this.sound.add("bgMusic");
-    // this.music.play({
-    //   loop: true,
-    //   volume: 0.5,
-    // });
+    this.music.play({
+      loop: true,
+      volume: 0.5,
+    });
     this.background = this.add
       .video(1280 / 2, 720 / 2, "loading")
       .setScale(0.68)

@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile, mkdir } from 'fs/promises';
 import { resolve } from 'path';
 
 interface AssetMapping {
@@ -10,7 +10,7 @@ interface AssetMapping {
 interface PackFileAsset {
   type: string;
   key: string;
-  url: string | string[];  // url can be string or array for audio files
+  url: string | string[];
 }
 
 interface PackFileSection {
@@ -22,77 +22,101 @@ interface PackFile {
   [key: string]: PackFileSection;
 }
 
-async function createBlobPack() {
+async function createBlobPacks() {
   try {
     // Load asset mapping
     const mappingContent = await readFile('src/game/asset-mapping.json', 'utf-8');
     const assetMapping: AssetMapping[] = JSON.parse(mappingContent);
     const urlMap = new Map(assetMapping.map(m => [m.pathname, m.blobUrl]));
 
-    // Load all pack files
-    const packFiles = [
-      'effects/effect-pack.json',
-      'weapons/weapon-pack.json',
-      'character/character-pack.json',
-      'sounds/sound-pack.json',
-      'buttons/button-pack.json',
-      'backgrounds/bg-pack.json'
-    ];
+    // Create packs directory if it doesn't exist
+    const packsDir = 'public/assets/packs';
+    await mkdir(packsDir, { recursive: true });
 
-    const consolidatedPack: PackFile = {};
+    // Define pack categories with correct paths
+    const packCategories = {
+      effects: 'effects/effect-pack.json',
+      weapons: 'weapons/weapon-pack.json',
+      character: 'character/character-pack.json',
+      sounds: 'sounds/sound-pack.json',
+      buttons: 'buttons/button-pack.json',
+      backgrounds: 'backgrounds/bg-pack.json'
+    };
 
-    for (const packFile of packFiles) {
-      console.log(`Processing ${packFile}...`);
+    // Process each category separately
+    for (const [category, packFile] of Object.entries(packCategories)) {
+      console.log(`Processing ${category} pack...`);
+      
       const content = await readFile(`public/assets/${packFile}`, 'utf-8');
       const pack = JSON.parse(content);
       
-      // Get the section name from the file path
-      const section = packFile.split('/')[0];
-      
-      consolidatedPack[section] = {
-        files: []
+      const blobPack: PackFile = {
+        [category]: {
+          files: []
+        }
       };
 
       // Process each file in the pack
       if (pack.section1?.files) {
         for (const file of pack.section1.files) {
           try {
-            // Handle both string and array URLs (for audio files)
-            const urls = Array.isArray(file.url) ? file.url : [file.url];
-            const processedUrls = urls.map((url: string) => {
-              const pathname = url.replace('assets/', '');
+            if (file.type === 'audio') {
+              // Handle audio files with URL arrays
+              const urls = Array.isArray(file.url) ? file.url : [file.url];
+              const processedUrls = urls.map((url: string) => {
+                const pathname = url.replace('assets/', '');
+                const blobUrl = urlMap.get(pathname);
+                if (!blobUrl) {
+                  console.warn(`No blob URL found for ${pathname}`);
+                  return url; // Keep original URL if no blob URL found
+                }
+                return blobUrl;
+              });
+
+              blobPack[category].files!.push({
+                type: file.type,
+                key: file.key,
+                url: processedUrls
+              });
+            } else {
+              // Handle other file types with single URL
+              const pathname = file.url.replace('assets/', '');
               const blobUrl = urlMap.get(pathname);
+
               if (!blobUrl) {
                 console.warn(`No blob URL found for ${pathname}`);
-                return url; // Keep original URL if no blob URL found
+                continue;
               }
-              return blobUrl;
-            });
 
-            consolidatedPack[section].files!.push({
-              type: file.type,
-              key: file.key,
-              url: file.type === 'audio' ? processedUrls : processedUrls[0]
-            });
+              blobPack[category].files!.push({
+                type: file.type,
+                key: file.key,
+                url: blobUrl
+              });
+            }
           } catch (error) {
-            console.error(`Error processing file in ${packFile}:`, file);
+            console.error(`Error processing file in ${category}:`, file);
             console.error(error);
           }
         }
       }
+
+      // Save to new packs directory
+      const outputPath = `${packsDir}/blob-${category}-pack.json`;
+      await writeFile(outputPath, JSON.stringify(blobPack, null, 2));
+      console.log(`Created ${category} blob pack at ${outputPath}`);
     }
 
-    // Save the consolidated pack file
-    const outputPath = 'public/assets/blob-pack.json';
-    await writeFile(outputPath, JSON.stringify(consolidatedPack, null, 2));
-    console.log(`Created blob pack at ${outputPath}`);
-
-    // Create a TypeScript type definition file for the keys
+    // Update type definitions
     let typeContent = 'export type AssetKeys =\n';
-    for (const [section, data] of Object.entries(consolidatedPack)) {
-      if (data.files) {
-        typeContent += `  // ${section}\n`;
-        data.files.forEach(file => {
+    for (const category of Object.keys(packCategories)) {
+      const packPath = `${packsDir}/blob-${category}-pack.json`;
+      const packContent = await readFile(packPath, 'utf-8');
+      const pack = JSON.parse(packContent);
+
+      typeContent += `  // ${category}\n`;
+      if (pack[category].files) {
+        pack[category].files.forEach((file: PackFileAsset) => {
           typeContent += `  | '${file.key}'\n`;
         });
       }
@@ -102,17 +126,10 @@ async function createBlobPack() {
     await writeFile('src/game/types/asset-keys.d.ts', typeContent);
     console.log('Created asset keys type definition');
 
-    // Print some statistics
-    for (const [section, data] of Object.entries(consolidatedPack)) {
-      if (data.files) {
-        console.log(`${section}: ${data.files.length} files`);
-      }
-    }
-
   } catch (error) {
-    console.error('Error creating blob pack:', error);
+    console.error('Error creating blob packs:', error);
     process.exit(1);
   }
 }
 
-createBlobPack().catch(console.error); 
+createBlobPacks().catch(console.error); 
