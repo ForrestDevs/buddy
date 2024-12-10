@@ -18,6 +18,9 @@ export class GameButtons extends Phaser.GameObjects.Container {
   private muteButtonState: "muted" | "unmuted" = "unmuted";
   private socialsButton: Phaser.GameObjects.Image;
   private socialsButtonState: "open" | "closed" = "closed";
+  private socialButtons: Map<string, Phaser.GameObjects.Image> = new Map();
+  private readonly SMALL_BUTTON_SIZE = 50;
+  private readonly SOCIAL_BUTTON_SPACING = 70;
 
   constructor(config: ButtonConfig) {
     super(config.scene, config.x, config.y);
@@ -25,18 +28,67 @@ export class GameButtons extends Phaser.GameObjects.Container {
     this.spacing = config.spacing || 60;
     this.scene.add.existing(this);
     this.inputState = InputState.getInstance();
-    this.createButtons();
+    this.createUtilityButtons();
+    this.createMainButtons();
     this.setupEventListeners();
   }
 
-  private createButtons(): void {
+  private createUtilityButtons(): void {
+    // Create mute button
+    this.muteButton = this.scene.add
+      .image(-25, -150, "unmuted")
+      .setDisplaySize(this.SMALL_BUTTON_SIZE, this.SMALL_BUTTON_SIZE)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.onExtraButtonHover())
+      .on("pointerout", () => this.onExtraButtonOut())
+      .on("pointerdown", () => this.onMuteButtonClick());
+
+    // Create socials toggle button
+    this.socialsButton = this.scene.add
+      .image(35, -150, "logo-select")
+      .setDisplaySize(this.SMALL_BUTTON_SIZE, this.SMALL_BUTTON_SIZE)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.onExtraButtonHover())
+      .on("pointerout", () => this.onExtraButtonOut())
+      .on("pointerdown", () => this.onSocialsButtonClick());
+
+    // Create social media buttons (initially hidden)
+    const socialTypes = ["twitter", "telegram", "dex"];
+    socialTypes.forEach((type, index) => {
+      const button = this.scene.add
+        .image(
+          this.socialsButton.x + (index + 1) * this.SOCIAL_BUTTON_SPACING,
+          -150,
+          `${type}-button`
+        )
+        .setDisplaySize(this.SMALL_BUTTON_SIZE, this.SMALL_BUTTON_SIZE)
+        .setInteractive({ useHandCursor: true })
+        .on("pointerover", () => {
+          // this.onExtraButtonHover();
+          button.setTexture(`${type}-button-active`);
+        })
+        .on("pointerout", () => {
+          this.onExtraButtonOut();
+          button.setTexture(`${type}-button`);
+        })
+        .on("pointerdown", () => this.onSocialClick(type))
+        .setVisible(false);
+
+      this.socialButtons.set(type, button);
+      this.add(button);
+    });
+
+    this.add([this.muteButton, this.socialsButton]);
+  }
+
+  private createMainButtons(): void {
     const buttonKeys = ["levels", "shop", "boxes", "skins"];
 
     buttonKeys.forEach((key, index) => {
       const button = this.scene.add
         .image(
-          0, // x relative to container
-          index * this.spacing, // y relative to container
+          0,
+          index * this.spacing - 50, // Start below utility buttons
           key
         )
         .setDisplaySize(100, 100)
@@ -45,30 +97,10 @@ export class GameButtons extends Phaser.GameObjects.Container {
         .on("pointerout", () => this.onButtonOut(key))
         .on("pointerdown", () => this.onButtonClick(key));
 
-      this.add(button); // Add to container
+      this.add(button);
       this.buttons.set(key, button);
       this.buttonStates.set(key, "default");
     });
-
-    this.socialsButton = this.scene.add
-      .image(0, 440, "logo-select")
-      .setDisplaySize(100, 100)
-      .setInteractive({ useHandCursor: true })
-      .on("pointerover", () => this.onExtraButtonHover())
-      .on("pointerout", () => this.onExtraButtonOut())
-      .on("pointerdown", () => this.onSocialsButtonClick());
-
-    this.add(this.socialsButton);
-
-    this.muteButton = this.scene.add
-      .image(0, -110, "unmuted")
-      .setDisplaySize(100, 100)
-      .setInteractive({ useHandCursor: true })
-      .on("pointerover", () => this.onExtraButtonHover())
-      .on("pointerout", () => this.onExtraButtonOut())
-      .on("pointerdown", () => this.onMuteButtonClick());
-
-    this.add(this.muteButton);
   }
 
   private setupEventListeners(): void {
@@ -91,6 +123,11 @@ export class GameButtons extends Phaser.GameObjects.Container {
     this.scene.sound.play("click");
     this.socialsButtonState =
       this.socialsButtonState === "open" ? "closed" : "open";
+
+    // Show/hide social buttons based on state
+    this.socialButtons.forEach((button) => {
+      button.setVisible(this.socialsButtonState === "open");
+    });
   }
 
   private onButtonHover(key: string): void {
@@ -187,9 +224,35 @@ export class GameButtons extends Phaser.GameObjects.Container {
     });
   }
 
+  private onSocialClick(type: string): void {
+    this.scene.sound.play("click");
+
+    // Open appropriate link based on type
+    let url = "";
+    switch (type) {
+      case "twitter":
+        url = "https://twitter.com/your_twitter";
+        break;
+      case "telegram":
+        url = "https://t.me/your_telegram";
+        break;
+      case "DexLogo":
+        url = "https://your_dex_url.com";
+        break;
+    }
+
+    if (url) {
+      window.open(url, "_blank");
+    }
+  }
+
   public destroy(): void {
     // Clean up event listeners
     EventBus.off("journal-closed", this.resetButtonStates, this);
+
+    // Clean up social buttons
+    this.socialButtons.forEach((button) => button.destroy());
+    this.socialButtons.clear();
 
     // Container's destroy method will handle destroying all child objects
     super.destroy();

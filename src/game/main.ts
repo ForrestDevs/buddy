@@ -16,7 +16,7 @@ const config: Phaser.Types.Core.GameConfig = {
     height: 720,
   },
   parent: "game-container",
-  backgroundColor: "#028af8",
+  backgroundColor: "#30cfd0",
   scene: [Boot, MainMenu, Preloader, MainGame],
   plugins: {},
   physics: {

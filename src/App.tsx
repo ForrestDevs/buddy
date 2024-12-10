@@ -47,22 +47,26 @@ function App() {
           gap: "20px",
         }}
       >
-        {/* <div style={{ flex: 1, textAlign: "center" }}>
+        <div style={{ flex: 1, textAlign: "center" }}>
           <p
             style={{
               fontSize: "1.2rem",
               margin: "0 auto",
-              color: "#888888", 
-              letterSpacing: "0.05em",
+              color: "#888888",
+              letterSpacing: "0.1em",
+              padding: "0 60px",
             }}
           >
-            The first kick-the-buddy game on the blockchain! Choose your tier,
-            pick your weapons, and unleash chaos. Earn while you play - the more
-            you kick, the more you earn!
+            Experience the first kick-the-buddy game on the blockchain! Unleash
+            mayhem with an arsenal of devastating weapons and stylish character
+            skins. The more you play, the more $BUDDY tokens you earn - use them
+            to unlock epic new weapons and rare skins! Help grow our community
+            and raise the market cap to unlock even more awesome content. Join
+            the chaos and start earning today!
           </p>
-        </div> */}
+        </div>
 
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexDirection: "row",
@@ -153,7 +157,7 @@ function App() {
               }}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

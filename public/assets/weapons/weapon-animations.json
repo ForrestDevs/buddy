@@ -2378,7 +2378,7 @@
       "type": "frame",
       "frames": [
         {
-          "key": "flamethrower idle",
+          "key": "flamethrower",
           "duration": 0,
           "keyframe": false
         },

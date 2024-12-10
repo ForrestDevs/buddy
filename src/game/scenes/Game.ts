@@ -124,17 +124,6 @@ export default class Game extends Phaser.Scene {
   update(time: number, delta: number): void {
     this.updatePhysics(delta);
     // Display FPS counter
-    const fps = Math.round(1000 / delta);
-    if (!this.fpsText) {
-      this.fpsText = this.add
-        .text(30, 10, `FPS: ${fps}`, {
-          color: "#fff",
-        })
-        .setScrollFactor(0);
-    } else {
-      this.fpsText.setText(`FPS: ${fps}`);
-    }
-
     this.character.update();
     this.weaponObject.updateWeaponPosition();
   }

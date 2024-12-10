@@ -104,12 +104,12 @@
             {
                 "url": "assets/buttons/socials/DexLogo.png",
                 "type": "image",
-                "key": "DexLogo"
+                "key": "dex-button"
             },
             {
                 "url": "assets/buttons/socials/DexLogoACTIVE.png",
                 "type": "image",
-                "key": "DexLogoACTIVE"
+                "key": "dex-button-active"
             },
             {
                 "url": "assets/buttons/shop/DynamiteUNLOCKED.png",
@@ -519,12 +519,12 @@
             {
                 "url": "assets/buttons/socials/TeleLogo.png",
                 "type": "image",
-                "key": "TeleLogo"
+                "key": "telegram-button"
             },
             {
                 "url": "assets/buttons/socials/TeleLogoACTIVE.png",
                 "type": "image",
-                "key": "TeleLogoACTIVE"
+                "key": "telegram-button-active"
             },
             {
                 "url": "assets/buttons/pages/FreePageBG.png",
@@ -594,12 +594,12 @@
             {
                 "url": "assets/buttons/socials/Xicon.png",
                 "type": "image",
-                "key": "twitter"
+                "key": "twitter-button"
             },
             {
                 "url": "assets/buttons/socials/XLogoACTIVE.png",
                 "type": "image",
-                "key": "twitter-active"
+                "key": "twitter-button-active"
             },
             {
                 "url": "assets/buttons/icons/Unmuted Icon.png",

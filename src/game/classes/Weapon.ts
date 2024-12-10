@@ -297,12 +297,14 @@ export class Weapon {
         width: 300,
         height: 150,
         name: "katana",
-        animationKey: "katanaFire",
-        fireRate: 1000,
+        fireRate: 500,
         burstSize: 1,
-        damage: 0.5,
-        isThrowable: false,
+        damage: 0.4,
+        isThrowable: true,
         specialCase: true,
+        projectileSpeed: 40,
+        projectileDisplaySize: { width: 300, height: 150 },
+        projectileTexture: "katana",
       },
       kar98: {
         texture: "kar98",
@@ -333,6 +335,14 @@ export class Weapon {
         specialCase: true,
       },
     };
+
+  private static CHAINSAW_CONFIG = {
+    damagePerTick: 5,
+    damageInterval: 100,
+    range: 150, // Range in pixels for chainsaw damage
+  };
+
+  private lastDamageTime: number = 0;
 
   constructor(scene: Phaser.Scene, character: Character, effects: Effects) {
     this.scene = scene;
@@ -498,8 +508,18 @@ export class Weapon {
       this.currentWeapon.removeFromDisplayList();
     }
   }
-
   private updateFlameDamage(): void {
+    // Return early if input is locked
+    if (this.inputState.isLocked) {
+      // Optionally stop the flamethrower sound and timer
+      this.scene.sound.stopByKey("flamethrower-fire");
+      if (this.firingTimer) {
+        this.firingTimer.destroy();
+        this.firingTimer = undefined;
+      }
+      return;
+    }
+
     const currentTime = this.scene.time.now;
 
     // Check if enough time has passed since last damage
@@ -510,8 +530,14 @@ export class Weapon {
       return;
     }
 
+    const characterPos = this.character.getPosition();
+
     if (!this.currentWeapon) return;
     EventBus.emit("health-changed", Weapon.FLAMETHROWER_CONFIG.damagePerTick);
+    this.randomBloodEffect(characterPos);
+    for (let i = 0; i < 3; i++) {
+      this.effects.spawnCoin(characterPos.x, characterPos.y);
+    }
 
     this.lastFlameDamageTime = currentTime;
   }
@@ -544,25 +570,38 @@ export class Weapon {
         break;
 
       case "chainsaw":
-        this.currentWeapon?.play("chainsawFire");
-        this.scene.sound.play("chainsaw-fire");
-        break;
+        if (!this.firingTimer && !this.inputState.isLocked) {
+          this.currentWeapon?.play("chainsawFire");
+          this.scene.sound.play("chainsaw-fire", { loop: true });
 
-      case "flamethrower":
-        if (!this.firingTimer) {
-          this.currentWeapon?.play("flamethrowerFire");
-          this.scene.sound.play("flamethrower-fire", { loop: true });
-
-          // Start checking for flame damage
+          // Start checking for chainsaw damage
           this.firingTimer = this.scene.time.addEvent({
-            delay: 16,
-            callback: this.updateFlameDamage,
+            delay: 100,
+            callback: this.updateChainsawDamage,
             callbackScope: this,
             loop: true,
           });
         }
         break;
 
+      case "flamethrower":
+        // Only start the flamethrower if input is not locked
+        if (!this.firingTimer && !this.inputState.isLocked) {
+          this.currentWeapon?.play("flamethrowerFire");
+          this.scene.sound.play("flamethrower-fire", { loop: true });
+
+          // Start checking for flame damage
+          this.firingTimer = this.scene.time.addEvent({
+            delay: 100,
+            callback: this.updateFlameDamage,
+            callbackScope: this,
+            loop: true,
+          });
+        }
+        break;
+      case "katana":
+        this.scene.sound.play("katana-pullout");
+      // Intentionally fall through to default case
       default: {
         // Clear any existing firing timer
         if (this.firingTimer) {
@@ -715,8 +754,8 @@ export class Weapon {
           this.currentWeapon?.play("lightsaberOpen");
           break;
         case "katana":
-          this.scene.sound.play("katana-pullout");
           this.scene.sound.play("katana-slash");
+          this.spawnProjectile(config);
           break;
         case "flamethrower":
           this.currentWeapon?.play("flamethrowerFire");
@@ -782,8 +821,8 @@ export class Weapon {
       // Add glow effect
       laser.setPostPipeline("GlowPostFX");
 
-      // Optional: Add some particle effects at the impact point
-      this.effects.playEffect("explosion1", characterPos.x, characterPos.y);
+      this.randomExplosionEffect(characterPos);
+      this.randomBloodEffect(characterPos);
 
       // Apply damage
       const damage =
@@ -928,7 +967,8 @@ export class Weapon {
     if (
       this.weapon === "grenade" ||
       this.weapon === "sticky-bomb" ||
-      this.weapon === "fire-bomb"
+      this.weapon === "fire-bomb" ||
+      this.weapon === "dynamite"
     ) {
       console.log("spawn projectile bomb");
       const matterBomb = this.scene.matter.add.gameObject(projectile, {
@@ -1008,6 +1048,12 @@ export class Weapon {
               break;
             }
             case "grenade": {
+              this.scene.sound.play("explode");
+              this.randomExplosionEffect(characterPos);
+              matterBomb.destroy();
+              break;
+            }
+            case "dynamite": {
               this.scene.sound.play("explode");
               this.randomExplosionEffect(characterPos);
               matterBomb.destroy();
@@ -1273,6 +1319,67 @@ export class Weapon {
 
   public destroy(): void {
     this.stopFiring();
+  }
+
+  private updateChainsawDamage(): void {
+    // Return early if input is locked
+    if (this.inputState.isLocked) {
+      this.scene.sound.stopByKey("chainsaw-fire");
+      if (this.firingTimer) {
+        this.firingTimer.destroy();
+        this.firingTimer = undefined;
+      }
+      return;
+    }
+
+    const currentTime = this.scene.time.now;
+
+    // Check if enough time has passed since last damage
+    if (
+      currentTime - this.lastDamageTime <
+      Weapon.CHAINSAW_CONFIG.damageInterval
+    ) {
+      return;
+    }
+
+    const characterPos = this.character.getPosition();
+
+    if (!this.currentWeapon) return;
+
+    // Calculate distance between chainsaw tip and character
+    const distance = Phaser.Math.Distance.Between(
+      this.barrelPoint.x,
+      this.barrelPoint.y,
+      characterPos.x,
+      characterPos.y
+    );
+
+    // Only apply damage if within range
+    if (distance <= Weapon.CHAINSAW_CONFIG.range) {
+      // Apply damage
+      EventBus.emit("health-changed", Weapon.CHAINSAW_CONFIG.damagePerTick);
+      
+      // Visual effects
+      this.randomBloodEffect(characterPos);
+      
+      // Spawn fewer coins than flamethrower but more frequently
+      for (let i = 0; i < 2; i++) {
+        this.effects.spawnCoin(characterPos.x, characterPos.y);
+      }
+
+      this.lastDamageTime = currentTime;
+    }
+
+    // Optional: Debug visualization of range
+    if (this.debugGraphics) {
+      this.debugGraphics.clear();
+      this.debugGraphics.lineStyle(2, 0xff0000, 0.5);
+      this.debugGraphics.strokeCircle(
+        this.barrelPoint.x,
+        this.barrelPoint.y,
+        Weapon.CHAINSAW_CONFIG.range
+      );
+    }
   }
 }
 
