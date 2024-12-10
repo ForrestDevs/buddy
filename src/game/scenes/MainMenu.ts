@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 import { EventBus } from "../EventBus";
+import { X_LINK, TELEGRAM_LINK, DEX_LINK } from "../../lib/sets";
 
 export default class MainMenu extends Phaser.Scene {
   private background!: Phaser.GameObjects.Video;
@@ -40,7 +41,7 @@ export default class MainMenu extends Phaser.Scene {
     // Twitter button
     const twitterButton = this.add
       .image(400 - spacing, socialY, "twitter-button")
-      .setScale(0.20)
+      .setScale(0.2)
       .setOrigin(0.5)
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
@@ -50,13 +51,13 @@ export default class MainMenu extends Phaser.Scene {
         twitterButton.setTexture("twitter-button");
       })
       .on("pointerdown", () => {
-        window.open("https://dex.com", "_blank");
+        window.open(X_LINK, "_blank");
       });
 
     // Telegram button
     const telegramButton = this.add
       .image(400, socialY, "telegram-button")
-      .setScale(0.20)
+      .setScale(0.2)
       .setOrigin(0.5)
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
@@ -66,13 +67,13 @@ export default class MainMenu extends Phaser.Scene {
         telegramButton.setTexture("telegram-button");
       })
       .on("pointerdown", () => {
-        window.open("https://dex.com", "_blank");
+        window.open(TELEGRAM_LINK, "_blank");
       });
 
     // Discord button
     const discordButton = this.add
       .image(400 + spacing, socialY, "dex-button")
-      .setScale(0.20)
+      .setScale(0.2)
       .setOrigin(0.5)
       .setInteractive({ useHandCursor: true })
       .on("pointerover", () => {
@@ -82,7 +83,7 @@ export default class MainMenu extends Phaser.Scene {
         discordButton.setTexture("dex-button");
       })
       .on("pointerdown", () => {
-        window.open("https://dex.com", "_blank");
+        window.open(DEX_LINK, "_blank");
       });
 
     // Add play button

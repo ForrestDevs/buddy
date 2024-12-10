@@ -1,5 +1,3 @@
-
-
 export function getPurchasedStates(key: string): Record<string, boolean> {
   console.log(key);
   const stored = localStorage.getItem(key);

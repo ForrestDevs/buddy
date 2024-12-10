@@ -1,3 +1,4 @@
+import { DEX_LINK, TELEGRAM_LINK, X_LINK } from "@/lib/sets";
 import { EventBus } from "../EventBus";
 import { InputState } from "./InputState";
 
@@ -249,13 +250,13 @@ export class GameButtons extends Phaser.GameObjects.Container {
     let url = "";
     switch (type) {
       case "twitter":
-        url = "https://twitter.com/your_twitter";
+        url = X_LINK;
         break;
       case "telegram":
-        url = "https://t.me/your_telegram";
+        url = TELEGRAM_LINK;
         break;
       case "DexLogo":
-        url = "https://your_dex_url.com";
+        url = DEX_LINK;
         break;
     }
 

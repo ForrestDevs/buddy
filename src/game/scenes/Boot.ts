@@ -1,3 +1,4 @@
+import { MARKETCAP } from "@/lib/sets";
 import { Scene } from "phaser";
 
 export default class Boot extends Scene {
@@ -10,7 +11,7 @@ export default class Boot extends Scene {
   }
 
   private createMarketcap(): void {
-    this.registry.set("marketcap", "10000000");
+    this.registry.set("marketcap", MARKETCAP);
   }
 
   create() {
