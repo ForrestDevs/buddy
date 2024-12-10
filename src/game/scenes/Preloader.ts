@@ -6,7 +6,7 @@ import {
   TierButtons,
   WeaponButton,
 } from "../classes/Journal";
-import { BlobAssetLoader } from "../classes/BlobAssetLoader";
+import { SANTA_SKIN_UNLOCKED } from "@/lib/sets";
 
 export default class Preloader extends Phaser.Scene {
   private progressBar!: Phaser.GameObjects.Rectangle;
@@ -324,7 +324,7 @@ export default class Preloader extends Phaser.Scene {
         name: "santa",
         price: 13000,
         purchased: skinPurchases["santa"] ?? false,
-        unlocked: true,
+        unlocked: SANTA_SKIN_UNLOCKED,
       },
       6: {
         name: "sol",
