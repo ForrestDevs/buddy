@@ -31,11 +31,11 @@ function App() {
 
   useEffect(() => {
     const checkDevice = () => {
-      const mobile =
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        );
-      setIsMobile(mobile);
+      // Check screen width rather than user agent
+      const mobile = window.innerWidth <= 768;
+      // Also check touch capability as a secondary indicator
+      const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      setIsMobile(mobile || hasTouch);
     };
 
     checkDevice();
