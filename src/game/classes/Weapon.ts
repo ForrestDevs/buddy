@@ -651,18 +651,35 @@ export class Weapon {
         this.scene.sound.play("katana-pullout");
       // Intentionally fall through to default case
       default: {
-        if (config.fireSound) {
-          config.fireSound.forEach((sound) => {
-            this.scene.sound.play(sound, {
-              volume: 0.5,
-              loop: true,
-            });
-          });
-        }
         // Clear any existing firing timer
         if (this.firingTimer) {
           this.firingTimer.destroy();
           this.firingTimer = undefined;
+        }
+
+        switch (this.weapon) {
+          case "tommy":
+            if (config.fireSound) {
+              config.fireSound.forEach((sound) => {
+                this.scene.sound.play(sound, {
+                  volume: 0.5,
+                  loop: true,
+                });
+              });
+            }
+            break;
+          case "mg":
+            if (config.fireSound) {
+              config.fireSound.forEach((sound) => {
+                this.scene.sound.play(sound, {
+                  volume: 0.5,
+                  loop: true,
+                });
+              });
+            }
+            break;
+          default:
+            break;
         }
 
         let lastFired = 0;
@@ -838,9 +855,24 @@ export class Weapon {
           return;
       }
     } else {
+      switch (this.weapon) {
+        case "tommy":
+          break;
+        case "mg":
+          break;
+        default:
+          if (config.fireSound) {
+            config.fireSound.forEach((sound) => {
+              this.scene.sound.play(sound, {
+                volume: 0.5,
+              });
+            });
+          }
+      }
       if (config.animationKey) {
         this.currentWeapon?.play(config.animationKey);
       }
+
       this.spawnProjectile(config);
     }
   }
