@@ -248,7 +248,7 @@ export class Weapon {
         name: "railgun",
         fireRate: 1000,
         burstSize: 1,
-        damage: 34,
+        damage: 25,
         isThrowable: false,
         specialCase: true,
       },
