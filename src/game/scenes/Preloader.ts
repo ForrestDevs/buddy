@@ -18,7 +18,6 @@ export default class Preloader extends Phaser.Scene {
   constructor() {
     super("Preloader");
   }
-
   init() {
     // background
     const width = this.cameras.main.width;
@@ -39,6 +38,22 @@ export default class Preloader extends Phaser.Scene {
 
     this.progressBar = progressBar;
 
+    // Loading text
+    const loadingText = this.add.text(width / 2, height / 2 + 50, 'Initializing...', {
+      fontFamily: 'Arial Black',
+      fontSize: '24px',
+      color: '#30cfd0',
+      stroke: '#ffffff',
+      strokeThickness: 2,
+      shadow: {
+        offsetX: 2,
+        offsetY: 2,
+        color: '#000000',
+        blur: 4,
+        fill: true
+      }
+    }).setOrigin(0.5);
+
     this.events.emit("scene-awake");
 
     //  This is the progress bar itself. It will increase in size from the left based on the % of progress.
@@ -54,6 +69,19 @@ export default class Preloader extends Phaser.Scene {
     this.load.on("progress", (progress: number) => {
       //  Update the progress bar (our bar is 464px wide, so 100% = 464px)
       bar.width = 4 + 460 * progress;
+
+      // Update loading text based on progress
+      if (progress < 0.2) {
+        loadingText.setText('Dusting off weapons...');
+      } else if (progress < 0.4) {
+        loadingText.setText('Minting character skins...');
+      } else if (progress < 0.6) {
+        loadingText.setText('Stocking the shop...');
+      } else if (progress < 0.8) {
+        loadingText.setText('Loading sound effects...');
+      } else {
+        loadingText.setText('Preparing mystery boxes...');
+      }
     });
   }
 
