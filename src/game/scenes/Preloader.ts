@@ -6,15 +6,19 @@ import {
   TierButtons,
   WeaponButton,
 } from "../classes/Journal";
+import { BlobAssetLoader } from "../classes/BlobAssetLoader";
 
 export default class Preloader extends Phaser.Scene {
   private progressBar!: Phaser.GameObjects.Rectangle;
+  // private blobLoader: BlobAssetLoader;
 
   constructor() {
     super("Preloader");
   }
 
   init() {
+    // this.blobLoader = new BlobAssetLoader(this);
+
     // background
     const width = this.cameras.main.width;
     const height = this.cameras.main.height;
@@ -52,13 +56,11 @@ export default class Preloader extends Phaser.Scene {
     });
   }
 
-  preload() {
-    this.load.pack("button-pack", "assets/buttons/button-pack.json");
-    this.load.pack("effect-pack", "assets/effects/effect-pack.json");
-    this.load.pack("weapon-pack", "assets/weapons/weapon-pack.json");
-    this.load.pack("character-pack", "assets/character/character-pack.json");
-    this.load.pack("sound-pack", "assets/sounds/sound-pack.json");
-    this.load.pack("background-pack", "assets/backgrounds/bg-pack.json");
+  async preload() {
+    // Load the consolidated pack file
+    this.load.pack('blob-pack', 'assets/blob-pack.json');
+    
+    // Load animations and other files that aren't in the pack
     this.load.json("characterShapes", "assets/character/character.xml.json");
     this.load.animation(
       "weapon-animations",
@@ -68,6 +70,9 @@ export default class Preloader extends Phaser.Scene {
       "effect-animations",
       "assets/effects/effect-animations.json"
     );
+
+    // Start the loading
+    // this.load.start();
   }
 
   private getPurchasedStates(key: string): Record<string, boolean> {

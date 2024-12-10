@@ -14,7 +14,7 @@ export default class Game extends Phaser.Scene {
   private effects!: Effects;
   private gameButtons!: GameButtons;
   private journalManager!: JournalManager;
-  private soundManager!: SoundManager;
+  // private soundManager!: SoundManager;
   private scoreBar!: ScoreBar;
   private weaponObject!: Weapon;
   private pointerConstraint!: Phaser.Physics.Matter.PointerConstraint;
@@ -55,7 +55,7 @@ export default class Game extends Phaser.Scene {
       collisionFilter: { group: canDrag },
     });
 
-    this.soundManager = new SoundManager(this);
+    // this.soundManager = new SoundManager(this);
     this.scoreBar = new ScoreBar({
       scene: this,
       x: 640, // Adjust based on your game width

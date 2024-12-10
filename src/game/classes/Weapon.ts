@@ -31,6 +31,8 @@ interface WeaponConfig {
 }
 
 //TODO: Make sure to remove the joints for sticky bombs working on it
+//TODO: lightsaber, chainsaw, sitckybomb, katana, dynamite 
+
 
 export class Weapon {
   private flipX = false;
@@ -833,7 +835,6 @@ export class Weapon {
         config.projectileTexture ?? ""
       )
       .setName(this.weapon ?? "")
-      // .setFlipX(this.flipX)
       .setFlipY(this.flipY);
 
     config.projectileDisplaySize
@@ -1055,14 +1056,16 @@ export class Weapon {
             y: collision.collision.supports[0]?.y,
           };
 
+          const characterPos = this.character.getPosition();
           if (this.weapon === "rpg") {
             this.scene.sound.play("explode");
+            this.randomExplosionEffect(characterPos);
           } else if (this.weapon === "raygun") {
             this.scene.sound.play("raygun-impact");
           }
 
           const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
-          const characterPos = this.character.getPosition();
+
           this.randomBloodEffect(characterPos);
 
           EventBus.emit("health-changed", damage);

@@ -15,14 +15,15 @@
     "strictPropertyInitialization": false,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "typeRoots": ["./node_modules/@types", "./src/game/types"]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/game/scenes/Game.ts",
-    "svgp.ts"
+    "**/*.json",
+    "scripts/upload-assets.ts"
   ],
   "exclude": ["node_modules"]
 }
