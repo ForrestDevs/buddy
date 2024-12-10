@@ -17,7 +17,10 @@ export default class MainMenu extends Phaser.Scene {
   }
 
   preload() {
-    this.load.video("loading", "assets/loadingScreen/loadingScreen.mp4");
+    this.load.video(
+      "loading",
+      "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/loadingScreen/loadingScreen-IhHwTROoWCUHIe0DkrFZ2B5T0VD4Lw.mp4"
+    );
   }
 
   private onInfoButtonClick(): void {

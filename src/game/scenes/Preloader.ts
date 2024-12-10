@@ -68,6 +68,8 @@ export default class Preloader extends Phaser.Scene {
     // await this.blobLoader.loadPack("buttons/button-pack.json");
     // await this.blobLoader.loadPack("backgrounds/bg-pack.json");
 
+
+    
     // this.load.pack('blob-pack', 'assets/blob-pack.json');
     this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
     this.load.pack("blob-weapons-pack", "assets/packs/blob-weapons-pack.json");
