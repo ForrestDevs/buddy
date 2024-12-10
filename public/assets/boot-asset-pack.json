@@ -2,6 +2,11 @@
   "section1": {
     "files": [
       {
+        "url": "assets/buttons/boxes/BloodBoxUnreleased.png",
+        "type": "image",
+        "key": "blood-box-unreleased"
+      },
+      {
         "url": "assets/loadingScreen/BG95.jpg",
         "type": "image",
         "key": "BG"

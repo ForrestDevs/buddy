@@ -54,6 +54,7 @@ export type BoxButtons = Record<
     bg: string;
     price: number;
     purchased: boolean;
+    unlocked: boolean;
   }
 >;
 
@@ -569,7 +570,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
       : `${item.name}-item-locked`;
 
     if (item.name === "flamethrower") {
-      texture = item.unlocked ? "flamethrower-unreleased" : texture;
+      texture = item.unlocked ? texture : "flamethrower-unreleased";
     }
 
     // const itemTexture = item.unlocked ? item.texture : item.texture + "-locked";
@@ -797,9 +798,13 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.currentBox = (this.currentBox % 6) + 1;
 
     const config = this.BOX_INFO[this.currentBox];
-    const texture = config.purchased
+    let texture = config.purchased
       ? `${config.name}-box`
       : `${config.name}-box-locked`;
+
+    if (config.name === "blood") {
+      texture = config.unlocked ? texture : "blood-box-unreleased";
+    }
 
     this.scene.tweens.add({
       targets: [this.boxPage],
@@ -826,7 +831,8 @@ export class JournalManager extends Phaser.GameObjects.Container {
 
   private handleSelectBox(box: BoxButtons[number]): void {
     this.scene.sound.play("click");
-    if (box.name === "coming-soon") {
+
+    if (!box.unlocked) {
       this.scene.sound.play("click-deny");
       return;
     }

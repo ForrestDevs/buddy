@@ -6,7 +6,11 @@ import {
   TierButtons,
   WeaponButton,
 } from "../classes/Journal";
-import { BURNER_UNLOCKED, SANTA_SKIN_UNLOCKED } from "@/lib/sets";
+import {
+  BLOOD_BOX_UNLOCKED,
+  BURNER_UNLOCKED,
+  SANTA_SKIN_UNLOCKED,
+} from "@/lib/sets";
 
 export default class Preloader extends Phaser.Scene {
   private progressBar!: Phaser.GameObjects.Rectangle;
@@ -67,8 +71,6 @@ export default class Preloader extends Phaser.Scene {
     // await this.blobLoader.loadPack("sounds/sound-pack.json");
     // await this.blobLoader.loadPack("buttons/button-pack.json");
     // await this.blobLoader.loadPack("backgrounds/bg-pack.json");
-
-
 
     // this.load.pack('blob-pack', 'assets/blob-pack.json');
     this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
@@ -263,17 +265,20 @@ export default class Preloader extends Phaser.Scene {
         bg: "bg-main",
         price: 0,
         purchased: true,
+        unlocked: true,
       },
       2: {
         name: "shoe",
         bg: "bg-shoe",
         price: 5000,
+        unlocked: true,
         purchased: boxPurchases["shoe"] ?? false,
       },
       3: {
         name: "present",
         bg: "bg-present",
         price: 8000,
+        unlocked: true,
         purchased: boxPurchases["present"] ?? false,
       },
       4: {
@@ -281,18 +286,21 @@ export default class Preloader extends Phaser.Scene {
         bg: "bg-basket",
         price: 13000,
         purchased: boxPurchases["basket"] ?? false,
+        unlocked: true,
       },
       5: {
         name: "blood",
         bg: "bg-bloody",
         price: 18000,
         purchased: boxPurchases["blood"] ?? false,
+        unlocked: BLOOD_BOX_UNLOCKED,
       },
       6: {
         name: "coming-soon",
         bg: "",
         price: 0,
         purchased: true,
+        unlocked: false,
       },
     };
     this.registry.set("box-buttons", boxes);
