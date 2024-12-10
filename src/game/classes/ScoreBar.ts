@@ -190,7 +190,7 @@ export class ScoreBar extends Phaser.GameObjects.Container {
   }
 
   public updateCoins(amount: number = 1): void {
-    this.coins += amount;
+    this.coins = Math.min(this.coins + amount, 99999);
     this.coinsText.setText(`${this.coins}`);
     localStorage.setItem("coins", this.coins.toString());
   }

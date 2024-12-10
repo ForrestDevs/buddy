@@ -56,7 +56,7 @@ export class GameButtons extends Phaser.GameObjects.Container {
       .on("pointerdown", () => this.onSocialsButtonClick());
 
     this.infoButton = this.scene.add
-      .image(-25, 400, "info-button-active")
+      .image(1120, 450, "info-button-active")
       .setDisplaySize(this.SMALL_BUTTON_SIZE, this.SMALL_BUTTON_SIZE)
       .setInteractive({ useHandCursor: true })
       .on("pointerdown", () => this.onInfoButtonClick());
