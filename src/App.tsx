@@ -3,6 +3,7 @@ import { IRefPhaserGame, PhaserGame } from "./game/PhaserGame";
 import { MainMenu } from "./game/scenes/MainMenu";
 import { EventBus } from "./game/EventBus";
 import { DEX_LINK, TELEGRAM_LINK, X_LINK } from "./lib/sets";
+import Image from "next/image";
 
 function App() {
   // The sprite can only be moved in the MainMenu Scene
@@ -22,26 +23,26 @@ function App() {
     EventBus.on("show-info", (show: boolean) => {
       setShowInfo(show);
     });
-  }, [EventBus.on]);
+  }, []);
 
   const [showInfo, setShowInfo] = useState(false);
 
-  
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkDevice = () => {
-      const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      );
+      const mobile =
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
       setIsMobile(mobile);
     };
 
     checkDevice();
-    window.addEventListener('resize', checkDevice);
+    window.addEventListener("resize", checkDevice);
 
     return () => {
-      window.removeEventListener('resize', checkDevice); 
+      window.removeEventListener("resize", checkDevice);
     };
   }, []);
 
@@ -100,7 +101,7 @@ function App() {
             >
               $Buddy
             </h1>
-            <img
+            <Image
               src="/og.png"
               alt="Game screenshot"
               style={{ maxWidth: "100%", height: "auto" }}
@@ -135,7 +136,9 @@ function App() {
                 onMouseOver={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
-                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
               >
                 Twitter
               </a>
@@ -157,7 +160,9 @@ function App() {
                 onMouseOver={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
-                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
               >
                 Telegram
               </a>
@@ -179,7 +184,9 @@ function App() {
                 onMouseOver={(e) =>
                   (e.currentTarget.style.transform = "scale(1.1)")
                 }
-                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
               >
                 Buy Now
               </a>

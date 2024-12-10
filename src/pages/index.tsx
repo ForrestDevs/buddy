@@ -1,16 +1,16 @@
 import Head from "next/head";
-import { Ultra } from "next/font/google";
+import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import dynamic from "next/dynamic";
 
-const ultra = Ultra({ subsets: ["latin"], weight: "400" });
+const inter = Inter({ subsets: ["latin"] });
 
 const AppWithoutSSR = dynamic(() => import("@/App"), { ssr: false });
 
 export default function Home() {
   return (
     <>
-      <main className={`${styles.main} ${ultra.className}`}>
+      <main className={`${styles.main} ${inter.className}`}>
         <AppWithoutSSR />
       </main>
     </>
