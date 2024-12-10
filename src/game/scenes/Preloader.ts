@@ -53,26 +53,20 @@ export default class Preloader extends Phaser.Scene {
     });
   }
 
-  async preload() {
+  preload() {
     // Load all packs in parallel
-    this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json"),
-      this.load.pack(
-        "blob-weapons-pack",
-        "assets/packs/blob-weapons-pack.json"
-      ),
-      this.load.pack(
-        "blob-character-pack",
-        "assets/packs/blob-character-pack.json"
-      ),
-      this.load.pack("blob-sounds-pack", "assets/packs/blob-sounds-pack.json"),
-      this.load.pack(
-        "blob-buttons-pack",
-        "assets/packs/blob-buttons-pack.json"
-      ),
-      this.load.pack(
-        "blob-backgrounds-pack",
-        "assets/packs/blob-backgrounds-pack.json"
-      );
+    this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
+    this.load.pack("blob-weapons-pack", "assets/packs/blob-weapons-pack.json");
+    this.load.pack(
+      "blob-character-pack",
+      "assets/packs/blob-character-pack.json"
+    );
+    this.load.pack("blob-sounds-pack", "assets/packs/blob-sounds-pack.json");
+    this.load.pack("blob-buttons-pack", "assets/packs/blob-buttons-pack.json");
+    this.load.pack(
+      "blob-backgrounds-pack",
+      "assets/packs/blob-backgrounds-pack.json"
+    );
 
     // Load animations and other files
     this.load.json("characterShapes", "assets/character/character.xml.json");
