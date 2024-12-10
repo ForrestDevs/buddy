@@ -53,22 +53,35 @@ export default class Preloader extends Phaser.Scene {
     });
   }
 
-  preload() {
-    // Load all packs in parallel
-    this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
-    this.load.pack("blob-weapons-pack", "assets/packs/blob-weapons-pack.json");
-    this.load.pack(
-      "blob-character-pack",
-      "assets/packs/blob-character-pack.json"
-    );
-    this.load.pack("blob-sounds-pack", "assets/packs/blob-sounds-pack.json");
-    this.load.pack("blob-buttons-pack", "assets/packs/blob-buttons-pack.json");
-    this.load.pack(
-      "blob-backgrounds-pack",
-      "assets/packs/blob-backgrounds-pack.json"
-    );
+  async preload() {
+    // Load asset packs from blob storage
+    this.load.pack("effect-pack", "assets/effects/effect-pack.json");
+    this.load.pack("weapon-pack", "assets/weapons/weapon-pack.json");
+    this.load.pack("character-pack", "assets/character/character-pack.json");
+    this.load.pack("sound-pack", "assets/sounds/sound-pack.json");
+    this.load.pack("button-pack", "assets/buttons/button-pack.json");
+    this.load.pack("background-pack", "assets/backgrounds/bg-pack.json");
+    // await this.blobLoader.loadPack("character/character-pack.json");
+    // await this.blobLoader.loadPack("weapons/weapon-pack.json");
+    // await this.blobLoader.loadPack("effects/effect-pack.json");
+    // await this.blobLoader.loadPack("sounds/sound-pack.json");
+    // await this.blobLoader.loadPack("buttons/button-pack.json");
+    // await this.blobLoader.loadPack("backgrounds/bg-pack.json");
 
-    // Load animations and other files
+    // this.load.pack('blob-pack', 'assets/blob-pack.json');
+    // this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
+    // this.load.pack("blob-weapons-pack", "assets/packs/blob-weapons-pack.json");
+    // this.load.pack(
+    //   "blob-character-pack",
+    //   "assets/packs/blob-character-pack.json"
+    // );
+    // this.load.pack("blob-sounds-pack", "assets/packs/blob-sounds-pack.json");
+    // this.load.pack("blob-buttons-pack", "assets/packs/blob-buttons-pack.json");
+    // this.load.pack(
+    //   "blob-backgrounds-pack",
+    //   "assets/packs/blob-backgrounds-pack.json"
+    // );
+
     this.load.json("characterShapes", "assets/character/character.xml.json");
     this.load.animation(
       "weapon-animations",
@@ -79,7 +92,7 @@ export default class Preloader extends Phaser.Scene {
       "assets/effects/effect-animations.json"
     );
 
-    // Start loading everything
+    // Start the loading
     this.load.start();
   }
 
