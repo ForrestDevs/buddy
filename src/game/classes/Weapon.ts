@@ -31,8 +31,7 @@ interface WeaponConfig {
 }
 
 //TODO: Make sure to remove the joints for sticky bombs working on it
-//TODO: lightsaber, chainsaw, sitckybomb, katana, dynamite 
-
+//TODO: lightsaber, chainsaw, sitckybomb, katana, dynamite
 
 export class Weapon {
   private flipX = false;
@@ -837,15 +836,18 @@ export class Weapon {
       .setName(this.weapon ?? "")
       .setFlipY(this.flipY);
 
-    config.projectileDisplaySize
-      ? projectile.setDisplaySize(
-          config.projectileDisplaySize.width,
-          config.projectileDisplaySize.height
-        )
-      : projectile.setScale(
-          config.projectileScale?.x ?? 1,
-          config.projectileScale?.y ?? 1
-        );
+    if (config.projectileDisplaySize) {
+      projectile.setDisplaySize(
+        config.projectileDisplaySize.width,
+        config.projectileDisplaySize.height
+      );
+    } else {
+      projectile.setScale(
+        config.projectileScale?.x ?? 1,
+        config.projectileScale?.y ?? 1
+      );
+    }
+
     // let projectileConfig = {
     //   friction: 0,
     //   frictionStatic: 0,
