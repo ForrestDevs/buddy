@@ -22,9 +22,28 @@ function App() {
     EventBus.on("show-info", (show: boolean) => {
       setShowInfo(show);
     });
-  }, [EventBus]);
+  }, [EventBus.on]);
 
   const [showInfo, setShowInfo] = useState(false);
+
+  
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkDevice = () => {
+      const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+      setIsMobile(mobile);
+    };
+
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
+
+    return () => {
+      window.removeEventListener('resize', checkDevice); 
+    };
+  }, []);
 
   return (
     <div
@@ -37,133 +56,7 @@ function App() {
       }}
     >
       <div className="game-container">
-        <div
-          className="desktop-game"
-          style={{
-            border: "2px solid #30cfd0",
-            borderRadius: "8px",
-            boxShadow:
-              "0 0 20px rgba(48, 207, 208, 0.5), inset 0 0 10px rgba(48, 207, 208, 0.3)",
-            padding: "4px",
-          }}
-        >
-          <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
-        </div>
-        <div className="mobile-message" style={{ padding: "20px" }}>
-          <h1
-            style={{
-              color: "#30cfd0",
-              textAlign: "center",
-              margin: "20px 0",
-              fontSize: "2rem",
-              textShadow: "0 0 10px rgba(48, 207, 208, 0.5)",
-            }}
-          >
-            $Buddy
-          </h1>
-          <img
-            src="/og.png"
-            alt="Game screenshot"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "20px",
-              margin: "20px 0",
-              flexDirection: window.innerWidth <= 768 ? "column" : "row",
-              alignItems: "center",
-              width: "100%",
-              padding: "0 10px",
-            }}
-          >
-            <a
-              href={X_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#30cfd0",
-                fontSize: "1.5rem",
-                transition: "transform 0.2s",
-                textDecoration: "none",
-                padding: "10px 20px",
-                border: "1px solid rgba(48, 207, 208, 0.3)",
-                borderRadius: "8px",
-                background: "rgba(48, 207, 208, 0.1)",
-                boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
-              }}
-              onMouseOver={(e) =>
-                (e.currentTarget.style.transform = "scale(1.1)")
-              }
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            >
-              Twitter
-            </a>
-            <a
-              href={TELEGRAM_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#30cfd0",
-                fontSize: "1.5rem",
-                transition: "transform 0.2s",
-                textDecoration: "none",
-                padding: "10px 20px",
-                border: "1px solid rgba(48, 207, 208, 0.3)",
-                borderRadius: "8px",
-                background: "rgba(48, 207, 208, 0.1)",
-                boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
-              }}
-              onMouseOver={(e) =>
-                (e.currentTarget.style.transform = "scale(1.1)")
-              }
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            >
-              Telegram
-            </a>
-            <a
-              href={DEX_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#30cfd0",
-                fontSize: "1.5rem",
-                transition: "transform 0.2s",
-                textDecoration: "none",
-                padding: "10px 20px",
-                border: "1px solid rgba(48, 207, 208, 0.3)",
-                borderRadius: "8px",
-                background: "rgba(48, 207, 208, 0.1)",
-                boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
-              }}
-              onMouseOver={(e) =>
-                (e.currentTarget.style.transform = "scale(1.1)")
-              }
-              onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            >
-              Buy Now
-            </a>
-          </div>
-          <p
-            style={{
-              color: "#fff",
-              textAlign: "center",
-              margin: "20px 0",
-              fontSize: "1.1rem",
-              padding: "15px 25px",
-              background: "rgba(48, 207, 208, 0.1)",
-              border: "1px solid rgba(48, 207, 208, 0.3)",
-              borderRadius: "8px",
-              boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
-              letterSpacing: "0.5px",
-              lineHeight: "1.5",
-            }}
-          >
-            Please use a computer to play this game for the best experience.
-          </p>
-        </div>
-        <style>{`
+        <style jsx>{`
           @media (max-width: 768px) {
             .desktop-game {
               display: none;
@@ -181,6 +74,135 @@ function App() {
             }
           }
         `}</style>
+        {!isMobile ? (
+          <div
+            className="desktop-game"
+            style={{
+              border: "2px solid #30cfd0",
+              borderRadius: "8px",
+              boxShadow:
+                "0 0 20px rgba(48, 207, 208, 0.5), inset 0 0 10px rgba(48, 207, 208, 0.3)",
+              padding: "4px",
+            }}
+          >
+            <PhaserGame ref={phaserRef} currentActiveScene={currentScene} />
+          </div>
+        ) : (
+          <div className="mobile-message" style={{ padding: "20px" }}>
+            <h1
+              style={{
+                color: "#30cfd0",
+                textAlign: "center",
+                margin: "20px 0",
+                fontSize: "2rem",
+                textShadow: "0 0 10px rgba(48, 207, 208, 0.5)",
+              }}
+            >
+              $Buddy
+            </h1>
+            <img
+              src="/og.png"
+              alt="Game screenshot"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "20px",
+                margin: "20px 0",
+                flexDirection: window.innerWidth <= 768 ? "column" : "row",
+                alignItems: "center",
+                width: "100%",
+                padding: "0 10px",
+              }}
+            >
+              <a
+                href={X_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#30cfd0",
+                  fontSize: "1.5rem",
+                  transition: "transform 0.2s",
+                  textDecoration: "none",
+                  padding: "10px 20px",
+                  border: "1px solid rgba(48, 207, 208, 0.3)",
+                  borderRadius: "8px",
+                  background: "rgba(48, 207, 208, 0.1)",
+                  boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
+                }}
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.1)")
+                }
+                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              >
+                Twitter
+              </a>
+              <a
+                href={TELEGRAM_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#30cfd0",
+                  fontSize: "1.5rem",
+                  transition: "transform 0.2s",
+                  textDecoration: "none",
+                  padding: "10px 20px",
+                  border: "1px solid rgba(48, 207, 208, 0.3)",
+                  borderRadius: "8px",
+                  background: "rgba(48, 207, 208, 0.1)",
+                  boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
+                }}
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.1)")
+                }
+                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              >
+                Telegram
+              </a>
+              <a
+                href={DEX_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#30cfd0",
+                  fontSize: "1.5rem",
+                  transition: "transform 0.2s",
+                  textDecoration: "none",
+                  padding: "10px 20px",
+                  border: "1px solid rgba(48, 207, 208, 0.3)",
+                  borderRadius: "8px",
+                  background: "rgba(48, 207, 208, 0.1)",
+                  boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
+                }}
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.1)")
+                }
+                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              >
+                Buy Now
+              </a>
+            </div>
+            <p
+              style={{
+                color: "#fff",
+                textAlign: "center",
+                margin: "20px 0",
+                fontSize: "1.1rem",
+                padding: "15px 25px",
+                background: "rgba(48, 207, 208, 0.1)",
+                border: "1px solid rgba(48, 207, 208, 0.3)",
+                borderRadius: "8px",
+                boxShadow: "0 0 15px rgba(48, 207, 208, 0.2)",
+                letterSpacing: "0.5px",
+                lineHeight: "1.5",
+              }}
+            >
+              Please use a computer to play this game for the best experience.
+            </p>
+          </div>
+        )}
       </div>
       <div
         className="game-info"

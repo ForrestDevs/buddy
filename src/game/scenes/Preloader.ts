@@ -6,7 +6,7 @@ import {
   TierButtons,
   WeaponButton,
 } from "../classes/Journal";
-import { SANTA_SKIN_UNLOCKED } from "@/lib/sets";
+import { BURNER_UNLOCKED, SANTA_SKIN_UNLOCKED } from "@/lib/sets";
 
 export default class Preloader extends Phaser.Scene {
   private progressBar!: Phaser.GameObjects.Rectangle;
@@ -69,7 +69,7 @@ export default class Preloader extends Phaser.Scene {
     // await this.blobLoader.loadPack("backgrounds/bg-pack.json");
 
 
-    
+
     // this.load.pack('blob-pack', 'assets/blob-pack.json');
     this.load.pack("blob-effects-pack", "assets/packs/blob-effects-pack.json");
     this.load.pack("blob-weapons-pack", "assets/packs/blob-weapons-pack.json");
@@ -251,7 +251,7 @@ export default class Preloader extends Phaser.Scene {
         tier: 3,
         price: 18000,
         purchased: itemPurchases["flamethrower"] ?? false,
-        unlocked: true,
+        unlocked: BURNER_UNLOCKED,
         hitbox: new Phaser.Geom.Rectangle(50, 150, 200, 250),
       },
     ];

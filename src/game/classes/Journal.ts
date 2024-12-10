@@ -564,9 +564,13 @@ export class JournalManager extends Phaser.GameObjects.Container {
       item.name
     );
 
-    const texture = item.purchased
+    let texture = item.purchased
       ? `${item.name}-item`
       : `${item.name}-item-locked`;
+
+    if (item.name === "flamethrower") {
+      texture = item.unlocked ? "flamethrower-unreleased" : texture;
+    }
 
     // const itemTexture = item.unlocked ? item.texture : item.texture + "-locked";
     // Create weapon display

@@ -394,10 +394,12 @@ export class Character {
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.HEAVY) {
       // console.log("updateDamageState HEAVY");
       this.currentDamageState = DamageState.HEAVY;
+      this.effects.spawnCoin(this.getPosition().x, this.getPosition().y, 200);
       EventBus.emit("damage-state-changed", DamageState.HEAVY);
     } else if (healthPercentage <= this.DAMAGE_THRESHOLDS.LIGHT) {
       // console.log("updateDamageState LIGHT");
       this.currentDamageState = DamageState.LIGHT;
+      this.effects.spawnCoin(this.getPosition().x, this.getPosition().y, 200);
       EventBus.emit("damage-state-changed", DamageState.LIGHT);
     } else {
       // console.log("updateDamageState CLEAN");
