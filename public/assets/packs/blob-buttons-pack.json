@@ -549,12 +549,12 @@
       {
         "type": "image",
         "key": "tier3-button",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/buttons/levels/Tier3-F0yIodmiqtOV0fFHenv18kWaQjt0ly.png"
+        "url": "assets/buttons/levels/Tier3.png"
       },
       {
         "type": "image",
         "key": "tier3-button-locked",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/buttons/levels/Tier3LOCKED-OX9CytyB2DRJPJ4ssihBk1g05gCQvo.png"
+        "url": "assets/buttons/levels/Tier3LOCKED.png"
       },
       {
         "type": "image",
@@ -564,12 +564,12 @@
       {
         "type": "image",
         "key": "tier4-button",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/buttons/levels/Tier4-LFpa7ypobctCRjXpoE7U5LsSiURahD.png"
+        "url": "assets/buttons/levels/Tier4.png"
       },
       {
         "type": "image",
         "key": "tier4-button-locked",
-        "url": "https://4ev7uhebvckwgaxr.public.blob.vercel-storage.com/buttons/levels/Tier4LOCKED-yJIsecweXb8c9BzmnME8WQ2yZI1kq0.png"
+        "url": "assets/buttons/levels/Tier4LOCKED.png"
       },
       {
         "type": "image",

@@ -328,7 +328,7 @@ export default class Preloader extends Phaser.Scene {
         name: "mil",
         price: 10000,
         purchased: skinPurchases["mil"] ?? false,
-        unlocked: this.getMarketcap() >= 5000000,
+        unlocked: this.getMarketcap() >= 2000000,
       },
       5: {
         name: "santa",
@@ -340,7 +340,7 @@ export default class Preloader extends Phaser.Scene {
         name: "sol",
         price: 22000,
         purchased: skinPurchases["sol"] ?? false,
-        unlocked: this.getMarketcap() >= 10000000,
+        unlocked: this.getMarketcap() >= 5000000,
       },
       7: {
         name: "coming-soon",
@@ -361,12 +361,12 @@ export default class Preloader extends Phaser.Scene {
       3: {
         name: "MIL",
         bg: "tier3-bg",
-        unlocked: this.getMarketcap() >= 5000000,
+        unlocked: this.getMarketcap() >= 2000000,
       },
       4: {
         name: "SOL",
         bg: "tier4-bg",
-        unlocked: this.getMarketcap() >= 10000000,
+        unlocked: this.getMarketcap() >= 5000000,
       },
     };
     this.registry.set("tier-buttons", tierButtons);

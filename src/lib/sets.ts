@@ -1,4 +1,4 @@
-export const MARKETCAP = "10000000";
+export const MARKETCAP = "0";
 export const SANTA_SKIN_UNLOCKED = false;
 export const BLOOD_BOX_UNLOCKED = false;
 export const BURNER_UNLOCKED = false;
