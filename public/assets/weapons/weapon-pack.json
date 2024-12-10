@@ -582,6 +582,66 @@
         "key": "fire-bomb"
       },
       {
+        "url": "assets/weapons/lightsaber/saberswipe_00000.png",
+        "type": "image",
+        "key": "saberswipe_00000"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00001.png",
+        "type": "image",
+        "key": "saberswipe_00001"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00002.png",
+        "type": "image",
+        "key": "saberswipe_00002"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00003.png",
+        "type": "image",
+        "key": "saberswipe_00003"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00004.png",
+        "type": "image",
+        "key": "saberswipe_00004"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00005.png",
+        "type": "image",
+        "key": "saberswipe_00005"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00006.png",
+        "type": "image",
+        "key": "saberswipe_00006"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00007.png",
+        "type": "image",
+        "key": "saberswipe_00007"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00008.png",
+        "type": "image",
+        "key": "saberswipe_00008"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00009.png",
+        "type": "image",
+        "key": "saberswipe_00009"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00010.png",
+        "type": "image",
+        "key": "saberswipe_00010"
+      },
+      {
+        "url": "assets/weapons/lightsaber/saberswipe_00011.png",
+        "type": "image",
+        "key": "saberswipe_00011"
+      },
+      {
         "url": "assets/weapons/lightsaber/fixedsaber_00000.png",
         "type": "image",
         "key": "fixedsaber_00000"
@@ -3566,3 +3626,4 @@
     "showAllFilesInBlocks": false
   }
 }
+

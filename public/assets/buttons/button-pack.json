@@ -1,618 +1,599 @@
 {
-    "section1": {
-        "files": [
-            {
-                "url": "assets/buttons/icons/BackARROW.png",
-                "type": "image",
-                "key": "backarrow"
-            },
-            {
-                "url": "assets/buttons/pages/backarrow1.png",
-                "type": "image",
-                "key": "backarrow1"
-            },
-            {
-                "url": "assets/buttons/pages/backarrow2.png",
-                "type": "image",
-                "key": "backarrow2"
-            },
-            {
-                "url": "assets/buttons/pages/backarrow3.png",
-                "type": "image",
-                "key": "backarrow3"
-            },
-            {
-                "url": "assets/buttons/boxes/BaskedBoxUNLOCKED.png",
-                "type": "image",
-                "key": "basket-box"
-            },
-            {
-                "url": "assets/buttons/boxes/BaskedBoxLOCKED.png",
-                "type": "image",
-                "key": "basket-box-locked"
-            },
-            {
-                "url": "assets/buttons/shop/FAKEbattleaxe.png",
-                "type": "image",
-                "key": "battleaxe-item"
-            },
-            {
-                "url": "assets/buttons/boxes/BloodBoxUNLOCKED.png",
-                "type": "image",
-                "key": "blood-box"
-            },
-            {
-                "url": "assets/buttons/boxes/BloodBoxLOCKED.png",
-                "type": "image",
-                "key": "blood-box-locked"
-            },
-            {
-                "url": "assets/buttons/icons/BuddyBoxesJournal icon.png",
-                "type": "image",
-                "key": "boxes"
-            },
-            {
-                "url": "assets/buttons/boxes/boxes-page.png",
-                "type": "image",
-                "key": "boxes-page"
-            },
-            {
-                "url": "assets/buttons/icons/BoxesSELECTED.png",
-                "type": "image",
-                "key": "boxes-selected"
-            },
-            {
-                "url": "assets/buttons/skins/BuddyBag2 Unlocked.png",
-                "type": "image",
-                "key": "buddy-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/skins/Buddy Guy Locked (1).png",
-                "type": "image",
-                "key": "buddy-skin-unlocked"
-            },
-            {
-                "url": "assets/buttons/pages/TeethUNLOCKED.png",
-                "type": "image",
-                "key": "chainsaw-button"
-            },
-            {
-                "url": "assets/buttons/pages/TeethLOCKED.png",
-                "type": "image",
-                "key": "chainsaw-button-locked"
-            },
-            {
-                "url": "assets/buttons/icons/CLOSEicon.png",
-                "type": "image",
-                "key": "close"
-            },
-            {
-                "url": "assets/buttons/boxes/coming-soon-box.png",
-                "type": "image",
-                "key": "coming-soon-box"
-            },
-            {
-                "url": "assets/buttons/skins/Final Page.png",
-                "type": "image",
-                "key": "coming-soon-skin-locked"
-            },
-            {
-                "url": "assets/buttons/pages/Deagle.png",
-                "type": "image",
-                "key": "deagle-button"
-            },
-            {
-                "url": "assets/buttons/socials/DexLogo.png",
-                "type": "image",
-                "key": "dex-button"
-            },
-            {
-                "url": "assets/buttons/socials/DexLogoACTIVE.png",
-                "type": "image",
-                "key": "dex-button-active"
-            },
-            {
-                "url": "assets/buttons/shop/DynamiteUNLOCKED.png",
-                "type": "image",
-                "key": "dynamite-item"
-            },
-            {
-                "url": "assets/buttons/shop/DynamiteLOCKED.png",
-                "type": "image",
-                "key": "dynamite-item-locked"
-            },
-            {
-                "url": "assets/buttons/pages/HeatUNLOCKED.png",
-                "type": "image",
-                "key": "fire-bomb-button"
-            },
-            {
-                "url": "assets/buttons/pages/HeatLOCKED.png",
-                "type": "image",
-                "key": "fire-bomb-button-locked"
-            },
-            {
-                "url": "assets/buttons/shop/BuddyBurnerUNLOCKED.png",
-                "type": "image",
-                "key": "flamethrower-item"
-            },
-            {
-                "url": "assets/buttons/shop/BuddyBurnerLOCKED.png",
-                "type": "image",
-                "key": "flamethrower-item-locked"
-            },
-            {
-                "url": "assets/buttons/shop/WILLBEREALflamethrower.png",
-                "type": "image",
-                "key": "flamethrower-item1"
-            },
-            {
-                "url": "assets/buttons/shop/FAKEgasnade.png",
-                "type": "image",
-                "key": "gasnade-item"
-            },
-            {
-                "url": "assets/buttons/pages/Nade.png",
-                "type": "image",
-                "key": "grenade-button"
-            },
-            {
-                "url": "assets/buttons/healthbar/Healthbar.png",
-                "type": "image",
-                "key": "healthbar"
-            },
-            {
-                "url": "assets/buttons/shop/Kar98kUNLOCKED.png",
-                "type": "image",
-                "key": "kar98-item"
-            },
-            {
-                "url": "assets/buttons/shop/Kar98kLOCKED.png",
-                "type": "image",
-                "key": "kar98-item-locked"
-            },
-            {
-                "url": "assets/buttons/shop/KatanaUNLOCKED.png",
-                "type": "image",
-                "key": "katana-item"
-            },
-            {
-                "url": "assets/buttons/shop/KatanaLOCKED.png",
-                "type": "image",
-                "key": "katana-item-locked"
-            },
-            {
-                "url": "assets/buttons/pages/Nife.png",
-                "type": "image",
-                "key": "knife-button"
-            },
-            {
-                "url": "assets/buttons/icons/BuddyLevelsJournal icon.png",
-                "type": "image",
-                "key": "levels"
-            },
-            {
-                "url": "assets/buttons/levels/levels-page.png",
-                "type": "image",
-                "key": "levels-page"
-            },
-            {
-                "url": "assets/buttons/icons/LevelsSELECTED.png",
-                "type": "image",
-                "key": "levels-selected"
-            },
-            {
-                "url": "assets/buttons/pages/LightSaberUNLOCKED.png",
-                "type": "image",
-                "key": "lightsaber-button"
-            },
-            {
-                "url": "assets/buttons/pages/LightSaberLOCKED.png",
-                "type": "image",
-                "key": "lightsaber-button-locked"
-            },
-            {
-                "url": "assets/buttons/icons/LogosSelect.png",
-                "type": "image",
-                "key": "logo-select"
-            },
-            {
-                "url": "assets/buttons/boxes/CardboardBoxIcon.png",
-                "type": "image",
-                "key": "main-box"
-            },
-            {
-                "url": "assets/buttons/pages/BG42UNLOCKED.png",
-                "type": "image",
-                "key": "mg-button"
-            },
-            {
-                "url": "assets/buttons/pages/BG42LOCKED.png",
-                "type": "image",
-                "key": "mg-button-locked"
-            },
-            {
-                "url": "assets/buttons/healthbar/miliclean.png",
-                "type": "image",
-                "key": "mil-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/milidead.png",
-                "type": "image",
-                "key": "mil-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/miliheavy.png",
-                "type": "image",
-                "key": "mil-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/mililight.png",
-                "type": "image",
-                "key": "mil-light"
-            },
-            {
-                "url": "assets/buttons/skins/Stage1T.png",
-                "type": "image",
-                "key": "mil-skin-locked"
-            },
-            {
-                "url": "assets/buttons/skins/Stage3T.png",
-                "type": "image",
-                "key": "mil-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/skins/Stage2T.png",
-                "type": "image",
-                "key": "mil-skin-unlocked"
-            },
-            {
-                "url": "assets/buttons/healthbar/muskclean.png",
-                "type": "image",
-                "key": "musk-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/muskdead.png",
-                "type": "image",
-                "key": "musk-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/muskheavy.png",
-                "type": "image",
-                "key": "musk-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/musklight.png",
-                "type": "image",
-                "key": "musk-light"
-            },
-            {
-                "url": "assets/buttons/skins/Stage1G.png",
-                "type": "image",
-                "key": "musk-skin-locked"
-            },
-            {
-                "url": "assets/buttons/skins/Stage3G.png",
-                "type": "image",
-                "key": "musk-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/skins/Stage2G.png",
-                "type": "image",
-                "key": "musk-skin-unlocked"
-            },
-            {
-                "url": "assets/buttons/icons/muteicon.png",
-                "type": "image",
-                "key": "mute"
-            },
-            {
-                "url": "assets/buttons/Page.png",
-                "type": "image",
-                "key": "Page"
-            },
-            {
-                "url": "assets/buttons/healthbar/papclean.png",
-                "type": "image",
-                "key": "buddy-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/papdead.png",
-                "type": "image",
-                "key": "buddy-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/bagclean.png",
-                "type": "image",
-                "key": "paper-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/bagdead.png",
-                "type": "image",
-                "key": "paper-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/bagheavy.png",
-                "type": "image",
-                "key": "paper-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/baglight.png",
-                "type": "image",
-                "key": "paper-light"
-            },
-            {
-                "url": "assets/buttons/skins/FreeBud.png",
-                "type": "image",
-                "key": "paper-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/healthbar/papheavy.png",
-                "type": "image",
-                "key": "buddy-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/paplight.png",
-                "type": "image",
-                "key": "buddy-light"
-            },
-            {
-                "url": "assets/buttons/boxes/PresentBoxUNLOCKED.png",
-                "type": "image",
-                "key": "present-box"
-            },
-            {
-                "url": "assets/buttons/boxes/PresentBoxLOCKED.png",
-                "type": "image",
-                "key": "present-box-locked"
-            },
-            {
-                "url": "assets/buttons/pages/RailGunUNLOCKED.png",
-                "type": "image",
-                "key": "railgun-button"
-            },
-            {
-                "url": "assets/buttons/pages/RailGunLOCKED.png",
-                "type": "image",
-                "key": "railgun-button-locked"
-            },
-            {
-                "url": "assets/buttons/pages/RayGunUNLOCKED.png",
-                "type": "image",
-                "key": "raygun-button"
-            },
-            {
-                "url": "assets/buttons/pages/RayGunLOCKED.png",
-                "type": "image",
-                "key": "raygun-button-locked"
-            },
-            {
-                "url": "assets/buttons/pages/BuddyBlasterUNLOCKED.png",
-                "type": "image",
-                "key": "rpg-button"
-            },
-            {
-                "url": "assets/buttons/pages/BuddyBlasterLOCKED.png",
-                "type": "image",
-                "key": "rpg-button-locked"
-            },
-            {
-                "url": "assets/buttons/skins/SantaSkin Buddy Clause Locked.png",
-                "type": "image",
-                "key": "santa-skin-locked"
-            },
-            {
-                "url": "assets/buttons/skins/Santa Skin Buddy Clause Unlocked.png",
-                "type": "image",
-                "key": "santa-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/skins/SantaSkin Buddy Clause Locked (1).png",
-                "type": "image",
-                "key": "santa-skin-unlocked"
-            },
-            {
-                "url": "assets/buttons/healthbar/santaclean.png",
-                "type": "image",
-                "key": "santa-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/santadead.png",
-                "type": "image",
-                "key": "santa-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/santaheavy.png",
-                "type": "image",
-                "key": "santa-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/santalight.png",
-                "type": "image",
-                "key": "santa-light"
-            },
-            {
-                "url": "assets/buttons/boxes/ShoeBoxIconUNLOCKED.png",
-                "type": "image",
-                "key": "shoe-box"
-            },
-            {
-                "url": "assets/buttons/boxes/ShoeBoxIconLOCKED.png",
-                "type": "image",
-                "key": "shoe-box-locked"
-            },
-            {
-                "url": "assets/buttons/icons/BuddyShopJournal icon.png",
-                "type": "image",
-                "key": "shop"
-            },
-            {
-                "url": "assets/buttons/shop/ShopPageRaw.png",
-                "type": "image",
-                "key": "shop-page"
-            },
-            {
-                "url": "assets/buttons/icons/ShopSELECTED.png",
-                "type": "image",
-                "key": "shop-selected"
-            },
-            {
-                "url": "assets/buttons/icons/BuddySkinsJournal icon.png",
-                "type": "image",
-                "key": "skins"
-            },
-            {
-                "url": "assets/buttons/skins/SkinsJournalRaw.png",
-                "type": "image",
-                "key": "skins-page"
-            },
-            {
-                "url": "assets/buttons/icons/SkinsSELECTED.png",
-                "type": "image",
-                "key": "skins-selected"
-            },
-            {
-                "url": "assets/buttons/healthbar/solclean.png",
-                "type": "image",
-                "key": "sol-clean"
-            },
-            {
-                "url": "assets/buttons/healthbar/soldead.png",
-                "type": "image",
-                "key": "sol-dead"
-            },
-            {
-                "url": "assets/buttons/healthbar/solheavy.png",
-                "type": "image",
-                "key": "sol-heavy"
-            },
-            {
-                "url": "assets/buttons/healthbar/sollight.png",
-                "type": "image",
-                "key": "sol-light"
-            },
-            {
-                "url": "assets/buttons/skins/Stage1S.png",
-                "type": "image",
-                "key": "sol-skin-locked"
-            },
-            {
-                "url": "assets/buttons/skins/Stage3S.png",
-                "type": "image",
-                "key": "sol-skin-purchased"
-            },
-            {
-                "url": "assets/buttons/skins/Stage2S.png",
-                "type": "image",
-                "key": "sol-skin-unlocked"
-            },
-            {
-                "url": "assets/buttons/pages/AntiBGUNLOCKED.png",
-                "type": "image",
-                "key": "sticky-bomb-button"
-            },
-            {
-                "url": "assets/buttons/pages/AntiBGLOCKED.png",
-                "type": "image",
-                "key": "sticky-bomb-button-locked"
-            },
-            {
-                "url": "assets/buttons/socials/TeleLogo.png",
-                "type": "image",
-                "key": "telegram-button"
-            },
-            {
-                "url": "assets/buttons/socials/TeleLogoACTIVE.png",
-                "type": "image",
-                "key": "telegram-button-active"
-            },
-            {
-                "url": "assets/buttons/pages/FreePageBG.png",
-                "type": "image",
-                "key": "tier1-bg"
-            },
-            {
-                "url": "assets/buttons/levels/FREETier.png",
-                "type": "image",
-                "key": "tier1-button"
-            },
-            {
-                "url": "assets/buttons/pages/GangstapageBG.png",
-                "type": "image",
-                "key": "tier2-bg"
-            },
-            {
-                "url": "assets/buttons/levels/Tier2.png",
-                "type": "image",
-                "key": "tier2-button"
-            },
-            {
-                "url": "assets/buttons/levels/Tier2LOCKED.png",
-                "type": "image",
-                "key": "tier2-button-locked"
-            },
-            {
-                "url": "assets/buttons/pages/TrenchWarriorBG.png",
-                "type": "image",
-                "key": "tier3-bg"
-            },
-            {
-                "url": "assets/buttons/levels/Tier3.png",
-                "type": "image",
-                "key": "tier3-button"
-            },
-            {
-                "url": "assets/buttons/levels/Tier3LOCKED.png",
-                "type": "image",
-                "key": "tier3-button-locked"
-            },
-            {
-                "url": "assets/buttons/pages/SolanaLegendBG.png",
-                "type": "image",
-                "key": "tier4-bg"
-            },
-            {
-                "url": "assets/buttons/levels/Tier4.png",
-                "type": "image",
-                "key": "tier4-button"
-            },
-            {
-                "url": "assets/buttons/levels/Tier4LOCKED.png",
-                "type": "image",
-                "key": "tier4-button-locked"
-            },
-            {
-                "url": "assets/buttons/pages/TommyUNLOCKED.png",
-                "type": "image",
-                "key": "tommy-button"
-            },
-            {
-                "url": "assets/buttons/pages/TommyLOCKED.png",
-                "type": "image",
-                "key": "tommy-button-locked"
-            },
-            {
-                "url": "assets/buttons/socials/Xicon.png",
-                "type": "image",
-                "key": "twitter-button"
-            },
-            {
-                "url": "assets/buttons/socials/XLogoACTIVE.png",
-                "type": "image",
-                "key": "twitter-button-active"
-            },
-            {
-                "url": "assets/buttons/icons/Unmuted Icon.png",
-                "type": "image",
-                "key": "unmuted"
-            }
-        ]
-    },
-    "meta": {
-        "app": "Phaser Editor 2D - Asset Pack Editor",
-        "contentType": "phasereditor2d.pack.core.AssetContentType",
-        "url": "https://phasereditor2d.com",
-        "version": 2,
-        "showAllFilesInBlocks": false
-    }
+  "section1": {
+    "files": [
+      {
+        "url": "assets/buttons/icons/drop-active.png",
+        "type": "image",
+        "key": "drop-button-active"
+      },
+      {
+        "url": "assets/buttons/icons/drop.png",
+        "type": "image",
+        "key": "drop-button"
+      },
+      {
+        "url": "assets/buttons/icons/BackARROW.png",
+        "type": "image",
+        "key": "backarrow"
+      },
+      {
+        "url": "assets/buttons/pages/backarrow1.png",
+        "type": "image",
+        "key": "backarrow1"
+      },
+      {
+        "url": "assets/buttons/pages/backarrow2.png",
+        "type": "image",
+        "key": "backarrow2"
+      },
+      {
+        "url": "assets/buttons/pages/backarrow3.png",
+        "type": "image",
+        "key": "backarrow3"
+      },
+      {
+        "url": "assets/buttons/boxes/BaskedBoxUNLOCKED.png",
+        "type": "image",
+        "key": "basket-box"
+      },
+      {
+        "url": "assets/buttons/boxes/BaskedBoxLOCKED.png",
+        "type": "image",
+        "key": "basket-box-locked"
+      },
+      {
+        "url": "assets/buttons/shop/FAKEbattleaxe.png",
+        "type": "image",
+        "key": "battleaxe-item"
+      },
+      {
+        "url": "assets/buttons/boxes/BloodBoxUNLOCKED.png",
+        "type": "image",
+        "key": "blood-box"
+      },
+      {
+        "url": "assets/buttons/boxes/BloodBoxLOCKED.png",
+        "type": "image",
+        "key": "blood-box-locked"
+      },
+      {
+        "url": "assets/buttons/icons/BuddyBoxesJournal icon.png",
+        "type": "image",
+        "key": "boxes"
+      },
+      {
+        "url": "assets/buttons/boxes/boxes-page.png",
+        "type": "image",
+        "key": "boxes-page"
+      },
+      {
+        "url": "assets/buttons/icons/BoxesSELECTED.png",
+        "type": "image",
+        "key": "boxes-selected"
+      },
+      {
+        "url": "assets/buttons/skins/BuddyBag2 Unlocked.png",
+        "type": "image",
+        "key": "buddy-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/skins/Buddy Guy Locked (1).png",
+        "type": "image",
+        "key": "buddy-skin-unlocked"
+      },
+      {
+        "url": "assets/buttons/pages/TeethUNLOCKED.png",
+        "type": "image",
+        "key": "chainsaw-button"
+      },
+      {
+        "url": "assets/buttons/pages/TeethLOCKED.png",
+        "type": "image",
+        "key": "chainsaw-button-locked"
+      },
+      {
+        "url": "assets/buttons/icons/CLOSEicon.png",
+        "type": "image",
+        "key": "close"
+      },
+      {
+        "url": "assets/buttons/boxes/coming-soon-box.png",
+        "type": "image",
+        "key": "coming-soon-box"
+      },
+      {
+        "url": "assets/buttons/skins/Final Page.png",
+        "type": "image",
+        "key": "coming-soon-skin-locked"
+      },
+      {
+        "url": "assets/buttons/pages/Deagle.png",
+        "type": "image",
+        "key": "deagle-button"
+      },
+      {
+        "url": "assets/buttons/shop/DynamiteUNLOCKED.png",
+        "type": "image",
+        "key": "dynamite-item"
+      },
+      {
+        "url": "assets/buttons/shop/DynamiteLOCKED.png",
+        "type": "image",
+        "key": "dynamite-item-locked"
+      },
+      {
+        "url": "assets/buttons/pages/HeatUNLOCKED.png",
+        "type": "image",
+        "key": "fire-bomb-button"
+      },
+      {
+        "url": "assets/buttons/pages/HeatLOCKED.png",
+        "type": "image",
+        "key": "fire-bomb-button-locked"
+      },
+      {
+        "url": "assets/buttons/shop/BuddyBurnerUNLOCKED.png",
+        "type": "image",
+        "key": "flamethrower-item"
+      },
+      {
+        "url": "assets/buttons/shop/BuddyBurnerLOCKED.png",
+        "type": "image",
+        "key": "flamethrower-item-locked"
+      },
+      {
+        "url": "assets/buttons/shop/WILLBEREALflamethrower.png",
+        "type": "image",
+        "key": "flamethrower-item1"
+      },
+      {
+        "url": "assets/buttons/shop/FAKEgasnade.png",
+        "type": "image",
+        "key": "gasnade-item"
+      },
+      {
+        "url": "assets/buttons/pages/Nade.png",
+        "type": "image",
+        "key": "grenade-button"
+      },
+      {
+        "url": "assets/buttons/healthbar/Healthbar.png",
+        "type": "image",
+        "key": "healthbar"
+      },
+      {
+        "url": "assets/buttons/shop/Kar98kUNLOCKED.png",
+        "type": "image",
+        "key": "kar98-item"
+      },
+      {
+        "url": "assets/buttons/shop/Kar98kLOCKED.png",
+        "type": "image",
+        "key": "kar98-item-locked"
+      },
+      {
+        "url": "assets/buttons/shop/KatanaUNLOCKED.png",
+        "type": "image",
+        "key": "katana-item"
+      },
+      {
+        "url": "assets/buttons/shop/KatanaLOCKED.png",
+        "type": "image",
+        "key": "katana-item-locked"
+      },
+      {
+        "url": "assets/buttons/pages/Nife.png",
+        "type": "image",
+        "key": "knife-button"
+      },
+      {
+        "url": "assets/buttons/icons/BuddyLevelsJournal icon.png",
+        "type": "image",
+        "key": "levels"
+      },
+      {
+        "url": "assets/buttons/levels/levels-page.png",
+        "type": "image",
+        "key": "levels-page"
+      },
+      {
+        "url": "assets/buttons/icons/LevelsSELECTED.png",
+        "type": "image",
+        "key": "levels-selected"
+      },
+      {
+        "url": "assets/buttons/pages/LightSaberUNLOCKED.png",
+        "type": "image",
+        "key": "lightsaber-button"
+      },
+      {
+        "url": "assets/buttons/pages/LightSaberLOCKED.png",
+        "type": "image",
+        "key": "lightsaber-button-locked"
+      },
+      {
+        "url": "assets/buttons/icons/LogosSelect.png",
+        "type": "image",
+        "key": "logo-select"
+      },
+      {
+        "url": "assets/buttons/boxes/CardboardBoxIcon.png",
+        "type": "image",
+        "key": "main-box"
+      },
+      {
+        "url": "assets/buttons/pages/BG42UNLOCKED.png",
+        "type": "image",
+        "key": "mg-button"
+      },
+      {
+        "url": "assets/buttons/pages/BG42LOCKED.png",
+        "type": "image",
+        "key": "mg-button-locked"
+      },
+      {
+        "url": "assets/buttons/healthbar/miliclean.png",
+        "type": "image",
+        "key": "mil-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/milidead.png",
+        "type": "image",
+        "key": "mil-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/miliheavy.png",
+        "type": "image",
+        "key": "mil-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/mililight.png",
+        "type": "image",
+        "key": "mil-light"
+      },
+      {
+        "url": "assets/buttons/skins/Stage1T.png",
+        "type": "image",
+        "key": "mil-skin-locked"
+      },
+      {
+        "url": "assets/buttons/skins/Stage3T.png",
+        "type": "image",
+        "key": "mil-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/skins/Stage2T.png",
+        "type": "image",
+        "key": "mil-skin-unlocked"
+      },
+      {
+        "url": "assets/buttons/healthbar/muskclean.png",
+        "type": "image",
+        "key": "musk-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/muskdead.png",
+        "type": "image",
+        "key": "musk-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/muskheavy.png",
+        "type": "image",
+        "key": "musk-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/musklight.png",
+        "type": "image",
+        "key": "musk-light"
+      },
+      {
+        "url": "assets/buttons/skins/Stage1G.png",
+        "type": "image",
+        "key": "musk-skin-locked"
+      },
+      {
+        "url": "assets/buttons/skins/Stage3G.png",
+        "type": "image",
+        "key": "musk-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/skins/Stage2G.png",
+        "type": "image",
+        "key": "musk-skin-unlocked"
+      },
+      {
+        "url": "assets/buttons/icons/muteicon.png",
+        "type": "image",
+        "key": "mute"
+      },
+      {
+        "url": "assets/buttons/Page.png",
+        "type": "image",
+        "key": "Page"
+      },
+      {
+        "url": "assets/buttons/healthbar/papclean.png",
+        "type": "image",
+        "key": "buddy-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/papdead.png",
+        "type": "image",
+        "key": "buddy-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/bagclean.png",
+        "type": "image",
+        "key": "paper-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/bagdead.png",
+        "type": "image",
+        "key": "paper-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/bagheavy.png",
+        "type": "image",
+        "key": "paper-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/baglight.png",
+        "type": "image",
+        "key": "paper-light"
+      },
+      {
+        "url": "assets/buttons/skins/FreeBud.png",
+        "type": "image",
+        "key": "paper-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/healthbar/papheavy.png",
+        "type": "image",
+        "key": "buddy-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/paplight.png",
+        "type": "image",
+        "key": "buddy-light"
+      },
+      {
+        "url": "assets/buttons/boxes/PresentBoxUNLOCKED.png",
+        "type": "image",
+        "key": "present-box"
+      },
+      {
+        "url": "assets/buttons/boxes/PresentBoxLOCKED.png",
+        "type": "image",
+        "key": "present-box-locked"
+      },
+      {
+        "url": "assets/buttons/pages/RailGunUNLOCKED.png",
+        "type": "image",
+        "key": "railgun-button"
+      },
+      {
+        "url": "assets/buttons/pages/RailGunLOCKED.png",
+        "type": "image",
+        "key": "railgun-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/RayGunUNLOCKED.png",
+        "type": "image",
+        "key": "raygun-button"
+      },
+      {
+        "url": "assets/buttons/pages/RayGunLOCKED.png",
+        "type": "image",
+        "key": "raygun-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/BuddyBlasterUNLOCKED.png",
+        "type": "image",
+        "key": "rpg-button"
+      },
+      {
+        "url": "assets/buttons/pages/BuddyBlasterLOCKED.png",
+        "type": "image",
+        "key": "rpg-button-locked"
+      },
+      {
+        "url": "assets/buttons/skins/SantaSkin Buddy Clause Locked.png",
+        "type": "image",
+        "key": "santa-skin-locked"
+      },
+      {
+        "url": "assets/buttons/skins/Santa Skin Buddy Clause Unlocked.png",
+        "type": "image",
+        "key": "santa-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/skins/SantaSkin Buddy Clause Locked (1).png",
+        "type": "image",
+        "key": "santa-skin-unlocked"
+      },
+      {
+        "url": "assets/buttons/healthbar/santaclean.png",
+        "type": "image",
+        "key": "santa-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/santadead.png",
+        "type": "image",
+        "key": "santa-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/santaheavy.png",
+        "type": "image",
+        "key": "santa-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/santalight.png",
+        "type": "image",
+        "key": "santa-light"
+      },
+      {
+        "url": "assets/buttons/boxes/ShoeBoxIconUNLOCKED.png",
+        "type": "image",
+        "key": "shoe-box"
+      },
+      {
+        "url": "assets/buttons/boxes/ShoeBoxIconLOCKED.png",
+        "type": "image",
+        "key": "shoe-box-locked"
+      },
+      {
+        "url": "assets/buttons/icons/BuddyShopJournal icon.png",
+        "type": "image",
+        "key": "shop"
+      },
+      {
+        "url": "assets/buttons/shop/ShopPageRaw.png",
+        "type": "image",
+        "key": "shop-page"
+      },
+      {
+        "url": "assets/buttons/icons/ShopSELECTED.png",
+        "type": "image",
+        "key": "shop-selected"
+      },
+      {
+        "url": "assets/buttons/icons/BuddySkinsJournal icon.png",
+        "type": "image",
+        "key": "skins"
+      },
+      {
+        "url": "assets/buttons/skins/SkinsJournalRaw.png",
+        "type": "image",
+        "key": "skins-page"
+      },
+      {
+        "url": "assets/buttons/icons/SkinsSELECTED.png",
+        "type": "image",
+        "key": "skins-selected"
+      },
+      {
+        "url": "assets/buttons/healthbar/solclean.png",
+        "type": "image",
+        "key": "sol-clean"
+      },
+      {
+        "url": "assets/buttons/healthbar/soldead.png",
+        "type": "image",
+        "key": "sol-dead"
+      },
+      {
+        "url": "assets/buttons/healthbar/solheavy.png",
+        "type": "image",
+        "key": "sol-heavy"
+      },
+      {
+        "url": "assets/buttons/healthbar/sollight.png",
+        "type": "image",
+        "key": "sol-light"
+      },
+      {
+        "url": "assets/buttons/skins/Stage1S.png",
+        "type": "image",
+        "key": "sol-skin-locked"
+      },
+      {
+        "url": "assets/buttons/skins/Stage3S.png",
+        "type": "image",
+        "key": "sol-skin-purchased"
+      },
+      {
+        "url": "assets/buttons/skins/Stage2S.png",
+        "type": "image",
+        "key": "sol-skin-unlocked"
+      },
+      {
+        "url": "assets/buttons/pages/AntiBGUNLOCKED.png",
+        "type": "image",
+        "key": "sticky-bomb-button"
+      },
+      {
+        "url": "assets/buttons/pages/AntiBGLOCKED.png",
+        "type": "image",
+        "key": "sticky-bomb-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/FreePageBG.png",
+        "type": "image",
+        "key": "tier1-bg"
+      },
+      {
+        "url": "assets/buttons/levels/FREETier.png",
+        "type": "image",
+        "key": "tier1-button"
+      },
+      {
+        "url": "assets/buttons/pages/GangstapageBG.png",
+        "type": "image",
+        "key": "tier2-bg"
+      },
+      {
+        "url": "assets/buttons/levels/Tier2.png",
+        "type": "image",
+        "key": "tier2-button"
+      },
+      {
+        "url": "assets/buttons/levels/Tier2LOCKED.png",
+        "type": "image",
+        "key": "tier2-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/TrenchWarriorBG.png",
+        "type": "image",
+        "key": "tier3-bg"
+      },
+      {
+        "url": "assets/buttons/levels/Tier3.png",
+        "type": "image",
+        "key": "tier3-button"
+      },
+      {
+        "url": "assets/buttons/levels/Tier3LOCKED.png",
+        "type": "image",
+        "key": "tier3-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/SolanaLegendBG.png",
+        "type": "image",
+        "key": "tier4-bg"
+      },
+      {
+        "url": "assets/buttons/levels/Tier4.png",
+        "type": "image",
+        "key": "tier4-button"
+      },
+      {
+        "url": "assets/buttons/levels/Tier4LOCKED.png",
+        "type": "image",
+        "key": "tier4-button-locked"
+      },
+      {
+        "url": "assets/buttons/pages/TommyUNLOCKED.png",
+        "type": "image",
+        "key": "tommy-button"
+      },
+      {
+        "url": "assets/buttons/pages/TommyLOCKED.png",
+        "type": "image",
+        "key": "tommy-button-locked"
+      },
+
+      {
+        "url": "assets/buttons/icons/Unmuted Icon.png",
+        "type": "image",
+        "key": "unmuted"
+      }
+    ]
+  },
+  "meta": {
+    "app": "Phaser Editor 2D - Asset Pack Editor",
+    "contentType": "phasereditor2d.pack.core.AssetContentType",
+    "url": "https://phasereditor2d.com",
+    "version": 2,
+    "showAllFilesInBlocks": false
+  }
 }

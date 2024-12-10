@@ -33,6 +33,59 @@ export default class MainMenu extends Phaser.Scene {
       .setDepth(-2)
       .play(true);
 
+    // Add social media buttons
+    const socialY = 500;
+    const spacing = 120;
+
+    // Twitter button
+    const twitterButton = this.add
+      .image(400 - spacing, socialY, "twitter-button")
+      .setScale(0.20)
+      .setOrigin(0.5)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        twitterButton.setTexture("twitter-button-active");
+      })
+      .on("pointerout", () => {
+        twitterButton.setTexture("twitter-button");
+      })
+      .on("pointerdown", () => {
+        window.open("https://dex.com", "_blank");
+      });
+
+    // Telegram button
+    const telegramButton = this.add
+      .image(400, socialY, "telegram-button")
+      .setScale(0.20)
+      .setOrigin(0.5)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        telegramButton.setTexture("telegram-button-active");
+      })
+      .on("pointerout", () => {
+        telegramButton.setTexture("telegram-button");
+      })
+      .on("pointerdown", () => {
+        window.open("https://dex.com", "_blank");
+      });
+
+    // Discord button
+    const discordButton = this.add
+      .image(400 + spacing, socialY, "dex-button")
+      .setScale(0.20)
+      .setOrigin(0.5)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => {
+        discordButton.setTexture("dex-button-active");
+      })
+      .on("pointerout", () => {
+        discordButton.setTexture("dex-button");
+      })
+      .on("pointerdown", () => {
+        window.open("https://dex.com", "_blank");
+      });
+
+    // Add play button
     // Add play button
     const playButton = this.add
       .text(400, 384, "Play Game", {
@@ -67,3 +120,4 @@ export default class MainMenu extends Phaser.Scene {
 }
 
 export { MainMenu };
+

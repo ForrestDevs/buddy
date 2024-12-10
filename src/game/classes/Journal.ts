@@ -60,8 +60,6 @@ export type BoxButtons = Record<
 const JOURNAL_SCALE = 0.6;
 const HITAREA_ALPHA = 0;
 
-// TODO: Make market cap event handler to update journal unlocked prop on items
-
 export class JournalManager extends Phaser.GameObjects.Container {
   private inputState: InputState;
   private currentJournal: JournalType | null = null;
@@ -78,7 +76,7 @@ export class JournalManager extends Phaser.GameObjects.Container {
   private closeButton: Phaser.GameObjects.Image;
   private backButton: Phaser.GameObjects.Container;
   private advanceButton: Phaser.GameObjects.Container;
-
+  private dropButton: Phaser.GameObjects.Image;
   // Position constants
   private readonly HIDDEN_X = 1480;
   private readonly VISIBLE_X = 1000;
@@ -126,7 +124,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.createSkinsJournal();
     this.createBoxesJournal();
     this.setupEventListeners();
-
     this.setX(this.HIDDEN_X);
     this.setVisible(false);
   }
@@ -149,6 +146,20 @@ export class JournalManager extends Phaser.GameObjects.Container {
       .on("pointerout", () => this.closeButton.clearTint())
       .on("pointerdown", () => {
         this.scene.sound.play("click");
+        this.closeJournal();
+      });
+
+    //drop weapon button
+    this.dropButton = this.scene.add
+      .image(-260, -170, "drop-button")
+      .setOrigin(0.5)
+      .setScale(0.15)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerover", () => this.dropButton.setTexture("drop-button-active"))
+      .on("pointerout", () => this.dropButton.setTexture("drop-button"))
+      .on("pointerdown", () => {
+        this.scene.sound.play("click");
+        EventBus.emit("set-weapon", undefined);
         this.closeJournal();
       });
 
@@ -229,7 +240,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
     this.advanceButton.setVisible(false);
     this.advanceButton.add([advanceButtonUI, hitArea]);
 
-    this.add([this.closeButton, this.advanceButton, this.backButton]);
+    this.add([
+      this.closeButton,
+      this.advanceButton,
+      this.backButton,
+      this.dropButton,
+    ]);
   }
 
   private setupEventListeners(): void {
@@ -412,9 +428,16 @@ export class JournalManager extends Phaser.GameObjects.Container {
       const texture = buttonContainer?.getByName(
         `${weaponData.name}-button-texture`
       ) as Phaser.GameObjects.Image;
+      const foundWeapon = this.WEAPON_INFO.find(
+        (weapon) => weapon.name === weaponData.name
+      );
+      if (foundWeapon) {
+        foundWeapon.purchased = true;
+      }
 
       texture.setTexture(`${weaponData.name}-button`);
       // set purchased state in local storage
+
       this.updatePurchaseState("weapon", weaponData.name);
     }
     this.scene.registry.set("equiped-item", weaponData.name);
@@ -601,7 +624,12 @@ export class JournalManager extends Phaser.GameObjects.Container {
       const texture = page.getByName(
         `${item.name}-texture`
       ) as Phaser.GameObjects.Image;
-
+      const foundItem = this.SHOP_INFO.find(
+        (itemOut) => itemOut.name === item.name
+      );
+      if (foundItem) {
+        foundItem.purchased = true;
+      }
       texture.setTexture(`${item.name}-item`);
       // set purchased state in local storage
       this.updatePurchaseState("item", item.name);
@@ -976,24 +1004,6 @@ export class JournalManager extends Phaser.GameObjects.Container {
     // Get current coins from game state
     const coins = this.getCoins();
     return coins >= price;
-  }
-
-  private showCannotAffordMessage(): void {
-    // Show "Not enough coins" message
-    const message = this.scene.add
-      .text(0, 0, "Not enough coins!", {
-        fontSize: "24px",
-        color: "#ff0000",
-      })
-      .setOrigin(0.5);
-
-    this.scene.tweens.add({
-      targets: message,
-      alpha: 0,
-      y: "-=50",
-      duration: 1000,
-      onComplete: () => message.destroy(),
-    });
   }
 
   public destroy(): void {

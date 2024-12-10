@@ -15,6 +15,36 @@
         "url": "assets/coin.png",
         "type": "image",
         "key": "coin"
+      },
+      {
+        "url": "assets/buttons/socials/DexLogo.png",
+        "type": "image",
+        "key": "dex-button"
+      },
+      {
+        "url": "assets/buttons/socials/DexLogoACTIVE.png",
+        "type": "image",
+        "key": "dex-button-active"
+      },
+      {
+        "url": "assets/buttons/socials/Xicon.png",
+        "type": "image",
+        "key": "twitter-button"
+      },
+      {
+        "url": "assets/buttons/socials/XLogoACTIVE.png",
+        "type": "image",
+        "key": "twitter-button-active"
+      },
+      {
+        "url": "assets/buttons/socials/TeleLogo.png",
+        "type": "image",
+        "key": "telegram-button"
+      },
+      {
+        "url": "assets/buttons/socials/TeleLogoACTIVE.png",
+        "type": "image",
+        "key": "telegram-button-active"
       }
     ]
   },

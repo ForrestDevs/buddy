@@ -2,6 +2,21 @@
   "section1": {
     "files": [
       {
+        "url": ["assets/sounds/buddy-respawn.mp3"],
+        "type": "audio",
+        "key": "buddy-respawn"
+      },
+      {
+        "url": ["assets/sounds/buddy-bone1.mp3"],
+        "type": "audio",
+        "key": "buddy-bone1"
+      },
+      {
+        "url": ["assets/sounds/buddy-bone2.mp3"],
+        "type": "audio",
+        "key": "buddy-bone2"
+      },
+      {
         "url": ["assets/sounds/flamethrower-fire.mp3"],
         "type": "audio",
         "key": "flamethrower-fire"
@@ -59,7 +74,7 @@
       {
         "url": ["assets/sounds/Buddy_death.mp3"],
         "type": "audio",
-        "key": "death"
+        "key": "buddy-death"
       },
       {
         "url": ["assets/sounds/Dyna_flick.mp3"],

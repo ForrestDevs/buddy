@@ -3,6 +3,10 @@ import { Character } from "./Character";
 import { EventBus } from "../EventBus";
 
 export type EffectType =
+  | "slash1"
+  | "slash2"
+  | "slash3"
+  | "slash4"
   | "b1"
   | "b2"
   | "b3"
@@ -22,6 +26,30 @@ interface EffectConfig {
 export class Effects {
   private scene: Scene;
   private static readonly effectConfig: Record<EffectType, EffectConfig> = {
+    slash1: {
+      animKey: "slash1",
+      texture: "slash1_00001",
+      isPlaying: false,
+      timer: undefined,
+    },
+    slash2: {
+      animKey: "slash2",
+      texture: "slash2_00010",
+      isPlaying: false,
+      timer: undefined,
+    },
+    slash3: {
+      animKey: "slash3",
+      texture: "slash3_00016",
+      isPlaying: false,
+      timer: undefined,
+    },
+    slash4: {
+      animKey: "slash4",
+      texture: "slash4_00027",
+      isPlaying: false,
+      timer: undefined,
+    },
     b1: {
       animKey: "b1",
       texture: "blood1_00018",
@@ -181,7 +209,7 @@ export class Effects {
     });
   }
 
-  public spawnCoin(x: number, y: number): void {
+  public spawnCoin(x: number, y: number, dropAmount?: number): void {
     const coin = this.scene.add.sprite(x, y, "coin").setDepth(4).setScale(0.2);
 
     // Random initial direction with full 360 degree range
@@ -234,7 +262,7 @@ export class Effects {
                         this.scene.sound.play("coin-pickup", {
                           volume: 0.4,
                         });
-                        EventBus.emit("coins-changed", 2);
+                        EventBus.emit("coins-changed", dropAmount ?? 2);
                         coin.destroy();
                       },
                     });

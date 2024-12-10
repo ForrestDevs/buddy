@@ -11,12 +11,7 @@ export default function Document() {
         <meta property="og:title" content="$BUDDY" />
         <meta property="og:description" content="Kick the $BUDDY" />
         <meta property="og:image" content="/og.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Ultra&display=swap"
-          rel="stylesheet"
-        />
+       
       </Head>
       <body>
         <Main />

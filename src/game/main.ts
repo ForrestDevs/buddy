@@ -6,16 +6,25 @@ import { AUTO, Game } from "phaser";
 
 const config: Phaser.Types.Core.GameConfig = {
   type: AUTO,
-  // width: 1280,
-  // height: 720,
+  width: 1280,
+  height: 720,
+  parent: "game-container",
   scale: {
     mode: Phaser.Scale.FIT,
     parent: "game-container",
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: 1280,
-    height: 720,
+    min: {
+      width: 640,
+      height: 360,
+    },
+    max: {
+      width: 1280,
+      height: 720,
+    },
+    zoom: 1,
   },
-  parent: "game-container",
+  autoRound: false,
+
   backgroundColor: "#30cfd0",
   scene: [Boot, MainMenu, Preloader, MainGame],
   plugins: {},

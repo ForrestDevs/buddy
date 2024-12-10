@@ -1,5 +1,6 @@
 import { EventBus } from "../EventBus";
 import { CHARACTER_WIDTH, CHARACTER_HEIGHT, JOINT_LENGTH } from "../config";
+import { Effects } from "./Effects";
 import { InputState } from "./InputState";
 
 interface CharacterConfig {
@@ -58,6 +59,7 @@ interface DamageThresholds {
 //TODO: Setup CDN Server
 
 export class Character {
+  private effects: Effects;
   private collisionGroup!: number;
   private scene: Phaser.Scene;
   private health: number = 100;
@@ -69,11 +71,6 @@ export class Character {
     ["rightArm", null],
     ["leftLeg", null],
     ["rightLeg", null],
-  ]);
-  private sounds: Map<string, Phaser.Sound.BaseSound | null> = new Map([
-    ["hit", null],
-    ["grunt", null],
-    ["death", null],
   ]);
   private currentDamageState: DamageState = DamageState.CLEAN;
   private readonly DAMAGE_THRESHOLDS: DamageThresholds = {
@@ -90,14 +87,14 @@ export class Character {
   private inputState: InputState;
   private isRespawning: boolean = false;
 
-  constructor(config: CharacterConfig) {
+  constructor(config: CharacterConfig, effects: Effects) {
     this.scene = config.scene;
+    this.effects = effects;
     this.characterSkin = config.tier || "paper";
     this.collisionGroup = config.collisionGroup;
     this.inputState = InputState.getInstance();
     this.createCharacter(config.x, config.y);
     this.setupEventListeners();
-    this.loadSounds();
   }
 
   private createCharacter(x: number, y: number): void {
@@ -365,8 +362,6 @@ export class Character {
   }
 
   private onHealthChanged = (damage: number): void => {
-    // console.log("health-changed character", damage);
-
     // If already dead or will be dead after damage, handle death immediately
     if (this.health <= 0 || this.health - damage <= 0) {
       this.health = 0;
@@ -380,6 +375,7 @@ export class Character {
     // Otherwise process normal damage
     this.health -= damage;
     const previousState = this.currentDamageState;
+    this.playRandomBuddySound();
     this.updateDamageState();
 
     if (previousState !== this.currentDamageState) {
@@ -457,6 +453,14 @@ export class Character {
       }
     });
 
+    const characterPos = this.getPosition();
+    for (let i = 0; i < 10; i++) {
+      this.effects.spawnCoin(characterPos.x, characterPos.y, 75);
+    }
+
+    this.scene.sound.play("buddy-bone1");
+    this.scene.sound.play("buddy-death");
+
     // Add stronger random forces to scatter parts dramatically
     this.bodyParts.forEach((part) => {
       if (part) {
@@ -509,24 +513,11 @@ export class Character {
     this.respawnCharacter();
   }
 
-  // private createSmokeEffect(x: number, y: number): void {
-  //   const particles = this.scene.add.particles("smoke");
-  //   const emitter = particles.createEmitter({
-  //     x,
-  //     y,
-  //     speed: { min: 20, max: 50 },
-  //     angle: { min: 0, max: 360 },
-  //     scale: { start: 0.5, end: 0 },
-  //     alpha: { start: 0.5, end: 0 },
-  //     lifespan: 1000,
-  //     quantity: 10,
-  //   });
-
-  //   // Auto-destroy particle system after animation
-  //   this.scene.time.delayedCall(1000, () => {
-  //     particles.destroy();
-  //   });
-  // }
+  private playRandomBuddySound(): void {
+    const sounds = ["grunt", "ouch", "scream", "swear", "thump", "buddy-bone2"];
+    const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+    this.scene.sound.play(randomSound);
+  }
 
   private isCharacterBody(body: MatterJS.BodyType): boolean {
     return Array.from(this.bodyParts.values()).some(
@@ -559,62 +550,13 @@ export class Character {
         });
       }
     });
+    this.scene.sound.play("buddy-respawn");
 
     this.inputState.unlock("character-death");
     this.isRespawning = false;
     // Emit respawn event
     EventBus.emit("character-respawned");
   }
-
-  private loadSounds(): void {
-    // Define sound configurations
-    const soundConfigs = [
-      { key: "ouch", path: "ouch" },
-      { key: "grunt", path: "grunt" },
-      { key: "death", path: "death" },
-      { key: "thump", path: "thump" },
-    ];
-
-    // Load and store sounds
-    soundConfigs.forEach(({ key, path }) => {
-      const sound = this.scene.sound.add(path, {
-        volume: 0.5,
-        rate: 1,
-      });
-      this.sounds.set(key, sound);
-    });
-  }
-
-  // private onProjectileHit({
-  //   damage,
-  //   isExplosion,
-  // }: {
-  //   damage: number;
-  //   isExplosion?: boolean;
-  // }): void {
-  //   this.damage(damage);
-
-  //   // Play appropriate sound based on damage/health
-  //   this.sounds.get("thump")?.play();
-  //   if (this.health <= 0) {
-  //     this.sounds.get("death")?.play();
-  //   } else if (damage > 20) {
-  //     this.sounds.get("grunt")?.play();
-  //   } else {
-  //     this.sounds.get("ouch")?.play();
-  //   }
-  // }
-
-  // public damage(amount: number): void {
-  //   this.health -= amount;
-  //   if (this.health <= 0) {
-  //     this.health = 100;
-  //     const currentKills = this.scene.data.get("killCount") || 0;
-  //     this.scene.data.set("killCount", currentKills + 1);
-  //   }
-  //   this.scene.data.set("health", this.health);
-  //   EventBus.emit("character-health-changed", this.health);
-  // }
 
   public getPosition(): Phaser.Math.Vector2 {
     const body = this.bodyParts.get("body");

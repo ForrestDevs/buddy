@@ -1,5 +1,118 @@
 {
     "anims": [
+
+        {
+            "key": "slash1",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "slash1_00001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash1_00002", 
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash1_00003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash1_00004",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "slash2",
+            "type": "frame", 
+            "frames": [
+                {
+                    "key": "slash2_00010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash2_00011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash2_00012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash2_00013",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "slash3",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "slash3_00016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash3_00017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash3_00018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash3_00019",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "slash4",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "slash4_00027",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash4_00028",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash4_00029",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slash4_00030",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        },
         {
             "key": "b1",
             "type": "frame",

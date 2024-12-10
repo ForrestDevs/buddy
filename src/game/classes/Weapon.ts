@@ -55,11 +55,9 @@ export class Weapon {
 
   // Add to class properties
   private static readonly FLAMETHROWER_CONFIG = {
-    offsetX: 350, // Adjust these values based on your texture
-    offsetY: 175,
-    damageRadius: 50,
-    damageInterval: 100, // How often to apply damage in ms
-    damagePerTick: 1, // How much damage per tick
+    damagePerTick: 1,
+    damageInterval: 100,
+    range: 250, // Adjust this value to set flame range
   };
 
   private lastFlameDamageTime: number = 0;
@@ -344,6 +342,18 @@ export class Weapon {
 
   private lastDamageTime: number = 0;
 
+  // Add lightsaber config similar to chainsaw and flamethrower
+  private static readonly LIGHTSABER_CONFIG = {
+    damagePerTick: 8,
+    damageInterval: 100,
+    range: 200,
+    swingDelay: 300, // Time to wait after opening before swinging
+  };
+
+  // Add to class properties
+  private isLightsaberOpen: boolean = false;
+  private lightsaberSwingTimer?: Phaser.Time.TimerEvent;
+
   constructor(scene: Phaser.Scene, character: Character, effects: Effects) {
     this.scene = scene;
     this.character = character;
@@ -508,10 +518,10 @@ export class Weapon {
       this.currentWeapon.removeFromDisplayList();
     }
   }
+
   private updateFlameDamage(): void {
     // Return early if input is locked
     if (this.inputState.isLocked) {
-      // Optionally stop the flamethrower sound and timer
       this.scene.sound.stopByKey("flamethrower-fire");
       if (this.firingTimer) {
         this.firingTimer.destroy();
@@ -533,13 +543,42 @@ export class Weapon {
     const characterPos = this.character.getPosition();
 
     if (!this.currentWeapon) return;
-    EventBus.emit("health-changed", Weapon.FLAMETHROWER_CONFIG.damagePerTick);
-    this.randomBloodEffect(characterPos);
-    for (let i = 0; i < 3; i++) {
-      this.effects.spawnCoin(characterPos.x, characterPos.y);
+
+    // Calculate distance between flame tip and character
+    const distance = Phaser.Math.Distance.Between(
+      this.barrelPoint.x,
+      this.barrelPoint.y,
+      characterPos.x,
+      characterPos.y
+    );
+
+    // Only apply damage if within range
+    if (distance <= Weapon.FLAMETHROWER_CONFIG.range) {
+      // Apply damage
+      EventBus.emit("health-changed", Weapon.FLAMETHROWER_CONFIG.damagePerTick);
+
+      // Visual effects
+      this.randomBloodEffect(characterPos);
+      this.randomFireEffect(characterPos);
+
+      // Spawn coins
+      for (let i = 0; i < 3; i++) {
+        this.effects.spawnCoin(characterPos.x, characterPos.y);
+      }
+
+      this.lastFlameDamageTime = currentTime;
     }
 
-    this.lastFlameDamageTime = currentTime;
+    // Optional: Debug visualization of range
+    if (this.debugGraphics) {
+      this.debugGraphics.clear();
+      this.debugGraphics.lineStyle(2, 0xff0000, 0.5);
+      this.debugGraphics.strokeCircle(
+        this.barrelPoint.x,
+        this.barrelPoint.y,
+        Weapon.FLAMETHROWER_CONFIG.range
+      );
+    }
   }
 
   public startFiring(): void {
@@ -562,11 +601,20 @@ export class Weapon {
         }
         break;
       case "lightsaber":
-        this.currentWeapon?.play("lightsaberOpen");
-        this.scene.sound.play("lightsaber-ignite");
-        this.scene.sound.play("lightsaber-active", {
-          loop: true,
-        });
+        if (!this.isLightsaberOpen) {
+          this.isLightsaberOpen = true;
+          this.currentWeapon?.play("lightsaberOpen");
+          this.scene.sound.play("lightsaber-ignite");
+          this.scene.sound.play("lightsaber-active", { loop: true });
+
+          // Start swinging after opening animation
+          this.scene.time.delayedCall(
+            Weapon.LIGHTSABER_CONFIG.swingDelay,
+            () => {
+              this.startLightsaberSwing();
+            }
+          );
+        }
         break;
 
       case "chainsaw":
@@ -603,6 +651,14 @@ export class Weapon {
         this.scene.sound.play("katana-pullout");
       // Intentionally fall through to default case
       default: {
+        if (config.fireSound) {
+          config.fireSound.forEach((sound) => {
+            this.scene.sound.play(sound, {
+              volume: 0.5,
+              loop: true,
+            });
+          });
+        }
         // Clear any existing firing timer
         if (this.firingTimer) {
           this.firingTimer.destroy();
@@ -674,10 +730,25 @@ export class Weapon {
 
     switch (this.weapon) {
       case "lightsaber":
-        this.currentWeapon?.play("lightsaberClose");
-        this.scene.sound.stopByKey("lightsaber-active");
-        this.scene.sound.stopByKey("lightsaber-ignite");
-        this.scene.sound.play("lightsaber-close");
+        if (this.isLightsaberOpen) {
+          this.currentWeapon?.play("lightsaberClose");
+          this.scene.sound.play("lightsaber-close");
+          this.scene.sound.stopByKey("lightsaber-active");
+
+          // Clean up lightsaber state
+          if (this.lightsaberSwingTimer) {
+            this.lightsaberSwingTimer.destroy();
+            this.lightsaberSwingTimer = undefined;
+          }
+
+          // Hide weapon after close animation completes
+          this.scene.time.delayedCall(500, () => {
+            this.isLightsaberOpen = false;
+            if (this.currentWeapon?.getDisplayList()) {
+              this.currentWeapon.removeFromDisplayList();
+            }
+          });
+        }
         break;
       case "railgun":
         if (this.isCharging && this.chargeStartTime) {
@@ -733,7 +804,7 @@ export class Weapon {
     this.debugGraphics.strokeCircle(
       this.barrelPoint.x,
       this.barrelPoint.y,
-      Weapon.FLAMETHROWER_CONFIG.damageRadius
+      Weapon.FLAMETHROWER_CONFIG.range
     );
 
     // Optionally draw barrel point
@@ -769,13 +840,6 @@ export class Weapon {
     } else {
       if (config.animationKey) {
         this.currentWeapon?.play(config.animationKey);
-      }
-      if (config.fireSound) {
-        config.fireSound.forEach((sound) => {
-          this.scene.sound.play(sound, {
-            volume: 0.5,
-          });
-        });
       }
       this.spawnProjectile(config);
     }
@@ -977,68 +1041,12 @@ export class Weapon {
         onCollideCallback: (collision: MatterJS.ICollisionPair) => {
           if (hasCollided) return;
           hasCollided = true;
-          // //@ts-ignore
-          // if (collision.bodyA.label === "grenade") {
-          //   return;
-          // }
-          const bodyA = collision.bodyA;
-          const bodyB = collision.bodyB;
-
-          // console.log(collision);
-
-          const collisionPoint = {
-            x: collision.collision.supports[0]?.x,
-            y: collision.collision.supports[0]?.y,
-          };
 
           switch (this.weapon) {
             case "sticky-bomb": {
-              //@ts-ignore
-              if (bodyA.label === "sticky-bomb") {
-                return;
-              }
-              // Stick to the first thing hit
-              if (!matterBomb.getData("stuck")) {
-                matterBomb.setData("stuck", true);
-                //@ts-ignore
-
-                const joint = this.scene.matter.constraint.create({
-                  bodyA: bodyA,
-                  bodyB: bodyB,
-                  pointA: { x: 0, y: 0 },
-                  pointB: { x: 0, y: 0 },
-                  length: 10,
-                  stiffness: 1,
-                  label: `sticky-bomb-joint-${this.stickyBombNumber}`,
-                });
-                console.log("joint", joint);
-                this.scene.matter.world.add(joint);
-                // Explode after delay
-                this.scene.time.delayedCall(2000, () => {
-                  this.effects.playEffect(
-                    "explosion2",
-                    collisionPoint.x,
-                    collisionPoint.y
-                  );
-
-                  console.log(this.scene.matter.world.getAllConstraints());
-
-                  this.scene.matter.world
-                    .getAllConstraints()
-                    .filter(
-                      (joint) =>
-                        joint.label ===
-                        `sticky-bomb-joint-${this.stickyBombNumber}`
-                      // joint.bodyB?.label === "sticky-bomb" ||
-                      // joint.bodyA?.label === "sticky-bomb"
-                    )
-                    .forEach((joint) => {
-                      this.scene.matter.world.removeConstraint(joint);
-                    });
-                  // this.createExplosion(collisionPoint.x, collisionPoint.y);
-                  matterBomb.destroy();
-                });
-              }
+              this.scene.sound.play("sticky-bomb-impact");
+              this.randomExplosionEffect(characterPos);
+              matterBomb.destroy();
               break;
             }
             case "fire-bomb": {
@@ -1105,11 +1113,23 @@ export class Weapon {
           };
 
           const characterPos = this.character.getPosition();
-          if (this.weapon === "rpg") {
-            this.scene.sound.play("explode");
-            this.randomExplosionEffect(characterPos);
-          } else if (this.weapon === "raygun") {
-            this.scene.sound.play("raygun-impact");
+
+          switch (this.weapon) {
+            case "rpg":
+              this.scene.sound.play("explode");
+              this.randomExplosionEffect(characterPos);
+              break;
+            case "raygun":
+              this.scene.sound.play("raygun-impact");
+              break;
+            case "knife":
+              this.scene.sound.play("throwknife-impact");
+              this.randomSlashEffect(characterPos);
+              break;
+            case "katana":
+              this.scene.sound.play("throwknife-impact");
+              this.randomSlashEffect(characterPos);
+              break;
           }
 
           const damage = this.getCurrentWeaponConfig()?.damage || 0.05;
@@ -1135,6 +1155,7 @@ export class Weapon {
   }
 
   private randomBloodEffect(characterPos: Phaser.Math.Vector2): void {
+    this.scene.sound.play("bloodspurt");
     const bloodEffect = `b${Math.floor(Math.random() * 3) + 1}` as EffectType;
     const offset = {
       x: 0,
@@ -1157,6 +1178,21 @@ export class Weapon {
     };
     this.effects.playEffect(
       explosionEffect,
+      characterPos.x + offset.x,
+      characterPos.y + offset.y
+    );
+  }
+
+  private randomSlashEffect(characterPos: Phaser.Math.Vector2): void {
+    const slashEffect = `slash${
+      Math.floor(Math.random() * 4) + 1
+    }` as EffectType;
+    const offset = {
+      x: 0,
+      y: 0,
+    };
+    this.effects.playEffect(
+      slashEffect,
       characterPos.x + offset.x,
       characterPos.y + offset.y
     );
@@ -1358,10 +1394,11 @@ export class Weapon {
     if (distance <= Weapon.CHAINSAW_CONFIG.range) {
       // Apply damage
       EventBus.emit("health-changed", Weapon.CHAINSAW_CONFIG.damagePerTick);
-      
+
       // Visual effects
       this.randomBloodEffect(characterPos);
-      
+      this.randomSlashEffect(characterPos);
+
       // Spawn fewer coins than flamethrower but more frequently
       for (let i = 0; i < 2; i++) {
         this.effects.spawnCoin(characterPos.x, characterPos.y);
@@ -1378,6 +1415,55 @@ export class Weapon {
         this.barrelPoint.x,
         this.barrelPoint.y,
         Weapon.CHAINSAW_CONFIG.range
+      );
+    }
+  }
+
+  // Add new methods for lightsaber handling
+  private startLightsaberSwing(): void {
+    if (!this.isLightsaberOpen) return;
+
+    this.currentWeapon?.play("saberswipe");
+
+    // Start damage checking
+    this.lightsaberSwingTimer = this.scene.time.addEvent({
+      delay: Weapon.LIGHTSABER_CONFIG.damageInterval,
+      callback: this.checkLightsaberDamage,
+      callbackScope: this,
+      loop: true,
+    });
+  }
+
+  private checkLightsaberDamage(): void {
+    if (!this.currentWeapon || !this.isLightsaberOpen) return;
+
+    const characterPos = this.character.getPosition();
+    const distance = Phaser.Math.Distance.Between(
+      this.barrelPoint.x,
+      this.barrelPoint.y,
+      characterPos.x,
+      characterPos.y
+    );
+
+    if (distance <= Weapon.LIGHTSABER_CONFIG.range) {
+      EventBus.emit("health-changed", Weapon.LIGHTSABER_CONFIG.damagePerTick);
+      this.scene.sound.play("lightsaber-hit");
+      this.randomBloodEffect(characterPos);
+      this.randomSlashEffect(characterPos);
+
+      for (let i = 0; i < 2; i++) {
+        this.effects.spawnCoin(characterPos.x, characterPos.y);
+      }
+    }
+
+    // Debug visualization
+    if (this.debugGraphics) {
+      this.debugGraphics.clear();
+      this.debugGraphics.lineStyle(2, 0x00ff00, 0.5);
+      this.debugGraphics.strokeCircle(
+        this.barrelPoint.x,
+        this.barrelPoint.y,
+        Weapon.LIGHTSABER_CONFIG.range
       );
     }
   }

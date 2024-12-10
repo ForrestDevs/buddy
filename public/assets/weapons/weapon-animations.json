@@ -2185,6 +2185,71 @@
       "randomFrame": false
     },
     {
+      "key": "saberswipe",
+      "type": "frame",
+      "frames": [
+        {
+          "key": "saberswipe_00001",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00002",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00003",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00004",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00005",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00006",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00007",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00008",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00009",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00010",
+          "duration": 0,
+          "keyframe": false
+        },
+        {
+          "key": "saberswipe_00011",
+          "duration": 0,
+          "keyframe": false
+        }
+      ],
+      "repeat": -1,
+      "frameRate": 24,
+      "skipMissedFrames": true,
+      "randomFrame": false
+    },
+    {
       "key": "dynamiteFire",
       "type": "frame",
       "frames": [

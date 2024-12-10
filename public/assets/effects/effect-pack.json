@@ -2,6 +2,86 @@
     "section1": {
         "files": [
             {
+                "url": "assets/effects/Slashes/1/slash1_00001.png",
+                "type": "image", 
+                "key": "slash1_00001"
+            },
+            {
+                "url": "assets/effects/Slashes/1/slash1_00002.png",
+                "type": "image",
+                "key": "slash1_00002"
+            },
+            {
+                "url": "assets/effects/Slashes/1/slash1_00003.png", 
+                "type": "image",
+                "key": "slash1_00003"
+            },
+            {
+                "url": "assets/effects/Slashes/1/slash1_00004.png",
+                "type": "image",
+                "key": "slash1_00004"
+            },
+            {
+                "url": "assets/effects/Slashes/2/slash2_00010.png",
+                "type": "image",
+                "key": "slash2_00010"
+            },
+            {
+                "url": "assets/effects/Slashes/2/slash2_00011.png",
+                "type": "image",
+                "key": "slash2_00011"
+            },
+            {
+                "url": "assets/effects/Slashes/2/slash2_00012.png",
+                "type": "image",
+                "key": "slash2_00012"
+            },
+            {
+                "url": "assets/effects/Slashes/2/slash2_00013.png",
+                "type": "image",
+                "key": "slash2_00013"
+            },
+            {
+                "url": "assets/effects/Slashes/3/slash3_00016.png",
+                "type": "image",
+                "key": "slash3_00016"
+            },
+            {
+                "url": "assets/effects/Slashes/3/slash3_00017.png",
+                "type": "image",
+                "key": "slash3_00017"
+            },
+            {
+                "url": "assets/effects/Slashes/3/slash3_00018.png",
+                "type": "image",
+                "key": "slash3_00018"
+            },
+            {
+                "url": "assets/effects/Slashes/3/slash3_00019.png",
+                "type": "image",
+                "key": "slash3_00019"
+            },
+            {
+                "url": "assets/effects/Slashes/4/slash4_00027.png",
+                "type": "image",
+                "key": "slash4_00027"
+            },
+            {
+                "url": "assets/effects/Slashes/4/slash4_00028.png",
+                "type": "image",
+                "key": "slash4_00028"
+            },
+            {
+                "url": "assets/effects/Slashes/4/slash4_00029.png",
+                "type": "image",
+                "key": "slash4_00029"
+            },
+            {
+                "url": "assets/effects/Slashes/4/slash4_00030.png",
+                "type": "image",
+                "key": "slash4_00030"
+            },
+            {
                 "url": "assets/effects/Blood/bloodspurt1/blood1_00001.png",
                 "type": "image",
                 "key": "blood1_00001"

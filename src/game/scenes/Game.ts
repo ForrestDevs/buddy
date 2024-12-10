@@ -81,14 +81,18 @@ export default class Game extends Phaser.Scene {
       // x: this.HIDDEN_X,
       y: 360, // Vertical center of the screen
     });
-    this.character = new Character({
-      scene: this,
-      x: 512,
-      y: 200,
-      tier: this.characterTiers[this.data.get("tier")] ?? "paper",
-      collisionGroup: canDrag,
-    });
     this.effects = new Effects(this);
+    this.character = new Character(
+      {
+        scene: this,
+        x: 512,
+        y: 200,
+        tier: this.characterTiers[this.data.get("tier")] ?? "paper",
+        collisionGroup: canDrag,
+      },
+      this.effects
+    );
+
     this.weaponObject = new Weapon(this, this.character, this.effects);
     EventBus.on("bg-change", (bg: string) => {
       this.bg.setTexture(bg);

@@ -47,7 +47,7 @@ function App() {
           gap: "20px",
         }}
       >
-        <div style={{ flex: 1, textAlign: "center" }}>
+        {/* <div style={{ flex: 1, textAlign: "center" }}>
           <p
             style={{
               fontSize: "1.2rem",
@@ -64,9 +64,9 @@ function App() {
             and raise the market cap to unlock even more awesome content. Join
             the chaos and start earning today!
           </p>
-        </div>
+        </div> */}
 
-        {/* <div
+        <div
           style={{
             display: "flex",
             flexDirection: "row",
@@ -157,7 +157,7 @@ function App() {
               }}
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
