@@ -45,6 +45,16 @@
         "url": "assets/buttons/socials/TeleLogoACTIVE.png",
         "type": "image",
         "key": "telegram-button-active"
+      },
+      {
+        "url": "assets/buttons/icons/InfoIcon.png",
+        "type": "image",
+        "key": "info-button"
+      },
+      {
+        "url": "assets/buttons/icons/InfoActive.png",
+        "type": "image",
+        "key": "info-button-active"
       }
     ]
   },

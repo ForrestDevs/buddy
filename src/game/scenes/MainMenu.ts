@@ -9,12 +9,24 @@ export default class MainMenu extends Phaser.Scene {
     | Phaser.Sound.NoAudioSound
     | Phaser.Sound.HTML5AudioSound;
 
+  private infoButtonState: "open" | "closed" = "closed";
+  private infoButton!: Phaser.GameObjects.Image;
+
   constructor() {
     super("MainMenu");
   }
 
   preload() {
     this.load.video("loading", "assets/loadingScreen/loadingScreen.mp4");
+  }
+
+  private onInfoButtonClick(): void {
+    this.infoButtonState = this.infoButtonState === "open" ? "closed" : "open";
+    EventBus.emit("show-info", this.infoButtonState === "open");
+    // Update info button texture based on state
+    this.infoButton.setTexture(
+      this.infoButtonState === "open" ? "info-button" : "info-button-active"
+    );
   }
 
   create() {
@@ -53,6 +65,12 @@ export default class MainMenu extends Phaser.Scene {
       .on("pointerdown", () => {
         window.open(X_LINK, "_blank");
       });
+
+    this.infoButton = this.add
+      .image(400, 600, "info-button-active")
+      .setDisplaySize(50, 50)
+      .setInteractive({ useHandCursor: true })
+      .on("pointerdown", () => this.onInfoButtonClick());
 
     // Telegram button
     const telegramButton = this.add
